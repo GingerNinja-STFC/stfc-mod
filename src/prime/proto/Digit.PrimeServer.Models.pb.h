@@ -75,6 +75,9 @@ extern ActionSpecDefaultTypeInternal _ActionSpec_default_instance_;
 class ActivatedAbilitySpec;
 struct ActivatedAbilitySpecDefaultTypeInternal;
 extern ActivatedAbilitySpecDefaultTypeInternal _ActivatedAbilitySpec_default_instance_;
+class ActivatedShipAbilityConfig;
+struct ActivatedShipAbilityConfigDefaultTypeInternal;
+extern ActivatedShipAbilityConfigDefaultTypeInternal _ActivatedShipAbilityConfig_default_instance_;
 class ActiveBuff;
 struct ActiveBuffDefaultTypeInternal;
 extern ActiveBuffDefaultTypeInternal _ActiveBuff_default_instance_;
@@ -348,6 +351,9 @@ extern ChallengeLadderSlotSpecParamsDefaultTypeInternal _ChallengeLadderSlotSpec
 class ChallengeLadderSpec;
 struct ChallengeLadderSpecDefaultTypeInternal;
 extern ChallengeLadderSpecDefaultTypeInternal _ChallengeLadderSpec_default_instance_;
+class ChallengeSpec;
+struct ChallengeSpecDefaultTypeInternal;
+extern ChallengeSpecDefaultTypeInternal _ChallengeSpec_default_instance_;
 class ChestInventoryItemParams;
 struct ChestInventoryItemParamsDefaultTypeInternal;
 extern ChestInventoryItemParamsDefaultTypeInternal _ChestInventoryItemParams_default_instance_;
@@ -411,12 +417,6 @@ extern CrewDataDefaultTypeInternal _CrewData_default_instance_;
 class CrewData_OfficersEntry_DoNotUse;
 struct CrewData_OfficersEntry_DoNotUseDefaultTypeInternal;
 extern CrewData_OfficersEntry_DoNotUseDefaultTypeInternal _CrewData_OfficersEntry_DoNotUse_default_instance_;
-class DataCache;
-struct DataCacheDefaultTypeInternal;
-extern DataCacheDefaultTypeInternal _DataCache_default_instance_;
-class DataCache_EtagsEntry_DoNotUse;
-struct DataCache_EtagsEntry_DoNotUseDefaultTypeInternal;
-extern DataCache_EtagsEntry_DoNotUseDefaultTypeInternal _DataCache_EtagsEntry_DoNotUse_default_instance_;
 class DebuffShipSpec;
 struct DebuffShipSpecDefaultTypeInternal;
 extern DebuffShipSpecDefaultTypeInternal _DebuffShipSpec_default_instance_;
@@ -540,6 +540,12 @@ extern ForbiddenTechChances_UpgradeCostEntry_DoNotUseDefaultTypeInternal _Forbid
 class ForbiddenTechConfig;
 struct ForbiddenTechConfigDefaultTypeInternal;
 extern ForbiddenTechConfigDefaultTypeInternal _ForbiddenTechConfig_default_instance_;
+class ForbiddenTechCost;
+struct ForbiddenTechCostDefaultTypeInternal;
+extern ForbiddenTechCostDefaultTypeInternal _ForbiddenTechCost_default_instance_;
+class ForbiddenTechCost_CostsEntry_DoNotUse;
+struct ForbiddenTechCost_CostsEntry_DoNotUseDefaultTypeInternal;
+extern ForbiddenTechCost_CostsEntry_DoNotUseDefaultTypeInternal _ForbiddenTechCost_CostsEntry_DoNotUse_default_instance_;
 class ForbiddenTechData;
 struct ForbiddenTechDataDefaultTypeInternal;
 extern ForbiddenTechDataDefaultTypeInternal _ForbiddenTechData_default_instance_;
@@ -567,6 +573,15 @@ extern ForbiddenTechSpec_MaxLevelTierEntry_DoNotUseDefaultTypeInternal _Forbidde
 class ForbiddenTechTier;
 struct ForbiddenTechTierDefaultTypeInternal;
 extern ForbiddenTechTierDefaultTypeInternal _ForbiddenTechTier_default_instance_;
+class ForbiddenTechUpgradeCostSpec;
+struct ForbiddenTechUpgradeCostSpecDefaultTypeInternal;
+extern ForbiddenTechUpgradeCostSpecDefaultTypeInternal _ForbiddenTechUpgradeCostSpec_default_instance_;
+class ForbiddenTechUpgradeCostSpec_LevelCostsEntry_DoNotUse;
+struct ForbiddenTechUpgradeCostSpec_LevelCostsEntry_DoNotUseDefaultTypeInternal;
+extern ForbiddenTechUpgradeCostSpec_LevelCostsEntry_DoNotUseDefaultTypeInternal _ForbiddenTechUpgradeCostSpec_LevelCostsEntry_DoNotUse_default_instance_;
+class ForbiddenTechUpgradeCostSpec_TierCostsEntry_DoNotUse;
+struct ForbiddenTechUpgradeCostSpec_TierCostsEntry_DoNotUseDefaultTypeInternal;
+extern ForbiddenTechUpgradeCostSpec_TierCostsEntry_DoNotUseDefaultTypeInternal _ForbiddenTechUpgradeCostSpec_TierCostsEntry_DoNotUse_default_instance_;
 class ForbiddenTechsResponse;
 struct ForbiddenTechsResponseDefaultTypeInternal;
 extern ForbiddenTechsResponseDefaultTypeInternal _ForbiddenTechsResponse_default_instance_;
@@ -609,6 +624,15 @@ extern HailingFrequenciesConfigDefaultTypeInternal _HailingFrequenciesConfig_def
 class HailingFrequency;
 struct HailingFrequencyDefaultTypeInternal;
 extern HailingFrequencyDefaultTypeInternal _HailingFrequency_default_instance_;
+class HazardSpec;
+struct HazardSpecDefaultTypeInternal;
+extern HazardSpecDefaultTypeInternal _HazardSpec_default_instance_;
+class HazardSpec_HazardLevel;
+struct HazardSpec_HazardLevelDefaultTypeInternal;
+extern HazardSpec_HazardLevelDefaultTypeInternal _HazardSpec_HazardLevel_default_instance_;
+class HostileWaveInfo;
+struct HostileWaveInfoDefaultTypeInternal;
+extern HostileWaveInfoDefaultTypeInternal _HostileWaveInfo_default_instance_;
 class HullSpec;
 struct HullSpecDefaultTypeInternal;
 extern HullSpecDefaultTypeInternal _HullSpec_default_instance_;
@@ -999,6 +1023,9 @@ extern OptimisedGalaxyDefaultTypeInternal _OptimisedGalaxy_default_instance_;
 class OptimisedGalaxyResponse;
 struct OptimisedGalaxyResponseDefaultTypeInternal;
 extern OptimisedGalaxyResponseDefaultTypeInternal _OptimisedGalaxyResponse_default_instance_;
+class Party;
+struct PartyDefaultTypeInternal;
+extern PartyDefaultTypeInternal _Party_default_instance_;
 class PeaceShieldRulesConfig;
 struct PeaceShieldRulesConfigDefaultTypeInternal;
 extern PeaceShieldRulesConfigDefaultTypeInternal _PeaceShieldRulesConfig_default_instance_;
@@ -1011,6 +1038,9 @@ extern PlanetSlotsConfigDefaultTypeInternal _PlanetSlotsConfig_default_instance_
 class PlanetSlotsConfig_Slot;
 struct PlanetSlotsConfig_SlotDefaultTypeInternal;
 extern PlanetSlotsConfig_SlotDefaultTypeInternal _PlanetSlotsConfig_Slot_default_instance_;
+class PlayerFleetList;
+struct PlayerFleetListDefaultTypeInternal;
+extern PlayerFleetListDefaultTypeInternal _PlayerFleetList_default_instance_;
 class PlayerXpSpec;
 struct PlayerXpSpecDefaultTypeInternal;
 extern PlayerXpSpecDefaultTypeInternal _PlayerXpSpec_default_instance_;
@@ -1281,6 +1311,9 @@ extern StaticSyncActionSpecResponseDefaultTypeInternal _StaticSyncActionSpecResp
 class StaticSyncActivatedAbilitySpecsResponse;
 struct StaticSyncActivatedAbilitySpecsResponseDefaultTypeInternal;
 extern StaticSyncActivatedAbilitySpecsResponseDefaultTypeInternal _StaticSyncActivatedAbilitySpecsResponse_default_instance_;
+class StaticSyncActivatedShipAbilityConfigsResponse;
+struct StaticSyncActivatedShipAbilityConfigsResponseDefaultTypeInternal;
+extern StaticSyncActivatedShipAbilityConfigsResponseDefaultTypeInternal _StaticSyncActivatedShipAbilityConfigsResponse_default_instance_;
 class StaticSyncAllianceConfResponse;
 struct StaticSyncAllianceConfResponseDefaultTypeInternal;
 extern StaticSyncAllianceConfResponseDefaultTypeInternal _StaticSyncAllianceConfResponse_default_instance_;
@@ -1437,6 +1470,9 @@ extern StaticSyncForbiddenTechRemovalCostsSpecsResponseDefaultTypeInternal _Stat
 class StaticSyncForbiddenTechSpecsResponse;
 struct StaticSyncForbiddenTechSpecsResponseDefaultTypeInternal;
 extern StaticSyncForbiddenTechSpecsResponseDefaultTypeInternal _StaticSyncForbiddenTechSpecsResponse_default_instance_;
+class StaticSyncForbiddenTechUpgradeCostsSpecsResponse;
+struct StaticSyncForbiddenTechUpgradeCostsSpecsResponseDefaultTypeInternal;
+extern StaticSyncForbiddenTechUpgradeCostsSpecsResponseDefaultTypeInternal _StaticSyncForbiddenTechUpgradeCostsSpecsResponse_default_instance_;
 class StaticSyncFtueConfResponse;
 struct StaticSyncFtueConfResponseDefaultTypeInternal;
 extern StaticSyncFtueConfResponseDefaultTypeInternal _StaticSyncFtueConfResponse_default_instance_;
@@ -1449,6 +1485,12 @@ extern StaticSyncGlobalDamageReductionConfigResponseDefaultTypeInternal _StaticS
 class StaticSyncHailingFrequenciesConfResponse;
 struct StaticSyncHailingFrequenciesConfResponseDefaultTypeInternal;
 extern StaticSyncHailingFrequenciesConfResponseDefaultTypeInternal _StaticSyncHailingFrequenciesConfResponse_default_instance_;
+class StaticSyncHazardSpecsResponse;
+struct StaticSyncHazardSpecsResponseDefaultTypeInternal;
+extern StaticSyncHazardSpecsResponseDefaultTypeInternal _StaticSyncHazardSpecsResponse_default_instance_;
+class StaticSyncHazardSpecsResponse_HazardSpecsEntry_DoNotUse;
+struct StaticSyncHazardSpecsResponse_HazardSpecsEntry_DoNotUseDefaultTypeInternal;
+extern StaticSyncHazardSpecsResponse_HazardSpecsEntry_DoNotUseDefaultTypeInternal _StaticSyncHazardSpecsResponse_HazardSpecsEntry_DoNotUse_default_instance_;
 class StaticSyncHullSpecsResponse;
 struct StaticSyncHullSpecsResponseDefaultTypeInternal;
 extern StaticSyncHullSpecsResponseDefaultTypeInternal _StaticSyncHullSpecsResponse_default_instance_;
@@ -1656,9 +1698,15 @@ extern StaticSyncUserConsumableSpecsResponse_UserConsumableSpecsEntry_DoNotUseDe
 class StaticSyncWorkerResponse;
 struct StaticSyncWorkerResponseDefaultTypeInternal;
 extern StaticSyncWorkerResponseDefaultTypeInternal _StaticSyncWorkerResponse_default_instance_;
+class StatusCounter;
+struct StatusCounterDefaultTypeInternal;
+extern StatusCounterDefaultTypeInternal _StatusCounter_default_instance_;
 class SupportShipSpec;
 struct SupportShipSpecDefaultTypeInternal;
 extern SupportShipSpecDefaultTypeInternal _SupportShipSpec_default_instance_;
+class TargetableConfig;
+struct TargetableConfigDefaultTypeInternal;
+extern TargetableConfigDefaultTypeInternal _TargetableConfig_default_instance_;
 class TerritoriesStaticDataResponse;
 struct TerritoriesStaticDataResponseDefaultTypeInternal;
 extern TerritoriesStaticDataResponseDefaultTypeInternal _TerritoriesStaticDataResponse_default_instance_;
@@ -1788,6 +1836,57 @@ extern WarpDataDefaultTypeInternal _WarpData_default_instance_;
 class WarpSpec;
 struct WarpSpecDefaultTypeInternal;
 extern WarpSpecDefaultTypeInternal _WarpSpec_default_instance_;
+class Wave;
+struct WaveDefaultTypeInternal;
+extern WaveDefaultTypeInternal _Wave_default_instance_;
+class WaveDefenseChallenge;
+struct WaveDefenseChallengeDefaultTypeInternal;
+extern WaveDefenseChallengeDefaultTypeInternal _WaveDefenseChallenge_default_instance_;
+class WaveDefenseChallengeDataResponse;
+struct WaveDefenseChallengeDataResponseDefaultTypeInternal;
+extern WaveDefenseChallengeDataResponseDefaultTypeInternal _WaveDefenseChallengeDataResponse_default_instance_;
+class WaveDefenseChallenge_PlayerFleetsMapEntry_DoNotUse;
+struct WaveDefenseChallenge_PlayerFleetsMapEntry_DoNotUseDefaultTypeInternal;
+extern WaveDefenseChallenge_PlayerFleetsMapEntry_DoNotUseDefaultTypeInternal _WaveDefenseChallenge_PlayerFleetsMapEntry_DoNotUse_default_instance_;
+class WaveDefensePartyDataResponse;
+struct WaveDefensePartyDataResponseDefaultTypeInternal;
+extern WaveDefensePartyDataResponseDefaultTypeInternal _WaveDefensePartyDataResponse_default_instance_;
+class WaveDefenseStaticDataResponse;
+struct WaveDefenseStaticDataResponseDefaultTypeInternal;
+extern WaveDefenseStaticDataResponseDefaultTypeInternal _WaveDefenseStaticDataResponse_default_instance_;
+class WaveDefenseStaticDataResponse_ChallengesEntry_DoNotUse;
+struct WaveDefenseStaticDataResponse_ChallengesEntry_DoNotUseDefaultTypeInternal;
+extern WaveDefenseStaticDataResponse_ChallengesEntry_DoNotUseDefaultTypeInternal _WaveDefenseStaticDataResponse_ChallengesEntry_DoNotUse_default_instance_;
+class WaveDefenseStaticDataResponse_RewardsEntry_DoNotUse;
+struct WaveDefenseStaticDataResponse_RewardsEntry_DoNotUseDefaultTypeInternal;
+extern WaveDefenseStaticDataResponse_RewardsEntry_DoNotUseDefaultTypeInternal _WaveDefenseStaticDataResponse_RewardsEntry_DoNotUse_default_instance_;
+class WaveDefenseStaticDataResponse_WavesEntry_DoNotUse;
+struct WaveDefenseStaticDataResponse_WavesEntry_DoNotUseDefaultTypeInternal;
+extern WaveDefenseStaticDataResponse_WavesEntry_DoNotUseDefaultTypeInternal _WaveDefenseStaticDataResponse_WavesEntry_DoNotUse_default_instance_;
+class WaveDefenseSyncDataResponse;
+struct WaveDefenseSyncDataResponseDefaultTypeInternal;
+extern WaveDefenseSyncDataResponseDefaultTypeInternal _WaveDefenseSyncDataResponse_default_instance_;
+class WaveDefenseSyncDataResponse_WaveDefenseSystemsEntry_DoNotUse;
+struct WaveDefenseSyncDataResponse_WaveDefenseSystemsEntry_DoNotUseDefaultTypeInternal;
+extern WaveDefenseSyncDataResponse_WaveDefenseSystemsEntry_DoNotUseDefaultTypeInternal _WaveDefenseSyncDataResponse_WaveDefenseSystemsEntry_DoNotUse_default_instance_;
+class WaveDefenseSystem;
+struct WaveDefenseSystemDefaultTypeInternal;
+extern WaveDefenseSystemDefaultTypeInternal _WaveDefenseSystem_default_instance_;
+class WaveRewardList;
+struct WaveRewardListDefaultTypeInternal;
+extern WaveRewardListDefaultTypeInternal _WaveRewardList_default_instance_;
+class WaveRewardSpec;
+struct WaveRewardSpecDefaultTypeInternal;
+extern WaveRewardSpecDefaultTypeInternal _WaveRewardSpec_default_instance_;
+class WaveRewardSpec_WaveRewardMapEntry_DoNotUse;
+struct WaveRewardSpec_WaveRewardMapEntry_DoNotUseDefaultTypeInternal;
+extern WaveRewardSpec_WaveRewardMapEntry_DoNotUseDefaultTypeInternal _WaveRewardSpec_WaveRewardMapEntry_DoNotUse_default_instance_;
+class WavesSpec;
+struct WavesSpecDefaultTypeInternal;
+extern WavesSpecDefaultTypeInternal _WavesSpec_default_instance_;
+class WavesSpec_WavesEntry_DoNotUse;
+struct WavesSpec_WavesEntry_DoNotUseDefaultTypeInternal;
+extern WavesSpec_WavesEntry_DoNotUseDefaultTypeInternal _WavesSpec_WavesEntry_DoNotUse_default_instance_;
 class WeaponSpec;
 struct WeaponSpecDefaultTypeInternal;
 extern WeaponSpecDefaultTypeInternal _WeaponSpec_default_instance_;
@@ -1967,6 +2066,13 @@ enum EntityGroup_Type : int {
   EntityGroup_Type_TYPE_FORBIDDENTECHCHANCES = 144,
   EntityGroup_Type_TYPE_FORBIDDENTECHCONFIG = 145,
   EntityGroup_Type_TYPE_CHALLENGECONFIG = 146,
+  EntityGroup_Type_TYPE_FORBIDDENTECHUPGRADECOSTS = 147,
+  EntityGroup_Type_TYPE_HAZARDSPECS = 148,
+  EntityGroup_Type_TYPE_ACTIVATEDSHIPABILITIESCONFIGS = 149,
+  EntityGroup_Type_TYPE_WAVEDEFENSESTATICDATA = 150,
+  EntityGroup_Type_TYPE_WAVEDEFENSEPARTYDATA = 151,
+  EntityGroup_Type_TYPE_WAVEDEFENSESYNCDATA = 152,
+  EntityGroup_Type_TYPE_WAVEDEFENSECHALLENGEDATA = 153,
   EntityGroup_Type_EntityGroup_Type_INT_MIN_SENTINEL_DO_NOT_USE_ =
       std::numeric_limits<::int32_t>::min(),
   EntityGroup_Type_EntityGroup_Type_INT_MAX_SENTINEL_DO_NOT_USE_ =
@@ -1975,8 +2081,8 @@ enum EntityGroup_Type : int {
 
 bool EntityGroup_Type_IsValid(int value);
 constexpr EntityGroup_Type EntityGroup_Type_Type_MIN = static_cast<EntityGroup_Type>(0);
-constexpr EntityGroup_Type EntityGroup_Type_Type_MAX = static_cast<EntityGroup_Type>(146);
-constexpr int EntityGroup_Type_Type_ARRAYSIZE = 146 + 1;
+constexpr EntityGroup_Type EntityGroup_Type_Type_MAX = static_cast<EntityGroup_Type>(153);
+constexpr int EntityGroup_Type_Type_ARRAYSIZE = 153 + 1;
 const ::google::protobuf::EnumDescriptor*
 EntityGroup_Type_descriptor();
 template <typename T>
@@ -1989,7 +2095,7 @@ const std::string& EntityGroup_Type_Name(T value) {
 template <>
 inline const std::string& EntityGroup_Type_Name(EntityGroup_Type value) {
   return ::google::protobuf::internal::NameOfDenseEnum<EntityGroup_Type_descriptor,
-                                                 0, 146>(
+                                                 0, 153>(
       static_cast<int>(value));
 }
 inline bool EntityGroup_Type_Parse(absl::string_view name, EntityGroup_Type* value) {
@@ -2226,6 +2332,74 @@ inline bool ActionType_Parse(absl::string_view name, ActionType* value) {
   return ::google::protobuf::internal::ParseNamedEnum<ActionType>(
       ActionType_descriptor(), name, value);
 }
+enum ActivatedAbilityCostType : int {
+  ACTIVATEDABILITYCOSTTYPE_NONE = 0,
+  ACTIVATEDABILITYCOSTTYPE_UNKNOWNABILITYCOSTTYPE = -1,
+  ACTIVATEDABILITYCOSTTYPE_RESOURCE = 1,
+  ACTIVATEDABILITYCOSTTYPE_COUNTER = 2,
+  ActivatedAbilityCostType_INT_MIN_SENTINEL_DO_NOT_USE_ =
+      std::numeric_limits<::int32_t>::min(),
+  ActivatedAbilityCostType_INT_MAX_SENTINEL_DO_NOT_USE_ =
+      std::numeric_limits<::int32_t>::max(),
+};
+
+bool ActivatedAbilityCostType_IsValid(int value);
+constexpr ActivatedAbilityCostType ActivatedAbilityCostType_MIN = static_cast<ActivatedAbilityCostType>(-1);
+constexpr ActivatedAbilityCostType ActivatedAbilityCostType_MAX = static_cast<ActivatedAbilityCostType>(2);
+constexpr int ActivatedAbilityCostType_ARRAYSIZE = 2 + 1;
+const ::google::protobuf::EnumDescriptor*
+ActivatedAbilityCostType_descriptor();
+template <typename T>
+const std::string& ActivatedAbilityCostType_Name(T value) {
+  static_assert(std::is_same<T, ActivatedAbilityCostType>::value ||
+                    std::is_integral<T>::value,
+                "Incorrect type passed to ActivatedAbilityCostType_Name().");
+  return ActivatedAbilityCostType_Name(static_cast<ActivatedAbilityCostType>(value));
+}
+template <>
+inline const std::string& ActivatedAbilityCostType_Name(ActivatedAbilityCostType value) {
+  return ::google::protobuf::internal::NameOfDenseEnum<ActivatedAbilityCostType_descriptor,
+                                                 -1, 2>(
+      static_cast<int>(value));
+}
+inline bool ActivatedAbilityCostType_Parse(absl::string_view name, ActivatedAbilityCostType* value) {
+  return ::google::protobuf::internal::ParseNamedEnum<ActivatedAbilityCostType>(
+      ActivatedAbilityCostType_descriptor(), name, value);
+}
+enum ActivationSource : int {
+  ACTIVATIONSOURCE_NONE = 0,
+  ACTIVATIONSOURCE_UNKNOWNACTIVATIONSOURCE = -1,
+  ACTIVATIONSOURCE_MANUAL = 1,
+  ACTIVATIONSOURCE_POSTBATTLE = 2,
+  ActivationSource_INT_MIN_SENTINEL_DO_NOT_USE_ =
+      std::numeric_limits<::int32_t>::min(),
+  ActivationSource_INT_MAX_SENTINEL_DO_NOT_USE_ =
+      std::numeric_limits<::int32_t>::max(),
+};
+
+bool ActivationSource_IsValid(int value);
+constexpr ActivationSource ActivationSource_MIN = static_cast<ActivationSource>(-1);
+constexpr ActivationSource ActivationSource_MAX = static_cast<ActivationSource>(2);
+constexpr int ActivationSource_ARRAYSIZE = 2 + 1;
+const ::google::protobuf::EnumDescriptor*
+ActivationSource_descriptor();
+template <typename T>
+const std::string& ActivationSource_Name(T value) {
+  static_assert(std::is_same<T, ActivationSource>::value ||
+                    std::is_integral<T>::value,
+                "Incorrect type passed to ActivationSource_Name().");
+  return ActivationSource_Name(static_cast<ActivationSource>(value));
+}
+template <>
+inline const std::string& ActivationSource_Name(ActivationSource value) {
+  return ::google::protobuf::internal::NameOfDenseEnum<ActivationSource_descriptor,
+                                                 -1, 2>(
+      static_cast<int>(value));
+}
+inline bool ActivationSource_Parse(absl::string_view name, ActivationSource* value) {
+  return ::google::protobuf::internal::ParseNamedEnum<ActivationSource>(
+      ActivationSource_descriptor(), name, value);
+}
 enum Domain : int {
   DOMAIN_NONE = 0,
   DOMAIN_INVALID = -1,
@@ -2249,6 +2423,7 @@ enum Domain : int {
   DOMAIN_BOOKMARKS = -253812259,
   DOMAIN_AWAYTEAMS = -846070968,
   DOMAIN_FORBIDDENTECH = -696223371,
+  DOMAIN_MINIGAMES = 1618762116,
   Domain_INT_MIN_SENTINEL_DO_NOT_USE_ =
       std::numeric_limits<::int32_t>::min(),
   Domain_INT_MAX_SENTINEL_DO_NOT_USE_ =
@@ -2271,6 +2446,108 @@ const std::string& Domain_Name(T value) {
 inline bool Domain_Parse(absl::string_view name, Domain* value) {
   return ::google::protobuf::internal::ParseNamedEnum<Domain>(
       Domain_descriptor(), name, value);
+}
+enum HazardType : int {
+  HAZARDTYPE_NONE = 0,
+  HAZARDTYPE_INVALID = -1,
+  HAZARDTYPE_TYPEA = 1,
+  HAZARDTYPE_TYPEB = 2,
+  HAZARDTYPE_TYPEC = 3,
+  HAZARDTYPE_TYPED = 4,
+  HazardType_INT_MIN_SENTINEL_DO_NOT_USE_ =
+      std::numeric_limits<::int32_t>::min(),
+  HazardType_INT_MAX_SENTINEL_DO_NOT_USE_ =
+      std::numeric_limits<::int32_t>::max(),
+};
+
+bool HazardType_IsValid(int value);
+constexpr HazardType HazardType_MIN = static_cast<HazardType>(-1);
+constexpr HazardType HazardType_MAX = static_cast<HazardType>(4);
+constexpr int HazardType_ARRAYSIZE = 4 + 1;
+const ::google::protobuf::EnumDescriptor*
+HazardType_descriptor();
+template <typename T>
+const std::string& HazardType_Name(T value) {
+  static_assert(std::is_same<T, HazardType>::value ||
+                    std::is_integral<T>::value,
+                "Incorrect type passed to HazardType_Name().");
+  return HazardType_Name(static_cast<HazardType>(value));
+}
+template <>
+inline const std::string& HazardType_Name(HazardType value) {
+  return ::google::protobuf::internal::NameOfDenseEnum<HazardType_descriptor,
+                                                 -1, 4>(
+      static_cast<int>(value));
+}
+inline bool HazardType_Parse(absl::string_view name, HazardType* value) {
+  return ::google::protobuf::internal::ParseNamedEnum<HazardType>(
+      HazardType_descriptor(), name, value);
+}
+enum HazardEffect : int {
+  HAZARDEFFECT_NONE = 0,
+  HAZARDEFFECT_INVALID = -1,
+  HAZARDEFFECT_DOT = 1,
+  HazardEffect_INT_MIN_SENTINEL_DO_NOT_USE_ =
+      std::numeric_limits<::int32_t>::min(),
+  HazardEffect_INT_MAX_SENTINEL_DO_NOT_USE_ =
+      std::numeric_limits<::int32_t>::max(),
+};
+
+bool HazardEffect_IsValid(int value);
+constexpr HazardEffect HazardEffect_MIN = static_cast<HazardEffect>(-1);
+constexpr HazardEffect HazardEffect_MAX = static_cast<HazardEffect>(1);
+constexpr int HazardEffect_ARRAYSIZE = 1 + 1;
+const ::google::protobuf::EnumDescriptor*
+HazardEffect_descriptor();
+template <typename T>
+const std::string& HazardEffect_Name(T value) {
+  static_assert(std::is_same<T, HazardEffect>::value ||
+                    std::is_integral<T>::value,
+                "Incorrect type passed to HazardEffect_Name().");
+  return HazardEffect_Name(static_cast<HazardEffect>(value));
+}
+template <>
+inline const std::string& HazardEffect_Name(HazardEffect value) {
+  return ::google::protobuf::internal::NameOfDenseEnum<HazardEffect_descriptor,
+                                                 -1, 1>(
+      static_cast<int>(value));
+}
+inline bool HazardEffect_Parse(absl::string_view name, HazardEffect* value) {
+  return ::google::protobuf::internal::ParseNamedEnum<HazardEffect>(
+      HazardEffect_descriptor(), name, value);
+}
+enum StatusCounterType : int {
+  STATUSCOUNTERTYPE_NONE = 0,
+  STATUSCOUNTERTYPE_UNKNOWNSTATUSCOUNTER = -1,
+  STATUSCOUNTERTYPE_ASSIMILATIONPOINTS = 1,
+  StatusCounterType_INT_MIN_SENTINEL_DO_NOT_USE_ =
+      std::numeric_limits<::int32_t>::min(),
+  StatusCounterType_INT_MAX_SENTINEL_DO_NOT_USE_ =
+      std::numeric_limits<::int32_t>::max(),
+};
+
+bool StatusCounterType_IsValid(int value);
+constexpr StatusCounterType StatusCounterType_MIN = static_cast<StatusCounterType>(-1);
+constexpr StatusCounterType StatusCounterType_MAX = static_cast<StatusCounterType>(1);
+constexpr int StatusCounterType_ARRAYSIZE = 1 + 1;
+const ::google::protobuf::EnumDescriptor*
+StatusCounterType_descriptor();
+template <typename T>
+const std::string& StatusCounterType_Name(T value) {
+  static_assert(std::is_same<T, StatusCounterType>::value ||
+                    std::is_integral<T>::value,
+                "Incorrect type passed to StatusCounterType_Name().");
+  return StatusCounterType_Name(static_cast<StatusCounterType>(value));
+}
+template <>
+inline const std::string& StatusCounterType_Name(StatusCounterType value) {
+  return ::google::protobuf::internal::NameOfDenseEnum<StatusCounterType_descriptor,
+                                                 -1, 1>(
+      static_cast<int>(value));
+}
+inline bool StatusCounterType_Parse(absl::string_view name, StatusCounterType* value) {
+  return ::google::protobuf::internal::ParseNamedEnum<StatusCounterType>(
+      StatusCounterType_descriptor(), name, value);
 }
 enum BuildStatus : int {
   BUILDSTATUS_NONE = 0,
@@ -2355,7 +2632,8 @@ enum ArmadaAttackState : int {
   ARMADAATTACKSTATE_DISBANDEDNOLEADERFLEET = 9,
   ARMADAATTACKSTATE_DISBANDEDEXPIRED = 10,
   ARMADAATTACKSTATE_DISBANDEDINVALIDSTATE = 11,
-  ARMADAATTACKSTATE_BATTLEFINISHED = 12,
+  ARMADAATTACKSTATE_BATTLEFINISHEDWIN = 12,
+  ARMADAATTACKSTATE_BATTLEFINISHEDLOSS = 13,
   ArmadaAttackState_INT_MIN_SENTINEL_DO_NOT_USE_ =
       std::numeric_limits<::int32_t>::min(),
   ArmadaAttackState_INT_MAX_SENTINEL_DO_NOT_USE_ =
@@ -2364,8 +2642,8 @@ enum ArmadaAttackState : int {
 
 bool ArmadaAttackState_IsValid(int value);
 constexpr ArmadaAttackState ArmadaAttackState_MIN = static_cast<ArmadaAttackState>(0);
-constexpr ArmadaAttackState ArmadaAttackState_MAX = static_cast<ArmadaAttackState>(12);
-constexpr int ArmadaAttackState_ARRAYSIZE = 12 + 1;
+constexpr ArmadaAttackState ArmadaAttackState_MAX = static_cast<ArmadaAttackState>(13);
+constexpr int ArmadaAttackState_ARRAYSIZE = 13 + 1;
 const ::google::protobuf::EnumDescriptor*
 ArmadaAttackState_descriptor();
 template <typename T>
@@ -2378,7 +2656,7 @@ const std::string& ArmadaAttackState_Name(T value) {
 template <>
 inline const std::string& ArmadaAttackState_Name(ArmadaAttackState value) {
   return ::google::protobuf::internal::NameOfDenseEnum<ArmadaAttackState_descriptor,
-                                                 0, 12>(
+                                                 0, 13>(
       static_cast<int>(value));
 }
 inline bool ArmadaAttackState_Parse(absl::string_view name, ArmadaAttackState* value) {
@@ -2773,6 +3051,39 @@ inline const std::string& DeployedFleetType_Name(DeployedFleetType value) {
 inline bool DeployedFleetType_Parse(absl::string_view name, DeployedFleetType* value) {
   return ::google::protobuf::internal::ParseNamedEnum<DeployedFleetType>(
       DeployedFleetType_descriptor(), name, value);
+}
+enum DamageSources : int {
+  DAMAGESOURCES_ENEMYFLEET = 0,
+  DAMAGESOURCES_NOTSET = -1,
+  DAMAGESOURCES_HAZARD = 2,
+  DamageSources_INT_MIN_SENTINEL_DO_NOT_USE_ =
+      std::numeric_limits<::int32_t>::min(),
+  DamageSources_INT_MAX_SENTINEL_DO_NOT_USE_ =
+      std::numeric_limits<::int32_t>::max(),
+};
+
+bool DamageSources_IsValid(int value);
+constexpr DamageSources DamageSources_MIN = static_cast<DamageSources>(-1);
+constexpr DamageSources DamageSources_MAX = static_cast<DamageSources>(2);
+constexpr int DamageSources_ARRAYSIZE = 2 + 1;
+const ::google::protobuf::EnumDescriptor*
+DamageSources_descriptor();
+template <typename T>
+const std::string& DamageSources_Name(T value) {
+  static_assert(std::is_same<T, DamageSources>::value ||
+                    std::is_integral<T>::value,
+                "Incorrect type passed to DamageSources_Name().");
+  return DamageSources_Name(static_cast<DamageSources>(value));
+}
+template <>
+inline const std::string& DamageSources_Name(DamageSources value) {
+  return ::google::protobuf::internal::NameOfDenseEnum<DamageSources_descriptor,
+                                                 -1, 2>(
+      static_cast<int>(value));
+}
+inline bool DamageSources_Parse(absl::string_view name, DamageSources* value) {
+  return ::google::protobuf::internal::ParseNamedEnum<DamageSources>(
+      DamageSources_descriptor(), name, value);
 }
 enum TargetAction : int {
   TARGETACTION_RETURN = 0,
@@ -3320,6 +3631,7 @@ enum ObjectiveType : int {
   OBJECTIVETYPE_ASSIGNOFFICERTODRYDOCK = 22,
   OBJECTIVETYPE_MOVESTARBASE = 23,
   OBJECTIVETYPE_DEFEATCHALLENGENPCINSTANTIATED = 24,
+  OBJECTIVETYPE_MINIGAMESTAGE = 25,
   ObjectiveType_INT_MIN_SENTINEL_DO_NOT_USE_ =
       std::numeric_limits<::int32_t>::min(),
   ObjectiveType_INT_MAX_SENTINEL_DO_NOT_USE_ =
@@ -3328,8 +3640,8 @@ enum ObjectiveType : int {
 
 bool ObjectiveType_IsValid(int value);
 constexpr ObjectiveType ObjectiveType_MIN = static_cast<ObjectiveType>(0);
-constexpr ObjectiveType ObjectiveType_MAX = static_cast<ObjectiveType>(24);
-constexpr int ObjectiveType_ARRAYSIZE = 24 + 1;
+constexpr ObjectiveType ObjectiveType_MAX = static_cast<ObjectiveType>(25);
+constexpr int ObjectiveType_ARRAYSIZE = 25 + 1;
 const ::google::protobuf::EnumDescriptor*
 ObjectiveType_descriptor();
 template <typename T>
@@ -3342,7 +3654,7 @@ const std::string& ObjectiveType_Name(T value) {
 template <>
 inline const std::string& ObjectiveType_Name(ObjectiveType value) {
   return ::google::protobuf::internal::NameOfDenseEnum<ObjectiveType_descriptor,
-                                                 0, 24>(
+                                                 0, 25>(
       static_cast<int>(value));
 }
 inline bool ObjectiveType_Parse(absl::string_view name, ObjectiveType* value) {
@@ -3368,6 +3680,7 @@ enum ObjectiveEventTrigger : int {
   OBJECTIVEEVENTTRIGGER_OFFICERUPDATED = 15,
   OBJECTIVEEVENTTRIGGER_OFFICERASSIGNED = 16,
   OBJECTIVEEVENTTRIGGER_STARBASEMOVED = 17,
+  OBJECTIVEEVENTTRIGGER_MINIGAMESTAGECOMPLETED = 18,
   ObjectiveEventTrigger_INT_MIN_SENTINEL_DO_NOT_USE_ =
       std::numeric_limits<::int32_t>::min(),
   ObjectiveEventTrigger_INT_MAX_SENTINEL_DO_NOT_USE_ =
@@ -3376,8 +3689,8 @@ enum ObjectiveEventTrigger : int {
 
 bool ObjectiveEventTrigger_IsValid(int value);
 constexpr ObjectiveEventTrigger ObjectiveEventTrigger_MIN = static_cast<ObjectiveEventTrigger>(0);
-constexpr ObjectiveEventTrigger ObjectiveEventTrigger_MAX = static_cast<ObjectiveEventTrigger>(17);
-constexpr int ObjectiveEventTrigger_ARRAYSIZE = 17 + 1;
+constexpr ObjectiveEventTrigger ObjectiveEventTrigger_MAX = static_cast<ObjectiveEventTrigger>(18);
+constexpr int ObjectiveEventTrigger_ARRAYSIZE = 18 + 1;
 const ::google::protobuf::EnumDescriptor*
 ObjectiveEventTrigger_descriptor();
 template <typename T>
@@ -3390,7 +3703,7 @@ const std::string& ObjectiveEventTrigger_Name(T value) {
 template <>
 inline const std::string& ObjectiveEventTrigger_Name(ObjectiveEventTrigger value) {
   return ::google::protobuf::internal::NameOfDenseEnum<ObjectiveEventTrigger_descriptor,
-                                                 0, 17>(
+                                                 0, 18>(
       static_cast<int>(value));
 }
 inline bool ObjectiveEventTrigger_Parse(absl::string_view name, ObjectiveEventTrigger* value) {
@@ -4298,6 +4611,10 @@ enum ActivatedAbilityType : int {
   ACTIVATEDABILITYTYPE_SYSTEMWIDESUPREMEBUFF = 13,
   ACTIVATEDABILITYTYPE_REVEAL = 14,
   ACTIVATEDABILITYTYPE_DEEPSCAN = 15,
+  ACTIVATEDABILITYTYPE_ISOLYTICDAMAGE = 16,
+  ACTIVATEDABILITYTYPE_ISOLYTICMITIGATION = 17,
+  ACTIVATEDABILITYTYPE_CUTTINGBEAM = 18,
+  ACTIVATEDABILITYTYPE_ASSIMILATION = 19,
   ActivatedAbilityType_INT_MIN_SENTINEL_DO_NOT_USE_ =
       std::numeric_limits<::int32_t>::min(),
   ActivatedAbilityType_INT_MAX_SENTINEL_DO_NOT_USE_ =
@@ -4306,8 +4623,8 @@ enum ActivatedAbilityType : int {
 
 bool ActivatedAbilityType_IsValid(int value);
 constexpr ActivatedAbilityType ActivatedAbilityType_MIN = static_cast<ActivatedAbilityType>(0);
-constexpr ActivatedAbilityType ActivatedAbilityType_MAX = static_cast<ActivatedAbilityType>(15);
-constexpr int ActivatedAbilityType_ARRAYSIZE = 15 + 1;
+constexpr ActivatedAbilityType ActivatedAbilityType_MAX = static_cast<ActivatedAbilityType>(19);
+constexpr int ActivatedAbilityType_ARRAYSIZE = 19 + 1;
 const ::google::protobuf::EnumDescriptor*
 ActivatedAbilityType_descriptor();
 template <typename T>
@@ -4320,7 +4637,7 @@ const std::string& ActivatedAbilityType_Name(T value) {
 template <>
 inline const std::string& ActivatedAbilityType_Name(ActivatedAbilityType value) {
   return ::google::protobuf::internal::NameOfDenseEnum<ActivatedAbilityType_descriptor,
-                                                 0, 15>(
+                                                 0, 19>(
       static_cast<int>(value));
 }
 inline bool ActivatedAbilityType_Parse(absl::string_view name, ActivatedAbilityType* value) {
@@ -4354,6 +4671,9 @@ enum ClientModifierType : int {
   CLIENTMODIFIERTYPE_MODCOMBATPARSTEELREWARD = 23,
   CLIENTMODIFIERTYPE_MODCOMBATTRITANIUMREWARD = 24,
   CLIENTMODIFIERTYPE_MODCOMBATDILITHIUMREWARD = 25,
+  CLIENTMODIFIERTYPE_MODCOMBATPARSTEELT2REWARD = 60001,
+  CLIENTMODIFIERTYPE_MODCOMBATTRITANIUMT2REWARD = 60002,
+  CLIENTMODIFIERTYPE_MODCOMBATDILITHIUMT2REWARD = 60003,
   CLIENTMODIFIERTYPE_MODCOMBATINTELREWARD = 26,
   CLIENTMODIFIERTYPE_MODCOMBATLOOTDROPCHANCE = 27,
   CLIENTMODIFIERTYPE_MODCOMBATLOOTDROPQUANTITY = 28,
@@ -4396,6 +4716,7 @@ enum ClientModifierType : int {
   CLIENTMODIFIERTYPE_MODENTERWARPDELAY = 65,
   CLIENTMODIFIERTYPE_MODCARGOCAPACITY = 66,
   CLIENTMODIFIERTYPE_MODCARGOPROTECTION = 67,
+  CLIENTMODIFIERTYPE_MODCARGOGENERATION = 809,
   CLIENTMODIFIERTYPE_MODAUTORECALL = 68,
   CLIENTMODIFIERTYPE_MODENERGYLOADSPEED = 69,
   CLIENTMODIFIERTYPE_MODKINETICLOADSPEED = 70,
@@ -4405,6 +4726,11 @@ enum ClientModifierType : int {
   CLIENTMODIFIERTYPE_MODALLPIERCING = 74,
   CLIENTMODIFIERTYPE_MODSHIELDREGENTIME = 75,
   CLIENTMODIFIERTYPE_MODSHIELDMITIGATION = 76,
+  CLIENTMODIFIERTYPE_MODHAZARDTYPEAMITIGATION = 810,
+  CLIENTMODIFIERTYPE_MODHAZARDTYPEBMITIGATION = 811,
+  CLIENTMODIFIERTYPE_MODHAZARDTYPECMITIGATION = 812,
+  CLIENTMODIFIERTYPE_MODHAZARDTYPEDMITIGATION = 813,
+  CLIENTMODIFIERTYPE_MODHAZARDBASEMITIGATION = 814,
   CLIENTMODIFIERTYPE_MODRESOURCEPROTECTION = 100,
   CLIENTMODIFIERTYPE_MODCOMBATRESOURCEREWARD = 101,
   CLIENTMODIFIERTYPE_MODMISSIONRESOURCEREWARD = 102,
@@ -4471,12 +4797,16 @@ enum ClientModifierType : int {
   CLIENTMODIFIERTYPE_MODSKILLARMADASUPPORTDURATION = 202,
   CLIENTMODIFIERTYPE_MODSKILLARMADASUPPORTCOST = 203,
   CLIENTMODIFIERTYPE_MODSKILLARMADASUPPORTDURATIONPERCENTAGE = 204,
+  CLIENTMODIFIERTYPE_MODSKILLCUTTINGBEAMABILITYCOST = 226,
+  CLIENTMODIFIERTYPE_MODSKILLCUTTINGBEAMPVEBASEDAMAGEPERCENTAGE = 240,
+  CLIENTMODIFIERTYPE_MODSKILLCUTTINGBEAMPVPBASEDAMAGEPERCENTAGE = 241,
   CLIENTMODIFIERTYPE_MODISOLYTICDAMAGE = 707,
   CLIENTMODIFIERTYPE_MODISOLYTICDEFENSE = 808,
   CLIENTMODIFIERTYPE_MODBDABILITYEFFECT = 220,
   CLIENTMODIFIERTYPE_MODFCCOOLDOWNSPEED = 218,
   CLIENTMODIFIERTYPE_MODJANEWAYFCCOOLDOWNSPEED = 219,
   CLIENTMODIFIERTYPE_MODFORBIDDENTECHUNSLOTCOST = 222,
+  CLIENTMODIFIERTYPE_MODINSTANTARMADAUNLOCKED = 224,
   CLIENTMODIFIERTYPE_MODNONE = -1000,
   CLIENTMODIFIERTYPE_SHIPDAMAGEPERROUND = -1,
   CLIENTMODIFIERTYPE_SHIPABSORPTION = -2,
@@ -4504,8 +4834,8 @@ enum ClientModifierType : int {
 
 bool ClientModifierType_IsValid(int value);
 constexpr ClientModifierType ClientModifierType_MIN = static_cast<ClientModifierType>(-1000);
-constexpr ClientModifierType ClientModifierType_MAX = static_cast<ClientModifierType>(808);
-constexpr int ClientModifierType_ARRAYSIZE = 808 + 1;
+constexpr ClientModifierType ClientModifierType_MAX = static_cast<ClientModifierType>(60003);
+constexpr int ClientModifierType_ARRAYSIZE = 60003 + 1;
 const ::google::protobuf::EnumDescriptor*
 ClientModifierType_descriptor();
 template <typename T>
@@ -4672,6 +5002,7 @@ enum RequirementType : int {
   REQUIREMENTTYPE_OFFICERRANK = 5,
   REQUIREMENTTYPE_OFFICERLEVEL = 6,
   REQUIREMENTTYPE_TOTALOFFICERLEVEL = 7,
+  REQUIREMENTTYPE_SHIPTIER = 8,
   RequirementType_INT_MIN_SENTINEL_DO_NOT_USE_ =
       std::numeric_limits<::int32_t>::min(),
   RequirementType_INT_MAX_SENTINEL_DO_NOT_USE_ =
@@ -4680,8 +5011,8 @@ enum RequirementType : int {
 
 bool RequirementType_IsValid(int value);
 constexpr RequirementType RequirementType_MIN = static_cast<RequirementType>(0);
-constexpr RequirementType RequirementType_MAX = static_cast<RequirementType>(7);
-constexpr int RequirementType_ARRAYSIZE = 7 + 1;
+constexpr RequirementType RequirementType_MAX = static_cast<RequirementType>(8);
+constexpr int RequirementType_ARRAYSIZE = 8 + 1;
 const ::google::protobuf::EnumDescriptor*
 RequirementType_descriptor();
 template <typename T>
@@ -4694,7 +5025,7 @@ const std::string& RequirementType_Name(T value) {
 template <>
 inline const std::string& RequirementType_Name(RequirementType value) {
   return ::google::protobuf::internal::NameOfDenseEnum<RequirementType_descriptor,
-                                                 0, 7>(
+                                                 0, 8>(
       static_cast<int>(value));
 }
 inline bool RequirementType_Parse(absl::string_view name, RequirementType* value) {
@@ -8891,6 +9222,9 @@ class ArmadaPveSpec final :
     kQuantityFieldNumber = 2,
     kMarauderGroupIdFieldNumber = 3,
     kAttackDurationFieldNumber = 4,
+    kInstantAttackDurationFieldNumber = 5,
+    kInstantQuantityFieldNumber = 6,
+    kInstantResourceIdFieldNumber = 7,
   };
   // int64 resourceId = 1;
   void clear_resourceid() ;
@@ -8932,12 +9266,42 @@ class ArmadaPveSpec final :
   void _internal_set_attackduration(::int32_t value);
 
   public:
+  // int32 instantAttackDuration = 5;
+  void clear_instantattackduration() ;
+  ::int32_t instantattackduration() const;
+  void set_instantattackduration(::int32_t value);
+
+  private:
+  ::int32_t _internal_instantattackduration() const;
+  void _internal_set_instantattackduration(::int32_t value);
+
+  public:
+  // int64 instantQuantity = 6;
+  void clear_instantquantity() ;
+  ::int64_t instantquantity() const;
+  void set_instantquantity(::int64_t value);
+
+  private:
+  ::int64_t _internal_instantquantity() const;
+  void _internal_set_instantquantity(::int64_t value);
+
+  public:
+  // int64 instantResourceId = 7;
+  void clear_instantresourceid() ;
+  ::int64_t instantresourceid() const;
+  void set_instantresourceid(::int64_t value);
+
+  private:
+  ::int64_t _internal_instantresourceid() const;
+  void _internal_set_instantresourceid(::int64_t value);
+
+  public:
   // @@protoc_insertion_point(class_scope:Digit.PrimeServer.Models.ArmadaPveSpec)
  private:
   class _Internal;
 
   friend class ::google::protobuf::internal::TcParser;
-  static const ::google::protobuf::internal::TcParseTable<2, 4, 0, 0, 2> _table_;
+  static const ::google::protobuf::internal::TcParseTable<3, 7, 0, 0, 2> _table_;
   template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
@@ -8946,6 +9310,9 @@ class ArmadaPveSpec final :
     ::int64_t quantity_;
     ::int64_t maraudergroupid_;
     ::int32_t attackduration_;
+    ::int32_t instantattackduration_;
+    ::int64_t instantquantity_;
+    ::int64_t instantresourceid_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER
   };
@@ -11844,6 +12211,361 @@ class AchievementsConfig final :
   friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
 };// -------------------------------------------------------------------
 
+class ActivatedShipAbilityConfig final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:Digit.PrimeServer.Models.ActivatedShipAbilityConfig) */ {
+ public:
+  inline ActivatedShipAbilityConfig() : ActivatedShipAbilityConfig(nullptr) {}
+  ~ActivatedShipAbilityConfig() override;
+  template<typename = void>
+  explicit PROTOBUF_CONSTEXPR ActivatedShipAbilityConfig(::google::protobuf::internal::ConstantInitialized);
+
+  ActivatedShipAbilityConfig(const ActivatedShipAbilityConfig& from);
+  ActivatedShipAbilityConfig(ActivatedShipAbilityConfig&& from) noexcept
+    : ActivatedShipAbilityConfig() {
+    *this = ::std::move(from);
+  }
+
+  inline ActivatedShipAbilityConfig& operator=(const ActivatedShipAbilityConfig& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ActivatedShipAbilityConfig& operator=(ActivatedShipAbilityConfig&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance);
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::google::protobuf::UnknownFieldSet>();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::google::protobuf::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::google::protobuf::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const ActivatedShipAbilityConfig& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const ActivatedShipAbilityConfig* internal_default_instance() {
+    return reinterpret_cast<const ActivatedShipAbilityConfig*>(
+               &_ActivatedShipAbilityConfig_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    38;
+
+  friend void swap(ActivatedShipAbilityConfig& a, ActivatedShipAbilityConfig& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(ActivatedShipAbilityConfig* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::google::protobuf::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(ActivatedShipAbilityConfig* other) {
+    if (other == this) return;
+    ABSL_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  ActivatedShipAbilityConfig* New(::google::protobuf::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<ActivatedShipAbilityConfig>(arena);
+  }
+  using ::google::protobuf::Message::CopyFrom;
+  void CopyFrom(const ActivatedShipAbilityConfig& from);
+  using ::google::protobuf::Message::MergeFrom;
+  void MergeFrom( const ActivatedShipAbilityConfig& from) {
+    ActivatedShipAbilityConfig::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  ::size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::google::protobuf::internal::ParseContext* ctx) final;
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target, ::google::protobuf::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::google::protobuf::Arena* arena);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ActivatedShipAbilityConfig* other);
+
+  private:
+  friend class ::google::protobuf::internal::AnyMetadata;
+  static ::absl::string_view FullMessageName() {
+    return "Digit.PrimeServer.Models.ActivatedShipAbilityConfig";
+  }
+  protected:
+  explicit ActivatedShipAbilityConfig(::google::protobuf::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::google::protobuf::Message::ClassData*GetClassData() const final;
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kTargetableFieldNumber = 1,
+    kAbilityTypeFieldNumber = 2,
+  };
+  // .Digit.PrimeServer.Models.TargetableConfig targetable = 1;
+  bool has_targetable() const;
+  void clear_targetable() ;
+  const ::Digit::PrimeServer::Models::TargetableConfig& targetable() const;
+  PROTOBUF_NODISCARD ::Digit::PrimeServer::Models::TargetableConfig* release_targetable();
+  ::Digit::PrimeServer::Models::TargetableConfig* mutable_targetable();
+  void set_allocated_targetable(::Digit::PrimeServer::Models::TargetableConfig* value);
+  void unsafe_arena_set_allocated_targetable(::Digit::PrimeServer::Models::TargetableConfig* value);
+  ::Digit::PrimeServer::Models::TargetableConfig* unsafe_arena_release_targetable();
+
+  private:
+  const ::Digit::PrimeServer::Models::TargetableConfig& _internal_targetable() const;
+  ::Digit::PrimeServer::Models::TargetableConfig* _internal_mutable_targetable();
+
+  public:
+  // int32 abilityType = 2;
+  void clear_abilitytype() ;
+  ::int32_t abilitytype() const;
+  void set_abilitytype(::int32_t value);
+
+  private:
+  ::int32_t _internal_abilitytype() const;
+  void _internal_set_abilitytype(::int32_t value);
+
+  public:
+  // @@protoc_insertion_point(class_scope:Digit.PrimeServer.Models.ActivatedShipAbilityConfig)
+ private:
+  class _Internal;
+
+  friend class ::google::protobuf::internal::TcParser;
+  static const ::google::protobuf::internal::TcParseTable<1, 2, 1, 0, 2> _table_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::google::protobuf::internal::HasBits<1> _has_bits_;
+    mutable ::google::protobuf::internal::CachedSize _cached_size_;
+    ::Digit::PrimeServer::Models::TargetableConfig* targetable_;
+    ::int32_t abilitytype_;
+    PROTOBUF_TSAN_DECLARE_MEMBER
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
+};// -------------------------------------------------------------------
+
+class TargetableConfig final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:Digit.PrimeServer.Models.TargetableConfig) */ {
+ public:
+  inline TargetableConfig() : TargetableConfig(nullptr) {}
+  ~TargetableConfig() override;
+  template<typename = void>
+  explicit PROTOBUF_CONSTEXPR TargetableConfig(::google::protobuf::internal::ConstantInitialized);
+
+  TargetableConfig(const TargetableConfig& from);
+  TargetableConfig(TargetableConfig&& from) noexcept
+    : TargetableConfig() {
+    *this = ::std::move(from);
+  }
+
+  inline TargetableConfig& operator=(const TargetableConfig& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline TargetableConfig& operator=(TargetableConfig&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance);
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::google::protobuf::UnknownFieldSet>();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::google::protobuf::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::google::protobuf::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const TargetableConfig& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const TargetableConfig* internal_default_instance() {
+    return reinterpret_cast<const TargetableConfig*>(
+               &_TargetableConfig_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    39;
+
+  friend void swap(TargetableConfig& a, TargetableConfig& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(TargetableConfig* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::google::protobuf::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(TargetableConfig* other) {
+    if (other == this) return;
+    ABSL_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  TargetableConfig* New(::google::protobuf::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<TargetableConfig>(arena);
+  }
+  using ::google::protobuf::Message::CopyFrom;
+  void CopyFrom(const TargetableConfig& from);
+  using ::google::protobuf::Message::MergeFrom;
+  void MergeFrom( const TargetableConfig& from) {
+    TargetableConfig::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  ::size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::google::protobuf::internal::ParseContext* ctx) final;
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target, ::google::protobuf::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::google::protobuf::Arena* arena);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(TargetableConfig* other);
+
+  private:
+  friend class ::google::protobuf::internal::AnyMetadata;
+  static ::absl::string_view FullMessageName() {
+    return "Digit.PrimeServer.Models.TargetableConfig";
+  }
+  protected:
+  explicit TargetableConfig(::google::protobuf::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::google::protobuf::Message::ClassData*GetClassData() const final;
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kDeployedFleetTypesFieldNumber = 1,
+    kArmadaFieldNumber = 2,
+  };
+  // repeated int32 deployedFleetTypes = 1;
+  int deployedfleettypes_size() const;
+  private:
+  int _internal_deployedfleettypes_size() const;
+
+  public:
+  void clear_deployedfleettypes() ;
+  ::int32_t deployedfleettypes(int index) const;
+  void set_deployedfleettypes(int index, ::int32_t value);
+  void add_deployedfleettypes(::int32_t value);
+  const ::google::protobuf::RepeatedField<::int32_t>& deployedfleettypes() const;
+  ::google::protobuf::RepeatedField<::int32_t>* mutable_deployedfleettypes();
+
+  private:
+  const ::google::protobuf::RepeatedField<::int32_t>& _internal_deployedfleettypes() const;
+  ::google::protobuf::RepeatedField<::int32_t>* _internal_mutable_deployedfleettypes();
+
+  public:
+  // bool armada = 2;
+  void clear_armada() ;
+  bool armada() const;
+  void set_armada(bool value);
+
+  private:
+  bool _internal_armada() const;
+  void _internal_set_armada(bool value);
+
+  public:
+  // @@protoc_insertion_point(class_scope:Digit.PrimeServer.Models.TargetableConfig)
+ private:
+  class _Internal;
+
+  friend class ::google::protobuf::internal::TcParser;
+  static const ::google::protobuf::internal::TcParseTable<1, 2, 0, 0, 2> _table_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::google::protobuf::RepeatedField<::int32_t> deployedfleettypes_;
+    mutable ::google::protobuf::internal::CachedSize _deployedfleettypes_cached_byte_size_;
+    bool armada_;
+    mutable ::google::protobuf::internal::CachedSize _cached_size_;
+    PROTOBUF_TSAN_DECLARE_MEMBER
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
+};// -------------------------------------------------------------------
+
 class AllianceConfig_CreationCostEntry_DoNotUse final : public ::google::protobuf::internal::MapEntry<AllianceConfig_CreationCostEntry_DoNotUse, 
     ::int64_t, ::int64_t,
     ::google::protobuf::internal::WireFormatLite::TYPE_INT64,
@@ -11924,7 +12646,7 @@ class AllianceConfig final :
                &_AllianceConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    39;
+    41;
 
   friend void swap(AllianceConfig& a, AllianceConfig& b) {
     a.Swap(&b);
@@ -12307,7 +13029,7 @@ class AllianceStarbaseConfig final :
                &_AllianceStarbaseConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    40;
+    42;
 
   friend void swap(AllianceStarbaseConfig& a, AllianceStarbaseConfig& b) {
     a.Swap(&b);
@@ -12564,7 +13286,7 @@ class ArmadasConfig final :
                &_ArmadasConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    42;
+    44;
 
   friend void swap(ArmadasConfig& a, ArmadasConfig& b) {
     a.Swap(&b);
@@ -12857,7 +13579,7 @@ class BattleConfig final :
                &_BattleConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    46;
+    48;
 
   friend void swap(BattleConfig& a, BattleConfig& b) {
     a.Swap(&b);
@@ -13193,7 +13915,7 @@ class ChallengeConfig final :
                &_ChallengeConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    47;
+    49;
 
   friend void swap(ChallengeConfig& a, ChallengeConfig& b) {
     a.Swap(&b);
@@ -13351,7 +14073,7 @@ class ClientShipStatLookupSpec final :
                &_ClientShipStatLookupSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    48;
+    50;
 
   friend void swap(ClientShipStatLookupSpec& a, ClientShipStatLookupSpec& b) {
     a.Swap(&b);
@@ -13517,7 +14239,7 @@ class ShipStats final :
                &_ShipStats_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    49;
+    51;
 
   friend void swap(ShipStats& a, ShipStats& b) {
     a.Swap(&b);
@@ -14035,7 +14757,7 @@ class ConsistencyConfig final :
                &_ConsistencyConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    50;
+    52;
 
   friend void swap(ConsistencyConfig& a, ConsistencyConfig& b) {
     a.Swap(&b);
@@ -14217,7 +14939,7 @@ class DialogueConfig_Buttons final :
                &_DialogueConfig_Buttons_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    51;
+    53;
 
   friend void swap(DialogueConfig_Buttons& a, DialogueConfig_Buttons& b) {
     a.Swap(&b);
@@ -14399,7 +15121,7 @@ class DialogueConfig_DialogueSides final :
                &_DialogueConfig_DialogueSides_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    52;
+    54;
 
   friend void swap(DialogueConfig_DialogueSides& a, DialogueConfig_DialogueSides& b) {
     a.Swap(&b);
@@ -14581,7 +15303,7 @@ class DialogueConfig final :
                &_DialogueConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    53;
+    55;
 
   friend void swap(DialogueConfig& a, DialogueConfig& b) {
     a.Swap(&b);
@@ -14765,7 +15487,7 @@ class PlanetSlotsConfig_Slot final :
                &_PlanetSlotsConfig_Slot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    54;
+    56;
 
   friend void swap(PlanetSlotsConfig_Slot& a, PlanetSlotsConfig_Slot& b) {
     a.Swap(&b);
@@ -14935,7 +15657,7 @@ class PlanetSlotsConfig final :
                &_PlanetSlotsConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    55;
+    57;
 
   friend void swap(PlanetSlotsConfig& a, PlanetSlotsConfig& b) {
     a.Swap(&b);
@@ -15103,7 +15825,7 @@ class ServerTransferConfig final :
                &_ServerTransferConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    56;
+    58;
 
   friend void swap(ServerTransferConfig& a, ServerTransferConfig& b) {
     a.Swap(&b);
@@ -15269,7 +15991,7 @@ class ServerTransferCost final :
                &_ServerTransferCost_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    57;
+    59;
 
   friend void swap(ServerTransferCost& a, ServerTransferCost& b) {
     a.Swap(&b);
@@ -15451,7 +16173,7 @@ class FactionConfig final :
                &_FactionConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    58;
+    60;
 
   friend void swap(FactionConfig& a, FactionConfig& b) {
     a.Swap(&b);
@@ -15630,7 +16352,7 @@ class FleetConfig final :
                &_FleetConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    59;
+    61;
 
   friend void swap(FleetConfig& a, FleetConfig& b) {
     a.Swap(&b);
@@ -15908,7 +16630,7 @@ class FleetIconConfig_Icon final :
                &_FleetIconConfig_Icon_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    60;
+    62;
 
   friend void swap(FleetIconConfig_Icon& a, FleetIconConfig_Icon& b) {
     a.Swap(&b);
@@ -16090,7 +16812,7 @@ class FleetIconConfig final :
                &_FleetIconConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    61;
+    63;
 
   friend void swap(FleetIconConfig& a, FleetIconConfig& b) {
     a.Swap(&b);
@@ -16306,7 +17028,7 @@ class FleetRepairCosts final :
                &_FleetRepairCosts_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    64;
+    66;
 
   friend void swap(FleetRepairCosts& a, FleetRepairCosts& b) {
     a.Swap(&b);
@@ -16529,7 +17251,7 @@ class ForbiddenTechConfig final :
                &_ForbiddenTechConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    65;
+    67;
 
   friend void swap(ForbiddenTechConfig& a, ForbiddenTechConfig& b) {
     a.Swap(&b);
@@ -16687,7 +17409,7 @@ class FtueConfig final :
                &_FtueConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    66;
+    68;
 
   friend void swap(FtueConfig& a, FtueConfig& b) {
     a.Swap(&b);
@@ -16845,7 +17567,7 @@ class FtueProgressionConfig final :
                &_FtueProgressionConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    67;
+    69;
 
   friend void swap(FtueProgressionConfig& a, FtueProgressionConfig& b) {
     a.Swap(&b);
@@ -17027,7 +17749,7 @@ class GalaxyNodeMarauderInfo final :
                &_GalaxyNodeMarauderInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    68;
+    70;
 
   friend void swap(GalaxyNodeMarauderInfo& a, GalaxyNodeMarauderInfo& b) {
     a.Swap(&b);
@@ -17194,7 +17916,7 @@ class GalaxyNodeMineSetups final :
                &_GalaxyNodeMineSetups_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    69;
+    71;
 
   friend void swap(GalaxyNodeMineSetups& a, GalaxyNodeMineSetups& b) {
     a.Swap(&b);
@@ -17361,7 +18083,7 @@ class GlobalDamageReductionConfig final :
                &_GlobalDamageReductionConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    70;
+    72;
 
   friend void swap(GlobalDamageReductionConfig& a, GlobalDamageReductionConfig& b) {
     a.Swap(&b);
@@ -17543,7 +18265,7 @@ class HailingFrequenciesConfig final :
                &_HailingFrequenciesConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    71;
+    73;
 
   friend void swap(HailingFrequenciesConfig& a, HailingFrequenciesConfig& b) {
     a.Swap(&b);
@@ -17713,7 +18435,7 @@ class NodeAddress final :
                &_NodeAddress_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    72;
+    74;
 
   friend void swap(NodeAddress& a, NodeAddress& b) {
     a.Swap(&b);
@@ -17895,7 +18617,7 @@ class Point final :
                &_Point_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    73;
+    75;
 
   friend void swap(Point& a, Point& b) {
     a.Swap(&b);
@@ -18065,7 +18787,7 @@ class MarauderInfo final :
                &_MarauderInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    74;
+    76;
 
   friend void swap(MarauderInfo& a, MarauderInfo& b) {
     a.Swap(&b);
@@ -18247,7 +18969,7 @@ class MiningSetup final :
                &_MiningSetup_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    75;
+    77;
 
   friend void swap(MiningSetup& a, MiningSetup& b) {
     a.Swap(&b);
@@ -18405,7 +19127,7 @@ class NavigationConfig final :
                &_NavigationConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    76;
+    78;
 
   friend void swap(NavigationConfig& a, NavigationConfig& b) {
     a.Swap(&b);
@@ -18695,7 +19417,7 @@ class NewPlayerConfig_FtueFleetPosition final :
                &_NewPlayerConfig_FtueFleetPosition_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    77;
+    79;
 
   friend void swap(NewPlayerConfig_FtueFleetPosition& a, NewPlayerConfig_FtueFleetPosition& b) {
     a.Swap(&b);
@@ -18865,7 +19587,7 @@ class NewPlayerConfig final :
                &_NewPlayerConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    78;
+    80;
 
   friend void swap(NewPlayerConfig& a, NewPlayerConfig& b) {
     a.Swap(&b);
@@ -19100,7 +19822,7 @@ class OfficerConfig final :
                &_OfficerConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    80;
+    82;
 
   friend void swap(OfficerConfig& a, OfficerConfig& b) {
     a.Swap(&b);
@@ -19267,7 +19989,7 @@ class OptimisedGalaxy final :
                &_OptimisedGalaxy_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    81;
+    83;
 
   friend void swap(OptimisedGalaxy& a, OptimisedGalaxy& b) {
     a.Swap(&b);
@@ -19362,6 +20084,11 @@ class OptimisedGalaxy final :
     kUnlockReqQuantitiesFieldNumber = 21,
     kSuperHighwaysIndicesFieldNumber = 22,
     kMaraudersFieldNumber = 23,
+    kHazardsEnabledFieldNumber = 27,
+    kHazardIdFieldNumber = 28,
+    kHazardsLevelFieldNumber = 29,
+    kIsWaveDefenseFieldNumber = 30,
+    kWaveDefenseChallengeFieldNumber = 31,
   };
   // repeated int32 factionInfluences = 1;
   int factioninfluences_size() const;
@@ -19778,12 +20505,102 @@ class OptimisedGalaxy final :
   ::Digit::PrimeServer::Models::GalaxyNodeMarauderInfo* add_marauders();
   const ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::GalaxyNodeMarauderInfo >&
       marauders() const;
+  // repeated bool hazardsEnabled = 27;
+  int hazardsenabled_size() const;
+  private:
+  int _internal_hazardsenabled_size() const;
+
+  public:
+  void clear_hazardsenabled() ;
+  bool hazardsenabled(int index) const;
+  void set_hazardsenabled(int index, bool value);
+  void add_hazardsenabled(bool value);
+  const ::google::protobuf::RepeatedField<bool>& hazardsenabled() const;
+  ::google::protobuf::RepeatedField<bool>* mutable_hazardsenabled();
+
+  private:
+  const ::google::protobuf::RepeatedField<bool>& _internal_hazardsenabled() const;
+  ::google::protobuf::RepeatedField<bool>* _internal_mutable_hazardsenabled();
+
+  public:
+  // repeated int64 hazardId = 28;
+  int hazardid_size() const;
+  private:
+  int _internal_hazardid_size() const;
+
+  public:
+  void clear_hazardid() ;
+  ::int64_t hazardid(int index) const;
+  void set_hazardid(int index, ::int64_t value);
+  void add_hazardid(::int64_t value);
+  const ::google::protobuf::RepeatedField<::int64_t>& hazardid() const;
+  ::google::protobuf::RepeatedField<::int64_t>* mutable_hazardid();
+
+  private:
+  const ::google::protobuf::RepeatedField<::int64_t>& _internal_hazardid() const;
+  ::google::protobuf::RepeatedField<::int64_t>* _internal_mutable_hazardid();
+
+  public:
+  // repeated int32 hazardsLevel = 29;
+  int hazardslevel_size() const;
+  private:
+  int _internal_hazardslevel_size() const;
+
+  public:
+  void clear_hazardslevel() ;
+  ::int32_t hazardslevel(int index) const;
+  void set_hazardslevel(int index, ::int32_t value);
+  void add_hazardslevel(::int32_t value);
+  const ::google::protobuf::RepeatedField<::int32_t>& hazardslevel() const;
+  ::google::protobuf::RepeatedField<::int32_t>* mutable_hazardslevel();
+
+  private:
+  const ::google::protobuf::RepeatedField<::int32_t>& _internal_hazardslevel() const;
+  ::google::protobuf::RepeatedField<::int32_t>* _internal_mutable_hazardslevel();
+
+  public:
+  // repeated bool isWaveDefense = 30;
+  int iswavedefense_size() const;
+  private:
+  int _internal_iswavedefense_size() const;
+
+  public:
+  void clear_iswavedefense() ;
+  bool iswavedefense(int index) const;
+  void set_iswavedefense(int index, bool value);
+  void add_iswavedefense(bool value);
+  const ::google::protobuf::RepeatedField<bool>& iswavedefense() const;
+  ::google::protobuf::RepeatedField<bool>* mutable_iswavedefense();
+
+  private:
+  const ::google::protobuf::RepeatedField<bool>& _internal_iswavedefense() const;
+  ::google::protobuf::RepeatedField<bool>* _internal_mutable_iswavedefense();
+
+  public:
+  // repeated int64 waveDefenseChallenge = 31;
+  int wavedefensechallenge_size() const;
+  private:
+  int _internal_wavedefensechallenge_size() const;
+
+  public:
+  void clear_wavedefensechallenge() ;
+  ::int64_t wavedefensechallenge(int index) const;
+  void set_wavedefensechallenge(int index, ::int64_t value);
+  void add_wavedefensechallenge(::int64_t value);
+  const ::google::protobuf::RepeatedField<::int64_t>& wavedefensechallenge() const;
+  ::google::protobuf::RepeatedField<::int64_t>* mutable_wavedefensechallenge();
+
+  private:
+  const ::google::protobuf::RepeatedField<::int64_t>& _internal_wavedefensechallenge() const;
+  ::google::protobuf::RepeatedField<::int64_t>* _internal_mutable_wavedefensechallenge();
+
+  public:
   // @@protoc_insertion_point(class_scope:Digit.PrimeServer.Models.OptimisedGalaxy)
  private:
   class _Internal;
 
   friend class ::google::protobuf::internal::TcParser;
-  static const ::google::protobuf::internal::TcParseTable<5, 23, 2, 0, 2> _table_;
+  static const ::google::protobuf::internal::TcParseTable<5, 28, 2, 0, 2> _table_;
   template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
@@ -19831,6 +20648,14 @@ class OptimisedGalaxy final :
     ::google::protobuf::RepeatedField<::int32_t> superhighwaysindices_;
     mutable ::google::protobuf::internal::CachedSize _superhighwaysindices_cached_byte_size_;
     ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::GalaxyNodeMarauderInfo > marauders_;
+    ::google::protobuf::RepeatedField<bool> hazardsenabled_;
+    ::google::protobuf::RepeatedField<::int64_t> hazardid_;
+    mutable ::google::protobuf::internal::CachedSize _hazardid_cached_byte_size_;
+    ::google::protobuf::RepeatedField<::int32_t> hazardslevel_;
+    mutable ::google::protobuf::internal::CachedSize _hazardslevel_cached_byte_size_;
+    ::google::protobuf::RepeatedField<bool> iswavedefense_;
+    ::google::protobuf::RepeatedField<::int64_t> wavedefensechallenge_;
+    mutable ::google::protobuf::internal::CachedSize _wavedefensechallenge_cached_byte_size_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER
   };
@@ -19894,7 +20719,7 @@ class PeaceShieldRulesConfig final :
                &_PeaceShieldRulesConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    82;
+    84;
 
   friend void swap(PeaceShieldRulesConfig& a, PeaceShieldRulesConfig& b) {
     a.Swap(&b);
@@ -20052,7 +20877,7 @@ class PlacementConfig final :
                &_PlacementConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    83;
+    85;
 
   friend void swap(PlacementConfig& a, PlacementConfig& b) {
     a.Swap(&b);
@@ -20210,7 +21035,7 @@ class ResourceConfig final :
                &_ResourceConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    84;
+    86;
 
   friend void swap(ResourceConfig& a, ResourceConfig& b) {
     a.Swap(&b);
@@ -20413,7 +21238,7 @@ class EntityGroup final :
                &_EntityGroup_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    85;
+    87;
 
   friend void swap(EntityGroup& a, EntityGroup& b) {
     a.Swap(&b);
@@ -20629,6 +21454,13 @@ class EntityGroup final :
   static constexpr Type TYPE_FORBIDDENTECHCHANCES = EntityGroup_Type_TYPE_FORBIDDENTECHCHANCES;
   static constexpr Type TYPE_FORBIDDENTECHCONFIG = EntityGroup_Type_TYPE_FORBIDDENTECHCONFIG;
   static constexpr Type TYPE_CHALLENGECONFIG = EntityGroup_Type_TYPE_CHALLENGECONFIG;
+  static constexpr Type TYPE_FORBIDDENTECHUPGRADECOSTS = EntityGroup_Type_TYPE_FORBIDDENTECHUPGRADECOSTS;
+  static constexpr Type TYPE_HAZARDSPECS = EntityGroup_Type_TYPE_HAZARDSPECS;
+  static constexpr Type TYPE_ACTIVATEDSHIPABILITIESCONFIGS = EntityGroup_Type_TYPE_ACTIVATEDSHIPABILITIESCONFIGS;
+  static constexpr Type TYPE_WAVEDEFENSESTATICDATA = EntityGroup_Type_TYPE_WAVEDEFENSESTATICDATA;
+  static constexpr Type TYPE_WAVEDEFENSEPARTYDATA = EntityGroup_Type_TYPE_WAVEDEFENSEPARTYDATA;
+  static constexpr Type TYPE_WAVEDEFENSESYNCDATA = EntityGroup_Type_TYPE_WAVEDEFENSESYNCDATA;
+  static constexpr Type TYPE_WAVEDEFENSECHALLENGEDATA = EntityGroup_Type_TYPE_WAVEDEFENSECHALLENGEDATA;
   static inline bool Type_IsValid(int value) {
     return EntityGroup_Type_IsValid(value);
   }
@@ -20753,7 +21585,7 @@ class ServiceResponse final :
                &_ServiceResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    86;
+    88;
 
   friend void swap(ServiceResponse& a, ServiceResponse& b) {
     a.Swap(&b);
@@ -21034,7 +21866,7 @@ class ShipXpConfig_XpConfig final :
                &_ShipXpConfig_XpConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    88;
+    90;
 
   friend void swap(ShipXpConfig_XpConfig& a, ShipXpConfig_XpConfig& b) {
     a.Swap(&b);
@@ -21225,7 +22057,7 @@ class ShipXpConfig final :
                &_ShipXpConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    90;
+    92;
 
   friend void swap(ShipXpConfig& a, ShipXpConfig& b) {
     a.Swap(&b);
@@ -21393,7 +22225,7 @@ class StarbaseConfig final :
                &_StarbaseConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    91;
+    93;
 
   friend void swap(StarbaseConfig& a, StarbaseConfig& b) {
     a.Swap(&b);
@@ -21641,7 +22473,7 @@ class ShipTypeModifier final :
                &_ShipTypeModifier_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    93;
+    95;
 
   friend void swap(ShipTypeModifier& a, ShipTypeModifier& b) {
     a.Swap(&b);
@@ -21900,7 +22732,7 @@ class ThreatConfig final :
                &_ThreatConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    97;
+    99;
 
   friend void swap(ThreatConfig& a, ThreatConfig& b) {
     a.Swap(&b);
@@ -22127,7 +22959,7 @@ class SimulateMarauderLootRollToolingResponse final :
                &_SimulateMarauderLootRollToolingResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    98;
+    100;
 
   friend void swap(SimulateMarauderLootRollToolingResponse& a, SimulateMarauderLootRollToolingResponse& b) {
     a.Swap(&b);
@@ -22323,7 +23155,7 @@ class RespawnMarauderTimersToolingResponse final :
                &_RespawnMarauderTimersToolingResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    99;
+    101;
 
   friend void swap(RespawnMarauderTimersToolingResponse& a, RespawnMarauderTimersToolingResponse& b) {
     a.Swap(&b);
@@ -22727,7 +23559,7 @@ class DeployedFleet final :
                &_DeployedFleet_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    110;
+    112;
 
   friend void swap(DeployedFleet& a, DeployedFleet& b) {
     a.Swap(&b);
@@ -22815,6 +23647,7 @@ class DeployedFleet final :
     kStatusEffectsFieldNumber = 33,
     kDetectedByAllianceIdsFieldNumber = 34,
     kForbiddenTechsFieldNumber = 36,
+    kStatusCountersFieldNumber = 38,
     kUidFieldNumber = 1,
     kNodeAddressFieldNumber = 5,
     kWarpTimeFieldNumber = 13,
@@ -22836,6 +23669,7 @@ class DeployedFleet final :
     kBattleOpponentFleetIdFieldNumber = 26,
     kArmadaAttackIdFieldNumber = 30,
     kMultiTargetArmadaIdFieldNumber = 35,
+    kCauseOfDestructionFieldNumber = 37,
   };
   // repeated int64 shipIds = 11;
   int shipids_size() const;
@@ -23077,6 +23911,24 @@ class DeployedFleet final :
   ::Digit::PrimeServer::Models::ForbiddenTechData* add_forbiddentechs();
   const ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::ForbiddenTechData >&
       forbiddentechs() const;
+  // repeated .Digit.PrimeServer.Models.StatusCounter statusCounters = 38;
+  int statuscounters_size() const;
+  private:
+  int _internal_statuscounters_size() const;
+
+  public:
+  void clear_statuscounters() ;
+  ::Digit::PrimeServer::Models::StatusCounter* mutable_statuscounters(int index);
+  ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::StatusCounter >*
+      mutable_statuscounters();
+  private:
+  const ::google::protobuf::RepeatedPtrField<::Digit::PrimeServer::Models::StatusCounter>& _internal_statuscounters() const;
+  ::google::protobuf::RepeatedPtrField<::Digit::PrimeServer::Models::StatusCounter>* _internal_mutable_statuscounters();
+  public:
+  const ::Digit::PrimeServer::Models::StatusCounter& statuscounters(int index) const;
+  ::Digit::PrimeServer::Models::StatusCounter* add_statuscounters();
+  const ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::StatusCounter >&
+      statuscounters() const;
   // string uid = 1;
   void clear_uid() ;
   const std::string& uid() const;
@@ -23318,12 +24170,22 @@ class DeployedFleet final :
   void _internal_set_multitargetarmadaid(::int64_t value);
 
   public:
+  // .Digit.PrimeServer.Models.DamageSources causeOfDestruction = 37;
+  void clear_causeofdestruction() ;
+  ::Digit::PrimeServer::Models::DamageSources causeofdestruction() const;
+  void set_causeofdestruction(::Digit::PrimeServer::Models::DamageSources value);
+
+  private:
+  ::Digit::PrimeServer::Models::DamageSources _internal_causeofdestruction() const;
+  void _internal_set_causeofdestruction(::Digit::PrimeServer::Models::DamageSources value);
+
+  public:
   // @@protoc_insertion_point(class_scope:Digit.PrimeServer.Models.DeployedFleet)
  private:
   class _Internal;
 
   friend class ::google::protobuf::internal::TcParser;
-  static const ::google::protobuf::internal::TcParseTable<5, 36, 20, 82, 7> _table_;
+  static const ::google::protobuf::internal::TcParseTable<5, 38, 21, 82, 7> _table_;
   template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
@@ -23378,6 +24240,7 @@ class DeployedFleet final :
     ::google::protobuf::RepeatedField<::int64_t> detectedbyallianceids_;
     mutable ::google::protobuf::internal::CachedSize _detectedbyallianceids_cached_byte_size_;
     ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::ForbiddenTechData > forbiddentechs_;
+    ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::StatusCounter > statuscounters_;
     ::google::protobuf::internal::ArenaStringPtr uid_;
     ::Digit::PrimeServer::Models::NodeAddress* nodeaddress_;
     ::google::protobuf::Timestamp* warptime_;
@@ -23399,6 +24262,7 @@ class DeployedFleet final :
     ::int64_t battleopponentfleetid_;
     ::int64_t armadaattackid_;
     ::int64_t multitargetarmadaid_;
+    int causeofdestruction_;
     PROTOBUF_TSAN_DECLARE_MEMBER
   };
   union { Impl_ _impl_; };
@@ -23461,7 +24325,7 @@ class WarpData final :
                &_WarpData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    111;
+    113;
 
   friend void swap(WarpData& a, WarpData& b) {
     a.Swap(&b);
@@ -23700,7 +24564,7 @@ class ShipAttributes final :
                &_ShipAttributes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    113;
+    115;
 
   friend void swap(ShipAttributes& a, ShipAttributes& b) {
     a.Swap(&b);
@@ -23867,7 +24731,7 @@ class DeployedShip final :
                &_DeployedShip_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    114;
+    116;
 
   friend void swap(DeployedShip& a, DeployedShip& b) {
     a.Swap(&b);
@@ -24034,7 +24898,7 @@ class ForbiddenTechData final :
                &_ForbiddenTechData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    115;
+    117;
 
   friend void swap(ForbiddenTechData& a, ForbiddenTechData& b) {
     a.Swap(&b);
@@ -24160,6 +25024,176 @@ class ForbiddenTechData final :
   friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
 };// -------------------------------------------------------------------
 
+class StatusCounter final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:Digit.PrimeServer.Models.StatusCounter) */ {
+ public:
+  inline StatusCounter() : StatusCounter(nullptr) {}
+  ~StatusCounter() override;
+  template<typename = void>
+  explicit PROTOBUF_CONSTEXPR StatusCounter(::google::protobuf::internal::ConstantInitialized);
+
+  StatusCounter(const StatusCounter& from);
+  StatusCounter(StatusCounter&& from) noexcept
+    : StatusCounter() {
+    *this = ::std::move(from);
+  }
+
+  inline StatusCounter& operator=(const StatusCounter& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline StatusCounter& operator=(StatusCounter&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance);
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::google::protobuf::UnknownFieldSet>();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::google::protobuf::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::google::protobuf::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const StatusCounter& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const StatusCounter* internal_default_instance() {
+    return reinterpret_cast<const StatusCounter*>(
+               &_StatusCounter_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    118;
+
+  friend void swap(StatusCounter& a, StatusCounter& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(StatusCounter* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::google::protobuf::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(StatusCounter* other) {
+    if (other == this) return;
+    ABSL_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  StatusCounter* New(::google::protobuf::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<StatusCounter>(arena);
+  }
+  using ::google::protobuf::Message::CopyFrom;
+  void CopyFrom(const StatusCounter& from);
+  using ::google::protobuf::Message::MergeFrom;
+  void MergeFrom( const StatusCounter& from) {
+    StatusCounter::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  ::size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::google::protobuf::internal::ParseContext* ctx) final;
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target, ::google::protobuf::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::google::protobuf::Arena* arena);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(StatusCounter* other);
+
+  private:
+  friend class ::google::protobuf::internal::AnyMetadata;
+  static ::absl::string_view FullMessageName() {
+    return "Digit.PrimeServer.Models.StatusCounter";
+  }
+  protected:
+  explicit StatusCounter(::google::protobuf::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::google::protobuf::Message::ClassData*GetClassData() const final;
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kStatusIdFieldNumber = 1,
+    kCounterFieldNumber = 2,
+  };
+  // int64 statusId = 1;
+  void clear_statusid() ;
+  ::int64_t statusid() const;
+  void set_statusid(::int64_t value);
+
+  private:
+  ::int64_t _internal_statusid() const;
+  void _internal_set_statusid(::int64_t value);
+
+  public:
+  // int64 counter = 2;
+  void clear_counter() ;
+  ::int64_t counter() const;
+  void set_counter(::int64_t value);
+
+  private:
+  ::int64_t _internal_counter() const;
+  void _internal_set_counter(::int64_t value);
+
+  public:
+  // @@protoc_insertion_point(class_scope:Digit.PrimeServer.Models.StatusCounter)
+ private:
+  class _Internal;
+
+  friend class ::google::protobuf::internal::TcParser;
+  static const ::google::protobuf::internal::TcParseTable<1, 2, 0, 0, 2> _table_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::int64_t statusid_;
+    ::int64_t counter_;
+    mutable ::google::protobuf::internal::CachedSize _cached_size_;
+    PROTOBUF_TSAN_DECLARE_MEMBER
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
+};// -------------------------------------------------------------------
+
 class Error final :
     public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:Digit.PrimeServer.Models.Error) */ {
  public:
@@ -24216,7 +25250,7 @@ class Error final :
                &_Error_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    116;
+    119;
 
   friend void swap(Error& a, Error& b) {
     a.Swap(&b);
@@ -24410,7 +25444,7 @@ class ForbiddenTech final :
                &_ForbiddenTech_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    117;
+    120;
 
   friend void swap(ForbiddenTech& a, ForbiddenTech& b) {
     a.Swap(&b);
@@ -24628,7 +25662,7 @@ class ForbiddenTechChances final :
                &_ForbiddenTechChances_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    119;
+    122;
 
   friend void swap(ForbiddenTechChances& a, ForbiddenTechChances& b) {
     a.Swap(&b);
@@ -24863,7 +25897,7 @@ class ForbiddenTechSpec final :
                &_ForbiddenTechSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    121;
+    124;
 
   friend void swap(ForbiddenTechSpec& a, ForbiddenTechSpec& b) {
     a.Swap(&b);
@@ -25194,7 +26228,7 @@ class ForbiddenTechChance final :
                &_ForbiddenTechChance_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    122;
+    125;
 
   friend void swap(ForbiddenTechChance& a, ForbiddenTechChance& b) {
     a.Swap(&b);
@@ -25364,7 +26398,7 @@ class ForbiddenTechInstance final :
                &_ForbiddenTechInstance_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    123;
+    126;
 
   friend void swap(ForbiddenTechInstance& a, ForbiddenTechInstance& b) {
     a.Swap(&b);
@@ -25540,7 +26574,7 @@ class ForbiddenTechsResponse final :
                &_ForbiddenTechsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    124;
+    127;
 
   friend void swap(ForbiddenTechsResponse& a, ForbiddenTechsResponse& b) {
     a.Swap(&b);
@@ -25706,7 +26740,7 @@ class IdRefs final :
                &_IdRefs_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    125;
+    128;
 
   friend void swap(IdRefs& a, IdRefs& b) {
     a.Swap(&b);
@@ -25894,7 +26928,7 @@ class HailingFrequency final :
                &_HailingFrequency_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    126;
+    129;
 
   friend void swap(HailingFrequency& a, HailingFrequency& b) {
     a.Swap(&b);
@@ -26078,7 +27112,7 @@ class Job final :
                &_Job_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    127;
+    130;
 
   friend void swap(Job& a, Job& b) {
     a.Swap(&b);
@@ -26158,6 +27192,7 @@ class Job final :
     kDurationFieldNumber = 3,
     kReductionInSecondsFieldNumber = 5,
     kJobSpeedupModFieldNumber = 6,
+    kTierFieldNumber = 19,
     kRefinementParamsFieldNumber = 8,
     kRepairFleetParamsFieldNumber = 9,
     kStarbaseConstructionParamsFieldNumber = 10,
@@ -26269,6 +27304,16 @@ class Job final :
   private:
   float _internal_jobspeedupmod() const;
   void _internal_set_jobspeedupmod(float value);
+
+  public:
+  // int32 tier = 19;
+  void clear_tier() ;
+  ::int32_t tier() const;
+  void set_tier(::int32_t value);
+
+  private:
+  ::int32_t _internal_tier() const;
+  void _internal_set_tier(::int32_t value);
 
   public:
   // .Digit.PrimeServer.Models.RefinementParams refinementParams = 8;
@@ -26481,7 +27526,7 @@ class Job final :
   inline void clear_has_Params();
 
   friend class ::google::protobuf::internal::TcParser;
-  static const ::google::protobuf::internal::TcParseTable<5, 18, 12, 63, 2> _table_;
+  static const ::google::protobuf::internal::TcParseTable<5, 19, 12, 63, 2> _table_;
   template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
@@ -26496,6 +27541,7 @@ class Job final :
     ::int32_t duration_;
     ::int32_t reductioninseconds_;
     float jobspeedupmod_;
+    ::int32_t tier_;
     union ParamsUnion {
       constexpr ParamsUnion() : _constinit_{} {}
         ::google::protobuf::internal::ConstantInitialized _constinit_;
@@ -26574,7 +27620,7 @@ class RefinementParams final :
                &_RefinementParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    128;
+    131;
 
   friend void swap(RefinementParams& a, RefinementParams& b) {
     a.Swap(&b);
@@ -26744,7 +27790,7 @@ class RepairFleetParams final :
                &_RepairFleetParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    129;
+    132;
 
   friend void swap(RepairFleetParams& a, RepairFleetParams& b) {
     a.Swap(&b);
@@ -26902,7 +27948,7 @@ class StarbaseConstructionParams final :
                &_StarbaseConstructionParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    130;
+    133;
 
   friend void swap(StarbaseConstructionParams& a, StarbaseConstructionParams& b) {
     a.Swap(&b);
@@ -27072,7 +28118,7 @@ class ShipConstructionParams final :
                &_ShipConstructionParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    131;
+    134;
 
   friend void swap(ShipConstructionParams& a, ShipConstructionParams& b) {
     a.Swap(&b);
@@ -27230,7 +28276,7 @@ class StarbaseRepairParams final :
                &_StarbaseRepairParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    132;
+    135;
 
   friend void swap(StarbaseRepairParams& a, StarbaseRepairParams& b) {
     a.Swap(&b);
@@ -27388,7 +28434,7 @@ class TierUpShipParams final :
                &_TierUpShipParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    133;
+    136;
 
   friend void swap(TierUpShipParams& a, TierUpShipParams& b) {
     a.Swap(&b);
@@ -27558,7 +28604,7 @@ class AllianceContributionCooldownParams final :
                &_AllianceContributionCooldownParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    134;
+    137;
 
   friend void swap(AllianceContributionCooldownParams& a, AllianceContributionCooldownParams& b) {
     a.Swap(&b);
@@ -27716,7 +28762,7 @@ class ResearchParams final :
                &_ResearchParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    135;
+    138;
 
   friend void swap(ResearchParams& a, ResearchParams& b) {
     a.Swap(&b);
@@ -27886,7 +28932,7 @@ class ScrapyardParams final :
                &_ScrapyardParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    136;
+    139;
 
   friend void swap(ScrapyardParams& a, ScrapyardParams& b) {
     a.Swap(&b);
@@ -28089,7 +29135,7 @@ class AwayAssignmentParams final :
                &_AwayAssignmentParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    137;
+    140;
 
   friend void swap(AwayAssignmentParams& a, AwayAssignmentParams& b) {
     a.Swap(&b);
@@ -28247,7 +29293,7 @@ class ActiveMission final :
                &_ActiveMission_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    138;
+    141;
 
   friend void swap(ActiveMission& a, ActiveMission& b) {
     a.Swap(&b);
@@ -28497,7 +29543,7 @@ class ActiveObjective final :
                &_ActiveObjective_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    139;
+    142;
 
   friend void swap(ActiveObjective& a, ActiveObjective& b) {
     a.Swap(&b);
@@ -28697,7 +29743,7 @@ class DialogueChunk final :
                &_DialogueChunk_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    140;
+    143;
 
   friend void swap(DialogueChunk& a, DialogueChunk& b) {
     a.Swap(&b);
@@ -28930,7 +29976,7 @@ class Mission final :
                &_Mission_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    141;
+    144;
 
   friend void swap(Mission& a, Mission& b) {
     a.Swap(&b);
@@ -29011,36 +30057,42 @@ class Mission final :
     kFleetRequiredFieldNumber = 5,
     kTypeFieldNumber = 6,
   };
-  // .Digit.PrimeServer.Models.MissionObjective objectives = 2;
-  bool has_objectives() const;
+  // repeated .Digit.PrimeServer.Models.MissionObjective objectives = 2;
+  int objectives_size() const;
+  private:
+  int _internal_objectives_size() const;
+
+  public:
   void clear_objectives() ;
-  const ::Digit::PrimeServer::Models::MissionObjective& objectives() const;
-  PROTOBUF_NODISCARD ::Digit::PrimeServer::Models::MissionObjective* release_objectives();
-  ::Digit::PrimeServer::Models::MissionObjective* mutable_objectives();
-  void set_allocated_objectives(::Digit::PrimeServer::Models::MissionObjective* value);
-  void unsafe_arena_set_allocated_objectives(::Digit::PrimeServer::Models::MissionObjective* value);
-  ::Digit::PrimeServer::Models::MissionObjective* unsafe_arena_release_objectives();
-
+  ::Digit::PrimeServer::Models::MissionObjective* mutable_objectives(int index);
+  ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::MissionObjective >*
+      mutable_objectives();
   private:
-  const ::Digit::PrimeServer::Models::MissionObjective& _internal_objectives() const;
-  ::Digit::PrimeServer::Models::MissionObjective* _internal_mutable_objectives();
+  const ::google::protobuf::RepeatedPtrField<::Digit::PrimeServer::Models::MissionObjective>& _internal_objectives() const;
+  ::google::protobuf::RepeatedPtrField<::Digit::PrimeServer::Models::MissionObjective>* _internal_mutable_objectives();
+  public:
+  const ::Digit::PrimeServer::Models::MissionObjective& objectives(int index) const;
+  ::Digit::PrimeServer::Models::MissionObjective* add_objectives();
+  const ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::MissionObjective >&
+      objectives() const;
+  // repeated .Digit.PrimeServer.Models.MissionRequirement acceptanceRequirements = 4;
+  int acceptancerequirements_size() const;
+  private:
+  int _internal_acceptancerequirements_size() const;
 
   public:
-  // .Digit.PrimeServer.Models.MissionRequirement acceptanceRequirements = 4;
-  bool has_acceptancerequirements() const;
   void clear_acceptancerequirements() ;
-  const ::Digit::PrimeServer::Models::MissionRequirement& acceptancerequirements() const;
-  PROTOBUF_NODISCARD ::Digit::PrimeServer::Models::MissionRequirement* release_acceptancerequirements();
-  ::Digit::PrimeServer::Models::MissionRequirement* mutable_acceptancerequirements();
-  void set_allocated_acceptancerequirements(::Digit::PrimeServer::Models::MissionRequirement* value);
-  void unsafe_arena_set_allocated_acceptancerequirements(::Digit::PrimeServer::Models::MissionRequirement* value);
-  ::Digit::PrimeServer::Models::MissionRequirement* unsafe_arena_release_acceptancerequirements();
-
+  ::Digit::PrimeServer::Models::MissionRequirement* mutable_acceptancerequirements(int index);
+  ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::MissionRequirement >*
+      mutable_acceptancerequirements();
   private:
-  const ::Digit::PrimeServer::Models::MissionRequirement& _internal_acceptancerequirements() const;
-  ::Digit::PrimeServer::Models::MissionRequirement* _internal_mutable_acceptancerequirements();
-
+  const ::google::protobuf::RepeatedPtrField<::Digit::PrimeServer::Models::MissionRequirement>& _internal_acceptancerequirements() const;
+  ::google::protobuf::RepeatedPtrField<::Digit::PrimeServer::Models::MissionRequirement>* _internal_mutable_acceptancerequirements();
   public:
+  const ::Digit::PrimeServer::Models::MissionRequirement& acceptancerequirements(int index) const;
+  ::Digit::PrimeServer::Models::MissionRequirement* add_acceptancerequirements();
+  const ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::MissionRequirement >&
+      acceptancerequirements() const;
   // .Digit.PrimeServer.Models.MissionMetaData metadata = 7;
   bool has_metadata() const;
   void clear_metadata() ;
@@ -29123,8 +30175,8 @@ class Mission final :
   struct Impl_ {
     ::google::protobuf::internal::HasBits<1> _has_bits_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
-    ::Digit::PrimeServer::Models::MissionObjective* objectives_;
-    ::Digit::PrimeServer::Models::MissionRequirement* acceptancerequirements_;
+    ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::MissionObjective > objectives_;
+    ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::MissionRequirement > acceptancerequirements_;
     ::Digit::PrimeServer::Models::MissionMetaData* metadata_;
     ::google::protobuf::Timestamp* lastmodified_;
     ::int64_t id_;
@@ -29193,7 +30245,7 @@ class MissionRequirement_AllOfficersCoreStatTotalParams final :
                &_MissionRequirement_AllOfficersCoreStatTotalParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    142;
+    145;
 
   friend void swap(MissionRequirement_AllOfficersCoreStatTotalParams& a, MissionRequirement_AllOfficersCoreStatTotalParams& b) {
     a.Swap(&b);
@@ -29363,7 +30415,7 @@ class MissionRequirement_AtLeastOneOfficerWithCoreStatParams final :
                &_MissionRequirement_AtLeastOneOfficerWithCoreStatParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    143;
+    146;
 
   friend void swap(MissionRequirement_AtLeastOneOfficerWithCoreStatParams& a, MissionRequirement_AtLeastOneOfficerWithCoreStatParams& b) {
     a.Swap(&b);
@@ -29533,7 +30585,7 @@ class MissionRequirement_StarbaseModuleLevelParams final :
                &_MissionRequirement_StarbaseModuleLevelParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    144;
+    147;
 
   friend void swap(MissionRequirement_StarbaseModuleLevelParams& a, MissionRequirement_StarbaseModuleLevelParams& b) {
     a.Swap(&b);
@@ -29703,7 +30755,7 @@ class MissionRequirement_PreviouslyCompletedMissionParams final :
                &_MissionRequirement_PreviouslyCompletedMissionParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    145;
+    148;
 
   friend void swap(MissionRequirement_PreviouslyCompletedMissionParams& a, MissionRequirement_PreviouslyCompletedMissionParams& b) {
     a.Swap(&b);
@@ -29861,7 +30913,7 @@ class MissionRequirement_HullTypeParams final :
                &_MissionRequirement_HullTypeParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    146;
+    149;
 
   friend void swap(MissionRequirement_HullTypeParams& a, MissionRequirement_HullTypeParams& b) {
     a.Swap(&b);
@@ -30031,7 +31083,7 @@ class MissionRequirement_HullGradeParams final :
                &_MissionRequirement_HullGradeParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    147;
+    150;
 
   friend void swap(MissionRequirement_HullGradeParams& a, MissionRequirement_HullGradeParams& b) {
     a.Swap(&b);
@@ -30201,7 +31253,7 @@ class MissionRequirement_ComponentValueParams final :
                &_MissionRequirement_ComponentValueParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    148;
+    151;
 
   friend void swap(MissionRequirement_ComponentValueParams& a, MissionRequirement_ComponentValueParams& b) {
     a.Swap(&b);
@@ -30377,7 +31429,7 @@ class MissionRequirement_PlayerLevelRangeParams final :
                &_MissionRequirement_PlayerLevelRangeParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    149;
+    152;
 
   friend void swap(MissionRequirement_PlayerLevelRangeParams& a, MissionRequirement_PlayerLevelRangeParams& b) {
     a.Swap(&b);
@@ -30547,7 +31599,7 @@ class MissionRequirement_FactionStandingParams final :
                &_MissionRequirement_FactionStandingParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    150;
+    153;
 
   friend void swap(MissionRequirement_FactionStandingParams& a, MissionRequirement_FactionStandingParams& b) {
     a.Swap(&b);
@@ -30730,7 +31782,7 @@ class MissionRequirement final :
                &_MissionRequirement_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    151;
+    154;
 
   friend void swap(MissionRequirement& a, MissionRequirement& b) {
     a.Swap(&b);
@@ -31107,7 +32159,7 @@ class MissionMetaData final :
                &_MissionMetaData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    152;
+    155;
 
   friend void swap(MissionMetaData& a, MissionMetaData& b) {
     a.Swap(&b);
@@ -31507,7 +32559,7 @@ class MissionObjective_MissionAttributes final :
                &_MissionObjective_MissionAttributes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    153;
+    156;
 
   friend void swap(MissionObjective_MissionAttributes& a, MissionObjective_MissionAttributes& b) {
     a.Swap(&b);
@@ -32170,7 +33222,7 @@ class MissionObjective_TargetDestinationAttributes final :
                &_MissionObjective_TargetDestinationAttributes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    154;
+    157;
 
   friend void swap(MissionObjective_TargetDestinationAttributes& a, MissionObjective_TargetDestinationAttributes& b) {
     a.Swap(&b);
@@ -32364,7 +33416,7 @@ class MissionObjective_PlanetDestinationAttributes final :
                &_MissionObjective_PlanetDestinationAttributes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    155;
+    158;
 
   friend void swap(MissionObjective_PlanetDestinationAttributes& a, MissionObjective_PlanetDestinationAttributes& b) {
     a.Swap(&b);
@@ -32570,7 +33622,7 @@ class MissionObjective_StarbaseModuleLevelAttributes final :
                &_MissionObjective_StarbaseModuleLevelAttributes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    156;
+    159;
 
   friend void swap(MissionObjective_StarbaseModuleLevelAttributes& a, MissionObjective_StarbaseModuleLevelAttributes& b) {
     a.Swap(&b);
@@ -32740,7 +33792,7 @@ class MissionObjective_DefeatNPCInstantiatedAttributes final :
                &_MissionObjective_DefeatNPCInstantiatedAttributes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    157;
+    160;
 
   friend void swap(MissionObjective_DefeatNPCInstantiatedAttributes& a, MissionObjective_DefeatNPCInstantiatedAttributes& b) {
     a.Swap(&b);
@@ -32946,7 +33998,7 @@ class MissionObjective_DefeatChallengeNPCInstantiatedAttributes final :
                &_MissionObjective_DefeatChallengeNPCInstantiatedAttributes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    158;
+    161;
 
   friend void swap(MissionObjective_DefeatChallengeNPCInstantiatedAttributes& a, MissionObjective_DefeatChallengeNPCInstantiatedAttributes& b) {
     a.Swap(&b);
@@ -33152,7 +34204,7 @@ class MissionObjective_DefeatNPCGlobalAttributes final :
                &_MissionObjective_DefeatNPCGlobalAttributes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    159;
+    162;
 
   friend void swap(MissionObjective_DefeatNPCGlobalAttributes& a, MissionObjective_DefeatNPCGlobalAttributes& b) {
     a.Swap(&b);
@@ -33346,7 +34398,7 @@ class MissionObjective_StartMiningAttributes final :
                &_MissionObjective_StartMiningAttributes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    160;
+    163;
 
   friend void swap(MissionObjective_StartMiningAttributes& a, MissionObjective_StartMiningAttributes& b) {
     a.Swap(&b);
@@ -33528,7 +34580,7 @@ class MissionObjective_MineResourcesAttributes final :
                &_MissionObjective_MineResourcesAttributes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    161;
+    164;
 
   friend void swap(MissionObjective_MineResourcesAttributes& a, MissionObjective_MineResourcesAttributes& b) {
     a.Swap(&b);
@@ -33721,7 +34773,7 @@ class MissionObjective_ReturnFleetToStationAttributes final :
                &_MissionObjective_ReturnFleetToStationAttributes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    162;
+    165;
 
   friend void swap(MissionObjective_ReturnFleetToStationAttributes& a, MissionObjective_ReturnFleetToStationAttributes& b) {
     a.Swap(&b);
@@ -33847,7 +34899,7 @@ class MissionObjective_BuildFromBlueprintAttributes final :
                &_MissionObjective_BuildFromBlueprintAttributes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    163;
+    166;
 
   friend void swap(MissionObjective_BuildFromBlueprintAttributes& a, MissionObjective_BuildFromBlueprintAttributes& b) {
     a.Swap(&b);
@@ -34004,7 +35056,7 @@ class MissionObjective_DummyObjectiveAttributes final :
                &_MissionObjective_DummyObjectiveAttributes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    164;
+    167;
 
   friend void swap(MissionObjective_DummyObjectiveAttributes& a, MissionObjective_DummyObjectiveAttributes& b) {
     a.Swap(&b);
@@ -34129,7 +35181,7 @@ class MissionObjective_DilemmaObjectiveAttributes final :
                &_MissionObjective_DilemmaObjectiveAttributes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    165;
+    168;
 
   friend void swap(MissionObjective_DilemmaObjectiveAttributes& a, MissionObjective_DilemmaObjectiveAttributes& b) {
     a.Swap(&b);
@@ -34255,7 +35307,7 @@ class MissionObjective_RecruitNewOfficerAttributes final :
                &_MissionObjective_RecruitNewOfficerAttributes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    166;
+    169;
 
   friend void swap(MissionObjective_RecruitNewOfficerAttributes& a, MissionObjective_RecruitNewOfficerAttributes& b) {
     a.Swap(&b);
@@ -34413,7 +35465,7 @@ class MissionObjective_JoinAllianceAttributes final :
                &_MissionObjective_JoinAllianceAttributes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    167;
+    170;
 
   friend void swap(MissionObjective_JoinAllianceAttributes& a, MissionObjective_JoinAllianceAttributes& b) {
     a.Swap(&b);
@@ -34571,7 +35623,7 @@ class MissionObjective_AttackStarbaseAttributes final :
                &_MissionObjective_AttackStarbaseAttributes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    168;
+    171;
 
   friend void swap(MissionObjective_AttackStarbaseAttributes& a, MissionObjective_AttackStarbaseAttributes& b) {
     a.Swap(&b);
@@ -34771,7 +35823,7 @@ class MissionObjective_DonateResourcesAttributes final :
                &_MissionObjective_DonateResourcesAttributes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    169;
+    172;
 
   friend void swap(MissionObjective_DonateResourcesAttributes& a, MissionObjective_DonateResourcesAttributes& b) {
     a.Swap(&b);
@@ -34941,7 +35993,7 @@ class MissionObjective_CompleteFactionMissionsAttributes final :
                &_MissionObjective_CompleteFactionMissionsAttributes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    170;
+    173;
 
   friend void swap(MissionObjective_CompleteFactionMissionsAttributes& a, MissionObjective_CompleteFactionMissionsAttributes& b) {
     a.Swap(&b);
@@ -35111,7 +36163,7 @@ class MissionObjective_UpgradeShipAttributes final :
                &_MissionObjective_UpgradeShipAttributes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    171;
+    174;
 
   friend void swap(MissionObjective_UpgradeShipAttributes& a, MissionObjective_UpgradeShipAttributes& b) {
     a.Swap(&b);
@@ -35281,7 +36333,7 @@ class MissionObjective_StockpileResourcesAttributes final :
                &_MissionObjective_StockpileResourcesAttributes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    172;
+    175;
 
   friend void swap(MissionObjective_StockpileResourcesAttributes& a, MissionObjective_StockpileResourcesAttributes& b) {
     a.Swap(&b);
@@ -35451,7 +36503,7 @@ class MissionObjective_OfficerLevelAndRankAttributes final :
                &_MissionObjective_OfficerLevelAndRankAttributes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    173;
+    176;
 
   friend void swap(MissionObjective_OfficerLevelAndRankAttributes& a, MissionObjective_OfficerLevelAndRankAttributes& b) {
     a.Swap(&b);
@@ -35633,7 +36685,7 @@ class MissionObjective_DefeatFactionShipsAttributes final :
                &_MissionObjective_DefeatFactionShipsAttributes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    174;
+    177;
 
   friend void swap(MissionObjective_DefeatFactionShipsAttributes& a, MissionObjective_DefeatFactionShipsAttributes& b) {
     a.Swap(&b);
@@ -35803,7 +36855,7 @@ class MissionObjective_AssignOfficerToDrydockAttributes final :
                &_MissionObjective_AssignOfficerToDrydockAttributes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    175;
+    178;
 
   friend void swap(MissionObjective_AssignOfficerToDrydockAttributes& a, MissionObjective_AssignOfficerToDrydockAttributes& b) {
     a.Swap(&b);
@@ -35982,7 +37034,7 @@ class MissionObjective_MoveStarbaseAttributes final :
                &_MissionObjective_MoveStarbaseAttributes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    176;
+    179;
 
   friend void swap(MissionObjective_MoveStarbaseAttributes& a, MissionObjective_MoveStarbaseAttributes& b) {
     a.Swap(&b);
@@ -36140,7 +37192,7 @@ class MissionObjective final :
                &_MissionObjective_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    177;
+    180;
 
   friend void swap(MissionObjective& a, MissionObjective& b) {
     a.Swap(&b);
@@ -36483,7 +37535,7 @@ class MissionObjectiveMetaData final :
                &_MissionObjectiveMetaData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    178;
+    181;
 
   friend void swap(MissionObjectiveMetaData& a, MissionObjectiveMetaData& b) {
     a.Swap(&b);
@@ -36757,7 +37809,7 @@ class ActionFlow final :
                &_ActionFlow_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    179;
+    182;
 
   friend void swap(ActionFlow& a, ActionFlow& b) {
     a.Swap(&b);
@@ -36951,7 +38003,7 @@ class MissionLocationContainer final :
                &_MissionLocationContainer_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    180;
+    183;
 
   friend void swap(MissionLocationContainer& a, MissionLocationContainer& b) {
     a.Swap(&b);
@@ -37117,7 +38169,7 @@ class MissionLocation final :
                &_MissionLocation_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    181;
+    184;
 
   friend void swap(MissionLocation& a, MissionLocation& b) {
     a.Swap(&b);
@@ -37310,7 +38362,7 @@ class ObjectiveDefinition_RequiredAttribute final :
                &_ObjectiveDefinition_RequiredAttribute_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    182;
+    185;
 
   friend void swap(ObjectiveDefinition_RequiredAttribute& a, ObjectiveDefinition_RequiredAttribute& b) {
     a.Swap(&b);
@@ -37492,7 +38544,7 @@ class ObjectiveDefinition final :
                &_ObjectiveDefinition_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    183;
+    186;
 
   friend void swap(ObjectiveDefinition& a, ObjectiveDefinition& b) {
     a.Swap(&b);
@@ -37810,7 +38862,7 @@ class BlueprintSpec final :
                &_BlueprintSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    188;
+    191;
 
   friend void swap(BlueprintSpec& a, BlueprintSpec& b) {
     a.Swap(&b);
@@ -38345,7 +39397,7 @@ class JobResponse final :
                &_JobResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    189;
+    192;
 
   friend void swap(JobResponse& a, JobResponse& b) {
     a.Swap(&b);
@@ -38511,7 +39563,7 @@ class Notification_ChestContent final :
                &_Notification_ChestContent_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    190;
+    193;
 
   friend void swap(Notification_ChestContent& a, Notification_ChestContent& b) {
     a.Swap(&b);
@@ -38677,7 +39729,7 @@ class Notification_MissionParams final :
                &_Notification_MissionParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    191;
+    194;
 
   friend void swap(Notification_MissionParams& a, Notification_MissionParams& b) {
     a.Swap(&b);
@@ -38883,7 +39935,7 @@ class Notification_TerritoryParams final :
                &_Notification_TerritoryParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    192;
+    195;
 
   friend void swap(Notification_TerritoryParams& a, Notification_TerritoryParams& b) {
     a.Swap(&b);
@@ -39053,7 +40105,7 @@ class Notification_UserProfileParams final :
                &_Notification_UserProfileParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    193;
+    196;
 
   friend void swap(Notification_UserProfileParams& a, Notification_UserProfileParams& b) {
     a.Swap(&b);
@@ -39223,7 +40275,7 @@ class Notification_ArmadaParams final :
                &_Notification_ArmadaParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    194;
+    197;
 
   friend void swap(Notification_ArmadaParams& a, Notification_ArmadaParams& b) {
     a.Swap(&b);
@@ -39399,7 +40451,7 @@ class Notification_PlatformChestParams final :
                &_Notification_PlatformChestParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    195;
+    198;
 
   friend void swap(Notification_PlatformChestParams& a, Notification_PlatformChestParams& b) {
     a.Swap(&b);
@@ -39565,7 +40617,7 @@ class Notification_FactionParams final :
                &_Notification_FactionParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    196;
+    199;
 
   friend void swap(Notification_FactionParams& a, Notification_FactionParams& b) {
     a.Swap(&b);
@@ -39771,7 +40823,7 @@ class Notification_AllianceParams final :
                &_Notification_AllianceParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    198;
+    201;
 
   friend void swap(Notification_AllianceParams& a, Notification_AllianceParams& b) {
     a.Swap(&b);
@@ -40100,7 +41152,7 @@ class Notification_AllianceDiplomacyParams final :
                &_Notification_AllianceDiplomacyParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    199;
+    202;
 
   friend void swap(Notification_AllianceDiplomacyParams& a, Notification_AllianceDiplomacyParams& b) {
     a.Swap(&b);
@@ -40306,7 +41358,7 @@ class Notification_IncomingFleetParams final :
                &_Notification_IncomingFleetParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    200;
+    203;
 
   friend void swap(Notification_IncomingFleetParams& a, Notification_IncomingFleetParams& b) {
     a.Swap(&b);
@@ -40527,7 +41579,7 @@ class Notification_AllianceChestParams final :
                &_Notification_AllianceChestParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    201;
+    204;
 
   friend void swap(Notification_AllianceChestParams& a, Notification_AllianceChestParams& b) {
     a.Swap(&b);
@@ -40759,7 +41811,7 @@ class Notification_CargoCollectParams final :
                &_Notification_CargoCollectParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    204;
+    207;
 
   friend void swap(Notification_CargoCollectParams& a, Notification_CargoCollectParams& b) {
     a.Swap(&b);
@@ -40946,7 +41998,7 @@ class Notification_TargetLostParams final :
                &_Notification_TargetLostParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    205;
+    208;
 
   friend void swap(Notification_TargetLostParams& a, Notification_TargetLostParams& b) {
     a.Swap(&b);
@@ -41134,7 +42186,7 @@ class Notification_StarbaseModuleRewardsParams final :
                &_Notification_StarbaseModuleRewardsParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    206;
+    209;
 
   friend void swap(Notification_StarbaseModuleRewardsParams& a, Notification_StarbaseModuleRewardsParams& b) {
     a.Swap(&b);
@@ -41300,7 +42352,7 @@ class Notification_CourseParams final :
                &_Notification_CourseParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    207;
+    210;
 
   friend void swap(Notification_CourseParams& a, Notification_CourseParams& b) {
     a.Swap(&b);
@@ -41470,7 +42522,7 @@ class Notification_ShipAbilityParams final :
                &_Notification_ShipAbilityParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    208;
+    211;
 
   friend void swap(Notification_ShipAbilityParams& a, Notification_ShipAbilityParams& b) {
     a.Swap(&b);
@@ -41689,7 +42741,7 @@ class Notification final :
                &_Notification_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    209;
+    212;
 
   friend void swap(Notification& a, Notification& b) {
     a.Swap(&b);
@@ -42258,7 +43310,7 @@ class NotificationsResponse final :
                &_NotificationsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    210;
+    213;
 
   friend void swap(NotificationsResponse& a, NotificationsResponse& b) {
     a.Swap(&b);
@@ -42424,7 +43476,7 @@ class Officer final :
                &_Officer_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    211;
+    214;
 
   friend void swap(Officer& a, Officer& b) {
     a.Swap(&b);
@@ -42642,7 +43694,7 @@ class OfficersResponse final :
                &_OfficersResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    212;
+    215;
 
   friend void swap(OfficersResponse& a, OfficersResponse& b) {
     a.Swap(&b);
@@ -42752,6 +43804,242 @@ class OfficersResponse final :
   friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
 };// -------------------------------------------------------------------
 
+class Party final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:Digit.PrimeServer.Models.Party) */ {
+ public:
+  inline Party() : Party(nullptr) {}
+  ~Party() override;
+  template<typename = void>
+  explicit PROTOBUF_CONSTEXPR Party(::google::protobuf::internal::ConstantInitialized);
+
+  Party(const Party& from);
+  Party(Party&& from) noexcept
+    : Party() {
+    *this = ::std::move(from);
+  }
+
+  inline Party& operator=(const Party& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline Party& operator=(Party&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance);
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::google::protobuf::UnknownFieldSet>();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::google::protobuf::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::google::protobuf::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const Party& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const Party* internal_default_instance() {
+    return reinterpret_cast<const Party*>(
+               &_Party_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    216;
+
+  friend void swap(Party& a, Party& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(Party* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::google::protobuf::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(Party* other) {
+    if (other == this) return;
+    ABSL_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  Party* New(::google::protobuf::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<Party>(arena);
+  }
+  using ::google::protobuf::Message::CopyFrom;
+  void CopyFrom(const Party& from);
+  using ::google::protobuf::Message::MergeFrom;
+  void MergeFrom( const Party& from) {
+    Party::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  ::size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::google::protobuf::internal::ParseContext* ctx) final;
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target, ::google::protobuf::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::google::protobuf::Arena* arena);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(Party* other);
+
+  private:
+  friend class ::google::protobuf::internal::AnyMetadata;
+  static ::absl::string_view FullMessageName() {
+    return "Digit.PrimeServer.Models.Party";
+  }
+  protected:
+  explicit Party(::google::protobuf::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::google::protobuf::Message::ClassData*GetClassData() const final;
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kMembersFieldNumber = 5,
+    kCreatedAtFieldNumber = 1,
+    kLeaderFieldNumber = 3,
+    kIdFieldNumber = 2,
+    kMaxPlayersFieldNumber = 4,
+  };
+  // repeated string members = 5;
+  int members_size() const;
+  private:
+  int _internal_members_size() const;
+
+  public:
+  void clear_members() ;
+  const std::string& members(int index) const;
+  std::string* mutable_members(int index);
+  void set_members(int index, const std::string& value);
+  void set_members(int index, std::string&& value);
+  void set_members(int index, const char* value);
+  void set_members(int index, const char* value, std::size_t size);
+  void set_members(int index, absl::string_view value);
+  std::string* add_members();
+  void add_members(const std::string& value);
+  void add_members(std::string&& value);
+  void add_members(const char* value);
+  void add_members(const char* value, std::size_t size);
+  void add_members(absl::string_view value);
+  const ::google::protobuf::RepeatedPtrField<std::string>& members() const;
+  ::google::protobuf::RepeatedPtrField<std::string>* mutable_members();
+
+  private:
+  const ::google::protobuf::RepeatedPtrField<std::string>& _internal_members() const;
+  ::google::protobuf::RepeatedPtrField<std::string>* _internal_mutable_members();
+
+  public:
+  // string createdAt = 1;
+  void clear_createdat() ;
+  const std::string& createdat() const;
+  template <typename Arg_ = const std::string&, typename... Args_>
+  void set_createdat(Arg_&& arg, Args_... args);
+  std::string* mutable_createdat();
+  PROTOBUF_NODISCARD std::string* release_createdat();
+  void set_allocated_createdat(std::string* ptr);
+
+  private:
+  const std::string& _internal_createdat() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_createdat(
+      const std::string& value);
+  std::string* _internal_mutable_createdat();
+
+  public:
+  // string leader = 3;
+  void clear_leader() ;
+  const std::string& leader() const;
+  template <typename Arg_ = const std::string&, typename... Args_>
+  void set_leader(Arg_&& arg, Args_... args);
+  std::string* mutable_leader();
+  PROTOBUF_NODISCARD std::string* release_leader();
+  void set_allocated_leader(std::string* ptr);
+
+  private:
+  const std::string& _internal_leader() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_leader(
+      const std::string& value);
+  std::string* _internal_mutable_leader();
+
+  public:
+  // int64 id = 2;
+  void clear_id() ;
+  ::int64_t id() const;
+  void set_id(::int64_t value);
+
+  private:
+  ::int64_t _internal_id() const;
+  void _internal_set_id(::int64_t value);
+
+  public:
+  // int32 maxPlayers = 4;
+  void clear_maxplayers() ;
+  ::int32_t maxplayers() const;
+  void set_maxplayers(::int32_t value);
+
+  private:
+  ::int32_t _internal_maxplayers() const;
+  void _internal_set_maxplayers(::int32_t value);
+
+  public:
+  // @@protoc_insertion_point(class_scope:Digit.PrimeServer.Models.Party)
+ private:
+  class _Internal;
+
+  friend class ::google::protobuf::internal::TcParser;
+  static const ::google::protobuf::internal::TcParseTable<3, 5, 0, 61, 2> _table_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::google::protobuf::RepeatedPtrField<std::string> members_;
+    ::google::protobuf::internal::ArenaStringPtr createdat_;
+    ::google::protobuf::internal::ArenaStringPtr leader_;
+    ::int64_t id_;
+    ::int32_t maxplayers_;
+    mutable ::google::protobuf::internal::CachedSize _cached_size_;
+    PROTOBUF_TSAN_DECLARE_MEMBER
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
+};// -------------------------------------------------------------------
+
 class Inventory final :
     public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:Digit.PrimeServer.Models.Inventory) */ {
  public:
@@ -42808,7 +44096,7 @@ class Inventory final :
                &_Inventory_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    213;
+    217;
 
   friend void swap(Inventory& a, Inventory& b) {
     a.Swap(&b);
@@ -43020,7 +44308,7 @@ class CommonInventoryItemParams final :
                &_CommonInventoryItemParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    214;
+    218;
 
   friend void swap(CommonInventoryItemParams& a, CommonInventoryItemParams& b) {
     a.Swap(&b);
@@ -43190,7 +44478,7 @@ class ChestInventoryItemParams final :
                &_ChestInventoryItemParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    215;
+    219;
 
   friend void swap(ChestInventoryItemParams& a, ChestInventoryItemParams& b) {
     a.Swap(&b);
@@ -43404,7 +44692,7 @@ class ResourceInventoryItemParams final :
                &_ResourceInventoryItemParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    216;
+    220;
 
   friend void swap(ResourceInventoryItemParams& a, ResourceInventoryItemParams& b) {
     a.Swap(&b);
@@ -43562,7 +44850,7 @@ class MetadataInventoryItemParams final :
                &_MetadataInventoryItemParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    217;
+    221;
 
   friend void swap(MetadataInventoryItemParams& a, MetadataInventoryItemParams& b) {
     a.Swap(&b);
@@ -43756,7 +45044,7 @@ class InventoryItem final :
                &_InventoryItem_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    218;
+    222;
 
   friend void swap(InventoryItem& a, InventoryItem& b) {
     a.Swap(&b);
@@ -44069,7 +45357,7 @@ class InventoryResponse final :
                &_InventoryResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    220;
+    224;
 
   friend void swap(InventoryResponse& a, InventoryResponse& b) {
     a.Swap(&b);
@@ -44236,7 +45524,7 @@ class PrestigeResearchIds final :
                &_PrestigeResearchIds_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    221;
+    225;
 
   friend void swap(PrestigeResearchIds& a, PrestigeResearchIds& b) {
     a.Swap(&b);
@@ -44427,7 +45715,7 @@ class PrestigeData final :
                &_PrestigeData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    223;
+    227;
 
   friend void swap(PrestigeData& a, PrestigeData& b) {
     a.Swap(&b);
@@ -44594,7 +45882,7 @@ class QuickScanFleetData_FleetCrewData final :
                &_QuickScanFleetData_FleetCrewData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    224;
+    228;
 
   friend void swap(QuickScanFleetData_FleetCrewData& a, QuickScanFleetData_FleetCrewData& b) {
     a.Swap(&b);
@@ -44872,7 +46160,7 @@ class QuickScanFleetData final :
                &_QuickScanFleetData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    229;
+    233;
 
   friend void swap(QuickScanFleetData& a, QuickScanFleetData& b) {
     a.Swap(&b);
@@ -45278,7 +46566,7 @@ class ResearchTreeSpec final :
                &_ResearchTreeSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    230;
+    234;
 
   friend void swap(ResearchTreeSpec& a, ResearchTreeSpec& b) {
     a.Swap(&b);
@@ -45607,7 +46895,7 @@ class StarbaseDetailedScan final :
                &_StarbaseDetailedScan_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    234;
+    238;
 
   friend void swap(StarbaseDetailedScan& a, StarbaseDetailedScan& b) {
     a.Swap(&b);
@@ -46068,7 +47356,7 @@ class CrewData final :
                &_CrewData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    236;
+    240;
 
   friend void swap(CrewData& a, CrewData& b) {
     a.Swap(&b);
@@ -46235,7 +47523,7 @@ class OfficerData final :
                &_OfficerData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    237;
+    241;
 
   friend void swap(OfficerData& a, OfficerData& b) {
     a.Swap(&b);
@@ -46417,7 +47705,7 @@ class StarbaseShield final :
                &_StarbaseShield_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    238;
+    242;
 
   friend void swap(StarbaseShield& a, StarbaseShield& b) {
     a.Swap(&b);
@@ -46598,7 +47886,7 @@ class StarbaseDetailedScanResponse final :
                &_StarbaseDetailedScanResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    239;
+    243;
 
   friend void swap(StarbaseDetailedScanResponse& a, StarbaseDetailedScanResponse& b) {
     a.Swap(&b);
@@ -46773,7 +48061,7 @@ class EntitySlot final :
                &_EntitySlot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    240;
+    244;
 
   friend void swap(EntitySlot& a, EntitySlot& b) {
     a.Swap(&b);
@@ -47134,7 +48422,7 @@ class OfficerPresetSlotParams final :
                &_OfficerPresetSlotParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    241;
+    245;
 
   friend void swap(OfficerPresetSlotParams& a, OfficerPresetSlotParams& b) {
     a.Swap(&b);
@@ -47331,7 +48619,7 @@ class ConsumableSlotParams final :
                &_ConsumableSlotParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    242;
+    246;
 
   friend void swap(ConsumableSlotParams& a, ConsumableSlotParams& b) {
     a.Swap(&b);
@@ -47513,7 +48801,7 @@ class FleetCommanderSlotParams final :
                &_FleetCommanderSlotParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    243;
+    247;
 
   friend void swap(FleetCommanderSlotParams& a, FleetCommanderSlotParams& b) {
     a.Swap(&b);
@@ -47677,7 +48965,7 @@ class SelectableSkillSlotParams final :
                &_SelectableSkillSlotParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    244;
+    248;
 
   friend void swap(SelectableSkillSlotParams& a, SelectableSkillSlotParams& b) {
     a.Swap(&b);
@@ -47841,7 +49129,7 @@ class ForbiddenTechSlotParams final :
                &_ForbiddenTechSlotParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    245;
+    249;
 
   friend void swap(ForbiddenTechSlotParams& a, ForbiddenTechSlotParams& b) {
     a.Swap(&b);
@@ -47914,6 +49202,8 @@ class ForbiddenTechSlotParams final :
 
   enum : int {
     kOwnerIdFieldNumber = 1,
+    kLevelFieldNumber = 2,
+    kTierFieldNumber = 3,
   };
   // int64 ownerId = 1;
   void clear_ownerid() ;
@@ -47925,17 +49215,39 @@ class ForbiddenTechSlotParams final :
   void _internal_set_ownerid(::int64_t value);
 
   public:
+  // int32 level = 2;
+  void clear_level() ;
+  ::int32_t level() const;
+  void set_level(::int32_t value);
+
+  private:
+  ::int32_t _internal_level() const;
+  void _internal_set_level(::int32_t value);
+
+  public:
+  // int32 tier = 3;
+  void clear_tier() ;
+  ::int32_t tier() const;
+  void set_tier(::int32_t value);
+
+  private:
+  ::int32_t _internal_tier() const;
+  void _internal_set_tier(::int32_t value);
+
+  public:
   // @@protoc_insertion_point(class_scope:Digit.PrimeServer.Models.ForbiddenTechSlotParams)
  private:
   class _Internal;
 
   friend class ::google::protobuf::internal::TcParser;
-  static const ::google::protobuf::internal::TcParseTable<0, 1, 0, 0, 2> _table_;
+  static const ::google::protobuf::internal::TcParseTable<2, 3, 0, 0, 2> _table_;
   template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
     ::int64_t ownerid_;
+    ::int32_t level_;
+    ::int32_t tier_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER
   };
@@ -47999,7 +49311,7 @@ class ChallengeLadderSlotParams final :
                &_ChallengeLadderSlotParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    246;
+    250;
 
   friend void swap(ChallengeLadderSlotParams& a, ChallengeLadderSlotParams& b) {
     a.Swap(&b);
@@ -48346,7 +49658,7 @@ class GeneratedShip final :
                &_GeneratedShip_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    247;
+    251;
 
   friend void swap(GeneratedShip& a, GeneratedShip& b) {
     a.Swap(&b);
@@ -48567,7 +49879,7 @@ class WorkerSlotParams final :
                &_WorkerSlotParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    248;
+    252;
 
   friend void swap(WorkerSlotParams& a, WorkerSlotParams& b) {
     a.Swap(&b);
@@ -48749,7 +50061,7 @@ class EntitySlots final :
                &_EntitySlots_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    249;
+    253;
 
   friend void swap(EntitySlots& a, EntitySlots& b) {
     a.Swap(&b);
@@ -48915,7 +50227,7 @@ class EntitySlotsData_EntitySlots final :
                &_EntitySlotsData_EntitySlots_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    250;
+    254;
 
   friend void swap(EntitySlotsData_EntitySlots& a, EntitySlotsData_EntitySlots& b) {
     a.Swap(&b);
@@ -49093,7 +50405,7 @@ class EntitySlotsData final :
                &_EntitySlotsData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    251;
+    255;
 
   friend void swap(EntitySlotsData& a, EntitySlotsData& b) {
     a.Swap(&b);
@@ -49283,7 +50595,7 @@ class BuffSpec_Attributes final :
                &_BuffSpec_Attributes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    252;
+    256;
 
   friend void swap(BuffSpec_Attributes& a, BuffSpec_Attributes& b) {
     a.Swap(&b);
@@ -49612,7 +50924,7 @@ class BuffSpec final :
                &_BuffSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    253;
+    257;
 
   friend void swap(BuffSpec& a, BuffSpec& b) {
     a.Swap(&b);
@@ -49960,7 +51272,7 @@ class ComponentSpec final :
                &_ComponentSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    254;
+    258;
 
   friend void swap(ComponentSpec& a, ComponentSpec& b) {
     a.Swap(&b);
@@ -50470,7 +51782,7 @@ class ConsumableSpec final :
                &_ConsumableSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    255;
+    259;
 
   friend void swap(ConsumableSpec& a, ConsumableSpec& b) {
     a.Swap(&b);
@@ -50841,7 +52153,7 @@ class Cosmetic final :
                &_Cosmetic_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    257;
+    261;
 
   friend void swap(Cosmetic& a, Cosmetic& b) {
     a.Swap(&b);
@@ -51104,7 +52416,7 @@ class ActionSpec final :
                &_ActionSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    258;
+    262;
 
   friend void swap(ActionSpec& a, ActionSpec& b) {
     a.Swap(&b);
@@ -51298,7 +52610,7 @@ class ActivatedAbilitySpec final :
                &_ActivatedAbilitySpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    259;
+    263;
 
   friend void swap(ActivatedAbilitySpec& a, ActivatedAbilitySpec& b) {
     a.Swap(&b);
@@ -51389,6 +52701,9 @@ class ActivatedAbilitySpec final :
     kModDurationPercentFieldNumber = 16,
     kModCostPercentFieldNumber = 17,
     kModCooldownPercentFieldNumber = 18,
+    kCostTypeFieldNumber = 20,
+    kCostIdFieldNumber = 21,
+    kActivationSourceFieldNumber = 22,
   };
   // repeated int64 buffIds = 13;
   int buffids_size() const;
@@ -51599,12 +52914,42 @@ class ActivatedAbilitySpec final :
   void _internal_set_modcooldownpercent(::int32_t value);
 
   public:
+  // .Digit.PrimeServer.Models.ActivatedAbilityCostType costType = 20;
+  void clear_costtype() ;
+  ::Digit::PrimeServer::Models::ActivatedAbilityCostType costtype() const;
+  void set_costtype(::Digit::PrimeServer::Models::ActivatedAbilityCostType value);
+
+  private:
+  ::Digit::PrimeServer::Models::ActivatedAbilityCostType _internal_costtype() const;
+  void _internal_set_costtype(::Digit::PrimeServer::Models::ActivatedAbilityCostType value);
+
+  public:
+  // int64 costId = 21;
+  void clear_costid() ;
+  ::int64_t costid() const;
+  void set_costid(::int64_t value);
+
+  private:
+  ::int64_t _internal_costid() const;
+  void _internal_set_costid(::int64_t value);
+
+  public:
+  // .Digit.PrimeServer.Models.ActivationSource activationSource = 22;
+  void clear_activationsource() ;
+  ::Digit::PrimeServer::Models::ActivationSource activationsource() const;
+  void set_activationsource(::Digit::PrimeServer::Models::ActivationSource value);
+
+  private:
+  ::Digit::PrimeServer::Models::ActivationSource _internal_activationsource() const;
+  void _internal_set_activationsource(::Digit::PrimeServer::Models::ActivationSource value);
+
+  public:
   // @@protoc_insertion_point(class_scope:Digit.PrimeServer.Models.ActivatedAbilitySpec)
  private:
   class _Internal;
 
   friend class ::google::protobuf::internal::TcParser;
-  static const ::google::protobuf::internal::TcParseTable<5, 19, 1, 75, 2> _table_;
+  static const ::google::protobuf::internal::TcParseTable<5, 22, 1, 75, 2> _table_;
   template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
@@ -51631,6 +52976,9 @@ class ActivatedAbilitySpec final :
     ::int32_t moddurationpercent_;
     ::int32_t modcostpercent_;
     ::int32_t modcooldownpercent_;
+    int costtype_;
+    ::int64_t costid_;
+    int activationsource_;
     PROTOBUF_TSAN_DECLARE_MEMBER
   };
   union { Impl_ _impl_; };
@@ -51693,7 +53041,7 @@ class AllianceLevelSpec_AllowedContribution final :
                &_AllianceLevelSpec_AllowedContribution_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    260;
+    264;
 
   friend void swap(AllianceLevelSpec_AllowedContribution& a, AllianceLevelSpec_AllowedContribution& b) {
     a.Swap(&b);
@@ -51887,7 +53235,7 @@ class AllianceLevelSpec final :
                &_AllianceLevelSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    262;
+    266;
 
   friend void swap(AllianceLevelSpec& a, AllianceLevelSpec& b) {
     a.Swap(&b);
@@ -52139,7 +53487,7 @@ class AlliancePermissionSpec final :
                &_AlliancePermissionSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    263;
+    267;
 
   friend void swap(AlliancePermissionSpec& a, AlliancePermissionSpec& b) {
     a.Swap(&b);
@@ -52345,7 +53693,7 @@ class AllianceRankSpec final :
                &_AllianceRankSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    264;
+    268;
 
   friend void swap(AllianceRankSpec& a, AllianceRankSpec& b) {
     a.Swap(&b);
@@ -52557,7 +53905,7 @@ class ArmorSpec final :
                &_ArmorSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    265;
+    269;
 
   friend void swap(ArmorSpec& a, ArmorSpec& b) {
     a.Swap(&b);
@@ -52769,7 +54117,7 @@ class BaseShipTierSpec final :
                &_BaseShipTierSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    267;
+    271;
 
   friend void swap(BaseShipTierSpec& a, BaseShipTierSpec& b) {
     a.Swap(&b);
@@ -52984,7 +54332,7 @@ class BuffConditionSpec final :
                &_BuffConditionSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    268;
+    272;
 
   friend void swap(BuffConditionSpec& a, BuffConditionSpec& b) {
     a.Swap(&b);
@@ -53166,7 +54514,7 @@ class BuffModifierSpec final :
                &_BuffModifierSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    269;
+    273;
 
   friend void swap(BuffModifierSpec& a, BuffModifierSpec& b) {
     a.Swap(&b);
@@ -53336,7 +54684,7 @@ class BuffTargetSpec final :
                &_BuffTargetSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    270;
+    274;
 
   friend void swap(BuffTargetSpec& a, BuffTargetSpec& b) {
     a.Swap(&b);
@@ -53524,7 +54872,7 @@ class BuffTriggerSpec final :
                &_BuffTriggerSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    271;
+    275;
 
   friend void swap(BuffTriggerSpec& a, BuffTriggerSpec& b) {
     a.Swap(&b);
@@ -53724,7 +55072,7 @@ class CargoSpec final :
                &_CargoSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    272;
+    276;
 
   friend void swap(CargoSpec& a, CargoSpec& b) {
     a.Swap(&b);
@@ -53798,6 +55146,7 @@ class CargoSpec final :
   enum : int {
     kResourceMaxFieldNumber = 2,
     kSafeResourcesFieldNumber = 1,
+    kGenerationFieldNumber = 3,
   };
   // int64 resourceMax = 2;
   void clear_resourcemax() ;
@@ -53819,18 +55168,29 @@ class CargoSpec final :
   void _internal_set_saferesources(float value);
 
   public:
+  // int32 generation = 3;
+  void clear_generation() ;
+  ::int32_t generation() const;
+  void set_generation(::int32_t value);
+
+  private:
+  ::int32_t _internal_generation() const;
+  void _internal_set_generation(::int32_t value);
+
+  public:
   // @@protoc_insertion_point(class_scope:Digit.PrimeServer.Models.CargoSpec)
  private:
   class _Internal;
 
   friend class ::google::protobuf::internal::TcParser;
-  static const ::google::protobuf::internal::TcParseTable<1, 2, 0, 0, 2> _table_;
+  static const ::google::protobuf::internal::TcParseTable<2, 3, 0, 0, 2> _table_;
   template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
     ::int64_t resourcemax_;
     float saferesources_;
+    ::int32_t generation_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER
   };
@@ -53894,7 +55254,7 @@ class Component final :
                &_Component_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    273;
+    277;
 
   friend void swap(Component& a, Component& b) {
     a.Swap(&b);
@@ -54211,7 +55571,7 @@ class ComponentSpecResponse final :
                &_ComponentSpecResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    275;
+    279;
 
   friend void swap(ComponentSpecResponse& a, ComponentSpecResponse& b) {
     a.Swap(&b);
@@ -54378,7 +55738,7 @@ class ConsumableBuffSpecParams final :
                &_ConsumableBuffSpecParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    276;
+    280;
 
   friend void swap(ConsumableBuffSpecParams& a, ConsumableBuffSpecParams& b) {
     a.Swap(&b);
@@ -54548,7 +55908,7 @@ class ConsumableUnlockSpecParams final :
                &_ConsumableUnlockSpecParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    277;
+    281;
 
   friend void swap(ConsumableUnlockSpecParams& a, ConsumableUnlockSpecParams& b) {
     a.Swap(&b);
@@ -54759,7 +56119,7 @@ class ResearchUnlockSpecParams final :
                &_ResearchUnlockSpecParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    278;
+    282;
 
   friend void swap(ResearchUnlockSpecParams& a, ResearchUnlockSpecParams& b) {
     a.Swap(&b);
@@ -54929,7 +56289,7 @@ class SlotUnlockSpecParams final :
                &_SlotUnlockSpecParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    279;
+    283;
 
   friend void swap(SlotUnlockSpecParams& a, SlotUnlockSpecParams& b) {
     a.Swap(&b);
@@ -55087,7 +56447,7 @@ class DeflectorSpec final :
                &_DeflectorSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    280;
+    284;
 
   friend void swap(DeflectorSpec& a, DeflectorSpec& b) {
     a.Swap(&b);
@@ -55245,7 +56605,7 @@ class FactionBehaviourSpec final :
                &_FactionBehaviourSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    281;
+    285;
 
   friend void swap(FactionBehaviourSpec& a, FactionBehaviourSpec& b) {
     a.Swap(&b);
@@ -55460,7 +56820,7 @@ class FactionSpec_Tier final :
                &_FactionSpec_Tier_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    282;
+    286;
 
   friend void swap(FactionSpec_Tier& a, FactionSpec_Tier& b) {
     a.Swap(&b);
@@ -55666,7 +57026,7 @@ class FactionSpec final :
                &_FactionSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    283;
+    287;
 
   friend void swap(FactionSpec& a, FactionSpec& b) {
     a.Swap(&b);
@@ -55978,7 +57338,7 @@ class ForbiddenTechTier final :
                &_ForbiddenTechTier_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    284;
+    288;
 
   friend void swap(ForbiddenTechTier& a, ForbiddenTechTier& b) {
     a.Swap(&b);
@@ -56181,7 +57541,7 @@ class ForbiddenTechRemovalCost final :
                &_ForbiddenTechRemovalCost_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    286;
+    290;
 
   friend void swap(ForbiddenTechRemovalCost& a, ForbiddenTechRemovalCost& b) {
     a.Swap(&b);
@@ -56304,6 +57664,444 @@ class ForbiddenTechRemovalCost final :
   friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
 };// -------------------------------------------------------------------
 
+class ForbiddenTechCost_CostsEntry_DoNotUse final : public ::google::protobuf::internal::MapEntry<ForbiddenTechCost_CostsEntry_DoNotUse, 
+    ::int64_t, ::int64_t,
+    ::google::protobuf::internal::WireFormatLite::TYPE_INT64,
+    ::google::protobuf::internal::WireFormatLite::TYPE_INT64> {
+public:
+  typedef ::google::protobuf::internal::MapEntry<ForbiddenTechCost_CostsEntry_DoNotUse, 
+    ::int64_t, ::int64_t,
+    ::google::protobuf::internal::WireFormatLite::TYPE_INT64,
+    ::google::protobuf::internal::WireFormatLite::TYPE_INT64> SuperType;
+  ForbiddenTechCost_CostsEntry_DoNotUse();
+  template <typename = void>
+  explicit PROTOBUF_CONSTEXPR ForbiddenTechCost_CostsEntry_DoNotUse(
+      ::google::protobuf::internal::ConstantInitialized);
+  explicit ForbiddenTechCost_CostsEntry_DoNotUse(::google::protobuf::Arena* arena);
+  void MergeFrom(const ForbiddenTechCost_CostsEntry_DoNotUse& other);
+  static const ForbiddenTechCost_CostsEntry_DoNotUse* internal_default_instance() { return reinterpret_cast<const ForbiddenTechCost_CostsEntry_DoNotUse*>(&_ForbiddenTechCost_CostsEntry_DoNotUse_default_instance_); }
+  static bool ValidateKey(void*) { return true; }
+  static bool ValidateValue(void*) { return true; }
+  using ::google::protobuf::Message::MergeFrom;
+  ::google::protobuf::Metadata GetMetadata() const final;
+  friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
+};
+// -------------------------------------------------------------------
+
+class ForbiddenTechCost final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:Digit.PrimeServer.Models.ForbiddenTechCost) */ {
+ public:
+  inline ForbiddenTechCost() : ForbiddenTechCost(nullptr) {}
+  ~ForbiddenTechCost() override;
+  template<typename = void>
+  explicit PROTOBUF_CONSTEXPR ForbiddenTechCost(::google::protobuf::internal::ConstantInitialized);
+
+  ForbiddenTechCost(const ForbiddenTechCost& from);
+  ForbiddenTechCost(ForbiddenTechCost&& from) noexcept
+    : ForbiddenTechCost() {
+    *this = ::std::move(from);
+  }
+
+  inline ForbiddenTechCost& operator=(const ForbiddenTechCost& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ForbiddenTechCost& operator=(ForbiddenTechCost&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance);
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::google::protobuf::UnknownFieldSet>();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::google::protobuf::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::google::protobuf::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const ForbiddenTechCost& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const ForbiddenTechCost* internal_default_instance() {
+    return reinterpret_cast<const ForbiddenTechCost*>(
+               &_ForbiddenTechCost_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    292;
+
+  friend void swap(ForbiddenTechCost& a, ForbiddenTechCost& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(ForbiddenTechCost* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::google::protobuf::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(ForbiddenTechCost* other) {
+    if (other == this) return;
+    ABSL_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  ForbiddenTechCost* New(::google::protobuf::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<ForbiddenTechCost>(arena);
+  }
+  using ::google::protobuf::Message::CopyFrom;
+  void CopyFrom(const ForbiddenTechCost& from);
+  using ::google::protobuf::Message::MergeFrom;
+  void MergeFrom( const ForbiddenTechCost& from) {
+    ForbiddenTechCost::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  ::size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::google::protobuf::internal::ParseContext* ctx) final;
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target, ::google::protobuf::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::google::protobuf::Arena* arena);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ForbiddenTechCost* other);
+
+  private:
+  friend class ::google::protobuf::internal::AnyMetadata;
+  static ::absl::string_view FullMessageName() {
+    return "Digit.PrimeServer.Models.ForbiddenTechCost";
+  }
+  protected:
+  explicit ForbiddenTechCost(::google::protobuf::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::google::protobuf::Message::ClassData*GetClassData() const final;
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kCostsFieldNumber = 1,
+  };
+  // map<int64, int64> costs = 1;
+  int costs_size() const;
+  private:
+  int _internal_costs_size() const;
+
+  public:
+  void clear_costs() ;
+  const ::google::protobuf::Map<::int64_t, ::int64_t>& costs() const;
+  ::google::protobuf::Map<::int64_t, ::int64_t>* mutable_costs();
+
+  private:
+  const ::google::protobuf::Map<::int64_t, ::int64_t>& _internal_costs() const;
+  ::google::protobuf::Map<::int64_t, ::int64_t>* _internal_mutable_costs();
+
+  public:
+  // @@protoc_insertion_point(class_scope:Digit.PrimeServer.Models.ForbiddenTechCost)
+ private:
+  class _Internal;
+
+  friend class ::google::protobuf::internal::TcParser;
+  static const ::google::protobuf::internal::TcParseTable<0, 1, 1, 0, 2> _table_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::google::protobuf::internal::MapField<ForbiddenTechCost_CostsEntry_DoNotUse, ::int64_t, ::int64_t,
+                      ::google::protobuf::internal::WireFormatLite::TYPE_INT64,
+                      ::google::protobuf::internal::WireFormatLite::TYPE_INT64>
+        costs_;
+    mutable ::google::protobuf::internal::CachedSize _cached_size_;
+    PROTOBUF_TSAN_DECLARE_MEMBER
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
+};// -------------------------------------------------------------------
+
+class ForbiddenTechUpgradeCostSpec_TierCostsEntry_DoNotUse final : public ::google::protobuf::internal::MapEntry<ForbiddenTechUpgradeCostSpec_TierCostsEntry_DoNotUse, 
+    ::int32_t, ::Digit::PrimeServer::Models::ForbiddenTechCost,
+    ::google::protobuf::internal::WireFormatLite::TYPE_INT32,
+    ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE> {
+public:
+  typedef ::google::protobuf::internal::MapEntry<ForbiddenTechUpgradeCostSpec_TierCostsEntry_DoNotUse, 
+    ::int32_t, ::Digit::PrimeServer::Models::ForbiddenTechCost,
+    ::google::protobuf::internal::WireFormatLite::TYPE_INT32,
+    ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE> SuperType;
+  ForbiddenTechUpgradeCostSpec_TierCostsEntry_DoNotUse();
+  template <typename = void>
+  explicit PROTOBUF_CONSTEXPR ForbiddenTechUpgradeCostSpec_TierCostsEntry_DoNotUse(
+      ::google::protobuf::internal::ConstantInitialized);
+  explicit ForbiddenTechUpgradeCostSpec_TierCostsEntry_DoNotUse(::google::protobuf::Arena* arena);
+  void MergeFrom(const ForbiddenTechUpgradeCostSpec_TierCostsEntry_DoNotUse& other);
+  static const ForbiddenTechUpgradeCostSpec_TierCostsEntry_DoNotUse* internal_default_instance() { return reinterpret_cast<const ForbiddenTechUpgradeCostSpec_TierCostsEntry_DoNotUse*>(&_ForbiddenTechUpgradeCostSpec_TierCostsEntry_DoNotUse_default_instance_); }
+  static bool ValidateKey(void*) { return true; }
+  static bool ValidateValue(void*) { return true; }
+  using ::google::protobuf::Message::MergeFrom;
+  ::google::protobuf::Metadata GetMetadata() const final;
+  friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
+};
+// -------------------------------------------------------------------
+
+class ForbiddenTechUpgradeCostSpec_LevelCostsEntry_DoNotUse final : public ::google::protobuf::internal::MapEntry<ForbiddenTechUpgradeCostSpec_LevelCostsEntry_DoNotUse, 
+    ::int32_t, ::Digit::PrimeServer::Models::ForbiddenTechCost,
+    ::google::protobuf::internal::WireFormatLite::TYPE_INT32,
+    ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE> {
+public:
+  typedef ::google::protobuf::internal::MapEntry<ForbiddenTechUpgradeCostSpec_LevelCostsEntry_DoNotUse, 
+    ::int32_t, ::Digit::PrimeServer::Models::ForbiddenTechCost,
+    ::google::protobuf::internal::WireFormatLite::TYPE_INT32,
+    ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE> SuperType;
+  ForbiddenTechUpgradeCostSpec_LevelCostsEntry_DoNotUse();
+  template <typename = void>
+  explicit PROTOBUF_CONSTEXPR ForbiddenTechUpgradeCostSpec_LevelCostsEntry_DoNotUse(
+      ::google::protobuf::internal::ConstantInitialized);
+  explicit ForbiddenTechUpgradeCostSpec_LevelCostsEntry_DoNotUse(::google::protobuf::Arena* arena);
+  void MergeFrom(const ForbiddenTechUpgradeCostSpec_LevelCostsEntry_DoNotUse& other);
+  static const ForbiddenTechUpgradeCostSpec_LevelCostsEntry_DoNotUse* internal_default_instance() { return reinterpret_cast<const ForbiddenTechUpgradeCostSpec_LevelCostsEntry_DoNotUse*>(&_ForbiddenTechUpgradeCostSpec_LevelCostsEntry_DoNotUse_default_instance_); }
+  static bool ValidateKey(void*) { return true; }
+  static bool ValidateValue(void*) { return true; }
+  using ::google::protobuf::Message::MergeFrom;
+  ::google::protobuf::Metadata GetMetadata() const final;
+  friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
+};
+// -------------------------------------------------------------------
+
+class ForbiddenTechUpgradeCostSpec final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:Digit.PrimeServer.Models.ForbiddenTechUpgradeCostSpec) */ {
+ public:
+  inline ForbiddenTechUpgradeCostSpec() : ForbiddenTechUpgradeCostSpec(nullptr) {}
+  ~ForbiddenTechUpgradeCostSpec() override;
+  template<typename = void>
+  explicit PROTOBUF_CONSTEXPR ForbiddenTechUpgradeCostSpec(::google::protobuf::internal::ConstantInitialized);
+
+  ForbiddenTechUpgradeCostSpec(const ForbiddenTechUpgradeCostSpec& from);
+  ForbiddenTechUpgradeCostSpec(ForbiddenTechUpgradeCostSpec&& from) noexcept
+    : ForbiddenTechUpgradeCostSpec() {
+    *this = ::std::move(from);
+  }
+
+  inline ForbiddenTechUpgradeCostSpec& operator=(const ForbiddenTechUpgradeCostSpec& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ForbiddenTechUpgradeCostSpec& operator=(ForbiddenTechUpgradeCostSpec&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance);
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::google::protobuf::UnknownFieldSet>();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::google::protobuf::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::google::protobuf::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const ForbiddenTechUpgradeCostSpec& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const ForbiddenTechUpgradeCostSpec* internal_default_instance() {
+    return reinterpret_cast<const ForbiddenTechUpgradeCostSpec*>(
+               &_ForbiddenTechUpgradeCostSpec_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    295;
+
+  friend void swap(ForbiddenTechUpgradeCostSpec& a, ForbiddenTechUpgradeCostSpec& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(ForbiddenTechUpgradeCostSpec* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::google::protobuf::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(ForbiddenTechUpgradeCostSpec* other) {
+    if (other == this) return;
+    ABSL_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  ForbiddenTechUpgradeCostSpec* New(::google::protobuf::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<ForbiddenTechUpgradeCostSpec>(arena);
+  }
+  using ::google::protobuf::Message::CopyFrom;
+  void CopyFrom(const ForbiddenTechUpgradeCostSpec& from);
+  using ::google::protobuf::Message::MergeFrom;
+  void MergeFrom( const ForbiddenTechUpgradeCostSpec& from) {
+    ForbiddenTechUpgradeCostSpec::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  ::size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::google::protobuf::internal::ParseContext* ctx) final;
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target, ::google::protobuf::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::google::protobuf::Arena* arena);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ForbiddenTechUpgradeCostSpec* other);
+
+  private:
+  friend class ::google::protobuf::internal::AnyMetadata;
+  static ::absl::string_view FullMessageName() {
+    return "Digit.PrimeServer.Models.ForbiddenTechUpgradeCostSpec";
+  }
+  protected:
+  explicit ForbiddenTechUpgradeCostSpec(::google::protobuf::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::google::protobuf::Message::ClassData*GetClassData() const final;
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kTierCostsFieldNumber = 2,
+    kLevelCostsFieldNumber = 3,
+    kRarityFieldNumber = 1,
+  };
+  // map<int32, .Digit.PrimeServer.Models.ForbiddenTechCost> tierCosts = 2;
+  int tiercosts_size() const;
+  private:
+  int _internal_tiercosts_size() const;
+
+  public:
+  void clear_tiercosts() ;
+  const ::google::protobuf::Map<::int32_t, ::Digit::PrimeServer::Models::ForbiddenTechCost>& tiercosts() const;
+  ::google::protobuf::Map<::int32_t, ::Digit::PrimeServer::Models::ForbiddenTechCost>* mutable_tiercosts();
+
+  private:
+  const ::google::protobuf::Map<::int32_t, ::Digit::PrimeServer::Models::ForbiddenTechCost>& _internal_tiercosts() const;
+  ::google::protobuf::Map<::int32_t, ::Digit::PrimeServer::Models::ForbiddenTechCost>* _internal_mutable_tiercosts();
+
+  public:
+  // map<int32, .Digit.PrimeServer.Models.ForbiddenTechCost> levelCosts = 3;
+  int levelcosts_size() const;
+  private:
+  int _internal_levelcosts_size() const;
+
+  public:
+  void clear_levelcosts() ;
+  const ::google::protobuf::Map<::int32_t, ::Digit::PrimeServer::Models::ForbiddenTechCost>& levelcosts() const;
+  ::google::protobuf::Map<::int32_t, ::Digit::PrimeServer::Models::ForbiddenTechCost>* mutable_levelcosts();
+
+  private:
+  const ::google::protobuf::Map<::int32_t, ::Digit::PrimeServer::Models::ForbiddenTechCost>& _internal_levelcosts() const;
+  ::google::protobuf::Map<::int32_t, ::Digit::PrimeServer::Models::ForbiddenTechCost>* _internal_mutable_levelcosts();
+
+  public:
+  // int32 rarity = 1;
+  void clear_rarity() ;
+  ::int32_t rarity() const;
+  void set_rarity(::int32_t value);
+
+  private:
+  ::int32_t _internal_rarity() const;
+  void _internal_set_rarity(::int32_t value);
+
+  public:
+  // @@protoc_insertion_point(class_scope:Digit.PrimeServer.Models.ForbiddenTechUpgradeCostSpec)
+ private:
+  class _Internal;
+
+  friend class ::google::protobuf::internal::TcParser;
+  static const ::google::protobuf::internal::TcParseTable<0, 3, 4, 0, 2> _table_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::google::protobuf::internal::MapField<ForbiddenTechUpgradeCostSpec_TierCostsEntry_DoNotUse, ::int32_t, ::Digit::PrimeServer::Models::ForbiddenTechCost,
+                      ::google::protobuf::internal::WireFormatLite::TYPE_INT32,
+                      ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE>
+        tiercosts_;
+    ::google::protobuf::internal::MapField<ForbiddenTechUpgradeCostSpec_LevelCostsEntry_DoNotUse, ::int32_t, ::Digit::PrimeServer::Models::ForbiddenTechCost,
+                      ::google::protobuf::internal::WireFormatLite::TYPE_INT32,
+                      ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE>
+        levelcosts_;
+    ::int32_t rarity_;
+    mutable ::google::protobuf::internal::CachedSize _cached_size_;
+    PROTOBUF_TSAN_DECLARE_MEMBER
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
+};// -------------------------------------------------------------------
+
 class StaticSyncResourceSpecsResponse_ResourceSpecsEntry_DoNotUse final : public ::google::protobuf::internal::MapEntry<StaticSyncResourceSpecsResponse_ResourceSpecsEntry_DoNotUse, 
     ::int64_t, ::Digit::PrimeServer::Models::ResourceSpec,
     ::google::protobuf::internal::WireFormatLite::TYPE_INT64,
@@ -56384,7 +58182,7 @@ class StaticSyncResourceSpecsResponse final :
                &_StaticSyncResourceSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    288;
+    297;
 
   friend void swap(StaticSyncResourceSpecsResponse& a, StaticSyncResourceSpecsResponse& b) {
     a.Swap(&b);
@@ -56575,7 +58373,7 @@ class StaticSyncHullSpecsResponse final :
                &_StaticSyncHullSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    290;
+    299;
 
   friend void swap(StaticSyncHullSpecsResponse& a, StaticSyncHullSpecsResponse& b) {
     a.Swap(&b);
@@ -56766,7 +58564,7 @@ class StaticSyncResourceConversionSpecsResponse final :
                &_StaticSyncResourceConversionSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    292;
+    301;
 
   friend void swap(StaticSyncResourceConversionSpecsResponse& a, StaticSyncResourceConversionSpecsResponse& b) {
     a.Swap(&b);
@@ -56957,7 +58755,7 @@ class StaticSyncJobSpeedupResourceSpecsResponse final :
                &_StaticSyncJobSpeedupResourceSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    294;
+    303;
 
   friend void swap(StaticSyncJobSpeedupResourceSpecsResponse& a, StaticSyncJobSpeedupResourceSpecsResponse& b) {
     a.Swap(&b);
@@ -57148,7 +58946,7 @@ class StaticSyncStarbaseSpecsResponse final :
                &_StaticSyncStarbaseSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    296;
+    305;
 
   friend void swap(StaticSyncStarbaseSpecsResponse& a, StaticSyncStarbaseSpecsResponse& b) {
     a.Swap(&b);
@@ -57259,6 +59057,197 @@ class StaticSyncStarbaseSpecsResponse final :
   friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
 };// -------------------------------------------------------------------
 
+class StaticSyncHazardSpecsResponse_HazardSpecsEntry_DoNotUse final : public ::google::protobuf::internal::MapEntry<StaticSyncHazardSpecsResponse_HazardSpecsEntry_DoNotUse, 
+    ::int64_t, ::Digit::PrimeServer::Models::HazardSpec,
+    ::google::protobuf::internal::WireFormatLite::TYPE_INT64,
+    ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE> {
+public:
+  typedef ::google::protobuf::internal::MapEntry<StaticSyncHazardSpecsResponse_HazardSpecsEntry_DoNotUse, 
+    ::int64_t, ::Digit::PrimeServer::Models::HazardSpec,
+    ::google::protobuf::internal::WireFormatLite::TYPE_INT64,
+    ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE> SuperType;
+  StaticSyncHazardSpecsResponse_HazardSpecsEntry_DoNotUse();
+  template <typename = void>
+  explicit PROTOBUF_CONSTEXPR StaticSyncHazardSpecsResponse_HazardSpecsEntry_DoNotUse(
+      ::google::protobuf::internal::ConstantInitialized);
+  explicit StaticSyncHazardSpecsResponse_HazardSpecsEntry_DoNotUse(::google::protobuf::Arena* arena);
+  void MergeFrom(const StaticSyncHazardSpecsResponse_HazardSpecsEntry_DoNotUse& other);
+  static const StaticSyncHazardSpecsResponse_HazardSpecsEntry_DoNotUse* internal_default_instance() { return reinterpret_cast<const StaticSyncHazardSpecsResponse_HazardSpecsEntry_DoNotUse*>(&_StaticSyncHazardSpecsResponse_HazardSpecsEntry_DoNotUse_default_instance_); }
+  static bool ValidateKey(void*) { return true; }
+  static bool ValidateValue(void*) { return true; }
+  using ::google::protobuf::Message::MergeFrom;
+  ::google::protobuf::Metadata GetMetadata() const final;
+  friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
+};
+// -------------------------------------------------------------------
+
+class StaticSyncHazardSpecsResponse final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:Digit.PrimeServer.Models.StaticSyncHazardSpecsResponse) */ {
+ public:
+  inline StaticSyncHazardSpecsResponse() : StaticSyncHazardSpecsResponse(nullptr) {}
+  ~StaticSyncHazardSpecsResponse() override;
+  template<typename = void>
+  explicit PROTOBUF_CONSTEXPR StaticSyncHazardSpecsResponse(::google::protobuf::internal::ConstantInitialized);
+
+  StaticSyncHazardSpecsResponse(const StaticSyncHazardSpecsResponse& from);
+  StaticSyncHazardSpecsResponse(StaticSyncHazardSpecsResponse&& from) noexcept
+    : StaticSyncHazardSpecsResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline StaticSyncHazardSpecsResponse& operator=(const StaticSyncHazardSpecsResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline StaticSyncHazardSpecsResponse& operator=(StaticSyncHazardSpecsResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance);
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::google::protobuf::UnknownFieldSet>();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::google::protobuf::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::google::protobuf::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const StaticSyncHazardSpecsResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const StaticSyncHazardSpecsResponse* internal_default_instance() {
+    return reinterpret_cast<const StaticSyncHazardSpecsResponse*>(
+               &_StaticSyncHazardSpecsResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    307;
+
+  friend void swap(StaticSyncHazardSpecsResponse& a, StaticSyncHazardSpecsResponse& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(StaticSyncHazardSpecsResponse* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::google::protobuf::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(StaticSyncHazardSpecsResponse* other) {
+    if (other == this) return;
+    ABSL_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  StaticSyncHazardSpecsResponse* New(::google::protobuf::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<StaticSyncHazardSpecsResponse>(arena);
+  }
+  using ::google::protobuf::Message::CopyFrom;
+  void CopyFrom(const StaticSyncHazardSpecsResponse& from);
+  using ::google::protobuf::Message::MergeFrom;
+  void MergeFrom( const StaticSyncHazardSpecsResponse& from) {
+    StaticSyncHazardSpecsResponse::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  ::size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::google::protobuf::internal::ParseContext* ctx) final;
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target, ::google::protobuf::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::google::protobuf::Arena* arena);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(StaticSyncHazardSpecsResponse* other);
+
+  private:
+  friend class ::google::protobuf::internal::AnyMetadata;
+  static ::absl::string_view FullMessageName() {
+    return "Digit.PrimeServer.Models.StaticSyncHazardSpecsResponse";
+  }
+  protected:
+  explicit StaticSyncHazardSpecsResponse(::google::protobuf::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::google::protobuf::Message::ClassData*GetClassData() const final;
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kHazardSpecsFieldNumber = 1,
+  };
+  // map<int64, .Digit.PrimeServer.Models.HazardSpec> hazardSpecs = 1;
+  int hazardspecs_size() const;
+  private:
+  int _internal_hazardspecs_size() const;
+
+  public:
+  void clear_hazardspecs() ;
+  const ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::HazardSpec>& hazardspecs() const;
+  ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::HazardSpec>* mutable_hazardspecs();
+
+  private:
+  const ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::HazardSpec>& _internal_hazardspecs() const;
+  ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::HazardSpec>* _internal_mutable_hazardspecs();
+
+  public:
+  // @@protoc_insertion_point(class_scope:Digit.PrimeServer.Models.StaticSyncHazardSpecsResponse)
+ private:
+  class _Internal;
+
+  friend class ::google::protobuf::internal::TcParser;
+  static const ::google::protobuf::internal::TcParseTable<0, 1, 2, 0, 2> _table_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::google::protobuf::internal::MapField<StaticSyncHazardSpecsResponse_HazardSpecsEntry_DoNotUse, ::int64_t, ::Digit::PrimeServer::Models::HazardSpec,
+                      ::google::protobuf::internal::WireFormatLite::TYPE_INT64,
+                      ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE>
+        hazardspecs_;
+    mutable ::google::protobuf::internal::CachedSize _cached_size_;
+    PROTOBUF_TSAN_DECLARE_MEMBER
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
+};// -------------------------------------------------------------------
+
 class StaticSyncOfficerSpecsResponse_OfficerSpecsEntry_DoNotUse final : public ::google::protobuf::internal::MapEntry<StaticSyncOfficerSpecsResponse_OfficerSpecsEntry_DoNotUse, 
     ::int64_t, ::Digit::PrimeServer::Models::OfficerSpec,
     ::google::protobuf::internal::WireFormatLite::TYPE_INT64,
@@ -57339,7 +59328,7 @@ class StaticSyncOfficerSpecsResponse final :
                &_StaticSyncOfficerSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    298;
+    309;
 
   friend void swap(StaticSyncOfficerSpecsResponse& a, StaticSyncOfficerSpecsResponse& b) {
     a.Swap(&b);
@@ -57530,7 +59519,7 @@ class StaticSyncFactionSpecsResponse final :
                &_StaticSyncFactionSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    300;
+    311;
 
   friend void swap(StaticSyncFactionSpecsResponse& a, StaticSyncFactionSpecsResponse& b) {
     a.Swap(&b);
@@ -57721,7 +59710,7 @@ class StaticSyncFactionBehaviourSpecsResponse final :
                &_StaticSyncFactionBehaviourSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    302;
+    313;
 
   friend void swap(StaticSyncFactionBehaviourSpecsResponse& a, StaticSyncFactionBehaviourSpecsResponse& b) {
     a.Swap(&b);
@@ -57912,7 +59901,7 @@ class StaticSyncUserConsumableSpecsResponse final :
                &_StaticSyncUserConsumableSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    304;
+    315;
 
   friend void swap(StaticSyncUserConsumableSpecsResponse& a, StaticSyncUserConsumableSpecsResponse& b) {
     a.Swap(&b);
@@ -58103,7 +60092,7 @@ class StaticSyncPlayerXpSpecsResponse final :
                &_StaticSyncPlayerXpSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    306;
+    317;
 
   friend void swap(StaticSyncPlayerXpSpecsResponse& a, StaticSyncPlayerXpSpecsResponse& b) {
     a.Swap(&b);
@@ -58294,7 +60283,7 @@ class StaticSyncObjectiveDefinitionsResponse final :
                &_StaticSyncObjectiveDefinitionsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    308;
+    319;
 
   friend void swap(StaticSyncObjectiveDefinitionsResponse& a, StaticSyncObjectiveDefinitionsResponse& b) {
     a.Swap(&b);
@@ -58485,7 +60474,7 @@ class StaticSyncAllianceRankSpecsResponse final :
                &_StaticSyncAllianceRankSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    310;
+    321;
 
   friend void swap(StaticSyncAllianceRankSpecsResponse& a, StaticSyncAllianceRankSpecsResponse& b) {
     a.Swap(&b);
@@ -58676,7 +60665,7 @@ class StaticSyncAllianceLevelSpecsResponse final :
                &_StaticSyncAllianceLevelSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    312;
+    323;
 
   friend void swap(StaticSyncAllianceLevelSpecsResponse& a, StaticSyncAllianceLevelSpecsResponse& b) {
     a.Swap(&b);
@@ -58867,7 +60856,7 @@ class StaticSyncAlliancePermissionSpecsResponse final :
                &_StaticSyncAlliancePermissionSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    314;
+    325;
 
   friend void swap(StaticSyncAlliancePermissionSpecsResponse& a, StaticSyncAlliancePermissionSpecsResponse& b) {
     a.Swap(&b);
@@ -59058,7 +61047,7 @@ class StaticSyncOfficerAbilitySpecsResponse final :
                &_StaticSyncOfficerAbilitySpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    316;
+    327;
 
   friend void swap(StaticSyncOfficerAbilitySpecsResponse& a, StaticSyncOfficerAbilitySpecsResponse& b) {
     a.Swap(&b);
@@ -59249,7 +61238,7 @@ class StaticSyncBuffTargetSpecsResponse final :
                &_StaticSyncBuffTargetSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    318;
+    329;
 
   friend void swap(StaticSyncBuffTargetSpecsResponse& a, StaticSyncBuffTargetSpecsResponse& b) {
     a.Swap(&b);
@@ -59440,7 +61429,7 @@ class StaticSyncBuffTriggerSpecsResponse final :
                &_StaticSyncBuffTriggerSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    320;
+    331;
 
   friend void swap(StaticSyncBuffTriggerSpecsResponse& a, StaticSyncBuffTriggerSpecsResponse& b) {
     a.Swap(&b);
@@ -59631,7 +61620,7 @@ class StaticSyncShipBonusSpecsResponse final :
                &_StaticSyncShipBonusSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    322;
+    333;
 
   friend void swap(StaticSyncShipBonusSpecsResponse& a, StaticSyncShipBonusSpecsResponse& b) {
     a.Swap(&b);
@@ -59822,7 +61811,7 @@ class StaticSyncOfficerCoreStatSpecsResponse final :
                &_StaticSyncOfficerCoreStatSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    324;
+    335;
 
   friend void swap(StaticSyncOfficerCoreStatSpecsResponse& a, StaticSyncOfficerCoreStatSpecsResponse& b) {
     a.Swap(&b);
@@ -60013,7 +62002,7 @@ class StaticSyncOfficerCoreStatThresholdsSpecsResponse final :
                &_StaticSyncOfficerCoreStatThresholdsSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    326;
+    337;
 
   friend void swap(StaticSyncOfficerCoreStatThresholdsSpecsResponse& a, StaticSyncOfficerCoreStatThresholdsSpecsResponse& b) {
     a.Swap(&b);
@@ -60204,7 +62193,7 @@ class StaticSyncOfficerIntelRequirementSpecsResponse final :
                &_StaticSyncOfficerIntelRequirementSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    328;
+    339;
 
   friend void swap(StaticSyncOfficerIntelRequirementSpecsResponse& a, StaticSyncOfficerIntelRequirementSpecsResponse& b) {
     a.Swap(&b);
@@ -60419,7 +62408,7 @@ class StaticSyncBlueprintSpecsResponse final :
                &_StaticSyncBlueprintSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    331;
+    342;
 
   friend void swap(StaticSyncBlueprintSpecsResponse& a, StaticSyncBlueprintSpecsResponse& b) {
     a.Swap(&b);
@@ -60606,7 +62595,7 @@ class StaticSyncScrapyardSpecsResponse final :
                &_StaticSyncScrapyardSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    332;
+    343;
 
   friend void swap(StaticSyncScrapyardSpecsResponse& a, StaticSyncScrapyardSpecsResponse& b) {
     a.Swap(&b);
@@ -60796,7 +62785,7 @@ class StaticSyncOfficerPromotionSpecsResponse final :
                &_StaticSyncOfficerPromotionSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    334;
+    345;
 
   friend void swap(StaticSyncOfficerPromotionSpecsResponse& a, StaticSyncOfficerPromotionSpecsResponse& b) {
     a.Swap(&b);
@@ -60963,7 +62952,7 @@ class StaticSyncNavigationConfResponse final :
                &_StaticSyncNavigationConfResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    335;
+    346;
 
   friend void swap(StaticSyncNavigationConfResponse& a, StaticSyncNavigationConfResponse& b) {
     a.Swap(&b);
@@ -61127,7 +63116,7 @@ class StaticSyncFleetConfResponse final :
                &_StaticSyncFleetConfResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    336;
+    347;
 
   friend void swap(StaticSyncFleetConfResponse& a, StaticSyncFleetConfResponse& b) {
     a.Swap(&b);
@@ -61291,7 +63280,7 @@ class StaticSyncAllianceConfResponse final :
                &_StaticSyncAllianceConfResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    337;
+    348;
 
   friend void swap(StaticSyncAllianceConfResponse& a, StaticSyncAllianceConfResponse& b) {
     a.Swap(&b);
@@ -61455,7 +63444,7 @@ class StaticSyncArmadaConfResponse final :
                &_StaticSyncArmadaConfResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    338;
+    349;
 
   friend void swap(StaticSyncArmadaConfResponse& a, StaticSyncArmadaConfResponse& b) {
     a.Swap(&b);
@@ -61619,7 +63608,7 @@ class StaticSyncConsistencyConfResponse final :
                &_StaticSyncConsistencyConfResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    339;
+    350;
 
   friend void swap(StaticSyncConsistencyConfResponse& a, StaticSyncConsistencyConfResponse& b) {
     a.Swap(&b);
@@ -61783,7 +63772,7 @@ class StaticSyncFtueConfResponse final :
                &_StaticSyncFtueConfResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    340;
+    351;
 
   friend void swap(StaticSyncFtueConfResponse& a, StaticSyncFtueConfResponse& b) {
     a.Swap(&b);
@@ -61947,7 +63936,7 @@ class StaticSyncPlacementConfResponse final :
                &_StaticSyncPlacementConfResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    341;
+    352;
 
   friend void swap(StaticSyncPlacementConfResponse& a, StaticSyncPlacementConfResponse& b) {
     a.Swap(&b);
@@ -62111,7 +64100,7 @@ class StaticSyncDialogConfResponse final :
                &_StaticSyncDialogConfResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    342;
+    353;
 
   friend void swap(StaticSyncDialogConfResponse& a, StaticSyncDialogConfResponse& b) {
     a.Swap(&b);
@@ -62275,7 +64264,7 @@ class StaticSyncFactionConfResponse final :
                &_StaticSyncFactionConfResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    343;
+    354;
 
   friend void swap(StaticSyncFactionConfResponse& a, StaticSyncFactionConfResponse& b) {
     a.Swap(&b);
@@ -62439,7 +64428,7 @@ class StaticSyncResourceConfResponse final :
                &_StaticSyncResourceConfResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    344;
+    355;
 
   friend void swap(StaticSyncResourceConfResponse& a, StaticSyncResourceConfResponse& b) {
     a.Swap(&b);
@@ -62603,7 +64592,7 @@ class StaticSyncFtueProgressionConfResponse final :
                &_StaticSyncFtueProgressionConfResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    345;
+    356;
 
   friend void swap(StaticSyncFtueProgressionConfResponse& a, StaticSyncFtueProgressionConfResponse& b) {
     a.Swap(&b);
@@ -62767,7 +64756,7 @@ class StaticSyncServerTransferConfig final :
                &_StaticSyncServerTransferConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    346;
+    357;
 
   friend void swap(StaticSyncServerTransferConfig& a, StaticSyncServerTransferConfig& b) {
     a.Swap(&b);
@@ -62931,7 +64920,7 @@ class StaticSyncNewPlayerConfResponse final :
                &_StaticSyncNewPlayerConfResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    347;
+    358;
 
   friend void swap(StaticSyncNewPlayerConfResponse& a, StaticSyncNewPlayerConfResponse& b) {
     a.Swap(&b);
@@ -63095,7 +65084,7 @@ class StaticSyncThreatConfResponse final :
                &_StaticSyncThreatConfResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    348;
+    359;
 
   friend void swap(StaticSyncThreatConfResponse& a, StaticSyncThreatConfResponse& b) {
     a.Swap(&b);
@@ -63283,7 +65272,7 @@ class StaticSyncPlanetSlotsConfResponse final :
                &_StaticSyncPlanetSlotsConfResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    350;
+    361;
 
   friend void swap(StaticSyncPlanetSlotsConfResponse& a, StaticSyncPlanetSlotsConfResponse& b) {
     a.Swap(&b);
@@ -63450,7 +65439,7 @@ class StaticSyncBattleConfResponse final :
                &_StaticSyncBattleConfResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    351;
+    362;
 
   friend void swap(StaticSyncBattleConfResponse& a, StaticSyncBattleConfResponse& b) {
     a.Swap(&b);
@@ -63614,7 +65603,7 @@ class StaticSyncStarbaseConfResponse final :
                &_StaticSyncStarbaseConfResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    352;
+    363;
 
   friend void swap(StaticSyncStarbaseConfResponse& a, StaticSyncStarbaseConfResponse& b) {
     a.Swap(&b);
@@ -63778,7 +65767,7 @@ class StaticSyncShipXpConfResponse final :
                &_StaticSyncShipXpConfResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    353;
+    364;
 
   friend void swap(StaticSyncShipXpConfResponse& a, StaticSyncShipXpConfResponse& b) {
     a.Swap(&b);
@@ -63942,7 +65931,7 @@ class ClientShipStatLookupSpecsResponse final :
                &_ClientShipStatLookupSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    354;
+    365;
 
   friend void swap(ClientShipStatLookupSpecsResponse& a, ClientShipStatLookupSpecsResponse& b) {
     a.Swap(&b);
@@ -64130,7 +66119,7 @@ class StaticSyncBaseShipTierSpecsResponse final :
                &_StaticSyncBaseShipTierSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    356;
+    367;
 
   friend void swap(StaticSyncBaseShipTierSpecsResponse& a, StaticSyncBaseShipTierSpecsResponse& b) {
     a.Swap(&b);
@@ -64321,7 +66310,7 @@ class StaticSyncShipTierSpecsResponse final :
                &_StaticSyncShipTierSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    358;
+    369;
 
   friend void swap(StaticSyncShipTierSpecsResponse& a, StaticSyncShipTierSpecsResponse& b) {
     a.Swap(&b);
@@ -64488,7 +66477,7 @@ class StaticSyncGlobalDamageReductionConfigResponse final :
                &_StaticSyncGlobalDamageReductionConfigResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    359;
+    370;
 
   friend void swap(StaticSyncGlobalDamageReductionConfigResponse& a, StaticSyncGlobalDamageReductionConfigResponse& b) {
     a.Swap(&b);
@@ -64652,7 +66641,7 @@ class StaticSyncMitigationCapsSpecResponse final :
                &_StaticSyncMitigationCapsSpecResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    360;
+    371;
 
   friend void swap(StaticSyncMitigationCapsSpecResponse& a, StaticSyncMitigationCapsSpecResponse& b) {
     a.Swap(&b);
@@ -64816,7 +66805,7 @@ class StaticSyncActionSpecResponse final :
                &_StaticSyncActionSpecResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    361;
+    372;
 
   friend void swap(StaticSyncActionSpecResponse& a, StaticSyncActionSpecResponse& b) {
     a.Swap(&b);
@@ -65006,7 +66995,7 @@ class StaticSyncShipLevelUpBonusBuffSpecResponse final :
                &_StaticSyncShipLevelUpBonusBuffSpecResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    363;
+    374;
 
   friend void swap(StaticSyncShipLevelUpBonusBuffSpecResponse& a, StaticSyncShipLevelUpBonusBuffSpecResponse& b) {
     a.Swap(&b);
@@ -65197,7 +67186,7 @@ class StaticSyncOfficerSynergyFactorSpecsResponse final :
                &_StaticSyncOfficerSynergyFactorSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    365;
+    376;
 
   friend void swap(StaticSyncOfficerSynergyFactorSpecsResponse& a, StaticSyncOfficerSynergyFactorSpecsResponse& b) {
     a.Swap(&b);
@@ -65364,7 +67353,7 @@ class StaticSyncOfficerConfResponse final :
                &_StaticSyncOfficerConfResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    366;
+    377;
 
   friend void swap(StaticSyncOfficerConfResponse& a, StaticSyncOfficerConfResponse& b) {
     a.Swap(&b);
@@ -65576,7 +67565,7 @@ class StaticSyncResearchTreeSpecsResponse final :
                &_StaticSyncResearchTreeSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    369;
+    380;
 
   friend void swap(StaticSyncResearchTreeSpecsResponse& a, StaticSyncResearchTreeSpecsResponse& b) {
     a.Swap(&b);
@@ -65807,7 +67796,7 @@ class StaticSyncStarbaseBuffsSpecsResponse final :
                &_StaticSyncStarbaseBuffsSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    371;
+    382;
 
   friend void swap(StaticSyncStarbaseBuffsSpecsResponse& a, StaticSyncStarbaseBuffsSpecsResponse& b) {
     a.Swap(&b);
@@ -65998,7 +67987,7 @@ class StaticSyncConsumableBuffsSpecsResponse final :
                &_StaticSyncConsumableBuffsSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    373;
+    384;
 
   friend void swap(StaticSyncConsumableBuffsSpecsResponse& a, StaticSyncConsumableBuffsSpecsResponse& b) {
     a.Swap(&b);
@@ -66165,7 +68154,7 @@ class StaticSyncPvPBandingResponse final :
                &_StaticSyncPvPBandingResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    374;
+    385;
 
   friend void swap(StaticSyncPvPBandingResponse& a, StaticSyncPvPBandingResponse& b) {
     a.Swap(&b);
@@ -66387,7 +68376,7 @@ class StaticSyncArmadaAttackSpecResponse final :
                &_StaticSyncArmadaAttackSpecResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    375;
+    386;
 
   friend void swap(StaticSyncArmadaAttackSpecResponse& a, StaticSyncArmadaAttackSpecResponse& b) {
     a.Swap(&b);
@@ -66577,7 +68566,7 @@ class StaticSyncArmadaPveSpecResponse final :
                &_StaticSyncArmadaPveSpecResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    377;
+    388;
 
   friend void swap(StaticSyncArmadaPveSpecResponse& a, StaticSyncArmadaPveSpecResponse& b) {
     a.Swap(&b);
@@ -66768,7 +68757,7 @@ class StaticSyncArmadaPvpSpecResponse final :
                &_StaticSyncArmadaPvpSpecResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    379;
+    390;
 
   friend void swap(StaticSyncArmadaPvpSpecResponse& a, StaticSyncArmadaPvpSpecResponse& b) {
     a.Swap(&b);
@@ -66959,7 +68948,7 @@ class StaticSyncMiningSetupResponse final :
                &_StaticSyncMiningSetupResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    381;
+    392;
 
   friend void swap(StaticSyncMiningSetupResponse& a, StaticSyncMiningSetupResponse& b) {
     a.Swap(&b);
@@ -67150,7 +69139,7 @@ class StaticSyncMarauderInfoResponse final :
                &_StaticSyncMarauderInfoResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    383;
+    394;
 
   friend void swap(StaticSyncMarauderInfoResponse& a, StaticSyncMarauderInfoResponse& b) {
     a.Swap(&b);
@@ -67317,7 +69306,7 @@ class StaticSyncCosmeticsResponse final :
                &_StaticSyncCosmeticsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    384;
+    395;
 
   friend void swap(StaticSyncCosmeticsResponse& a, StaticSyncCosmeticsResponse& b) {
     a.Swap(&b);
@@ -67483,7 +69472,7 @@ class StaticSyncCeasefireResponse final :
                &_StaticSyncCeasefireResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    385;
+    396;
 
   friend void swap(StaticSyncCeasefireResponse& a, StaticSyncCeasefireResponse& b) {
     a.Swap(&b);
@@ -67647,7 +69636,7 @@ class StaticSyncPrestigeDataResponse final :
                &_StaticSyncPrestigeDataResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    386;
+    397;
 
   friend void swap(StaticSyncPrestigeDataResponse& a, StaticSyncPrestigeDataResponse& b) {
     a.Swap(&b);
@@ -67811,7 +69800,7 @@ class StaticSyncWorkerResponse final :
                &_StaticSyncWorkerResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    387;
+    398;
 
   friend void swap(StaticSyncWorkerResponse& a, StaticSyncWorkerResponse& b) {
     a.Swap(&b);
@@ -67977,7 +69966,7 @@ class StaticSyncAwayAssignmentsResponse final :
                &_StaticSyncAwayAssignmentsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    388;
+    399;
 
   friend void swap(StaticSyncAwayAssignmentsResponse& a, StaticSyncAwayAssignmentsResponse& b) {
     a.Swap(&b);
@@ -68162,7 +70151,7 @@ class StaticSyncConsumableSpecsResponse final :
                &_StaticSyncConsumableSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    389;
+    400;
 
   friend void swap(StaticSyncConsumableSpecsResponse& a, StaticSyncConsumableSpecsResponse& b) {
     a.Swap(&b);
@@ -68328,7 +70317,7 @@ class StaticSyncSlotSpecsResponse final :
                &_StaticSyncSlotSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    390;
+    401;
 
   friend void swap(StaticSyncSlotSpecsResponse& a, StaticSyncSlotSpecsResponse& b) {
     a.Swap(&b);
@@ -68494,7 +70483,7 @@ class StaticSyncTraitsResponse final :
                &_StaticSyncTraitsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    391;
+    402;
 
   friend void swap(StaticSyncTraitsResponse& a, StaticSyncTraitsResponse& b) {
     a.Swap(&b);
@@ -68660,7 +70649,7 @@ class StaticSyncOfficerTraitsResponse final :
                &_StaticSyncOfficerTraitsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    392;
+    403;
 
   friend void swap(StaticSyncOfficerTraitsResponse& a, StaticSyncOfficerTraitsResponse& b) {
     a.Swap(&b);
@@ -68826,7 +70815,7 @@ class StaticSyncLoyaltyResponse final :
                &_StaticSyncLoyaltyResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    393;
+    404;
 
   friend void swap(StaticSyncLoyaltyResponse& a, StaticSyncLoyaltyResponse& b) {
     a.Swap(&b);
@@ -69007,7 +70996,7 @@ class StaticSyncPeaceShieldRulesResponse final :
                &_StaticSyncPeaceShieldRulesResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    394;
+    405;
 
   friend void swap(StaticSyncPeaceShieldRulesResponse& a, StaticSyncPeaceShieldRulesResponse& b) {
     a.Swap(&b);
@@ -69115,6 +71104,172 @@ class StaticSyncPeaceShieldRulesResponse final :
   friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
 };// -------------------------------------------------------------------
 
+class StaticSyncActivatedShipAbilityConfigsResponse final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:Digit.PrimeServer.Models.StaticSyncActivatedShipAbilityConfigsResponse) */ {
+ public:
+  inline StaticSyncActivatedShipAbilityConfigsResponse() : StaticSyncActivatedShipAbilityConfigsResponse(nullptr) {}
+  ~StaticSyncActivatedShipAbilityConfigsResponse() override;
+  template<typename = void>
+  explicit PROTOBUF_CONSTEXPR StaticSyncActivatedShipAbilityConfigsResponse(::google::protobuf::internal::ConstantInitialized);
+
+  StaticSyncActivatedShipAbilityConfigsResponse(const StaticSyncActivatedShipAbilityConfigsResponse& from);
+  StaticSyncActivatedShipAbilityConfigsResponse(StaticSyncActivatedShipAbilityConfigsResponse&& from) noexcept
+    : StaticSyncActivatedShipAbilityConfigsResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline StaticSyncActivatedShipAbilityConfigsResponse& operator=(const StaticSyncActivatedShipAbilityConfigsResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline StaticSyncActivatedShipAbilityConfigsResponse& operator=(StaticSyncActivatedShipAbilityConfigsResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance);
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::google::protobuf::UnknownFieldSet>();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::google::protobuf::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::google::protobuf::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const StaticSyncActivatedShipAbilityConfigsResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const StaticSyncActivatedShipAbilityConfigsResponse* internal_default_instance() {
+    return reinterpret_cast<const StaticSyncActivatedShipAbilityConfigsResponse*>(
+               &_StaticSyncActivatedShipAbilityConfigsResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    406;
+
+  friend void swap(StaticSyncActivatedShipAbilityConfigsResponse& a, StaticSyncActivatedShipAbilityConfigsResponse& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(StaticSyncActivatedShipAbilityConfigsResponse* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::google::protobuf::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(StaticSyncActivatedShipAbilityConfigsResponse* other) {
+    if (other == this) return;
+    ABSL_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  StaticSyncActivatedShipAbilityConfigsResponse* New(::google::protobuf::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<StaticSyncActivatedShipAbilityConfigsResponse>(arena);
+  }
+  using ::google::protobuf::Message::CopyFrom;
+  void CopyFrom(const StaticSyncActivatedShipAbilityConfigsResponse& from);
+  using ::google::protobuf::Message::MergeFrom;
+  void MergeFrom( const StaticSyncActivatedShipAbilityConfigsResponse& from) {
+    StaticSyncActivatedShipAbilityConfigsResponse::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  ::size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::google::protobuf::internal::ParseContext* ctx) final;
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target, ::google::protobuf::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::google::protobuf::Arena* arena);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(StaticSyncActivatedShipAbilityConfigsResponse* other);
+
+  private:
+  friend class ::google::protobuf::internal::AnyMetadata;
+  static ::absl::string_view FullMessageName() {
+    return "Digit.PrimeServer.Models.StaticSyncActivatedShipAbilityConfigsResponse";
+  }
+  protected:
+  explicit StaticSyncActivatedShipAbilityConfigsResponse(::google::protobuf::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::google::protobuf::Message::ClassData*GetClassData() const final;
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kActivatedShipAbilityConfigFieldNumber = 1,
+  };
+  // repeated .Digit.PrimeServer.Models.ActivatedShipAbilityConfig activatedShipAbilityConfig = 1;
+  int activatedshipabilityconfig_size() const;
+  private:
+  int _internal_activatedshipabilityconfig_size() const;
+
+  public:
+  void clear_activatedshipabilityconfig() ;
+  ::Digit::PrimeServer::Models::ActivatedShipAbilityConfig* mutable_activatedshipabilityconfig(int index);
+  ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::ActivatedShipAbilityConfig >*
+      mutable_activatedshipabilityconfig();
+  private:
+  const ::google::protobuf::RepeatedPtrField<::Digit::PrimeServer::Models::ActivatedShipAbilityConfig>& _internal_activatedshipabilityconfig() const;
+  ::google::protobuf::RepeatedPtrField<::Digit::PrimeServer::Models::ActivatedShipAbilityConfig>* _internal_mutable_activatedshipabilityconfig();
+  public:
+  const ::Digit::PrimeServer::Models::ActivatedShipAbilityConfig& activatedshipabilityconfig(int index) const;
+  ::Digit::PrimeServer::Models::ActivatedShipAbilityConfig* add_activatedshipabilityconfig();
+  const ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::ActivatedShipAbilityConfig >&
+      activatedshipabilityconfig() const;
+  // @@protoc_insertion_point(class_scope:Digit.PrimeServer.Models.StaticSyncActivatedShipAbilityConfigsResponse)
+ private:
+  class _Internal;
+
+  friend class ::google::protobuf::internal::TcParser;
+  static const ::google::protobuf::internal::TcParseTable<0, 1, 1, 0, 2> _table_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::ActivatedShipAbilityConfig > activatedshipabilityconfig_;
+    mutable ::google::protobuf::internal::CachedSize _cached_size_;
+    PROTOBUF_TSAN_DECLARE_MEMBER
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
+};// -------------------------------------------------------------------
+
 class StaticSyncAllianceStarbaseConfResponse final :
     public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:Digit.PrimeServer.Models.StaticSyncAllianceStarbaseConfResponse) */ {
  public:
@@ -69171,7 +71326,7 @@ class StaticSyncAllianceStarbaseConfResponse final :
                &_StaticSyncAllianceStarbaseConfResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    395;
+    407;
 
   friend void swap(StaticSyncAllianceStarbaseConfResponse& a, StaticSyncAllianceStarbaseConfResponse& b) {
     a.Swap(&b);
@@ -69335,7 +71490,7 @@ class StaticSyncAchievementsConfResponse final :
                &_StaticSyncAchievementsConfResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    396;
+    408;
 
   friend void swap(StaticSyncAchievementsConfResponse& a, StaticSyncAchievementsConfResponse& b) {
     a.Swap(&b);
@@ -69499,7 +71654,7 @@ class GameworldResponse final :
                &_GameworldResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    397;
+    409;
 
   friend void swap(GameworldResponse& a, GameworldResponse& b) {
     a.Swap(&b);
@@ -69657,7 +71812,7 @@ class StaticSyncActivatedAbilitySpecsResponse final :
                &_StaticSyncActivatedAbilitySpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    398;
+    410;
 
   friend void swap(StaticSyncActivatedAbilitySpecsResponse& a, StaticSyncActivatedAbilitySpecsResponse& b) {
     a.Swap(&b);
@@ -69823,7 +71978,7 @@ class StaticSyncOfficerProgressRewardSpecsResponse final :
                &_StaticSyncOfficerProgressRewardSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    399;
+    411;
 
   friend void swap(StaticSyncOfficerProgressRewardSpecsResponse& a, StaticSyncOfficerProgressRewardSpecsResponse& b) {
     a.Swap(&b);
@@ -70013,7 +72168,7 @@ class StaticSyncCommanderSkillSpecsResponse final :
                &_StaticSyncCommanderSkillSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    401;
+    413;
 
   friend void swap(StaticSyncCommanderSkillSpecsResponse& a, StaticSyncCommanderSkillSpecsResponse& b) {
     a.Swap(&b);
@@ -70204,7 +72359,7 @@ class StaticSyncCommanderIntelRequirementSpecsResponse final :
                &_StaticSyncCommanderIntelRequirementSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    403;
+    415;
 
   friend void swap(StaticSyncCommanderIntelRequirementSpecsResponse& a, StaticSyncCommanderIntelRequirementSpecsResponse& b) {
     a.Swap(&b);
@@ -70371,7 +72526,7 @@ class StaticSyncHailingFrequenciesConfResponse final :
                &_StaticSyncHailingFrequenciesConfResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    404;
+    416;
 
   friend void swap(StaticSyncHailingFrequenciesConfResponse& a, StaticSyncHailingFrequenciesConfResponse& b) {
     a.Swap(&b);
@@ -70559,7 +72714,7 @@ class StaticSyncOfficerLevelRewardsSpecsResponse final :
                &_StaticSyncOfficerLevelRewardsSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    406;
+    418;
 
   friend void swap(StaticSyncOfficerLevelRewardsSpecsResponse& a, StaticSyncOfficerLevelRewardsSpecsResponse& b) {
     a.Swap(&b);
@@ -70750,7 +72905,7 @@ class StaticSyncChallengeLaddersSpecsResponse final :
                &_StaticSyncChallengeLaddersSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    408;
+    420;
 
   friend void swap(StaticSyncChallengeLaddersSpecsResponse& a, StaticSyncChallengeLaddersSpecsResponse& b) {
     a.Swap(&b);
@@ -70941,7 +73096,7 @@ class StaticSyncBundleRewardsSpecsResponse final :
                &_StaticSyncBundleRewardsSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    410;
+    422;
 
   friend void swap(StaticSyncBundleRewardsSpecsResponse& a, StaticSyncBundleRewardsSpecsResponse& b) {
     a.Swap(&b);
@@ -71108,7 +73263,7 @@ class StaticSyncForbiddenTechSpecsResponse final :
                &_StaticSyncForbiddenTechSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    411;
+    423;
 
   friend void swap(StaticSyncForbiddenTechSpecsResponse& a, StaticSyncForbiddenTechSpecsResponse& b) {
     a.Swap(&b);
@@ -71298,7 +73453,7 @@ class StaticSyncForbiddenTechBuffsSpecsResponse final :
                &_StaticSyncForbiddenTechBuffsSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    413;
+    425;
 
   friend void swap(StaticSyncForbiddenTechBuffsSpecsResponse& a, StaticSyncForbiddenTechBuffsSpecsResponse& b) {
     a.Swap(&b);
@@ -71465,7 +73620,7 @@ class StaticSyncForbiddenTechRemovalCostsSpecsResponse final :
                &_StaticSyncForbiddenTechRemovalCostsSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    414;
+    426;
 
   friend void swap(StaticSyncForbiddenTechRemovalCostsSpecsResponse& a, StaticSyncForbiddenTechRemovalCostsSpecsResponse& b) {
     a.Swap(&b);
@@ -71631,7 +73786,7 @@ class StaticSyncForbiddenTechConfResponse final :
                &_StaticSyncForbiddenTechConfResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    415;
+    427;
 
   friend void swap(StaticSyncForbiddenTechConfResponse& a, StaticSyncForbiddenTechConfResponse& b) {
     a.Swap(&b);
@@ -71795,7 +73950,7 @@ class StaticSyncChallengeConfResponse final :
                &_StaticSyncChallengeConfResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    416;
+    428;
 
   friend void swap(StaticSyncChallengeConfResponse& a, StaticSyncChallengeConfResponse& b) {
     a.Swap(&b);
@@ -71903,6 +74058,606 @@ class StaticSyncChallengeConfResponse final :
   friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
 };// -------------------------------------------------------------------
 
+class StaticSyncForbiddenTechUpgradeCostsSpecsResponse final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:Digit.PrimeServer.Models.StaticSyncForbiddenTechUpgradeCostsSpecsResponse) */ {
+ public:
+  inline StaticSyncForbiddenTechUpgradeCostsSpecsResponse() : StaticSyncForbiddenTechUpgradeCostsSpecsResponse(nullptr) {}
+  ~StaticSyncForbiddenTechUpgradeCostsSpecsResponse() override;
+  template<typename = void>
+  explicit PROTOBUF_CONSTEXPR StaticSyncForbiddenTechUpgradeCostsSpecsResponse(::google::protobuf::internal::ConstantInitialized);
+
+  StaticSyncForbiddenTechUpgradeCostsSpecsResponse(const StaticSyncForbiddenTechUpgradeCostsSpecsResponse& from);
+  StaticSyncForbiddenTechUpgradeCostsSpecsResponse(StaticSyncForbiddenTechUpgradeCostsSpecsResponse&& from) noexcept
+    : StaticSyncForbiddenTechUpgradeCostsSpecsResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline StaticSyncForbiddenTechUpgradeCostsSpecsResponse& operator=(const StaticSyncForbiddenTechUpgradeCostsSpecsResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline StaticSyncForbiddenTechUpgradeCostsSpecsResponse& operator=(StaticSyncForbiddenTechUpgradeCostsSpecsResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance);
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::google::protobuf::UnknownFieldSet>();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::google::protobuf::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::google::protobuf::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const StaticSyncForbiddenTechUpgradeCostsSpecsResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const StaticSyncForbiddenTechUpgradeCostsSpecsResponse* internal_default_instance() {
+    return reinterpret_cast<const StaticSyncForbiddenTechUpgradeCostsSpecsResponse*>(
+               &_StaticSyncForbiddenTechUpgradeCostsSpecsResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    429;
+
+  friend void swap(StaticSyncForbiddenTechUpgradeCostsSpecsResponse& a, StaticSyncForbiddenTechUpgradeCostsSpecsResponse& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(StaticSyncForbiddenTechUpgradeCostsSpecsResponse* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::google::protobuf::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(StaticSyncForbiddenTechUpgradeCostsSpecsResponse* other) {
+    if (other == this) return;
+    ABSL_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  StaticSyncForbiddenTechUpgradeCostsSpecsResponse* New(::google::protobuf::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<StaticSyncForbiddenTechUpgradeCostsSpecsResponse>(arena);
+  }
+  using ::google::protobuf::Message::CopyFrom;
+  void CopyFrom(const StaticSyncForbiddenTechUpgradeCostsSpecsResponse& from);
+  using ::google::protobuf::Message::MergeFrom;
+  void MergeFrom( const StaticSyncForbiddenTechUpgradeCostsSpecsResponse& from) {
+    StaticSyncForbiddenTechUpgradeCostsSpecsResponse::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  ::size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::google::protobuf::internal::ParseContext* ctx) final;
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target, ::google::protobuf::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::google::protobuf::Arena* arena);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(StaticSyncForbiddenTechUpgradeCostsSpecsResponse* other);
+
+  private:
+  friend class ::google::protobuf::internal::AnyMetadata;
+  static ::absl::string_view FullMessageName() {
+    return "Digit.PrimeServer.Models.StaticSyncForbiddenTechUpgradeCostsSpecsResponse";
+  }
+  protected:
+  explicit StaticSyncForbiddenTechUpgradeCostsSpecsResponse(::google::protobuf::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::google::protobuf::Message::ClassData*GetClassData() const final;
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kForbiddenTechUpgradeCostsSpecsFieldNumber = 1,
+  };
+  // repeated .Digit.PrimeServer.Models.ForbiddenTechUpgradeCostSpec forbiddenTechUpgradeCostsSpecs = 1;
+  int forbiddentechupgradecostsspecs_size() const;
+  private:
+  int _internal_forbiddentechupgradecostsspecs_size() const;
+
+  public:
+  void clear_forbiddentechupgradecostsspecs() ;
+  ::Digit::PrimeServer::Models::ForbiddenTechUpgradeCostSpec* mutable_forbiddentechupgradecostsspecs(int index);
+  ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::ForbiddenTechUpgradeCostSpec >*
+      mutable_forbiddentechupgradecostsspecs();
+  private:
+  const ::google::protobuf::RepeatedPtrField<::Digit::PrimeServer::Models::ForbiddenTechUpgradeCostSpec>& _internal_forbiddentechupgradecostsspecs() const;
+  ::google::protobuf::RepeatedPtrField<::Digit::PrimeServer::Models::ForbiddenTechUpgradeCostSpec>* _internal_mutable_forbiddentechupgradecostsspecs();
+  public:
+  const ::Digit::PrimeServer::Models::ForbiddenTechUpgradeCostSpec& forbiddentechupgradecostsspecs(int index) const;
+  ::Digit::PrimeServer::Models::ForbiddenTechUpgradeCostSpec* add_forbiddentechupgradecostsspecs();
+  const ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::ForbiddenTechUpgradeCostSpec >&
+      forbiddentechupgradecostsspecs() const;
+  // @@protoc_insertion_point(class_scope:Digit.PrimeServer.Models.StaticSyncForbiddenTechUpgradeCostsSpecsResponse)
+ private:
+  class _Internal;
+
+  friend class ::google::protobuf::internal::TcParser;
+  static const ::google::protobuf::internal::TcParseTable<0, 1, 1, 0, 2> _table_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::ForbiddenTechUpgradeCostSpec > forbiddentechupgradecostsspecs_;
+    mutable ::google::protobuf::internal::CachedSize _cached_size_;
+    PROTOBUF_TSAN_DECLARE_MEMBER
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
+};// -------------------------------------------------------------------
+
+class HazardSpec_HazardLevel final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:Digit.PrimeServer.Models.HazardSpec.HazardLevel) */ {
+ public:
+  inline HazardSpec_HazardLevel() : HazardSpec_HazardLevel(nullptr) {}
+  ~HazardSpec_HazardLevel() override;
+  template<typename = void>
+  explicit PROTOBUF_CONSTEXPR HazardSpec_HazardLevel(::google::protobuf::internal::ConstantInitialized);
+
+  HazardSpec_HazardLevel(const HazardSpec_HazardLevel& from);
+  HazardSpec_HazardLevel(HazardSpec_HazardLevel&& from) noexcept
+    : HazardSpec_HazardLevel() {
+    *this = ::std::move(from);
+  }
+
+  inline HazardSpec_HazardLevel& operator=(const HazardSpec_HazardLevel& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline HazardSpec_HazardLevel& operator=(HazardSpec_HazardLevel&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance);
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::google::protobuf::UnknownFieldSet>();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::google::protobuf::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::google::protobuf::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const HazardSpec_HazardLevel& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const HazardSpec_HazardLevel* internal_default_instance() {
+    return reinterpret_cast<const HazardSpec_HazardLevel*>(
+               &_HazardSpec_HazardLevel_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    430;
+
+  friend void swap(HazardSpec_HazardLevel& a, HazardSpec_HazardLevel& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(HazardSpec_HazardLevel* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::google::protobuf::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(HazardSpec_HazardLevel* other) {
+    if (other == this) return;
+    ABSL_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  HazardSpec_HazardLevel* New(::google::protobuf::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<HazardSpec_HazardLevel>(arena);
+  }
+  using ::google::protobuf::Message::CopyFrom;
+  void CopyFrom(const HazardSpec_HazardLevel& from);
+  using ::google::protobuf::Message::MergeFrom;
+  void MergeFrom( const HazardSpec_HazardLevel& from) {
+    HazardSpec_HazardLevel::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  ::size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::google::protobuf::internal::ParseContext* ctx) final;
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target, ::google::protobuf::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::google::protobuf::Arena* arena);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(HazardSpec_HazardLevel* other);
+
+  private:
+  friend class ::google::protobuf::internal::AnyMetadata;
+  static ::absl::string_view FullMessageName() {
+    return "Digit.PrimeServer.Models.HazardSpec.HazardLevel";
+  }
+  protected:
+  explicit HazardSpec_HazardLevel(::google::protobuf::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::google::protobuf::Message::ClassData*GetClassData() const final;
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kLevelFieldNumber = 1,
+    kStrengthFieldNumber = 2,
+  };
+  // int32 level = 1;
+  void clear_level() ;
+  ::int32_t level() const;
+  void set_level(::int32_t value);
+
+  private:
+  ::int32_t _internal_level() const;
+  void _internal_set_level(::int32_t value);
+
+  public:
+  // float strength = 2;
+  void clear_strength() ;
+  float strength() const;
+  void set_strength(float value);
+
+  private:
+  float _internal_strength() const;
+  void _internal_set_strength(float value);
+
+  public:
+  // @@protoc_insertion_point(class_scope:Digit.PrimeServer.Models.HazardSpec.HazardLevel)
+ private:
+  class _Internal;
+
+  friend class ::google::protobuf::internal::TcParser;
+  static const ::google::protobuf::internal::TcParseTable<1, 2, 0, 0, 2> _table_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::int32_t level_;
+    float strength_;
+    mutable ::google::protobuf::internal::CachedSize _cached_size_;
+    PROTOBUF_TSAN_DECLARE_MEMBER
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
+};// -------------------------------------------------------------------
+
+class HazardSpec final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:Digit.PrimeServer.Models.HazardSpec) */ {
+ public:
+  inline HazardSpec() : HazardSpec(nullptr) {}
+  ~HazardSpec() override;
+  template<typename = void>
+  explicit PROTOBUF_CONSTEXPR HazardSpec(::google::protobuf::internal::ConstantInitialized);
+
+  HazardSpec(const HazardSpec& from);
+  HazardSpec(HazardSpec&& from) noexcept
+    : HazardSpec() {
+    *this = ::std::move(from);
+  }
+
+  inline HazardSpec& operator=(const HazardSpec& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline HazardSpec& operator=(HazardSpec&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance);
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::google::protobuf::UnknownFieldSet>();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::google::protobuf::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::google::protobuf::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const HazardSpec& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const HazardSpec* internal_default_instance() {
+    return reinterpret_cast<const HazardSpec*>(
+               &_HazardSpec_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    431;
+
+  friend void swap(HazardSpec& a, HazardSpec& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(HazardSpec* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::google::protobuf::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(HazardSpec* other) {
+    if (other == this) return;
+    ABSL_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  HazardSpec* New(::google::protobuf::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<HazardSpec>(arena);
+  }
+  using ::google::protobuf::Message::CopyFrom;
+  void CopyFrom(const HazardSpec& from);
+  using ::google::protobuf::Message::MergeFrom;
+  void MergeFrom( const HazardSpec& from) {
+    HazardSpec::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  ::size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::google::protobuf::internal::ParseContext* ctx) final;
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target, ::google::protobuf::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::google::protobuf::Arena* arena);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(HazardSpec* other);
+
+  private:
+  friend class ::google::protobuf::internal::AnyMetadata;
+  static ::absl::string_view FullMessageName() {
+    return "Digit.PrimeServer.Models.HazardSpec";
+  }
+  protected:
+  explicit HazardSpec(::google::protobuf::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::google::protobuf::Message::ClassData*GetClassData() const final;
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  typedef HazardSpec_HazardLevel HazardLevel;
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kLevelsFieldNumber = 7,
+    kNameFieldNumber = 2,
+    kIdRefsFieldNumber = 5,
+    kIdFieldNumber = 1,
+    kTypeFieldNumber = 3,
+    kEffectFieldNumber = 4,
+    kBaseDamageFieldNumber = 6,
+    kRateFieldNumber = 8,
+  };
+  // repeated .Digit.PrimeServer.Models.HazardSpec.HazardLevel levels = 7;
+  int levels_size() const;
+  private:
+  int _internal_levels_size() const;
+
+  public:
+  void clear_levels() ;
+  ::Digit::PrimeServer::Models::HazardSpec_HazardLevel* mutable_levels(int index);
+  ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::HazardSpec_HazardLevel >*
+      mutable_levels();
+  private:
+  const ::google::protobuf::RepeatedPtrField<::Digit::PrimeServer::Models::HazardSpec_HazardLevel>& _internal_levels() const;
+  ::google::protobuf::RepeatedPtrField<::Digit::PrimeServer::Models::HazardSpec_HazardLevel>* _internal_mutable_levels();
+  public:
+  const ::Digit::PrimeServer::Models::HazardSpec_HazardLevel& levels(int index) const;
+  ::Digit::PrimeServer::Models::HazardSpec_HazardLevel* add_levels();
+  const ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::HazardSpec_HazardLevel >&
+      levels() const;
+  // string name = 2;
+  void clear_name() ;
+  const std::string& name() const;
+  template <typename Arg_ = const std::string&, typename... Args_>
+  void set_name(Arg_&& arg, Args_... args);
+  std::string* mutable_name();
+  PROTOBUF_NODISCARD std::string* release_name();
+  void set_allocated_name(std::string* ptr);
+
+  private:
+  const std::string& _internal_name() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_name(
+      const std::string& value);
+  std::string* _internal_mutable_name();
+
+  public:
+  // .Digit.PrimeServer.Models.IdRefs idRefs = 5;
+  bool has_idrefs() const;
+  void clear_idrefs() ;
+  const ::Digit::PrimeServer::Models::IdRefs& idrefs() const;
+  PROTOBUF_NODISCARD ::Digit::PrimeServer::Models::IdRefs* release_idrefs();
+  ::Digit::PrimeServer::Models::IdRefs* mutable_idrefs();
+  void set_allocated_idrefs(::Digit::PrimeServer::Models::IdRefs* value);
+  void unsafe_arena_set_allocated_idrefs(::Digit::PrimeServer::Models::IdRefs* value);
+  ::Digit::PrimeServer::Models::IdRefs* unsafe_arena_release_idrefs();
+
+  private:
+  const ::Digit::PrimeServer::Models::IdRefs& _internal_idrefs() const;
+  ::Digit::PrimeServer::Models::IdRefs* _internal_mutable_idrefs();
+
+  public:
+  // int64 id = 1;
+  void clear_id() ;
+  ::int64_t id() const;
+  void set_id(::int64_t value);
+
+  private:
+  ::int64_t _internal_id() const;
+  void _internal_set_id(::int64_t value);
+
+  public:
+  // .Digit.PrimeServer.Models.HazardType type = 3;
+  void clear_type() ;
+  ::Digit::PrimeServer::Models::HazardType type() const;
+  void set_type(::Digit::PrimeServer::Models::HazardType value);
+
+  private:
+  ::Digit::PrimeServer::Models::HazardType _internal_type() const;
+  void _internal_set_type(::Digit::PrimeServer::Models::HazardType value);
+
+  public:
+  // .Digit.PrimeServer.Models.HazardEffect effect = 4;
+  void clear_effect() ;
+  ::Digit::PrimeServer::Models::HazardEffect effect() const;
+  void set_effect(::Digit::PrimeServer::Models::HazardEffect value);
+
+  private:
+  ::Digit::PrimeServer::Models::HazardEffect _internal_effect() const;
+  void _internal_set_effect(::Digit::PrimeServer::Models::HazardEffect value);
+
+  public:
+  // float baseDamage = 6;
+  void clear_basedamage() ;
+  float basedamage() const;
+  void set_basedamage(float value);
+
+  private:
+  float _internal_basedamage() const;
+  void _internal_set_basedamage(float value);
+
+  public:
+  // float rate = 8;
+  void clear_rate() ;
+  float rate() const;
+  void set_rate(float value);
+
+  private:
+  float _internal_rate() const;
+  void _internal_set_rate(float value);
+
+  public:
+  // @@protoc_insertion_point(class_scope:Digit.PrimeServer.Models.HazardSpec)
+ private:
+  class _Internal;
+
+  friend class ::google::protobuf::internal::TcParser;
+  static const ::google::protobuf::internal::TcParseTable<3, 8, 2, 56, 2> _table_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::google::protobuf::internal::HasBits<1> _has_bits_;
+    mutable ::google::protobuf::internal::CachedSize _cached_size_;
+    ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::HazardSpec_HazardLevel > levels_;
+    ::google::protobuf::internal::ArenaStringPtr name_;
+    ::Digit::PrimeServer::Models::IdRefs* idrefs_;
+    ::int64_t id_;
+    int type_;
+    int effect_;
+    float basedamage_;
+    float rate_;
+    PROTOBUF_TSAN_DECLARE_MEMBER
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
+};// -------------------------------------------------------------------
+
 class ComponentSlotModifier final :
     public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:Digit.PrimeServer.Models.ComponentSlotModifier) */ {
  public:
@@ -71959,7 +74714,7 @@ class ComponentSlotModifier final :
                &_ComponentSlotModifier_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    417;
+    432;
 
   friend void swap(ComponentSlotModifier& a, ComponentSlotModifier& b) {
     a.Swap(&b);
@@ -72153,7 +74908,7 @@ class HullSpec_Component final :
                &_HullSpec_Component_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    418;
+    433;
 
   friend void swap(HullSpec_Component& a, HullSpec_Component& b) {
     a.Swap(&b);
@@ -72319,7 +75074,7 @@ class HullSpec_OfficerSlotBonus final :
                &_HullSpec_OfficerSlotBonus_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    419;
+    434;
 
   friend void swap(HullSpec_OfficerSlotBonus& a, HullSpec_OfficerSlotBonus& b) {
     a.Swap(&b);
@@ -72495,7 +75250,7 @@ class HullSpec_OfficerSlots final :
                &_HullSpec_OfficerSlots_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    420;
+    435;
 
   friend void swap(HullSpec_OfficerSlots& a, HullSpec_OfficerSlots& b) {
     a.Swap(&b);
@@ -72673,7 +75428,7 @@ class HullSpec_CrewSlot final :
                &_HullSpec_CrewSlot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    421;
+    436;
 
   friend void swap(HullSpec_CrewSlot& a, HullSpec_CrewSlot& b) {
     a.Swap(&b);
@@ -72843,7 +75598,7 @@ class HullSpec_CoreStatModifier final :
                &_HullSpec_CoreStatModifier_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    422;
+    437;
 
   friend void swap(HullSpec_CoreStatModifier& a, HullSpec_CoreStatModifier& b) {
     a.Swap(&b);
@@ -73097,7 +75852,7 @@ class HullSpec final :
                &_HullSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    426;
+    441;
 
   friend void swap(HullSpec& a, HullSpec& b) {
     a.Swap(&b);
@@ -73184,6 +75939,7 @@ class HullSpec final :
     kActivatedAbilitiesIdsFieldNumber = 28,
     kAbilityUnlockResearchIdsFieldNumber = 29,
     kForbiddenTechSlot1CostFieldNumber = 32,
+    kShipBonusesFieldNumber = 35,
     kIdStrFieldNumber = 2,
     kNameFieldNumber = 3,
     kCraftingIdFieldNumber = 24,
@@ -73206,6 +75962,8 @@ class HullSpec final :
     kCategoryFieldNumber = 27,
     kForbiddenTechSlot1SpecIdFieldNumber = 30,
     kForbiddenTechSlot1TierReqFieldNumber = 31,
+    kPeaceShieldDownWhenAttackedFieldNumber = 33,
+    kGenerationFieldNumber = 34,
   };
   // repeated int64 componentDefaults = 13;
   int componentdefaults_size() const;
@@ -73358,6 +76116,24 @@ class HullSpec final :
   private:
   const ::google::protobuf::Map<::int64_t, ::int32_t>& _internal_forbiddentechslot1cost() const;
   ::google::protobuf::Map<::int64_t, ::int32_t>* _internal_mutable_forbiddentechslot1cost();
+
+  public:
+  // repeated int64 shipBonuses = 35;
+  int shipbonuses_size() const;
+  private:
+  int _internal_shipbonuses_size() const;
+
+  public:
+  void clear_shipbonuses() ;
+  ::int64_t shipbonuses(int index) const;
+  void set_shipbonuses(int index, ::int64_t value);
+  void add_shipbonuses(::int64_t value);
+  const ::google::protobuf::RepeatedField<::int64_t>& shipbonuses() const;
+  ::google::protobuf::RepeatedField<::int64_t>* mutable_shipbonuses();
+
+  private:
+  const ::google::protobuf::RepeatedField<::int64_t>& _internal_shipbonuses() const;
+  ::google::protobuf::RepeatedField<::int64_t>* _internal_mutable_shipbonuses();
 
   public:
   // string idStr = 2;
@@ -73603,12 +76379,32 @@ class HullSpec final :
   void _internal_set_forbiddentechslot1tierreq(::int32_t value);
 
   public:
+  // bool peaceShieldDownWhenAttacked = 33;
+  void clear_peaceshielddownwhenattacked() ;
+  bool peaceshielddownwhenattacked() const;
+  void set_peaceshielddownwhenattacked(bool value);
+
+  private:
+  bool _internal_peaceshielddownwhenattacked() const;
+  void _internal_set_peaceshielddownwhenattacked(bool value);
+
+  public:
+  // int32 generation = 34;
+  void clear_generation() ;
+  ::int32_t generation() const;
+  void set_generation(::int32_t value);
+
+  private:
+  ::int32_t _internal_generation() const;
+  void _internal_set_generation(::int32_t value);
+
+  public:
   // @@protoc_insertion_point(class_scope:Digit.PrimeServer.Models.HullSpec)
  private:
   class _Internal;
 
   friend class ::google::protobuf::internal::TcParser;
-  static const ::google::protobuf::internal::TcParseTable<5, 31, 8, 85, 2> _table_;
+  static const ::google::protobuf::internal::TcParseTable<5, 34, 8, 93, 7> _table_;
   template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
@@ -73636,6 +76432,8 @@ class HullSpec final :
                       ::google::protobuf::internal::WireFormatLite::TYPE_INT64,
                       ::google::protobuf::internal::WireFormatLite::TYPE_INT32>
         forbiddentechslot1cost_;
+    ::google::protobuf::RepeatedField<::int64_t> shipbonuses_;
+    mutable ::google::protobuf::internal::CachedSize _shipbonuses_cached_byte_size_;
     ::google::protobuf::internal::ArenaStringPtr idstr_;
     ::google::protobuf::internal::ArenaStringPtr name_;
     ::google::protobuf::internal::ArenaStringPtr craftingid_;
@@ -73658,6 +76456,8 @@ class HullSpec final :
     int category_;
     ::int64_t forbiddentechslot1specid_;
     ::int32_t forbiddentechslot1tierreq_;
+    bool peaceshielddownwhenattacked_;
+    ::int32_t generation_;
     PROTOBUF_TSAN_DECLARE_MEMBER
   };
   union { Impl_ _impl_; };
@@ -73720,7 +76520,7 @@ class ImpulseSpec final :
                &_ImpulseSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    427;
+    442;
 
   friend void swap(ImpulseSpec& a, ImpulseSpec& b) {
     a.Swap(&b);
@@ -73890,7 +76690,7 @@ class JobSpeedupResourceSpec_Cost final :
                &_JobSpeedupResourceSpec_Cost_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    428;
+    443;
 
   friend void swap(JobSpeedupResourceSpec_Cost& a, JobSpeedupResourceSpec_Cost& b) {
     a.Swap(&b);
@@ -74060,7 +76860,7 @@ class JobSpeedupResourceSpec_Costs final :
                &_JobSpeedupResourceSpec_Costs_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    429;
+    444;
 
   friend void swap(JobSpeedupResourceSpec_Costs& a, JobSpeedupResourceSpec_Costs& b) {
     a.Swap(&b);
@@ -74238,7 +77038,7 @@ class JobSpeedupResourceSpec final :
                &_JobSpeedupResourceSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    430;
+    445;
 
   friend void swap(JobSpeedupResourceSpec& a, JobSpeedupResourceSpec& b) {
     a.Swap(&b);
@@ -74439,7 +77239,7 @@ class LoyaltyConfig final :
                &_LoyaltyConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    431;
+    446;
 
   friend void swap(LoyaltyConfig& a, LoyaltyConfig& b) {
     a.Swap(&b);
@@ -74609,7 +77409,7 @@ class LoyaltySpecs final :
                &_LoyaltySpecs_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    432;
+    447;
 
   friend void swap(LoyaltySpecs& a, LoyaltySpecs& b) {
     a.Swap(&b);
@@ -74775,7 +77575,7 @@ class LoyaltyTier final :
                &_LoyaltyTier_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    433;
+    448;
 
   friend void swap(LoyaltyTier& a, LoyaltyTier& b) {
     a.Swap(&b);
@@ -75019,7 +77819,7 @@ class LoyaltyBuffRewardCollectionsSpec final :
                &_LoyaltyBuffRewardCollectionsSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    434;
+    449;
 
   friend void swap(LoyaltyBuffRewardCollectionsSpec& a, LoyaltyBuffRewardCollectionsSpec& b) {
     a.Swap(&b);
@@ -75197,7 +77997,7 @@ class LoyaltyBuffRewardsSpec final :
                &_LoyaltyBuffRewardsSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    435;
+    450;
 
   friend void swap(LoyaltyBuffRewardsSpec& a, LoyaltyBuffRewardsSpec& b) {
     a.Swap(&b);
@@ -75415,7 +78215,7 @@ class MitigationCapsSpec_MitigationCap final :
                &_MitigationCapsSpec_MitigationCap_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    438;
+    453;
 
   friend void swap(MitigationCapsSpec_MitigationCap& a, MitigationCapsSpec_MitigationCap& b) {
     a.Swap(&b);
@@ -75620,7 +78420,7 @@ class MitigationCapsSpec final :
                &_MitigationCapsSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    439;
+    454;
 
   friend void swap(MitigationCapsSpec& a, MitigationCapsSpec& b) {
     a.Swap(&b);
@@ -75788,7 +78588,7 @@ class Modifiers final :
                &_Modifiers_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    440;
+    455;
 
   friend void swap(Modifiers& a, Modifiers& b) {
     a.Swap(&b);
@@ -76012,7 +78812,7 @@ class ModuleEffectSpec final :
                &_ModuleEffectSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    441;
+    456;
 
   friend void swap(ModuleEffectSpec& a, ModuleEffectSpec& b) {
     a.Swap(&b);
@@ -76311,7 +79111,7 @@ class RankedValuesFloat final :
                &_RankedValuesFloat_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    442;
+    457;
 
   friend void swap(RankedValuesFloat& a, RankedValuesFloat& b) {
     a.Swap(&b);
@@ -76477,7 +79277,7 @@ class RankedValuesInt final :
                &_RankedValuesInt_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    443;
+    458;
 
   friend void swap(RankedValuesInt& a, RankedValuesInt& b) {
     a.Swap(&b);
@@ -76668,7 +79468,7 @@ class OfficerCoreStatSpec final :
                &_OfficerCoreStatSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    445;
+    460;
 
   friend void swap(OfficerCoreStatSpec& a, OfficerCoreStatSpec& b) {
     a.Swap(&b);
@@ -76847,7 +79647,7 @@ class OfficerCoreStatThresholdsSpec_Threshold final :
                &_OfficerCoreStatThresholdsSpec_Threshold_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    446;
+    461;
 
   friend void swap(OfficerCoreStatThresholdsSpec_Threshold& a, OfficerCoreStatThresholdsSpec_Threshold& b) {
     a.Swap(&b);
@@ -77017,7 +79817,7 @@ class OfficerCoreStatThresholdsSpec final :
                &_OfficerCoreStatThresholdsSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    447;
+    462;
 
   friend void swap(OfficerCoreStatThresholdsSpec& a, OfficerCoreStatThresholdsSpec& b) {
     a.Swap(&b);
@@ -77209,7 +80009,7 @@ class OfficerIntelRequirementSpec final :
                &_OfficerIntelRequirementSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    449;
+    464;
 
   friend void swap(OfficerIntelRequirementSpec& a, OfficerIntelRequirementSpec& b) {
     a.Swap(&b);
@@ -77388,7 +80188,7 @@ class PromotionCost final :
                &_PromotionCost_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    450;
+    465;
 
   friend void swap(PromotionCost& a, PromotionCost& b) {
     a.Swap(&b);
@@ -77606,7 +80406,7 @@ class OfficerPromotionSpec final :
                &_OfficerPromotionSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    452;
+    467;
 
   friend void swap(OfficerPromotionSpec& a, OfficerPromotionSpec& b) {
     a.Swap(&b);
@@ -77809,7 +80609,7 @@ class OfficerRank final :
                &_OfficerRank_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    453;
+    468;
 
   friend void swap(OfficerRank& a, OfficerRank& b) {
     a.Swap(&b);
@@ -78023,7 +80823,7 @@ class OfficerSpec_Level final :
                &_OfficerSpec_Level_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    454;
+    469;
 
   friend void swap(OfficerSpec_Level& a, OfficerSpec_Level& b) {
     a.Swap(&b);
@@ -78189,7 +80989,7 @@ class OfficerSpec final :
                &_OfficerSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    455;
+    470;
 
   friend void swap(OfficerSpec& a, OfficerSpec& b) {
     a.Swap(&b);
@@ -78709,7 +81509,7 @@ class OfficerSynergyFactorSpec_ManeuverFactor final :
                &_OfficerSynergyFactorSpec_ManeuverFactor_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    456;
+    471;
 
   friend void swap(OfficerSynergyFactorSpec_ManeuverFactor& a, OfficerSynergyFactorSpec_ManeuverFactor& b) {
     a.Swap(&b);
@@ -78879,7 +81679,7 @@ class OfficerSynergyFactorSpec final :
                &_OfficerSynergyFactorSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    457;
+    472;
 
   friend void swap(OfficerSynergyFactorSpec& a, OfficerSynergyFactorSpec& b) {
     a.Swap(&b);
@@ -79059,7 +81859,7 @@ class PlayerXpSpec_Rewards final :
                &_PlayerXpSpec_Rewards_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    458;
+    473;
 
   friend void swap(PlayerXpSpec_Rewards& a, PlayerXpSpec_Rewards& b) {
     a.Swap(&b);
@@ -79249,7 +82049,7 @@ class PlayerXpSpec final :
                &_PlayerXpSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    460;
+    475;
 
   friend void swap(PlayerXpSpec& a, PlayerXpSpec& b) {
     a.Swap(&b);
@@ -79441,7 +82241,7 @@ class PvPBandingLevel final :
                &_PvPBandingLevel_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    461;
+    476;
 
   friend void swap(PvPBandingLevel& a, PvPBandingLevel& b) {
     a.Swap(&b);
@@ -79611,7 +82411,7 @@ class Requirement final :
                &_Requirement_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    462;
+    477;
 
   friend void swap(Requirement& a, Requirement& b) {
     a.Swap(&b);
@@ -79817,7 +82617,7 @@ class ResearchTreesState final :
                &_ResearchTreesState_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    464;
+    479;
 
   friend void swap(ResearchTreesState& a, ResearchTreesState& b) {
     a.Swap(&b);
@@ -79984,7 +82784,7 @@ class ResearchProjectLevel final :
                &_ResearchProjectLevel_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    465;
+    480;
 
   friend void swap(ResearchProjectLevel& a, ResearchProjectLevel& b) {
     a.Swap(&b);
@@ -80226,7 +83026,7 @@ class ResearchProjectSpec final :
                &_ResearchProjectSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    466;
+    481;
 
   friend void swap(ResearchProjectSpec& a, ResearchProjectSpec& b) {
     a.Swap(&b);
@@ -80306,6 +83106,7 @@ class ResearchProjectSpec final :
     kViewLevelFieldNumber = 7,
     kDoublerFieldNumber = 6,
     kEntityTypeFieldNumber = 8,
+    kGenerationFieldNumber = 9,
   };
   // repeated .Digit.PrimeServer.Models.ResearchProjectLevel levels = 4;
   int levels_size() const;
@@ -80408,12 +83209,22 @@ class ResearchProjectSpec final :
   void _internal_set_entitytype(::Digit::PrimeServer::Models::EntityType value);
 
   public:
+  // int32 generation = 9;
+  void clear_generation() ;
+  ::int32_t generation() const;
+  void set_generation(::int32_t value);
+
+  private:
+  ::int32_t _internal_generation() const;
+  void _internal_set_generation(::int32_t value);
+
+  public:
   // @@protoc_insertion_point(class_scope:Digit.PrimeServer.Models.ResearchProjectSpec)
  private:
   class _Internal;
 
   friend class ::google::protobuf::internal::TcParser;
-  static const ::google::protobuf::internal::TcParseTable<3, 8, 2, 0, 2> _table_;
+  static const ::google::protobuf::internal::TcParseTable<4, 9, 2, 0, 2> _table_;
   template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
@@ -80429,6 +83240,7 @@ class ResearchProjectSpec final :
     ::int64_t viewlevel_;
     bool doubler_;
     int entitytype_;
+    ::int32_t generation_;
     PROTOBUF_TSAN_DECLARE_MEMBER
   };
   union { Impl_ _impl_; };
@@ -80491,7 +83303,7 @@ class Resource final :
                &_Resource_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    467;
+    482;
 
   friend void swap(Resource& a, Resource& b) {
     a.Swap(&b);
@@ -80661,7 +83473,7 @@ class ResourceConversionRate final :
                &_ResourceConversionRate_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    468;
+    483;
 
   friend void swap(ResourceConversionRate& a, ResourceConversionRate& b) {
     a.Swap(&b);
@@ -80831,7 +83643,7 @@ class ResourceConversionSpec final :
                &_ResourceConversionSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    469;
+    484;
 
   friend void swap(ResourceConversionSpec& a, ResourceConversionSpec& b) {
     a.Swap(&b);
@@ -80910,6 +83722,7 @@ class ResourceConversionSpec final :
     kConversionTypeFieldNumber = 4,
     kActivateLevelUpFieldNumber = 5,
     kFreeSkipThresholdFieldNumber = 6,
+    kGenerationFieldNumber = 8,
   };
   // repeated .Digit.PrimeServer.Models.ResourceConversionRate rates = 7;
   int rates_size() const;
@@ -80995,12 +83808,22 @@ class ResourceConversionSpec final :
   void _internal_set_freeskipthreshold(float value);
 
   public:
+  // int32 generation = 8;
+  void clear_generation() ;
+  ::int32_t generation() const;
+  void set_generation(::int32_t value);
+
+  private:
+  ::int32_t _internal_generation() const;
+  void _internal_set_generation(::int32_t value);
+
+  public:
   // @@protoc_insertion_point(class_scope:Digit.PrimeServer.Models.ResourceConversionSpec)
  private:
   class _Internal;
 
   friend class ::google::protobuf::internal::TcParser;
-  static const ::google::protobuf::internal::TcParseTable<3, 7, 1, 61, 2> _table_;
+  static const ::google::protobuf::internal::TcParseTable<3, 8, 1, 69, 2> _table_;
   template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
@@ -81012,6 +83835,7 @@ class ResourceConversionSpec final :
     int conversiontype_;
     float activatelevelup_;
     float freeskipthreshold_;
+    ::int32_t generation_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER
   };
@@ -81082,7 +83906,7 @@ class ResourceSpec final :
                &_ResourceSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    470;
+    485;
 
   friend void swap(ResourceSpec& a, ResourceSpec& b) {
     a.Swap(&b);
@@ -81172,6 +83996,7 @@ class ResourceSpec final :
     kShowInInventoryRuleFieldNumber = 18,
     kMiningNodeThresholdFieldNumber = 20,
     kOwnerTypeFieldNumber = 21,
+    kGenerationFieldNumber = 22,
     kSpeedupParamsFieldNumber = 13,
     kBatchParamsFieldNumber = 14,
     kPeaceShieldParamsFieldNumber = 19,
@@ -81379,6 +84204,16 @@ class ResourceSpec final :
   void _internal_set_ownertype(::Digit::PrimeServer::Models::ResourceOwnerType value);
 
   public:
+  // int32 generation = 22;
+  void clear_generation() ;
+  ::int32_t generation() const;
+  void set_generation(::int32_t value);
+
+  private:
+  ::int32_t _internal_generation() const;
+  void _internal_set_generation(::int32_t value);
+
+  public:
   // .Digit.PrimeServer.Models.ResourceSpeedupParameters speedupParams = 13;
   bool has_speedupparams() const;
   private:
@@ -81449,7 +84284,7 @@ class ResourceSpec final :
   inline void clear_has_Params();
 
   friend class ::google::protobuf::internal::TcParser;
-  static const ::google::protobuf::internal::TcParseTable<5, 21, 4, 81, 2> _table_;
+  static const ::google::protobuf::internal::TcParseTable<5, 22, 4, 81, 2> _table_;
   template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
@@ -81474,6 +84309,7 @@ class ResourceSpec final :
     int showininventoryrule_;
     float miningnodethreshold_;
     int ownertype_;
+    ::int32_t generation_;
     union ParamsUnion {
       constexpr ParamsUnion() : _constinit_{} {}
         ::google::protobuf::internal::ConstantInitialized _constinit_;
@@ -81545,7 +84381,7 @@ class ResourceSpeedupParameters final :
                &_ResourceSpeedupParameters_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    471;
+    486;
 
   friend void swap(ResourceSpeedupParameters& a, ResourceSpeedupParameters& b) {
     a.Swap(&b);
@@ -81725,7 +84561,7 @@ class ResourceBatchParameters final :
                &_ResourceBatchParameters_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    472;
+    487;
 
   friend void swap(ResourceBatchParameters& a, ResourceBatchParameters& b) {
     a.Swap(&b);
@@ -81895,7 +84731,7 @@ class ResourcePeaceShieldParameters final :
                &_ResourcePeaceShieldParameters_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    473;
+    488;
 
   friend void swap(ResourcePeaceShieldParameters& a, ResourcePeaceShieldParameters& b) {
     a.Swap(&b);
@@ -82089,7 +84925,7 @@ class ScrapyardSpec final :
                &_ScrapyardSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    475;
+    490;
 
   friend void swap(ScrapyardSpec& a, ScrapyardSpec& b) {
     a.Swap(&b);
@@ -82292,7 +85128,7 @@ class SensorSpec final :
                &_SensorSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    476;
+    491;
 
   friend void swap(SensorSpec& a, SensorSpec& b) {
     a.Swap(&b);
@@ -82450,7 +85286,7 @@ class ShieldSpec final :
                &_ShieldSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    477;
+    492;
 
   friend void swap(ShieldSpec& a, ShieldSpec& b) {
     a.Swap(&b);
@@ -82662,7 +85498,7 @@ class ShipLevelUpBonusBuffSpec final :
                &_ShipLevelUpBonusBuffSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    478;
+    493;
 
   friend void swap(ShipLevelUpBonusBuffSpec& a, ShipLevelUpBonusBuffSpec& b) {
     a.Swap(&b);
@@ -82828,7 +85664,7 @@ class ShipLevelUpBonusSpec final :
                &_ShipLevelUpBonusSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    479;
+    494;
 
   friend void swap(ShipLevelUpBonusSpec& a, ShipLevelUpBonusSpec& b) {
     a.Swap(&b);
@@ -83066,7 +85902,7 @@ class ShipTierSpec final :
                &_ShipTierSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    482;
+    497;
 
   friend void swap(ShipTierSpec& a, ShipTierSpec& b) {
     a.Swap(&b);
@@ -83325,7 +86161,7 @@ class TierCost final :
                &_TierCost_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    484;
+    499;
 
   friend void swap(TierCost& a, TierCost& b) {
     a.Swap(&b);
@@ -83528,7 +86364,7 @@ class TierStatModifier final :
                &_TierStatModifier_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    486;
+    501;
 
   friend void swap(TierStatModifier& a, TierStatModifier& b) {
     a.Swap(&b);
@@ -83707,7 +86543,7 @@ class ConsumablesSlotSpecParams final :
                &_ConsumablesSlotSpecParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    487;
+    502;
 
   friend void swap(ConsumablesSlotSpecParams& a, ConsumablesSlotSpecParams& b) {
     a.Swap(&b);
@@ -83920,7 +86756,7 @@ class OfficerPresetsSpecParams final :
                &_OfficerPresetsSpecParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    488;
+    503;
 
   friend void swap(OfficerPresetsSpecParams& a, OfficerPresetsSpecParams& b) {
     a.Swap(&b);
@@ -84078,7 +86914,7 @@ class WorkerSlotSpecParams final :
                &_WorkerSlotSpecParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    489;
+    504;
 
   friend void swap(WorkerSlotSpecParams& a, WorkerSlotSpecParams& b) {
     a.Swap(&b);
@@ -84236,7 +87072,7 @@ class FleetCommanderSlotSpecParams final :
                &_FleetCommanderSlotSpecParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    490;
+    505;
 
   friend void swap(FleetCommanderSlotSpecParams& a, FleetCommanderSlotSpecParams& b) {
     a.Swap(&b);
@@ -84394,7 +87230,7 @@ class SelectableSkillSlotSpecParams final :
                &_SelectableSkillSlotSpecParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    491;
+    506;
 
   friend void swap(SelectableSkillSlotSpecParams& a, SelectableSkillSlotSpecParams& b) {
     a.Swap(&b);
@@ -84576,7 +87412,7 @@ class ChallengeLadderSlotSpecParams final :
                &_ChallengeLadderSlotSpecParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    492;
+    507;
 
   friend void swap(ChallengeLadderSlotSpecParams& a, ChallengeLadderSlotSpecParams& b) {
     a.Swap(&b);
@@ -84733,7 +87569,7 @@ class ForbiddenTechSlotSpecParams final :
                &_ForbiddenTechSlotSpecParams_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    493;
+    508;
 
   friend void swap(ForbiddenTechSlotSpecParams& a, ForbiddenTechSlotSpecParams& b) {
     a.Swap(&b);
@@ -84870,7 +87706,7 @@ class SlotSpec final :
                &_SlotSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    494;
+    509;
 
   friend void swap(SlotSpec& a, SlotSpec& b) {
     a.Swap(&b);
@@ -85253,7 +88089,7 @@ class SpecialSpec_Stat final :
                &_SpecialSpec_Stat_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    495;
+    510;
 
   friend void swap(SpecialSpec_Stat& a, SpecialSpec_Stat& b) {
     a.Swap(&b);
@@ -85423,7 +88259,7 @@ class SpecialSpec final :
                &_SpecialSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    496;
+    511;
 
   friend void swap(SpecialSpec& a, SpecialSpec& b) {
     a.Swap(&b);
@@ -85643,7 +88479,7 @@ class StarbaseInfoResponse final :
                &_StarbaseInfoResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    499;
+    514;
 
   friend void swap(StarbaseInfoResponse& a, StarbaseInfoResponse& b) {
     a.Swap(&b);
@@ -85848,7 +88684,7 @@ class StarbaseInfo final :
                &_StarbaseInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    500;
+    515;
 
   friend void swap(StarbaseInfo& a, StarbaseInfo& b) {
     a.Swap(&b);
@@ -86075,7 +88911,7 @@ class StarbaseModuleInfo final :
                &_StarbaseModuleInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    501;
+    516;
 
   friend void swap(StarbaseModuleInfo& a, StarbaseModuleInfo& b) {
     a.Swap(&b);
@@ -86245,7 +89081,7 @@ class ResourceHarvester final :
                &_ResourceHarvester_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    502;
+    517;
 
   friend void swap(ResourceHarvester& a, ResourceHarvester& b) {
     a.Swap(&b);
@@ -86462,7 +89298,7 @@ class StarbaseSpec_Attribute final :
                &_StarbaseSpec_Attribute_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    503;
+    518;
 
   friend void swap(StarbaseSpec_Attribute& a, StarbaseSpec_Attribute& b) {
     a.Swap(&b);
@@ -86627,12 +89463,17 @@ class StarbaseSpec_Level final :
   static const StarbaseSpec_Level& default_instance() {
     return *internal_default_instance();
   }
+  enum AttributeCase {
+    kResourceType = 11,
+    ATTRIBUTE_NOT_SET = 0,
+  };
+
   static inline const StarbaseSpec_Level* internal_default_instance() {
     return reinterpret_cast<const StarbaseSpec_Level*>(
                &_StarbaseSpec_Level_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    504;
+    519;
 
   friend void swap(StarbaseSpec_Level& a, StarbaseSpec_Level& b) {
     a.Swap(&b);
@@ -86711,6 +89552,8 @@ class StarbaseSpec_Level final :
     kPlayerXpFieldNumber = 2,
     kHardCurrencyCostFieldNumber = 3,
     kMilitaryMightFieldNumber = 8,
+    kGenerationFieldNumber = 10,
+    kResourceTypeFieldNumber = 11,
   };
   // repeated .Digit.PrimeServer.Models.InventoryItem rewards = 5;
   int rewards_size() const;
@@ -86806,12 +89649,39 @@ class StarbaseSpec_Level final :
   void _internal_set_militarymight(::int64_t value);
 
   public:
+  // int32 generation = 10;
+  void clear_generation() ;
+  ::int32_t generation() const;
+  void set_generation(::int32_t value);
+
+  private:
+  ::int32_t _internal_generation() const;
+  void _internal_set_generation(::int32_t value);
+
+  public:
+  // int64 resourceType = 11;
+  bool has_resourcetype() const;
+  void clear_resourcetype() ;
+  ::int64_t resourcetype() const;
+  void set_resourcetype(::int64_t value);
+
+  private:
+  ::int64_t _internal_resourcetype() const;
+  void _internal_set_resourcetype(::int64_t value);
+
+  public:
+  void clear_Attribute();
+  AttributeCase Attribute_case() const;
   // @@protoc_insertion_point(class_scope:Digit.PrimeServer.Models.StarbaseSpec.Level)
  private:
   class _Internal;
+  void set_has_resourcetype();
+
+  inline bool has_Attribute() const;
+  inline void clear_has_Attribute();
 
   friend class ::google::protobuf::internal::TcParser;
-  static const ::google::protobuf::internal::TcParseTable<3, 7, 3, 0, 2> _table_;
+  static const ::google::protobuf::internal::TcParseTable<4, 9, 3, 0, 2> _table_;
   template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
@@ -86823,7 +89693,15 @@ class StarbaseSpec_Level final :
     ::int64_t playerxp_;
     ::int64_t hardcurrencycost_;
     ::int64_t militarymight_;
+    ::int32_t generation_;
+    union AttributeUnion {
+      constexpr AttributeUnion() : _constinit_{} {}
+        ::google::protobuf::internal::ConstantInitialized _constinit_;
+      ::int64_t resourcetype_;
+    } Attribute_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
+    ::uint32_t _oneof_case_[1];
+
     PROTOBUF_TSAN_DECLARE_MEMBER
   };
   union { Impl_ _impl_; };
@@ -86886,7 +89764,7 @@ class StarbaseSpec final :
                &_StarbaseSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    505;
+    520;
 
   friend void swap(StarbaseSpec& a, StarbaseSpec& b) {
     a.Swap(&b);
@@ -87166,7 +90044,7 @@ class TraitsSpec final :
                &_TraitsSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    506;
+    521;
 
   friend void swap(TraitsSpec& a, TraitsSpec& b) {
     a.Swap(&b);
@@ -87372,7 +90250,7 @@ class TraitCostsSpec final :
                &_TraitCostsSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    507;
+    522;
 
   friend void swap(TraitCostsSpec& a, TraitCostsSpec& b) {
     a.Swap(&b);
@@ -87562,7 +90440,7 @@ class TraitCostsPerLevelSpec final :
                &_TraitCostsPerLevelSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    509;
+    524;
 
   friend void swap(TraitCostsPerLevelSpec& a, TraitCostsPerLevelSpec& b) {
     a.Swap(&b);
@@ -87741,7 +90619,7 @@ class TraitRequirementsSpec final :
                &_TraitRequirementsSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    510;
+    525;
 
   friend void swap(TraitRequirementsSpec& a, TraitRequirementsSpec& b) {
     a.Swap(&b);
@@ -87911,7 +90789,7 @@ class TraitWithMaxLevelSpec final :
                &_TraitWithMaxLevelSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    511;
+    526;
 
   friend void swap(TraitWithMaxLevelSpec& a, TraitWithMaxLevelSpec& b) {
     a.Swap(&b);
@@ -88081,7 +90959,7 @@ class OfficerToTraitSpec final :
                &_OfficerToTraitSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    512;
+    527;
 
   friend void swap(OfficerToTraitSpec& a, OfficerToTraitSpec& b) {
     a.Swap(&b);
@@ -88284,7 +91162,7 @@ class UserConsumableSpec_Attributes final :
                &_UserConsumableSpec_Attributes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    513;
+    528;
 
   friend void swap(UserConsumableSpec_Attributes& a, UserConsumableSpec_Attributes& b) {
     a.Swap(&b);
@@ -88455,7 +91333,7 @@ class UserConsumableSpec final :
                &_UserConsumableSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    514;
+    529;
 
   friend void swap(UserConsumableSpec& a, UserConsumableSpec& b) {
     a.Swap(&b);
@@ -88645,7 +91523,7 @@ class WarpSpec final :
                &_WarpSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    515;
+    530;
 
   friend void swap(WarpSpec& a, WarpSpec& b) {
     a.Swap(&b);
@@ -88901,7 +91779,7 @@ class InstantWarpSpec final :
                &_InstantWarpSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    516;
+    531;
 
   friend void swap(InstantWarpSpec& a, InstantWarpSpec& b) {
     a.Swap(&b);
@@ -89083,7 +91961,7 @@ class TowingSpec final :
                &_TowingSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    517;
+    532;
 
   friend void swap(TowingSpec& a, TowingSpec& b) {
     a.Swap(&b);
@@ -89253,7 +92131,7 @@ class CloakingSpec final :
                &_CloakingSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    518;
+    533;
 
   friend void swap(CloakingSpec& a, CloakingSpec& b) {
     a.Swap(&b);
@@ -89459,7 +92337,7 @@ class SupportShipSpec final :
                &_SupportShipSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    519;
+    534;
 
   friend void swap(SupportShipSpec& a, SupportShipSpec& b) {
     a.Swap(&b);
@@ -89665,7 +92543,7 @@ class DebuffShipSpec final :
                &_DebuffShipSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    520;
+    535;
 
   friend void swap(DebuffShipSpec& a, DebuffShipSpec& b) {
     a.Swap(&b);
@@ -89880,7 +92758,7 @@ class WeaponSpec_Debuffs final :
                &_WeaponSpec_Debuffs_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    521;
+    536;
 
   friend void swap(WeaponSpec_Debuffs& a, WeaponSpec_Debuffs& b) {
     a.Swap(&b);
@@ -90050,7 +92928,7 @@ class WeaponSpec_Modifiers final :
                &_WeaponSpec_Modifiers_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    522;
+    537;
 
   friend void swap(WeaponSpec_Modifiers& a, WeaponSpec_Modifiers& b) {
     a.Swap(&b);
@@ -90268,7 +93146,7 @@ class WeaponSpec_Attack final :
                &_WeaponSpec_Attack_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    523;
+    538;
 
   friend void swap(WeaponSpec_Attack& a, WeaponSpec_Attack& b) {
     a.Swap(&b);
@@ -90558,7 +93436,7 @@ class WeaponSpec final :
                &_WeaponSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    524;
+    539;
 
   friend void swap(WeaponSpec& a, WeaponSpec& b) {
     a.Swap(&b);
@@ -90784,7 +93662,7 @@ class WorkerSpec final :
                &_WorkerSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    525;
+    540;
 
   friend void swap(WorkerSpec& a, WorkerSpec& b) {
     a.Swap(&b);
@@ -91014,7 +93892,7 @@ class AllianceAssignedTerritorySlot final :
                &_AllianceAssignedTerritorySlot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    526;
+    541;
 
   friend void swap(AllianceAssignedTerritorySlot& a, AllianceAssignedTerritorySlot& b) {
     a.Swap(&b);
@@ -91228,7 +94106,7 @@ class AllianceTerritorySlots final :
                &_AllianceTerritorySlots_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    528;
+    543;
 
   friend void swap(AllianceTerritorySlots& a, AllianceTerritorySlots& b) {
     a.Swap(&b);
@@ -91443,7 +94321,7 @@ class Territory final :
                &_Territory_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    530;
+    545;
 
   friend void swap(Territory& a, Territory& b) {
     a.Swap(&b);
@@ -91720,7 +94598,7 @@ class TerritoryTakeoverPeriod final :
                &_TerritoryTakeoverPeriod_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    532;
+    547;
 
   friend void swap(TerritoryTakeoverPeriod& a, TerritoryTakeoverPeriod& b) {
     a.Swap(&b);
@@ -91971,7 +94849,7 @@ class TerritoryTakeover final :
                &_TerritoryTakeover_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    534;
+    549;
 
   friend void swap(TerritoryTakeover& a, TerritoryTakeover& b) {
     a.Swap(&b);
@@ -92185,7 +95063,7 @@ class TerritoryOwner final :
                &_TerritoryOwner_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    535;
+    550;
 
   friend void swap(TerritoryOwner& a, TerritoryOwner& b) {
     a.Swap(&b);
@@ -92373,7 +95251,7 @@ class TerritoryOwnerVisualData final :
                &_TerritoryOwnerVisualData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    536;
+    551;
 
   friend void swap(TerritoryOwnerVisualData& a, TerritoryOwnerVisualData& b) {
     a.Swap(&b);
@@ -92605,7 +95483,7 @@ class TerritoryServiceSpec final :
                &_TerritoryServiceSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    539;
+    554;
 
   friend void swap(TerritoryServiceSpec& a, TerritoryServiceSpec& b) {
     a.Swap(&b);
@@ -92872,7 +95750,7 @@ class ActiveTerritoryServiceItem final :
                &_ActiveTerritoryServiceItem_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    541;
+    556;
 
   friend void swap(ActiveTerritoryServiceItem& a, ActiveTerritoryServiceItem& b) {
     a.Swap(&b);
@@ -93051,7 +95929,7 @@ class ActiveTerritoryService final :
                &_ActiveTerritoryService_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    542;
+    557;
 
   friend void swap(ActiveTerritoryService& a, ActiveTerritoryService& b) {
     a.Swap(&b);
@@ -93229,7 +96107,7 @@ class TerritoryServiceSlot final :
                &_TerritoryServiceSlot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    543;
+    558;
 
   friend void swap(TerritoryServiceSlot& a, TerritoryServiceSlot& b) {
     a.Swap(&b);
@@ -93447,7 +96325,7 @@ class TerritoriesStaticDataResponse final :
                &_TerritoriesStaticDataResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    546;
+    561;
 
   friend void swap(TerritoriesStaticDataResponse& a, TerritoriesStaticDataResponse& b) {
     a.Swap(&b);
@@ -93658,7 +96536,7 @@ class AllTerritoryOwnersResponse final :
                &_AllTerritoryOwnersResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    548;
+    563;
 
   friend void swap(AllTerritoryOwnersResponse& a, AllTerritoryOwnersResponse& b) {
     a.Swap(&b);
@@ -93825,7 +96703,7 @@ class TerritoryOwnerResponse final :
                &_TerritoryOwnerResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    549;
+    564;
 
   friend void swap(TerritoryOwnerResponse& a, TerritoryOwnerResponse& b) {
     a.Swap(&b);
@@ -94013,7 +96891,7 @@ class AllTerritoryTakeoversResponse final :
                &_AllTerritoryTakeoversResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    551;
+    566;
 
   friend void swap(AllTerritoryTakeoversResponse& a, AllTerritoryTakeoversResponse& b) {
     a.Swap(&b);
@@ -94180,7 +97058,7 @@ class TerritoryTakeoverResponse final :
                &_TerritoryTakeoverResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    552;
+    567;
 
   friend void swap(TerritoryTakeoverResponse& a, TerritoryTakeoverResponse& b) {
     a.Swap(&b);
@@ -94368,7 +97246,7 @@ class CanJoinTakeoverResponseData final :
                &_CanJoinTakeoverResponseData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    554;
+    569;
 
   friend void swap(CanJoinTakeoverResponseData& a, CanJoinTakeoverResponseData& b) {
     a.Swap(&b);
@@ -94619,7 +97497,7 @@ class CanJoinTakeoverResponse final :
                &_CanJoinTakeoverResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    555;
+    570;
 
   friend void swap(CanJoinTakeoverResponse& a, CanJoinTakeoverResponse& b) {
     a.Swap(&b);
@@ -94807,7 +97685,7 @@ class ActiveTerritoryServicesResponse final :
                &_ActiveTerritoryServicesResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    557;
+    572;
 
   friend void swap(ActiveTerritoryServicesResponse& a, ActiveTerritoryServicesResponse& b) {
     a.Swap(&b);
@@ -94974,7 +97852,7 @@ class TerritoryServiceSlotsResponse final :
                &_TerritoryServiceSlotsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    558;
+    573;
 
   friend void swap(TerritoryServiceSlotsResponse& a, TerritoryServiceSlotsResponse& b) {
     a.Swap(&b);
@@ -95152,7 +98030,7 @@ class AllianceTerritorySlotsResponse final :
                &_AllianceTerritorySlotsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    559;
+    574;
 
   friend void swap(AllianceTerritorySlotsResponse& a, AllianceTerritorySlotsResponse& b) {
     a.Swap(&b);
@@ -95316,7 +98194,7 @@ class CanActivateTerritoryServiceResponse final :
                &_CanActivateTerritoryServiceResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    560;
+    575;
 
   friend void swap(CanActivateTerritoryServiceResponse& a, CanActivateTerritoryServiceResponse& b) {
     a.Swap(&b);
@@ -95510,7 +98388,7 @@ class ActiveTrait final :
                &_ActiveTrait_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    561;
+    576;
 
   friend void swap(ActiveTrait& a, ActiveTrait& b) {
     a.Swap(&b);
@@ -95704,7 +98582,7 @@ class ActiveOfficerTraits final :
                &_ActiveOfficerTraits_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    563;
+    578;
 
   friend void swap(ActiveOfficerTraits& a, ActiveOfficerTraits& b) {
     a.Swap(&b);
@@ -95907,7 +98785,7 @@ class OfficerTraitsResponse final :
                &_OfficerTraitsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    565;
+    580;
 
   friend void swap(OfficerTraitsResponse& a, OfficerTraitsResponse& b) {
     a.Swap(&b);
@@ -96074,7 +98952,7 @@ class GetResourceGroupsResponse final :
                &_GetResourceGroupsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    566;
+    581;
 
   friend void swap(GetResourceGroupsResponse& a, GetResourceGroupsResponse& b) {
     a.Swap(&b);
@@ -96240,7 +99118,7 @@ class ResourceGroup final :
                &_ResourceGroup_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    567;
+    582;
 
   friend void swap(ResourceGroup& a, ResourceGroup& b) {
     a.Swap(&b);
@@ -96416,7 +99294,7 @@ class OptimisedGalaxyResponse final :
                &_OptimisedGalaxyResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    568;
+    583;
 
   friend void swap(OptimisedGalaxyResponse& a, OptimisedGalaxyResponse& b) {
     a.Swap(&b);
@@ -96580,7 +99458,7 @@ class NodeMissionsResponse final :
                &_NodeMissionsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    569;
+    584;
 
   friend void swap(NodeMissionsResponse& a, NodeMissionsResponse& b) {
     a.Swap(&b);
@@ -96770,7 +99648,7 @@ class AvailableMissionsResponse final :
                &_AvailableMissionsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    571;
+    586;
 
   friend void swap(AvailableMissionsResponse& a, AvailableMissionsResponse& b) {
     a.Swap(&b);
@@ -96961,7 +99839,7 @@ class MissionSpecsResponse final :
                &_MissionSpecsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    573;
+    588;
 
   friend void swap(MissionSpecsResponse& a, MissionSpecsResponse& b) {
     a.Swap(&b);
@@ -97148,7 +100026,7 @@ class ActiveMissionsResponse final :
                &_ActiveMissionsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    574;
+    589;
 
   friend void swap(ActiveMissionsResponse& a, ActiveMissionsResponse& b) {
     a.Swap(&b);
@@ -97314,7 +100192,7 @@ class CompletedMissionsResponse final :
                &_CompletedMissionsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    575;
+    590;
 
   friend void swap(CompletedMissionsResponse& a, CompletedMissionsResponse& b) {
     a.Swap(&b);
@@ -97481,7 +100359,7 @@ class ScrapyardJobResponse final :
                &_ScrapyardJobResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    576;
+    591;
 
   friend void swap(ScrapyardJobResponse& a, ScrapyardJobResponse& b) {
     a.Swap(&b);
@@ -97669,7 +100547,7 @@ class UserProfile final :
                &_UserProfile_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    578;
+    593;
 
   friend void swap(UserProfile& a, UserProfile& b) {
     a.Swap(&b);
@@ -97968,7 +100846,7 @@ class UserProfilesResponse final :
                &_UserProfilesResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    579;
+    594;
 
   friend void swap(UserProfilesResponse& a, UserProfilesResponse& b) {
     a.Swap(&b);
@@ -98078,53 +100956,25 @@ class UserProfilesResponse final :
   friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
 };// -------------------------------------------------------------------
 
-class DataCache_EtagsEntry_DoNotUse final : public ::google::protobuf::internal::MapEntry<DataCache_EtagsEntry_DoNotUse, 
-    std::string, std::string,
-    ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
-    ::google::protobuf::internal::WireFormatLite::TYPE_STRING> {
-public:
-  typedef ::google::protobuf::internal::MapEntry<DataCache_EtagsEntry_DoNotUse, 
-    std::string, std::string,
-    ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
-    ::google::protobuf::internal::WireFormatLite::TYPE_STRING> SuperType;
-  DataCache_EtagsEntry_DoNotUse();
-  template <typename = void>
-  explicit PROTOBUF_CONSTEXPR DataCache_EtagsEntry_DoNotUse(
-      ::google::protobuf::internal::ConstantInitialized);
-  explicit DataCache_EtagsEntry_DoNotUse(::google::protobuf::Arena* arena);
-  void MergeFrom(const DataCache_EtagsEntry_DoNotUse& other);
-  static const DataCache_EtagsEntry_DoNotUse* internal_default_instance() { return reinterpret_cast<const DataCache_EtagsEntry_DoNotUse*>(&_DataCache_EtagsEntry_DoNotUse_default_instance_); }
-  static bool ValidateKey(std::string* s) {
-    return ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(s->data(), static_cast<int>(s->size()), ::google::protobuf::internal::WireFormatLite::PARSE, "Digit.PrimeServer.Models.DataCache.EtagsEntry.key");
- }
-  static bool ValidateValue(std::string* s) {
-    return ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(s->data(), static_cast<int>(s->size()), ::google::protobuf::internal::WireFormatLite::PARSE, "Digit.PrimeServer.Models.DataCache.EtagsEntry.value");
- }
-  using ::google::protobuf::Message::MergeFrom;
-  ::google::protobuf::Metadata GetMetadata() const final;
-  friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
-};
-// -------------------------------------------------------------------
-
-class DataCache final :
-    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:Digit.PrimeServer.Models.DataCache) */ {
+class HostileWaveInfo final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:Digit.PrimeServer.Models.HostileWaveInfo) */ {
  public:
-  inline DataCache() : DataCache(nullptr) {}
-  ~DataCache() override;
+  inline HostileWaveInfo() : HostileWaveInfo(nullptr) {}
+  ~HostileWaveInfo() override;
   template<typename = void>
-  explicit PROTOBUF_CONSTEXPR DataCache(::google::protobuf::internal::ConstantInitialized);
+  explicit PROTOBUF_CONSTEXPR HostileWaveInfo(::google::protobuf::internal::ConstantInitialized);
 
-  DataCache(const DataCache& from);
-  DataCache(DataCache&& from) noexcept
-    : DataCache() {
+  HostileWaveInfo(const HostileWaveInfo& from);
+  HostileWaveInfo(HostileWaveInfo&& from) noexcept
+    : HostileWaveInfo() {
     *this = ::std::move(from);
   }
 
-  inline DataCache& operator=(const DataCache& from) {
+  inline HostileWaveInfo& operator=(const HostileWaveInfo& from) {
     CopyFrom(from);
     return *this;
   }
-  inline DataCache& operator=(DataCache&& from) noexcept {
+  inline HostileWaveInfo& operator=(HostileWaveInfo&& from) noexcept {
     if (this == &from) return *this;
     if (GetOwningArena() == from.GetOwningArena()
   #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
@@ -98154,20 +101004,20 @@ class DataCache final :
   static const ::google::protobuf::Reflection* GetReflection() {
     return default_instance().GetMetadata().reflection;
   }
-  static const DataCache& default_instance() {
+  static const HostileWaveInfo& default_instance() {
     return *internal_default_instance();
   }
-  static inline const DataCache* internal_default_instance() {
-    return reinterpret_cast<const DataCache*>(
-               &_DataCache_default_instance_);
+  static inline const HostileWaveInfo* internal_default_instance() {
+    return reinterpret_cast<const HostileWaveInfo*>(
+               &_HostileWaveInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    581;
+    595;
 
-  friend void swap(DataCache& a, DataCache& b) {
+  friend void swap(HostileWaveInfo& a, HostileWaveInfo& b) {
     a.Swap(&b);
   }
-  inline void Swap(DataCache* other) {
+  inline void Swap(HostileWaveInfo* other) {
     if (other == this) return;
   #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
     if (GetOwningArena() != nullptr &&
@@ -98180,7 +101030,7 @@ class DataCache final :
       ::google::protobuf::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(DataCache* other) {
+  void UnsafeArenaSwap(HostileWaveInfo* other) {
     if (other == this) return;
     ABSL_DCHECK(GetOwningArena() == other->GetOwningArena());
     InternalSwap(other);
@@ -98188,14 +101038,14 @@ class DataCache final :
 
   // implements Message ----------------------------------------------
 
-  DataCache* New(::google::protobuf::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<DataCache>(arena);
+  HostileWaveInfo* New(::google::protobuf::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<HostileWaveInfo>(arena);
   }
   using ::google::protobuf::Message::CopyFrom;
-  void CopyFrom(const DataCache& from);
+  void CopyFrom(const HostileWaveInfo& from);
   using ::google::protobuf::Message::MergeFrom;
-  void MergeFrom( const DataCache& from) {
-    DataCache::MergeImpl(*this, from);
+  void MergeFrom( const HostileWaveInfo& from) {
+    HostileWaveInfo::MergeImpl(*this, from);
   }
   private:
   static void MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg);
@@ -98213,15 +101063,417 @@ class DataCache final :
   void SharedCtor(::google::protobuf::Arena* arena);
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(DataCache* other);
+  void InternalSwap(HostileWaveInfo* other);
 
   private:
   friend class ::google::protobuf::internal::AnyMetadata;
   static ::absl::string_view FullMessageName() {
-    return "Digit.PrimeServer.Models.DataCache";
+    return "Digit.PrimeServer.Models.HostileWaveInfo";
   }
   protected:
-  explicit DataCache(::google::protobuf::Arena* arena);
+  explicit HostileWaveInfo(::google::protobuf::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::google::protobuf::Message::ClassData*GetClassData() const final;
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kHostileNameFieldNumber = 1,
+    kAmountFieldNumber = 3,
+    kLevelFieldNumber = 4,
+  };
+  // string hostileName = 1;
+  void clear_hostilename() ;
+  const std::string& hostilename() const;
+  template <typename Arg_ = const std::string&, typename... Args_>
+  void set_hostilename(Arg_&& arg, Args_... args);
+  std::string* mutable_hostilename();
+  PROTOBUF_NODISCARD std::string* release_hostilename();
+  void set_allocated_hostilename(std::string* ptr);
+
+  private:
+  const std::string& _internal_hostilename() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_hostilename(
+      const std::string& value);
+  std::string* _internal_mutable_hostilename();
+
+  public:
+  // int32 amount = 3;
+  void clear_amount() ;
+  ::int32_t amount() const;
+  void set_amount(::int32_t value);
+
+  private:
+  ::int32_t _internal_amount() const;
+  void _internal_set_amount(::int32_t value);
+
+  public:
+  // int32 level = 4;
+  void clear_level() ;
+  ::int32_t level() const;
+  void set_level(::int32_t value);
+
+  private:
+  ::int32_t _internal_level() const;
+  void _internal_set_level(::int32_t value);
+
+  public:
+  // @@protoc_insertion_point(class_scope:Digit.PrimeServer.Models.HostileWaveInfo)
+ private:
+  class _Internal;
+
+  friend class ::google::protobuf::internal::TcParser;
+  static const ::google::protobuf::internal::TcParseTable<2, 3, 0, 60, 2> _table_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::google::protobuf::internal::ArenaStringPtr hostilename_;
+    ::int32_t amount_;
+    ::int32_t level_;
+    mutable ::google::protobuf::internal::CachedSize _cached_size_;
+    PROTOBUF_TSAN_DECLARE_MEMBER
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
+};// -------------------------------------------------------------------
+
+class Wave final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:Digit.PrimeServer.Models.Wave) */ {
+ public:
+  inline Wave() : Wave(nullptr) {}
+  ~Wave() override;
+  template<typename = void>
+  explicit PROTOBUF_CONSTEXPR Wave(::google::protobuf::internal::ConstantInitialized);
+
+  Wave(const Wave& from);
+  Wave(Wave&& from) noexcept
+    : Wave() {
+    *this = ::std::move(from);
+  }
+
+  inline Wave& operator=(const Wave& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline Wave& operator=(Wave&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance);
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::google::protobuf::UnknownFieldSet>();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::google::protobuf::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::google::protobuf::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const Wave& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const Wave* internal_default_instance() {
+    return reinterpret_cast<const Wave*>(
+               &_Wave_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    596;
+
+  friend void swap(Wave& a, Wave& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(Wave* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::google::protobuf::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(Wave* other) {
+    if (other == this) return;
+    ABSL_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  Wave* New(::google::protobuf::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<Wave>(arena);
+  }
+  using ::google::protobuf::Message::CopyFrom;
+  void CopyFrom(const Wave& from);
+  using ::google::protobuf::Message::MergeFrom;
+  void MergeFrom( const Wave& from) {
+    Wave::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  ::size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::google::protobuf::internal::ParseContext* ctx) final;
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target, ::google::protobuf::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::google::protobuf::Arena* arena);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(Wave* other);
+
+  private:
+  friend class ::google::protobuf::internal::AnyMetadata;
+  static ::absl::string_view FullMessageName() {
+    return "Digit.PrimeServer.Models.Wave";
+  }
+  protected:
+  explicit Wave(::google::protobuf::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::google::protobuf::Message::ClassData*GetClassData() const final;
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kHostileFleetsFieldNumber = 3,
+    kWaveNumberFieldNumber = 1,
+    kTotalHostilesFieldNumber = 2,
+  };
+  // repeated .Digit.PrimeServer.Models.HostileWaveInfo hostileFleets = 3;
+  int hostilefleets_size() const;
+  private:
+  int _internal_hostilefleets_size() const;
+
+  public:
+  void clear_hostilefleets() ;
+  ::Digit::PrimeServer::Models::HostileWaveInfo* mutable_hostilefleets(int index);
+  ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::HostileWaveInfo >*
+      mutable_hostilefleets();
+  private:
+  const ::google::protobuf::RepeatedPtrField<::Digit::PrimeServer::Models::HostileWaveInfo>& _internal_hostilefleets() const;
+  ::google::protobuf::RepeatedPtrField<::Digit::PrimeServer::Models::HostileWaveInfo>* _internal_mutable_hostilefleets();
+  public:
+  const ::Digit::PrimeServer::Models::HostileWaveInfo& hostilefleets(int index) const;
+  ::Digit::PrimeServer::Models::HostileWaveInfo* add_hostilefleets();
+  const ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::HostileWaveInfo >&
+      hostilefleets() const;
+  // int32 waveNumber = 1;
+  void clear_wavenumber() ;
+  ::int32_t wavenumber() const;
+  void set_wavenumber(::int32_t value);
+
+  private:
+  ::int32_t _internal_wavenumber() const;
+  void _internal_set_wavenumber(::int32_t value);
+
+  public:
+  // int32 totalHostiles = 2;
+  void clear_totalhostiles() ;
+  ::int32_t totalhostiles() const;
+  void set_totalhostiles(::int32_t value);
+
+  private:
+  ::int32_t _internal_totalhostiles() const;
+  void _internal_set_totalhostiles(::int32_t value);
+
+  public:
+  // @@protoc_insertion_point(class_scope:Digit.PrimeServer.Models.Wave)
+ private:
+  class _Internal;
+
+  friend class ::google::protobuf::internal::TcParser;
+  static const ::google::protobuf::internal::TcParseTable<2, 3, 1, 0, 2> _table_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::HostileWaveInfo > hostilefleets_;
+    ::int32_t wavenumber_;
+    ::int32_t totalhostiles_;
+    mutable ::google::protobuf::internal::CachedSize _cached_size_;
+    PROTOBUF_TSAN_DECLARE_MEMBER
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
+};// -------------------------------------------------------------------
+
+class WavesSpec_WavesEntry_DoNotUse final : public ::google::protobuf::internal::MapEntry<WavesSpec_WavesEntry_DoNotUse, 
+    ::int64_t, ::Digit::PrimeServer::Models::Wave,
+    ::google::protobuf::internal::WireFormatLite::TYPE_INT64,
+    ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE> {
+public:
+  typedef ::google::protobuf::internal::MapEntry<WavesSpec_WavesEntry_DoNotUse, 
+    ::int64_t, ::Digit::PrimeServer::Models::Wave,
+    ::google::protobuf::internal::WireFormatLite::TYPE_INT64,
+    ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE> SuperType;
+  WavesSpec_WavesEntry_DoNotUse();
+  template <typename = void>
+  explicit PROTOBUF_CONSTEXPR WavesSpec_WavesEntry_DoNotUse(
+      ::google::protobuf::internal::ConstantInitialized);
+  explicit WavesSpec_WavesEntry_DoNotUse(::google::protobuf::Arena* arena);
+  void MergeFrom(const WavesSpec_WavesEntry_DoNotUse& other);
+  static const WavesSpec_WavesEntry_DoNotUse* internal_default_instance() { return reinterpret_cast<const WavesSpec_WavesEntry_DoNotUse*>(&_WavesSpec_WavesEntry_DoNotUse_default_instance_); }
+  static bool ValidateKey(void*) { return true; }
+  static bool ValidateValue(void*) { return true; }
+  using ::google::protobuf::Message::MergeFrom;
+  ::google::protobuf::Metadata GetMetadata() const final;
+  friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
+};
+// -------------------------------------------------------------------
+
+class WavesSpec final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:Digit.PrimeServer.Models.WavesSpec) */ {
+ public:
+  inline WavesSpec() : WavesSpec(nullptr) {}
+  ~WavesSpec() override;
+  template<typename = void>
+  explicit PROTOBUF_CONSTEXPR WavesSpec(::google::protobuf::internal::ConstantInitialized);
+
+  WavesSpec(const WavesSpec& from);
+  WavesSpec(WavesSpec&& from) noexcept
+    : WavesSpec() {
+    *this = ::std::move(from);
+  }
+
+  inline WavesSpec& operator=(const WavesSpec& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline WavesSpec& operator=(WavesSpec&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance);
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::google::protobuf::UnknownFieldSet>();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::google::protobuf::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::google::protobuf::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const WavesSpec& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const WavesSpec* internal_default_instance() {
+    return reinterpret_cast<const WavesSpec*>(
+               &_WavesSpec_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    598;
+
+  friend void swap(WavesSpec& a, WavesSpec& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(WavesSpec* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::google::protobuf::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(WavesSpec* other) {
+    if (other == this) return;
+    ABSL_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  WavesSpec* New(::google::protobuf::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<WavesSpec>(arena);
+  }
+  using ::google::protobuf::Message::CopyFrom;
+  void CopyFrom(const WavesSpec& from);
+  using ::google::protobuf::Message::MergeFrom;
+  void MergeFrom( const WavesSpec& from) {
+    WavesSpec::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  ::size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::google::protobuf::internal::ParseContext* ctx) final;
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target, ::google::protobuf::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::google::protobuf::Arena* arena);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(WavesSpec* other);
+
+  private:
+  friend class ::google::protobuf::internal::AnyMetadata;
+  static ::absl::string_view FullMessageName() {
+    return "Digit.PrimeServer.Models.WavesSpec";
+  }
+  protected:
+  explicit WavesSpec(::google::protobuf::Arena* arena);
   public:
 
   static const ClassData _class_data_;
@@ -98235,38 +101487,2211 @@ class DataCache final :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kEtagsFieldNumber = 1,
+    kWavesFieldNumber = 4,
+    kIdStrFieldNumber = 2,
+    kIdFieldNumber = 1,
+    kTotalWavesFieldNumber = 3,
   };
-  // map<string, string> etags = 1;
-  int etags_size() const;
+  // map<int64, .Digit.PrimeServer.Models.Wave> waves = 4;
+  int waves_size() const;
   private:
-  int _internal_etags_size() const;
+  int _internal_waves_size() const;
 
   public:
-  void clear_etags() ;
-  const ::google::protobuf::Map<std::string, std::string>& etags() const;
-  ::google::protobuf::Map<std::string, std::string>* mutable_etags();
+  void clear_waves() ;
+  const ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::Wave>& waves() const;
+  ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::Wave>* mutable_waves();
 
   private:
-  const ::google::protobuf::Map<std::string, std::string>& _internal_etags() const;
-  ::google::protobuf::Map<std::string, std::string>* _internal_mutable_etags();
+  const ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::Wave>& _internal_waves() const;
+  ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::Wave>* _internal_mutable_waves();
 
   public:
-  // @@protoc_insertion_point(class_scope:Digit.PrimeServer.Models.DataCache)
+  // string idStr = 2;
+  void clear_idstr() ;
+  const std::string& idstr() const;
+  template <typename Arg_ = const std::string&, typename... Args_>
+  void set_idstr(Arg_&& arg, Args_... args);
+  std::string* mutable_idstr();
+  PROTOBUF_NODISCARD std::string* release_idstr();
+  void set_allocated_idstr(std::string* ptr);
+
+  private:
+  const std::string& _internal_idstr() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_idstr(
+      const std::string& value);
+  std::string* _internal_mutable_idstr();
+
+  public:
+  // int64 id = 1;
+  void clear_id() ;
+  ::int64_t id() const;
+  void set_id(::int64_t value);
+
+  private:
+  ::int64_t _internal_id() const;
+  void _internal_set_id(::int64_t value);
+
+  public:
+  // int32 totalWaves = 3;
+  void clear_totalwaves() ;
+  ::int32_t totalwaves() const;
+  void set_totalwaves(::int32_t value);
+
+  private:
+  ::int32_t _internal_totalwaves() const;
+  void _internal_set_totalwaves(::int32_t value);
+
+  public:
+  // @@protoc_insertion_point(class_scope:Digit.PrimeServer.Models.WavesSpec)
  private:
   class _Internal;
 
   friend class ::google::protobuf::internal::TcParser;
-  static const ::google::protobuf::internal::TcParseTable<0, 1, 1, 48, 2> _table_;
+  static const ::google::protobuf::internal::TcParseTable<2, 4, 2, 48, 2> _table_;
   template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
-    ::google::protobuf::internal::MapField<DataCache_EtagsEntry_DoNotUse, std::string, std::string,
-                      ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
-                      ::google::protobuf::internal::WireFormatLite::TYPE_STRING>
-        etags_;
+    ::google::protobuf::internal::MapField<WavesSpec_WavesEntry_DoNotUse, ::int64_t, ::Digit::PrimeServer::Models::Wave,
+                      ::google::protobuf::internal::WireFormatLite::TYPE_INT64,
+                      ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE>
+        waves_;
+    ::google::protobuf::internal::ArenaStringPtr idstr_;
+    ::int64_t id_;
+    ::int32_t totalwaves_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
+    PROTOBUF_TSAN_DECLARE_MEMBER
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
+};// -------------------------------------------------------------------
+
+class ChallengeSpec final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:Digit.PrimeServer.Models.ChallengeSpec) */ {
+ public:
+  inline ChallengeSpec() : ChallengeSpec(nullptr) {}
+  ~ChallengeSpec() override;
+  template<typename = void>
+  explicit PROTOBUF_CONSTEXPR ChallengeSpec(::google::protobuf::internal::ConstantInitialized);
+
+  ChallengeSpec(const ChallengeSpec& from);
+  ChallengeSpec(ChallengeSpec&& from) noexcept
+    : ChallengeSpec() {
+    *this = ::std::move(from);
+  }
+
+  inline ChallengeSpec& operator=(const ChallengeSpec& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ChallengeSpec& operator=(ChallengeSpec&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance);
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::google::protobuf::UnknownFieldSet>();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::google::protobuf::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::google::protobuf::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const ChallengeSpec& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const ChallengeSpec* internal_default_instance() {
+    return reinterpret_cast<const ChallengeSpec*>(
+               &_ChallengeSpec_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    599;
+
+  friend void swap(ChallengeSpec& a, ChallengeSpec& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(ChallengeSpec* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::google::protobuf::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(ChallengeSpec* other) {
+    if (other == this) return;
+    ABSL_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  ChallengeSpec* New(::google::protobuf::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<ChallengeSpec>(arena);
+  }
+  using ::google::protobuf::Message::CopyFrom;
+  void CopyFrom(const ChallengeSpec& from);
+  using ::google::protobuf::Message::MergeFrom;
+  void MergeFrom( const ChallengeSpec& from) {
+    ChallengeSpec::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  ::size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::google::protobuf::internal::ParseContext* ctx) final;
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target, ::google::protobuf::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::google::protobuf::Arena* arena);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ChallengeSpec* other);
+
+  private:
+  friend class ::google::protobuf::internal::AnyMetadata;
+  static ::absl::string_view FullMessageName() {
+    return "Digit.PrimeServer.Models.ChallengeSpec";
+  }
+  protected:
+  explicit ChallengeSpec(::google::protobuf::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::google::protobuf::Message::ClassData*GetClassData() const final;
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kIdStrFieldNumber = 4,
+    kEntryCostAmountFieldNumber = 1,
+    kEntryCostResourceIdFieldNumber = 2,
+    kIdFieldNumber = 3,
+    kMaxAllowedDamageFieldNumber = 5,
+    kMaxPlayersFieldNumber = 6,
+    kTotalWavesFieldNumber = 7,
+    kFleetsPerPlayerFieldNumber = 8,
+    kRequiredLevelFieldNumber = 9,
+    kCountdownDurationFieldNumber = 10,
+  };
+  // string idStr = 4;
+  void clear_idstr() ;
+  const std::string& idstr() const;
+  template <typename Arg_ = const std::string&, typename... Args_>
+  void set_idstr(Arg_&& arg, Args_... args);
+  std::string* mutable_idstr();
+  PROTOBUF_NODISCARD std::string* release_idstr();
+  void set_allocated_idstr(std::string* ptr);
+
+  private:
+  const std::string& _internal_idstr() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_idstr(
+      const std::string& value);
+  std::string* _internal_mutable_idstr();
+
+  public:
+  // int64 entryCostAmount = 1;
+  void clear_entrycostamount() ;
+  ::int64_t entrycostamount() const;
+  void set_entrycostamount(::int64_t value);
+
+  private:
+  ::int64_t _internal_entrycostamount() const;
+  void _internal_set_entrycostamount(::int64_t value);
+
+  public:
+  // int64 entryCostResourceId = 2;
+  void clear_entrycostresourceid() ;
+  ::int64_t entrycostresourceid() const;
+  void set_entrycostresourceid(::int64_t value);
+
+  private:
+  ::int64_t _internal_entrycostresourceid() const;
+  void _internal_set_entrycostresourceid(::int64_t value);
+
+  public:
+  // int64 id = 3;
+  void clear_id() ;
+  ::int64_t id() const;
+  void set_id(::int64_t value);
+
+  private:
+  ::int64_t _internal_id() const;
+  void _internal_set_id(::int64_t value);
+
+  public:
+  // int32 maxAllowedDamage = 5;
+  void clear_maxalloweddamage() ;
+  ::int32_t maxalloweddamage() const;
+  void set_maxalloweddamage(::int32_t value);
+
+  private:
+  ::int32_t _internal_maxalloweddamage() const;
+  void _internal_set_maxalloweddamage(::int32_t value);
+
+  public:
+  // int32 maxPlayers = 6;
+  void clear_maxplayers() ;
+  ::int32_t maxplayers() const;
+  void set_maxplayers(::int32_t value);
+
+  private:
+  ::int32_t _internal_maxplayers() const;
+  void _internal_set_maxplayers(::int32_t value);
+
+  public:
+  // int32 totalWaves = 7;
+  void clear_totalwaves() ;
+  ::int32_t totalwaves() const;
+  void set_totalwaves(::int32_t value);
+
+  private:
+  ::int32_t _internal_totalwaves() const;
+  void _internal_set_totalwaves(::int32_t value);
+
+  public:
+  // int32 fleetsPerPlayer = 8;
+  void clear_fleetsperplayer() ;
+  ::int32_t fleetsperplayer() const;
+  void set_fleetsperplayer(::int32_t value);
+
+  private:
+  ::int32_t _internal_fleetsperplayer() const;
+  void _internal_set_fleetsperplayer(::int32_t value);
+
+  public:
+  // int32 requiredLevel = 9;
+  void clear_requiredlevel() ;
+  ::int32_t requiredlevel() const;
+  void set_requiredlevel(::int32_t value);
+
+  private:
+  ::int32_t _internal_requiredlevel() const;
+  void _internal_set_requiredlevel(::int32_t value);
+
+  public:
+  // int32 countdownDuration = 10;
+  void clear_countdownduration() ;
+  ::int32_t countdownduration() const;
+  void set_countdownduration(::int32_t value);
+
+  private:
+  ::int32_t _internal_countdownduration() const;
+  void _internal_set_countdownduration(::int32_t value);
+
+  public:
+  // @@protoc_insertion_point(class_scope:Digit.PrimeServer.Models.ChallengeSpec)
+ private:
+  class _Internal;
+
+  friend class ::google::protobuf::internal::TcParser;
+  static const ::google::protobuf::internal::TcParseTable<4, 10, 0, 60, 2> _table_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::google::protobuf::internal::ArenaStringPtr idstr_;
+    ::int64_t entrycostamount_;
+    ::int64_t entrycostresourceid_;
+    ::int64_t id_;
+    ::int32_t maxalloweddamage_;
+    ::int32_t maxplayers_;
+    ::int32_t totalwaves_;
+    ::int32_t fleetsperplayer_;
+    ::int32_t requiredlevel_;
+    ::int32_t countdownduration_;
+    mutable ::google::protobuf::internal::CachedSize _cached_size_;
+    PROTOBUF_TSAN_DECLARE_MEMBER
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
+};// -------------------------------------------------------------------
+
+class WaveRewardSpec_WaveRewardMapEntry_DoNotUse final : public ::google::protobuf::internal::MapEntry<WaveRewardSpec_WaveRewardMapEntry_DoNotUse, 
+    ::int32_t, ::Digit::PrimeServer::Models::WaveRewardList,
+    ::google::protobuf::internal::WireFormatLite::TYPE_INT32,
+    ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE> {
+public:
+  typedef ::google::protobuf::internal::MapEntry<WaveRewardSpec_WaveRewardMapEntry_DoNotUse, 
+    ::int32_t, ::Digit::PrimeServer::Models::WaveRewardList,
+    ::google::protobuf::internal::WireFormatLite::TYPE_INT32,
+    ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE> SuperType;
+  WaveRewardSpec_WaveRewardMapEntry_DoNotUse();
+  template <typename = void>
+  explicit PROTOBUF_CONSTEXPR WaveRewardSpec_WaveRewardMapEntry_DoNotUse(
+      ::google::protobuf::internal::ConstantInitialized);
+  explicit WaveRewardSpec_WaveRewardMapEntry_DoNotUse(::google::protobuf::Arena* arena);
+  void MergeFrom(const WaveRewardSpec_WaveRewardMapEntry_DoNotUse& other);
+  static const WaveRewardSpec_WaveRewardMapEntry_DoNotUse* internal_default_instance() { return reinterpret_cast<const WaveRewardSpec_WaveRewardMapEntry_DoNotUse*>(&_WaveRewardSpec_WaveRewardMapEntry_DoNotUse_default_instance_); }
+  static bool ValidateKey(void*) { return true; }
+  static bool ValidateValue(void*) { return true; }
+  using ::google::protobuf::Message::MergeFrom;
+  ::google::protobuf::Metadata GetMetadata() const final;
+  friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
+};
+// -------------------------------------------------------------------
+
+class WaveRewardSpec final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:Digit.PrimeServer.Models.WaveRewardSpec) */ {
+ public:
+  inline WaveRewardSpec() : WaveRewardSpec(nullptr) {}
+  ~WaveRewardSpec() override;
+  template<typename = void>
+  explicit PROTOBUF_CONSTEXPR WaveRewardSpec(::google::protobuf::internal::ConstantInitialized);
+
+  WaveRewardSpec(const WaveRewardSpec& from);
+  WaveRewardSpec(WaveRewardSpec&& from) noexcept
+    : WaveRewardSpec() {
+    *this = ::std::move(from);
+  }
+
+  inline WaveRewardSpec& operator=(const WaveRewardSpec& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline WaveRewardSpec& operator=(WaveRewardSpec&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance);
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::google::protobuf::UnknownFieldSet>();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::google::protobuf::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::google::protobuf::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const WaveRewardSpec& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const WaveRewardSpec* internal_default_instance() {
+    return reinterpret_cast<const WaveRewardSpec*>(
+               &_WaveRewardSpec_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    601;
+
+  friend void swap(WaveRewardSpec& a, WaveRewardSpec& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(WaveRewardSpec* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::google::protobuf::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(WaveRewardSpec* other) {
+    if (other == this) return;
+    ABSL_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  WaveRewardSpec* New(::google::protobuf::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<WaveRewardSpec>(arena);
+  }
+  using ::google::protobuf::Message::CopyFrom;
+  void CopyFrom(const WaveRewardSpec& from);
+  using ::google::protobuf::Message::MergeFrom;
+  void MergeFrom( const WaveRewardSpec& from) {
+    WaveRewardSpec::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  ::size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::google::protobuf::internal::ParseContext* ctx) final;
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target, ::google::protobuf::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::google::protobuf::Arena* arena);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(WaveRewardSpec* other);
+
+  private:
+  friend class ::google::protobuf::internal::AnyMetadata;
+  static ::absl::string_view FullMessageName() {
+    return "Digit.PrimeServer.Models.WaveRewardSpec";
+  }
+  protected:
+  explicit WaveRewardSpec(::google::protobuf::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::google::protobuf::Message::ClassData*GetClassData() const final;
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kWaveRewardMapFieldNumber = 3,
+    kIdStrFieldNumber = 2,
+    kIdFieldNumber = 1,
+  };
+  // map<int32, .Digit.PrimeServer.Models.WaveRewardList> waveRewardMap = 3;
+  int waverewardmap_size() const;
+  private:
+  int _internal_waverewardmap_size() const;
+
+  public:
+  void clear_waverewardmap() ;
+  const ::google::protobuf::Map<::int32_t, ::Digit::PrimeServer::Models::WaveRewardList>& waverewardmap() const;
+  ::google::protobuf::Map<::int32_t, ::Digit::PrimeServer::Models::WaveRewardList>* mutable_waverewardmap();
+
+  private:
+  const ::google::protobuf::Map<::int32_t, ::Digit::PrimeServer::Models::WaveRewardList>& _internal_waverewardmap() const;
+  ::google::protobuf::Map<::int32_t, ::Digit::PrimeServer::Models::WaveRewardList>* _internal_mutable_waverewardmap();
+
+  public:
+  // string idStr = 2;
+  void clear_idstr() ;
+  const std::string& idstr() const;
+  template <typename Arg_ = const std::string&, typename... Args_>
+  void set_idstr(Arg_&& arg, Args_... args);
+  std::string* mutable_idstr();
+  PROTOBUF_NODISCARD std::string* release_idstr();
+  void set_allocated_idstr(std::string* ptr);
+
+  private:
+  const std::string& _internal_idstr() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_idstr(
+      const std::string& value);
+  std::string* _internal_mutable_idstr();
+
+  public:
+  // int64 id = 1;
+  void clear_id() ;
+  ::int64_t id() const;
+  void set_id(::int64_t value);
+
+  private:
+  ::int64_t _internal_id() const;
+  void _internal_set_id(::int64_t value);
+
+  public:
+  // @@protoc_insertion_point(class_scope:Digit.PrimeServer.Models.WaveRewardSpec)
+ private:
+  class _Internal;
+
+  friend class ::google::protobuf::internal::TcParser;
+  static const ::google::protobuf::internal::TcParseTable<1, 3, 2, 53, 2> _table_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::google::protobuf::internal::MapField<WaveRewardSpec_WaveRewardMapEntry_DoNotUse, ::int32_t, ::Digit::PrimeServer::Models::WaveRewardList,
+                      ::google::protobuf::internal::WireFormatLite::TYPE_INT32,
+                      ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE>
+        waverewardmap_;
+    ::google::protobuf::internal::ArenaStringPtr idstr_;
+    ::int64_t id_;
+    mutable ::google::protobuf::internal::CachedSize _cached_size_;
+    PROTOBUF_TSAN_DECLARE_MEMBER
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
+};// -------------------------------------------------------------------
+
+class WaveRewardList final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:Digit.PrimeServer.Models.WaveRewardList) */ {
+ public:
+  inline WaveRewardList() : WaveRewardList(nullptr) {}
+  ~WaveRewardList() override;
+  template<typename = void>
+  explicit PROTOBUF_CONSTEXPR WaveRewardList(::google::protobuf::internal::ConstantInitialized);
+
+  WaveRewardList(const WaveRewardList& from);
+  WaveRewardList(WaveRewardList&& from) noexcept
+    : WaveRewardList() {
+    *this = ::std::move(from);
+  }
+
+  inline WaveRewardList& operator=(const WaveRewardList& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline WaveRewardList& operator=(WaveRewardList&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance);
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::google::protobuf::UnknownFieldSet>();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::google::protobuf::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::google::protobuf::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const WaveRewardList& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const WaveRewardList* internal_default_instance() {
+    return reinterpret_cast<const WaveRewardList*>(
+               &_WaveRewardList_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    602;
+
+  friend void swap(WaveRewardList& a, WaveRewardList& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(WaveRewardList* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::google::protobuf::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(WaveRewardList* other) {
+    if (other == this) return;
+    ABSL_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  WaveRewardList* New(::google::protobuf::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<WaveRewardList>(arena);
+  }
+  using ::google::protobuf::Message::CopyFrom;
+  void CopyFrom(const WaveRewardList& from);
+  using ::google::protobuf::Message::MergeFrom;
+  void MergeFrom( const WaveRewardList& from) {
+    WaveRewardList::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  ::size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::google::protobuf::internal::ParseContext* ctx) final;
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target, ::google::protobuf::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::google::protobuf::Arena* arena);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(WaveRewardList* other);
+
+  private:
+  friend class ::google::protobuf::internal::AnyMetadata;
+  static ::absl::string_view FullMessageName() {
+    return "Digit.PrimeServer.Models.WaveRewardList";
+  }
+  protected:
+  explicit WaveRewardList(::google::protobuf::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::google::protobuf::Message::ClassData*GetClassData() const final;
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kRewardListFieldNumber = 1,
+  };
+  // repeated .Digit.PrimeServer.Models.InventoryItem rewardList = 1;
+  int rewardlist_size() const;
+  private:
+  int _internal_rewardlist_size() const;
+
+  public:
+  void clear_rewardlist() ;
+  ::Digit::PrimeServer::Models::InventoryItem* mutable_rewardlist(int index);
+  ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::InventoryItem >*
+      mutable_rewardlist();
+  private:
+  const ::google::protobuf::RepeatedPtrField<::Digit::PrimeServer::Models::InventoryItem>& _internal_rewardlist() const;
+  ::google::protobuf::RepeatedPtrField<::Digit::PrimeServer::Models::InventoryItem>* _internal_mutable_rewardlist();
+  public:
+  const ::Digit::PrimeServer::Models::InventoryItem& rewardlist(int index) const;
+  ::Digit::PrimeServer::Models::InventoryItem* add_rewardlist();
+  const ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::InventoryItem >&
+      rewardlist() const;
+  // @@protoc_insertion_point(class_scope:Digit.PrimeServer.Models.WaveRewardList)
+ private:
+  class _Internal;
+
+  friend class ::google::protobuf::internal::TcParser;
+  static const ::google::protobuf::internal::TcParseTable<0, 1, 1, 0, 2> _table_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::InventoryItem > rewardlist_;
+    mutable ::google::protobuf::internal::CachedSize _cached_size_;
+    PROTOBUF_TSAN_DECLARE_MEMBER
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
+};// -------------------------------------------------------------------
+
+class WaveDefenseSystem final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:Digit.PrimeServer.Models.WaveDefenseSystem) */ {
+ public:
+  inline WaveDefenseSystem() : WaveDefenseSystem(nullptr) {}
+  ~WaveDefenseSystem() override;
+  template<typename = void>
+  explicit PROTOBUF_CONSTEXPR WaveDefenseSystem(::google::protobuf::internal::ConstantInitialized);
+
+  WaveDefenseSystem(const WaveDefenseSystem& from);
+  WaveDefenseSystem(WaveDefenseSystem&& from) noexcept
+    : WaveDefenseSystem() {
+    *this = ::std::move(from);
+  }
+
+  inline WaveDefenseSystem& operator=(const WaveDefenseSystem& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline WaveDefenseSystem& operator=(WaveDefenseSystem&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance);
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::google::protobuf::UnknownFieldSet>();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::google::protobuf::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::google::protobuf::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const WaveDefenseSystem& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const WaveDefenseSystem* internal_default_instance() {
+    return reinterpret_cast<const WaveDefenseSystem*>(
+               &_WaveDefenseSystem_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    603;
+
+  friend void swap(WaveDefenseSystem& a, WaveDefenseSystem& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(WaveDefenseSystem* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::google::protobuf::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(WaveDefenseSystem* other) {
+    if (other == this) return;
+    ABSL_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  WaveDefenseSystem* New(::google::protobuf::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<WaveDefenseSystem>(arena);
+  }
+  using ::google::protobuf::Message::CopyFrom;
+  void CopyFrom(const WaveDefenseSystem& from);
+  using ::google::protobuf::Message::MergeFrom;
+  void MergeFrom( const WaveDefenseSystem& from) {
+    WaveDefenseSystem::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  ::size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::google::protobuf::internal::ParseContext* ctx) final;
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target, ::google::protobuf::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::google::protobuf::Arena* arena);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(WaveDefenseSystem* other);
+
+  private:
+  friend class ::google::protobuf::internal::AnyMetadata;
+  static ::absl::string_view FullMessageName() {
+    return "Digit.PrimeServer.Models.WaveDefenseSystem";
+  }
+  protected:
+  explicit WaveDefenseSystem(::google::protobuf::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::google::protobuf::Message::ClassData*GetClassData() const final;
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kChallengeIdFieldNumber = 1,
+    kWdChallengeIdFieldNumber = 3,
+    kSystemIdFieldNumber = 4,
+    kStatusFieldNumber = 2,
+  };
+  // int64 challengeId = 1;
+  void clear_challengeid() ;
+  ::int64_t challengeid() const;
+  void set_challengeid(::int64_t value);
+
+  private:
+  ::int64_t _internal_challengeid() const;
+  void _internal_set_challengeid(::int64_t value);
+
+  public:
+  // int64 wdChallengeId = 3;
+  void clear_wdchallengeid() ;
+  ::int64_t wdchallengeid() const;
+  void set_wdchallengeid(::int64_t value);
+
+  private:
+  ::int64_t _internal_wdchallengeid() const;
+  void _internal_set_wdchallengeid(::int64_t value);
+
+  public:
+  // int64 systemId = 4;
+  void clear_systemid() ;
+  ::int64_t systemid() const;
+  void set_systemid(::int64_t value);
+
+  private:
+  ::int64_t _internal_systemid() const;
+  void _internal_set_systemid(::int64_t value);
+
+  public:
+  // int32 status = 2;
+  void clear_status() ;
+  ::int32_t status() const;
+  void set_status(::int32_t value);
+
+  private:
+  ::int32_t _internal_status() const;
+  void _internal_set_status(::int32_t value);
+
+  public:
+  // @@protoc_insertion_point(class_scope:Digit.PrimeServer.Models.WaveDefenseSystem)
+ private:
+  class _Internal;
+
+  friend class ::google::protobuf::internal::TcParser;
+  static const ::google::protobuf::internal::TcParseTable<2, 4, 0, 0, 2> _table_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::int64_t challengeid_;
+    ::int64_t wdchallengeid_;
+    ::int64_t systemid_;
+    ::int32_t status_;
+    mutable ::google::protobuf::internal::CachedSize _cached_size_;
+    PROTOBUF_TSAN_DECLARE_MEMBER
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
+};// -------------------------------------------------------------------
+
+class PlayerFleetList final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:Digit.PrimeServer.Models.PlayerFleetList) */ {
+ public:
+  inline PlayerFleetList() : PlayerFleetList(nullptr) {}
+  ~PlayerFleetList() override;
+  template<typename = void>
+  explicit PROTOBUF_CONSTEXPR PlayerFleetList(::google::protobuf::internal::ConstantInitialized);
+
+  PlayerFleetList(const PlayerFleetList& from);
+  PlayerFleetList(PlayerFleetList&& from) noexcept
+    : PlayerFleetList() {
+    *this = ::std::move(from);
+  }
+
+  inline PlayerFleetList& operator=(const PlayerFleetList& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline PlayerFleetList& operator=(PlayerFleetList&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance);
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::google::protobuf::UnknownFieldSet>();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::google::protobuf::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::google::protobuf::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const PlayerFleetList& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const PlayerFleetList* internal_default_instance() {
+    return reinterpret_cast<const PlayerFleetList*>(
+               &_PlayerFleetList_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    604;
+
+  friend void swap(PlayerFleetList& a, PlayerFleetList& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(PlayerFleetList* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::google::protobuf::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(PlayerFleetList* other) {
+    if (other == this) return;
+    ABSL_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  PlayerFleetList* New(::google::protobuf::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<PlayerFleetList>(arena);
+  }
+  using ::google::protobuf::Message::CopyFrom;
+  void CopyFrom(const PlayerFleetList& from);
+  using ::google::protobuf::Message::MergeFrom;
+  void MergeFrom( const PlayerFleetList& from) {
+    PlayerFleetList::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  ::size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::google::protobuf::internal::ParseContext* ctx) final;
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target, ::google::protobuf::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::google::protobuf::Arena* arena);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(PlayerFleetList* other);
+
+  private:
+  friend class ::google::protobuf::internal::AnyMetadata;
+  static ::absl::string_view FullMessageName() {
+    return "Digit.PrimeServer.Models.PlayerFleetList";
+  }
+  protected:
+  explicit PlayerFleetList(::google::protobuf::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::google::protobuf::Message::ClassData*GetClassData() const final;
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kFleetListFieldNumber = 1,
+  };
+  // repeated int64 fleetList = 1;
+  int fleetlist_size() const;
+  private:
+  int _internal_fleetlist_size() const;
+
+  public:
+  void clear_fleetlist() ;
+  ::int64_t fleetlist(int index) const;
+  void set_fleetlist(int index, ::int64_t value);
+  void add_fleetlist(::int64_t value);
+  const ::google::protobuf::RepeatedField<::int64_t>& fleetlist() const;
+  ::google::protobuf::RepeatedField<::int64_t>* mutable_fleetlist();
+
+  private:
+  const ::google::protobuf::RepeatedField<::int64_t>& _internal_fleetlist() const;
+  ::google::protobuf::RepeatedField<::int64_t>* _internal_mutable_fleetlist();
+
+  public:
+  // @@protoc_insertion_point(class_scope:Digit.PrimeServer.Models.PlayerFleetList)
+ private:
+  class _Internal;
+
+  friend class ::google::protobuf::internal::TcParser;
+  static const ::google::protobuf::internal::TcParseTable<0, 1, 0, 0, 2> _table_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::google::protobuf::RepeatedField<::int64_t> fleetlist_;
+    mutable ::google::protobuf::internal::CachedSize _fleetlist_cached_byte_size_;
+    mutable ::google::protobuf::internal::CachedSize _cached_size_;
+    PROTOBUF_TSAN_DECLARE_MEMBER
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
+};// -------------------------------------------------------------------
+
+class WaveDefenseChallenge_PlayerFleetsMapEntry_DoNotUse final : public ::google::protobuf::internal::MapEntry<WaveDefenseChallenge_PlayerFleetsMapEntry_DoNotUse, 
+    std::string, ::Digit::PrimeServer::Models::PlayerFleetList,
+    ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
+    ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE> {
+public:
+  typedef ::google::protobuf::internal::MapEntry<WaveDefenseChallenge_PlayerFleetsMapEntry_DoNotUse, 
+    std::string, ::Digit::PrimeServer::Models::PlayerFleetList,
+    ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
+    ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE> SuperType;
+  WaveDefenseChallenge_PlayerFleetsMapEntry_DoNotUse();
+  template <typename = void>
+  explicit PROTOBUF_CONSTEXPR WaveDefenseChallenge_PlayerFleetsMapEntry_DoNotUse(
+      ::google::protobuf::internal::ConstantInitialized);
+  explicit WaveDefenseChallenge_PlayerFleetsMapEntry_DoNotUse(::google::protobuf::Arena* arena);
+  void MergeFrom(const WaveDefenseChallenge_PlayerFleetsMapEntry_DoNotUse& other);
+  static const WaveDefenseChallenge_PlayerFleetsMapEntry_DoNotUse* internal_default_instance() { return reinterpret_cast<const WaveDefenseChallenge_PlayerFleetsMapEntry_DoNotUse*>(&_WaveDefenseChallenge_PlayerFleetsMapEntry_DoNotUse_default_instance_); }
+  static bool ValidateKey(std::string* s) {
+    return ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(s->data(), static_cast<int>(s->size()), ::google::protobuf::internal::WireFormatLite::PARSE, "Digit.PrimeServer.Models.WaveDefenseChallenge.PlayerFleetsMapEntry.key");
+ }
+  static bool ValidateValue(void*) { return true; }
+  using ::google::protobuf::Message::MergeFrom;
+  ::google::protobuf::Metadata GetMetadata() const final;
+  friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
+};
+// -------------------------------------------------------------------
+
+class WaveDefenseChallenge final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:Digit.PrimeServer.Models.WaveDefenseChallenge) */ {
+ public:
+  inline WaveDefenseChallenge() : WaveDefenseChallenge(nullptr) {}
+  ~WaveDefenseChallenge() override;
+  template<typename = void>
+  explicit PROTOBUF_CONSTEXPR WaveDefenseChallenge(::google::protobuf::internal::ConstantInitialized);
+
+  WaveDefenseChallenge(const WaveDefenseChallenge& from);
+  WaveDefenseChallenge(WaveDefenseChallenge&& from) noexcept
+    : WaveDefenseChallenge() {
+    *this = ::std::move(from);
+  }
+
+  inline WaveDefenseChallenge& operator=(const WaveDefenseChallenge& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline WaveDefenseChallenge& operator=(WaveDefenseChallenge&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance);
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::google::protobuf::UnknownFieldSet>();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::google::protobuf::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::google::protobuf::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const WaveDefenseChallenge& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const WaveDefenseChallenge* internal_default_instance() {
+    return reinterpret_cast<const WaveDefenseChallenge*>(
+               &_WaveDefenseChallenge_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    606;
+
+  friend void swap(WaveDefenseChallenge& a, WaveDefenseChallenge& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(WaveDefenseChallenge* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::google::protobuf::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(WaveDefenseChallenge* other) {
+    if (other == this) return;
+    ABSL_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  WaveDefenseChallenge* New(::google::protobuf::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<WaveDefenseChallenge>(arena);
+  }
+  using ::google::protobuf::Message::CopyFrom;
+  void CopyFrom(const WaveDefenseChallenge& from);
+  using ::google::protobuf::Message::MergeFrom;
+  void MergeFrom( const WaveDefenseChallenge& from) {
+    WaveDefenseChallenge::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  ::size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::google::protobuf::internal::ParseContext* ctx) final;
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target, ::google::protobuf::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::google::protobuf::Arena* arena);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(WaveDefenseChallenge* other);
+
+  private:
+  friend class ::google::protobuf::internal::AnyMetadata;
+  static ::absl::string_view FullMessageName() {
+    return "Digit.PrimeServer.Models.WaveDefenseChallenge";
+  }
+  protected:
+  explicit WaveDefenseChallenge(::google::protobuf::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::google::protobuf::Message::ClassData*GetClassData() const final;
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kPlayerFleetsMapFieldNumber = 9,
+    kLeaderFieldNumber = 10,
+    kStartTimeFieldNumber = 8,
+    kIdFieldNumber = 1,
+    kChallengeIdFieldNumber = 2,
+    kSystemIdFieldNumber = 3,
+    kTotalWavesFieldNumber = 4,
+    kCurrentWaveFieldNumber = 5,
+    kStatusFieldNumber = 6,
+    kCentralEntityHpFieldNumber = 7,
+  };
+  // map<string, .Digit.PrimeServer.Models.PlayerFleetList> playerFleetsMap = 9;
+  int playerfleetsmap_size() const;
+  private:
+  int _internal_playerfleetsmap_size() const;
+
+  public:
+  void clear_playerfleetsmap() ;
+  const ::google::protobuf::Map<std::string, ::Digit::PrimeServer::Models::PlayerFleetList>& playerfleetsmap() const;
+  ::google::protobuf::Map<std::string, ::Digit::PrimeServer::Models::PlayerFleetList>* mutable_playerfleetsmap();
+
+  private:
+  const ::google::protobuf::Map<std::string, ::Digit::PrimeServer::Models::PlayerFleetList>& _internal_playerfleetsmap() const;
+  ::google::protobuf::Map<std::string, ::Digit::PrimeServer::Models::PlayerFleetList>* _internal_mutable_playerfleetsmap();
+
+  public:
+  // string leader = 10;
+  void clear_leader() ;
+  const std::string& leader() const;
+  template <typename Arg_ = const std::string&, typename... Args_>
+  void set_leader(Arg_&& arg, Args_... args);
+  std::string* mutable_leader();
+  PROTOBUF_NODISCARD std::string* release_leader();
+  void set_allocated_leader(std::string* ptr);
+
+  private:
+  const std::string& _internal_leader() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_leader(
+      const std::string& value);
+  std::string* _internal_mutable_leader();
+
+  public:
+  // .google.protobuf.Timestamp startTime = 8;
+  bool has_starttime() const;
+  void clear_starttime() ;
+  const ::google::protobuf::Timestamp& starttime() const;
+  PROTOBUF_NODISCARD ::google::protobuf::Timestamp* release_starttime();
+  ::google::protobuf::Timestamp* mutable_starttime();
+  void set_allocated_starttime(::google::protobuf::Timestamp* value);
+  void unsafe_arena_set_allocated_starttime(::google::protobuf::Timestamp* value);
+  ::google::protobuf::Timestamp* unsafe_arena_release_starttime();
+
+  private:
+  const ::google::protobuf::Timestamp& _internal_starttime() const;
+  ::google::protobuf::Timestamp* _internal_mutable_starttime();
+
+  public:
+  // int64 id = 1;
+  void clear_id() ;
+  ::int64_t id() const;
+  void set_id(::int64_t value);
+
+  private:
+  ::int64_t _internal_id() const;
+  void _internal_set_id(::int64_t value);
+
+  public:
+  // int64 challengeId = 2;
+  void clear_challengeid() ;
+  ::int64_t challengeid() const;
+  void set_challengeid(::int64_t value);
+
+  private:
+  ::int64_t _internal_challengeid() const;
+  void _internal_set_challengeid(::int64_t value);
+
+  public:
+  // int64 systemId = 3;
+  void clear_systemid() ;
+  ::int64_t systemid() const;
+  void set_systemid(::int64_t value);
+
+  private:
+  ::int64_t _internal_systemid() const;
+  void _internal_set_systemid(::int64_t value);
+
+  public:
+  // int32 totalWaves = 4;
+  void clear_totalwaves() ;
+  ::int32_t totalwaves() const;
+  void set_totalwaves(::int32_t value);
+
+  private:
+  ::int32_t _internal_totalwaves() const;
+  void _internal_set_totalwaves(::int32_t value);
+
+  public:
+  // int32 currentWave = 5;
+  void clear_currentwave() ;
+  ::int32_t currentwave() const;
+  void set_currentwave(::int32_t value);
+
+  private:
+  ::int32_t _internal_currentwave() const;
+  void _internal_set_currentwave(::int32_t value);
+
+  public:
+  // int32 status = 6;
+  void clear_status() ;
+  ::int32_t status() const;
+  void set_status(::int32_t value);
+
+  private:
+  ::int32_t _internal_status() const;
+  void _internal_set_status(::int32_t value);
+
+  public:
+  // int32 centralEntityHp = 7;
+  void clear_centralentityhp() ;
+  ::int32_t centralentityhp() const;
+  void set_centralentityhp(::int32_t value);
+
+  private:
+  ::int32_t _internal_centralentityhp() const;
+  void _internal_set_centralentityhp(::int32_t value);
+
+  public:
+  // @@protoc_insertion_point(class_scope:Digit.PrimeServer.Models.WaveDefenseChallenge)
+ private:
+  class _Internal;
+
+  friend class ::google::protobuf::internal::TcParser;
+  static const ::google::protobuf::internal::TcParseTable<4, 10, 3, 83, 2> _table_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::google::protobuf::internal::HasBits<1> _has_bits_;
+    mutable ::google::protobuf::internal::CachedSize _cached_size_;
+    ::google::protobuf::internal::MapField<WaveDefenseChallenge_PlayerFleetsMapEntry_DoNotUse, std::string, ::Digit::PrimeServer::Models::PlayerFleetList,
+                      ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
+                      ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE>
+        playerfleetsmap_;
+    ::google::protobuf::internal::ArenaStringPtr leader_;
+    ::google::protobuf::Timestamp* starttime_;
+    ::int64_t id_;
+    ::int64_t challengeid_;
+    ::int64_t systemid_;
+    ::int32_t totalwaves_;
+    ::int32_t currentwave_;
+    ::int32_t status_;
+    ::int32_t centralentityhp_;
+    PROTOBUF_TSAN_DECLARE_MEMBER
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
+};// -------------------------------------------------------------------
+
+class WaveDefenseStaticDataResponse_ChallengesEntry_DoNotUse final : public ::google::protobuf::internal::MapEntry<WaveDefenseStaticDataResponse_ChallengesEntry_DoNotUse, 
+    ::int64_t, ::Digit::PrimeServer::Models::ChallengeSpec,
+    ::google::protobuf::internal::WireFormatLite::TYPE_INT64,
+    ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE> {
+public:
+  typedef ::google::protobuf::internal::MapEntry<WaveDefenseStaticDataResponse_ChallengesEntry_DoNotUse, 
+    ::int64_t, ::Digit::PrimeServer::Models::ChallengeSpec,
+    ::google::protobuf::internal::WireFormatLite::TYPE_INT64,
+    ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE> SuperType;
+  WaveDefenseStaticDataResponse_ChallengesEntry_DoNotUse();
+  template <typename = void>
+  explicit PROTOBUF_CONSTEXPR WaveDefenseStaticDataResponse_ChallengesEntry_DoNotUse(
+      ::google::protobuf::internal::ConstantInitialized);
+  explicit WaveDefenseStaticDataResponse_ChallengesEntry_DoNotUse(::google::protobuf::Arena* arena);
+  void MergeFrom(const WaveDefenseStaticDataResponse_ChallengesEntry_DoNotUse& other);
+  static const WaveDefenseStaticDataResponse_ChallengesEntry_DoNotUse* internal_default_instance() { return reinterpret_cast<const WaveDefenseStaticDataResponse_ChallengesEntry_DoNotUse*>(&_WaveDefenseStaticDataResponse_ChallengesEntry_DoNotUse_default_instance_); }
+  static bool ValidateKey(void*) { return true; }
+  static bool ValidateValue(void*) { return true; }
+  using ::google::protobuf::Message::MergeFrom;
+  ::google::protobuf::Metadata GetMetadata() const final;
+  friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
+};
+// -------------------------------------------------------------------
+
+class WaveDefenseStaticDataResponse_WavesEntry_DoNotUse final : public ::google::protobuf::internal::MapEntry<WaveDefenseStaticDataResponse_WavesEntry_DoNotUse, 
+    ::int64_t, ::Digit::PrimeServer::Models::WavesSpec,
+    ::google::protobuf::internal::WireFormatLite::TYPE_INT64,
+    ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE> {
+public:
+  typedef ::google::protobuf::internal::MapEntry<WaveDefenseStaticDataResponse_WavesEntry_DoNotUse, 
+    ::int64_t, ::Digit::PrimeServer::Models::WavesSpec,
+    ::google::protobuf::internal::WireFormatLite::TYPE_INT64,
+    ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE> SuperType;
+  WaveDefenseStaticDataResponse_WavesEntry_DoNotUse();
+  template <typename = void>
+  explicit PROTOBUF_CONSTEXPR WaveDefenseStaticDataResponse_WavesEntry_DoNotUse(
+      ::google::protobuf::internal::ConstantInitialized);
+  explicit WaveDefenseStaticDataResponse_WavesEntry_DoNotUse(::google::protobuf::Arena* arena);
+  void MergeFrom(const WaveDefenseStaticDataResponse_WavesEntry_DoNotUse& other);
+  static const WaveDefenseStaticDataResponse_WavesEntry_DoNotUse* internal_default_instance() { return reinterpret_cast<const WaveDefenseStaticDataResponse_WavesEntry_DoNotUse*>(&_WaveDefenseStaticDataResponse_WavesEntry_DoNotUse_default_instance_); }
+  static bool ValidateKey(void*) { return true; }
+  static bool ValidateValue(void*) { return true; }
+  using ::google::protobuf::Message::MergeFrom;
+  ::google::protobuf::Metadata GetMetadata() const final;
+  friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
+};
+// -------------------------------------------------------------------
+
+class WaveDefenseStaticDataResponse_RewardsEntry_DoNotUse final : public ::google::protobuf::internal::MapEntry<WaveDefenseStaticDataResponse_RewardsEntry_DoNotUse, 
+    ::int64_t, ::Digit::PrimeServer::Models::WaveRewardSpec,
+    ::google::protobuf::internal::WireFormatLite::TYPE_INT64,
+    ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE> {
+public:
+  typedef ::google::protobuf::internal::MapEntry<WaveDefenseStaticDataResponse_RewardsEntry_DoNotUse, 
+    ::int64_t, ::Digit::PrimeServer::Models::WaveRewardSpec,
+    ::google::protobuf::internal::WireFormatLite::TYPE_INT64,
+    ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE> SuperType;
+  WaveDefenseStaticDataResponse_RewardsEntry_DoNotUse();
+  template <typename = void>
+  explicit PROTOBUF_CONSTEXPR WaveDefenseStaticDataResponse_RewardsEntry_DoNotUse(
+      ::google::protobuf::internal::ConstantInitialized);
+  explicit WaveDefenseStaticDataResponse_RewardsEntry_DoNotUse(::google::protobuf::Arena* arena);
+  void MergeFrom(const WaveDefenseStaticDataResponse_RewardsEntry_DoNotUse& other);
+  static const WaveDefenseStaticDataResponse_RewardsEntry_DoNotUse* internal_default_instance() { return reinterpret_cast<const WaveDefenseStaticDataResponse_RewardsEntry_DoNotUse*>(&_WaveDefenseStaticDataResponse_RewardsEntry_DoNotUse_default_instance_); }
+  static bool ValidateKey(void*) { return true; }
+  static bool ValidateValue(void*) { return true; }
+  using ::google::protobuf::Message::MergeFrom;
+  ::google::protobuf::Metadata GetMetadata() const final;
+  friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
+};
+// -------------------------------------------------------------------
+
+class WaveDefenseStaticDataResponse final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:Digit.PrimeServer.Models.WaveDefenseStaticDataResponse) */ {
+ public:
+  inline WaveDefenseStaticDataResponse() : WaveDefenseStaticDataResponse(nullptr) {}
+  ~WaveDefenseStaticDataResponse() override;
+  template<typename = void>
+  explicit PROTOBUF_CONSTEXPR WaveDefenseStaticDataResponse(::google::protobuf::internal::ConstantInitialized);
+
+  WaveDefenseStaticDataResponse(const WaveDefenseStaticDataResponse& from);
+  WaveDefenseStaticDataResponse(WaveDefenseStaticDataResponse&& from) noexcept
+    : WaveDefenseStaticDataResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline WaveDefenseStaticDataResponse& operator=(const WaveDefenseStaticDataResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline WaveDefenseStaticDataResponse& operator=(WaveDefenseStaticDataResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance);
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::google::protobuf::UnknownFieldSet>();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::google::protobuf::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::google::protobuf::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const WaveDefenseStaticDataResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const WaveDefenseStaticDataResponse* internal_default_instance() {
+    return reinterpret_cast<const WaveDefenseStaticDataResponse*>(
+               &_WaveDefenseStaticDataResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    610;
+
+  friend void swap(WaveDefenseStaticDataResponse& a, WaveDefenseStaticDataResponse& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(WaveDefenseStaticDataResponse* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::google::protobuf::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(WaveDefenseStaticDataResponse* other) {
+    if (other == this) return;
+    ABSL_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  WaveDefenseStaticDataResponse* New(::google::protobuf::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<WaveDefenseStaticDataResponse>(arena);
+  }
+  using ::google::protobuf::Message::CopyFrom;
+  void CopyFrom(const WaveDefenseStaticDataResponse& from);
+  using ::google::protobuf::Message::MergeFrom;
+  void MergeFrom( const WaveDefenseStaticDataResponse& from) {
+    WaveDefenseStaticDataResponse::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  ::size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::google::protobuf::internal::ParseContext* ctx) final;
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target, ::google::protobuf::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::google::protobuf::Arena* arena);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(WaveDefenseStaticDataResponse* other);
+
+  private:
+  friend class ::google::protobuf::internal::AnyMetadata;
+  static ::absl::string_view FullMessageName() {
+    return "Digit.PrimeServer.Models.WaveDefenseStaticDataResponse";
+  }
+  protected:
+  explicit WaveDefenseStaticDataResponse(::google::protobuf::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::google::protobuf::Message::ClassData*GetClassData() const final;
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kChallengesFieldNumber = 1,
+    kWavesFieldNumber = 2,
+    kRewardsFieldNumber = 3,
+  };
+  // map<int64, .Digit.PrimeServer.Models.ChallengeSpec> challenges = 1;
+  int challenges_size() const;
+  private:
+  int _internal_challenges_size() const;
+
+  public:
+  void clear_challenges() ;
+  const ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::ChallengeSpec>& challenges() const;
+  ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::ChallengeSpec>* mutable_challenges();
+
+  private:
+  const ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::ChallengeSpec>& _internal_challenges() const;
+  ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::ChallengeSpec>* _internal_mutable_challenges();
+
+  public:
+  // map<int64, .Digit.PrimeServer.Models.WavesSpec> waves = 2;
+  int waves_size() const;
+  private:
+  int _internal_waves_size() const;
+
+  public:
+  void clear_waves() ;
+  const ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::WavesSpec>& waves() const;
+  ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::WavesSpec>* mutable_waves();
+
+  private:
+  const ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::WavesSpec>& _internal_waves() const;
+  ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::WavesSpec>* _internal_mutable_waves();
+
+  public:
+  // map<int64, .Digit.PrimeServer.Models.WaveRewardSpec> rewards = 3;
+  int rewards_size() const;
+  private:
+  int _internal_rewards_size() const;
+
+  public:
+  void clear_rewards() ;
+  const ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::WaveRewardSpec>& rewards() const;
+  ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::WaveRewardSpec>* mutable_rewards();
+
+  private:
+  const ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::WaveRewardSpec>& _internal_rewards() const;
+  ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::WaveRewardSpec>* _internal_mutable_rewards();
+
+  public:
+  // @@protoc_insertion_point(class_scope:Digit.PrimeServer.Models.WaveDefenseStaticDataResponse)
+ private:
+  class _Internal;
+
+  friend class ::google::protobuf::internal::TcParser;
+  static const ::google::protobuf::internal::TcParseTable<0, 3, 6, 0, 2> _table_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::google::protobuf::internal::MapField<WaveDefenseStaticDataResponse_ChallengesEntry_DoNotUse, ::int64_t, ::Digit::PrimeServer::Models::ChallengeSpec,
+                      ::google::protobuf::internal::WireFormatLite::TYPE_INT64,
+                      ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE>
+        challenges_;
+    ::google::protobuf::internal::MapField<WaveDefenseStaticDataResponse_WavesEntry_DoNotUse, ::int64_t, ::Digit::PrimeServer::Models::WavesSpec,
+                      ::google::protobuf::internal::WireFormatLite::TYPE_INT64,
+                      ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE>
+        waves_;
+    ::google::protobuf::internal::MapField<WaveDefenseStaticDataResponse_RewardsEntry_DoNotUse, ::int64_t, ::Digit::PrimeServer::Models::WaveRewardSpec,
+                      ::google::protobuf::internal::WireFormatLite::TYPE_INT64,
+                      ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE>
+        rewards_;
+    mutable ::google::protobuf::internal::CachedSize _cached_size_;
+    PROTOBUF_TSAN_DECLARE_MEMBER
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
+};// -------------------------------------------------------------------
+
+class WaveDefensePartyDataResponse final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:Digit.PrimeServer.Models.WaveDefensePartyDataResponse) */ {
+ public:
+  inline WaveDefensePartyDataResponse() : WaveDefensePartyDataResponse(nullptr) {}
+  ~WaveDefensePartyDataResponse() override;
+  template<typename = void>
+  explicit PROTOBUF_CONSTEXPR WaveDefensePartyDataResponse(::google::protobuf::internal::ConstantInitialized);
+
+  WaveDefensePartyDataResponse(const WaveDefensePartyDataResponse& from);
+  WaveDefensePartyDataResponse(WaveDefensePartyDataResponse&& from) noexcept
+    : WaveDefensePartyDataResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline WaveDefensePartyDataResponse& operator=(const WaveDefensePartyDataResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline WaveDefensePartyDataResponse& operator=(WaveDefensePartyDataResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance);
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::google::protobuf::UnknownFieldSet>();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::google::protobuf::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::google::protobuf::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const WaveDefensePartyDataResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const WaveDefensePartyDataResponse* internal_default_instance() {
+    return reinterpret_cast<const WaveDefensePartyDataResponse*>(
+               &_WaveDefensePartyDataResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    611;
+
+  friend void swap(WaveDefensePartyDataResponse& a, WaveDefensePartyDataResponse& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(WaveDefensePartyDataResponse* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::google::protobuf::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(WaveDefensePartyDataResponse* other) {
+    if (other == this) return;
+    ABSL_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  WaveDefensePartyDataResponse* New(::google::protobuf::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<WaveDefensePartyDataResponse>(arena);
+  }
+  using ::google::protobuf::Message::CopyFrom;
+  void CopyFrom(const WaveDefensePartyDataResponse& from);
+  using ::google::protobuf::Message::MergeFrom;
+  void MergeFrom( const WaveDefensePartyDataResponse& from) {
+    WaveDefensePartyDataResponse::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  ::size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::google::protobuf::internal::ParseContext* ctx) final;
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target, ::google::protobuf::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::google::protobuf::Arena* arena);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(WaveDefensePartyDataResponse* other);
+
+  private:
+  friend class ::google::protobuf::internal::AnyMetadata;
+  static ::absl::string_view FullMessageName() {
+    return "Digit.PrimeServer.Models.WaveDefensePartyDataResponse";
+  }
+  protected:
+  explicit WaveDefensePartyDataResponse(::google::protobuf::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::google::protobuf::Message::ClassData*GetClassData() const final;
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kPartyFieldNumber = 1,
+  };
+  // .Digit.PrimeServer.Models.Party party = 1;
+  bool has_party() const;
+  void clear_party() ;
+  const ::Digit::PrimeServer::Models::Party& party() const;
+  PROTOBUF_NODISCARD ::Digit::PrimeServer::Models::Party* release_party();
+  ::Digit::PrimeServer::Models::Party* mutable_party();
+  void set_allocated_party(::Digit::PrimeServer::Models::Party* value);
+  void unsafe_arena_set_allocated_party(::Digit::PrimeServer::Models::Party* value);
+  ::Digit::PrimeServer::Models::Party* unsafe_arena_release_party();
+
+  private:
+  const ::Digit::PrimeServer::Models::Party& _internal_party() const;
+  ::Digit::PrimeServer::Models::Party* _internal_mutable_party();
+
+  public:
+  // @@protoc_insertion_point(class_scope:Digit.PrimeServer.Models.WaveDefensePartyDataResponse)
+ private:
+  class _Internal;
+
+  friend class ::google::protobuf::internal::TcParser;
+  static const ::google::protobuf::internal::TcParseTable<0, 1, 1, 0, 2> _table_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::google::protobuf::internal::HasBits<1> _has_bits_;
+    mutable ::google::protobuf::internal::CachedSize _cached_size_;
+    ::Digit::PrimeServer::Models::Party* party_;
+    PROTOBUF_TSAN_DECLARE_MEMBER
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
+};// -------------------------------------------------------------------
+
+class WaveDefenseSyncDataResponse_WaveDefenseSystemsEntry_DoNotUse final : public ::google::protobuf::internal::MapEntry<WaveDefenseSyncDataResponse_WaveDefenseSystemsEntry_DoNotUse, 
+    ::int64_t, ::Digit::PrimeServer::Models::WaveDefenseSystem,
+    ::google::protobuf::internal::WireFormatLite::TYPE_INT64,
+    ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE> {
+public:
+  typedef ::google::protobuf::internal::MapEntry<WaveDefenseSyncDataResponse_WaveDefenseSystemsEntry_DoNotUse, 
+    ::int64_t, ::Digit::PrimeServer::Models::WaveDefenseSystem,
+    ::google::protobuf::internal::WireFormatLite::TYPE_INT64,
+    ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE> SuperType;
+  WaveDefenseSyncDataResponse_WaveDefenseSystemsEntry_DoNotUse();
+  template <typename = void>
+  explicit PROTOBUF_CONSTEXPR WaveDefenseSyncDataResponse_WaveDefenseSystemsEntry_DoNotUse(
+      ::google::protobuf::internal::ConstantInitialized);
+  explicit WaveDefenseSyncDataResponse_WaveDefenseSystemsEntry_DoNotUse(::google::protobuf::Arena* arena);
+  void MergeFrom(const WaveDefenseSyncDataResponse_WaveDefenseSystemsEntry_DoNotUse& other);
+  static const WaveDefenseSyncDataResponse_WaveDefenseSystemsEntry_DoNotUse* internal_default_instance() { return reinterpret_cast<const WaveDefenseSyncDataResponse_WaveDefenseSystemsEntry_DoNotUse*>(&_WaveDefenseSyncDataResponse_WaveDefenseSystemsEntry_DoNotUse_default_instance_); }
+  static bool ValidateKey(void*) { return true; }
+  static bool ValidateValue(void*) { return true; }
+  using ::google::protobuf::Message::MergeFrom;
+  ::google::protobuf::Metadata GetMetadata() const final;
+  friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
+};
+// -------------------------------------------------------------------
+
+class WaveDefenseSyncDataResponse final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:Digit.PrimeServer.Models.WaveDefenseSyncDataResponse) */ {
+ public:
+  inline WaveDefenseSyncDataResponse() : WaveDefenseSyncDataResponse(nullptr) {}
+  ~WaveDefenseSyncDataResponse() override;
+  template<typename = void>
+  explicit PROTOBUF_CONSTEXPR WaveDefenseSyncDataResponse(::google::protobuf::internal::ConstantInitialized);
+
+  WaveDefenseSyncDataResponse(const WaveDefenseSyncDataResponse& from);
+  WaveDefenseSyncDataResponse(WaveDefenseSyncDataResponse&& from) noexcept
+    : WaveDefenseSyncDataResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline WaveDefenseSyncDataResponse& operator=(const WaveDefenseSyncDataResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline WaveDefenseSyncDataResponse& operator=(WaveDefenseSyncDataResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance);
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::google::protobuf::UnknownFieldSet>();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::google::protobuf::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::google::protobuf::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const WaveDefenseSyncDataResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const WaveDefenseSyncDataResponse* internal_default_instance() {
+    return reinterpret_cast<const WaveDefenseSyncDataResponse*>(
+               &_WaveDefenseSyncDataResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    613;
+
+  friend void swap(WaveDefenseSyncDataResponse& a, WaveDefenseSyncDataResponse& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(WaveDefenseSyncDataResponse* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::google::protobuf::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(WaveDefenseSyncDataResponse* other) {
+    if (other == this) return;
+    ABSL_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  WaveDefenseSyncDataResponse* New(::google::protobuf::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<WaveDefenseSyncDataResponse>(arena);
+  }
+  using ::google::protobuf::Message::CopyFrom;
+  void CopyFrom(const WaveDefenseSyncDataResponse& from);
+  using ::google::protobuf::Message::MergeFrom;
+  void MergeFrom( const WaveDefenseSyncDataResponse& from) {
+    WaveDefenseSyncDataResponse::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  ::size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::google::protobuf::internal::ParseContext* ctx) final;
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target, ::google::protobuf::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::google::protobuf::Arena* arena);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(WaveDefenseSyncDataResponse* other);
+
+  private:
+  friend class ::google::protobuf::internal::AnyMetadata;
+  static ::absl::string_view FullMessageName() {
+    return "Digit.PrimeServer.Models.WaveDefenseSyncDataResponse";
+  }
+  protected:
+  explicit WaveDefenseSyncDataResponse(::google::protobuf::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::google::protobuf::Message::ClassData*GetClassData() const final;
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kWaveDefenseSystemsFieldNumber = 1,
+  };
+  // map<int64, .Digit.PrimeServer.Models.WaveDefenseSystem> waveDefenseSystems = 1;
+  int wavedefensesystems_size() const;
+  private:
+  int _internal_wavedefensesystems_size() const;
+
+  public:
+  void clear_wavedefensesystems() ;
+  const ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::WaveDefenseSystem>& wavedefensesystems() const;
+  ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::WaveDefenseSystem>* mutable_wavedefensesystems();
+
+  private:
+  const ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::WaveDefenseSystem>& _internal_wavedefensesystems() const;
+  ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::WaveDefenseSystem>* _internal_mutable_wavedefensesystems();
+
+  public:
+  // @@protoc_insertion_point(class_scope:Digit.PrimeServer.Models.WaveDefenseSyncDataResponse)
+ private:
+  class _Internal;
+
+  friend class ::google::protobuf::internal::TcParser;
+  static const ::google::protobuf::internal::TcParseTable<0, 1, 2, 0, 2> _table_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::google::protobuf::internal::MapField<WaveDefenseSyncDataResponse_WaveDefenseSystemsEntry_DoNotUse, ::int64_t, ::Digit::PrimeServer::Models::WaveDefenseSystem,
+                      ::google::protobuf::internal::WireFormatLite::TYPE_INT64,
+                      ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE>
+        wavedefensesystems_;
+    mutable ::google::protobuf::internal::CachedSize _cached_size_;
+    PROTOBUF_TSAN_DECLARE_MEMBER
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_Digit_2ePrimeServer_2eModels_2eproto;
+};// -------------------------------------------------------------------
+
+class WaveDefenseChallengeDataResponse final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:Digit.PrimeServer.Models.WaveDefenseChallengeDataResponse) */ {
+ public:
+  inline WaveDefenseChallengeDataResponse() : WaveDefenseChallengeDataResponse(nullptr) {}
+  ~WaveDefenseChallengeDataResponse() override;
+  template<typename = void>
+  explicit PROTOBUF_CONSTEXPR WaveDefenseChallengeDataResponse(::google::protobuf::internal::ConstantInitialized);
+
+  WaveDefenseChallengeDataResponse(const WaveDefenseChallengeDataResponse& from);
+  WaveDefenseChallengeDataResponse(WaveDefenseChallengeDataResponse&& from) noexcept
+    : WaveDefenseChallengeDataResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline WaveDefenseChallengeDataResponse& operator=(const WaveDefenseChallengeDataResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline WaveDefenseChallengeDataResponse& operator=(WaveDefenseChallengeDataResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance);
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::google::protobuf::UnknownFieldSet>();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::google::protobuf::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::google::protobuf::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const WaveDefenseChallengeDataResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const WaveDefenseChallengeDataResponse* internal_default_instance() {
+    return reinterpret_cast<const WaveDefenseChallengeDataResponse*>(
+               &_WaveDefenseChallengeDataResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    614;
+
+  friend void swap(WaveDefenseChallengeDataResponse& a, WaveDefenseChallengeDataResponse& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(WaveDefenseChallengeDataResponse* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::google::protobuf::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(WaveDefenseChallengeDataResponse* other) {
+    if (other == this) return;
+    ABSL_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  WaveDefenseChallengeDataResponse* New(::google::protobuf::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<WaveDefenseChallengeDataResponse>(arena);
+  }
+  using ::google::protobuf::Message::CopyFrom;
+  void CopyFrom(const WaveDefenseChallengeDataResponse& from);
+  using ::google::protobuf::Message::MergeFrom;
+  void MergeFrom( const WaveDefenseChallengeDataResponse& from) {
+    WaveDefenseChallengeDataResponse::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  ::size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::google::protobuf::internal::ParseContext* ctx) final;
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target, ::google::protobuf::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::google::protobuf::Arena* arena);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(WaveDefenseChallengeDataResponse* other);
+
+  private:
+  friend class ::google::protobuf::internal::AnyMetadata;
+  static ::absl::string_view FullMessageName() {
+    return "Digit.PrimeServer.Models.WaveDefenseChallengeDataResponse";
+  }
+  protected:
+  explicit WaveDefenseChallengeDataResponse(::google::protobuf::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::google::protobuf::Message::ClassData*GetClassData() const final;
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kWaveDefenseChallengeFieldNumber = 1,
+  };
+  // .Digit.PrimeServer.Models.WaveDefenseChallenge waveDefenseChallenge = 1;
+  bool has_wavedefensechallenge() const;
+  void clear_wavedefensechallenge() ;
+  const ::Digit::PrimeServer::Models::WaveDefenseChallenge& wavedefensechallenge() const;
+  PROTOBUF_NODISCARD ::Digit::PrimeServer::Models::WaveDefenseChallenge* release_wavedefensechallenge();
+  ::Digit::PrimeServer::Models::WaveDefenseChallenge* mutable_wavedefensechallenge();
+  void set_allocated_wavedefensechallenge(::Digit::PrimeServer::Models::WaveDefenseChallenge* value);
+  void unsafe_arena_set_allocated_wavedefensechallenge(::Digit::PrimeServer::Models::WaveDefenseChallenge* value);
+  ::Digit::PrimeServer::Models::WaveDefenseChallenge* unsafe_arena_release_wavedefensechallenge();
+
+  private:
+  const ::Digit::PrimeServer::Models::WaveDefenseChallenge& _internal_wavedefensechallenge() const;
+  ::Digit::PrimeServer::Models::WaveDefenseChallenge* _internal_mutable_wavedefensechallenge();
+
+  public:
+  // @@protoc_insertion_point(class_scope:Digit.PrimeServer.Models.WaveDefenseChallengeDataResponse)
+ private:
+  class _Internal;
+
+  friend class ::google::protobuf::internal::TcParser;
+  static const ::google::protobuf::internal::TcParseTable<0, 1, 1, 0, 2> _table_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::google::protobuf::internal::HasBits<1> _has_bits_;
+    mutable ::google::protobuf::internal::CachedSize _cached_size_;
+    ::Digit::PrimeServer::Models::WaveDefenseChallenge* wavedefensechallenge_;
     PROTOBUF_TSAN_DECLARE_MEMBER
   };
   union { Impl_ _impl_; };
@@ -100987,6 +106412,72 @@ inline void ArmadaPveSpec::_internal_set_attackduration(::int32_t value) {
   _impl_.attackduration_ = value;
 }
 
+// int32 instantAttackDuration = 5;
+inline void ArmadaPveSpec::clear_instantattackduration() {
+  _impl_.instantattackduration_ = 0;
+}
+inline ::int32_t ArmadaPveSpec::instantattackduration() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.ArmadaPveSpec.instantAttackDuration)
+  return _internal_instantattackduration();
+}
+inline void ArmadaPveSpec::set_instantattackduration(::int32_t value) {
+  _internal_set_instantattackduration(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.ArmadaPveSpec.instantAttackDuration)
+}
+inline ::int32_t ArmadaPveSpec::_internal_instantattackduration() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.instantattackduration_;
+}
+inline void ArmadaPveSpec::_internal_set_instantattackduration(::int32_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.instantattackduration_ = value;
+}
+
+// int64 instantQuantity = 6;
+inline void ArmadaPveSpec::clear_instantquantity() {
+  _impl_.instantquantity_ = ::int64_t{0};
+}
+inline ::int64_t ArmadaPveSpec::instantquantity() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.ArmadaPveSpec.instantQuantity)
+  return _internal_instantquantity();
+}
+inline void ArmadaPveSpec::set_instantquantity(::int64_t value) {
+  _internal_set_instantquantity(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.ArmadaPveSpec.instantQuantity)
+}
+inline ::int64_t ArmadaPveSpec::_internal_instantquantity() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.instantquantity_;
+}
+inline void ArmadaPveSpec::_internal_set_instantquantity(::int64_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.instantquantity_ = value;
+}
+
+// int64 instantResourceId = 7;
+inline void ArmadaPveSpec::clear_instantresourceid() {
+  _impl_.instantresourceid_ = ::int64_t{0};
+}
+inline ::int64_t ArmadaPveSpec::instantresourceid() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.ArmadaPveSpec.instantResourceId)
+  return _internal_instantresourceid();
+}
+inline void ArmadaPveSpec::set_instantresourceid(::int64_t value) {
+  _internal_set_instantresourceid(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.ArmadaPveSpec.instantResourceId)
+}
+inline ::int64_t ArmadaPveSpec::_internal_instantresourceid() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.instantresourceid_;
+}
+inline void ArmadaPveSpec::_internal_set_instantresourceid(::int64_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.instantresourceid_ = value;
+}
+
 // -------------------------------------------------------------------
 
 // ArmadaPvpSpec
@@ -103423,6 +108914,196 @@ inline void AchievementsConfig::_internal_set_maxlevel(::int32_t value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
   _impl_.maxlevel_ = value;
+}
+
+// -------------------------------------------------------------------
+
+// ActivatedShipAbilityConfig
+
+// .Digit.PrimeServer.Models.TargetableConfig targetable = 1;
+inline bool ActivatedShipAbilityConfig::has_targetable() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  PROTOBUF_ASSUME(!value || _impl_.targetable_ != nullptr);
+  return value;
+}
+inline void ActivatedShipAbilityConfig::clear_targetable() {
+  if (_impl_.targetable_ != nullptr) _impl_.targetable_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline const ::Digit::PrimeServer::Models::TargetableConfig& ActivatedShipAbilityConfig::_internal_targetable() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  const ::Digit::PrimeServer::Models::TargetableConfig* p = _impl_.targetable_;
+  return p != nullptr ? *p : reinterpret_cast<const ::Digit::PrimeServer::Models::TargetableConfig&>(::Digit::PrimeServer::Models::_TargetableConfig_default_instance_);
+}
+inline const ::Digit::PrimeServer::Models::TargetableConfig& ActivatedShipAbilityConfig::targetable() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.ActivatedShipAbilityConfig.targetable)
+  return _internal_targetable();
+}
+inline void ActivatedShipAbilityConfig::unsafe_arena_set_allocated_targetable(::Digit::PrimeServer::Models::TargetableConfig* value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  if (GetArenaForAllocation() == nullptr) {
+    delete reinterpret_cast<::google::protobuf::MessageLite*>(_impl_.targetable_);
+  }
+  _impl_.targetable_ = reinterpret_cast<::Digit::PrimeServer::Models::TargetableConfig*>(value);
+  if (value != nullptr) {
+    _impl_._has_bits_[0] |= 0x00000001u;
+  } else {
+    _impl_._has_bits_[0] &= ~0x00000001u;
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:Digit.PrimeServer.Models.ActivatedShipAbilityConfig.targetable)
+}
+inline ::Digit::PrimeServer::Models::TargetableConfig* ActivatedShipAbilityConfig::release_targetable() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+
+  _impl_._has_bits_[0] &= ~0x00000001u;
+  ::Digit::PrimeServer::Models::TargetableConfig* released = _impl_.targetable_;
+  _impl_.targetable_ = nullptr;
+#ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
+  auto* old = reinterpret_cast<::google::protobuf::MessageLite*>(released);
+  released = ::google::protobuf::internal::DuplicateIfNonNull(released);
+  if (GetArenaForAllocation() == nullptr) {
+    delete old;
+  }
+#else   // PROTOBUF_FORCE_COPY_IN_RELEASE
+  if (GetArenaForAllocation() != nullptr) {
+    released = ::google::protobuf::internal::DuplicateIfNonNull(released);
+  }
+#endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
+  return released;
+}
+inline ::Digit::PrimeServer::Models::TargetableConfig* ActivatedShipAbilityConfig::unsafe_arena_release_targetable() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  // @@protoc_insertion_point(field_release:Digit.PrimeServer.Models.ActivatedShipAbilityConfig.targetable)
+
+  _impl_._has_bits_[0] &= ~0x00000001u;
+  ::Digit::PrimeServer::Models::TargetableConfig* temp = _impl_.targetable_;
+  _impl_.targetable_ = nullptr;
+  return temp;
+}
+inline ::Digit::PrimeServer::Models::TargetableConfig* ActivatedShipAbilityConfig::_internal_mutable_targetable() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_._has_bits_[0] |= 0x00000001u;
+  if (_impl_.targetable_ == nullptr) {
+    auto* p = CreateMaybeMessage<::Digit::PrimeServer::Models::TargetableConfig>(GetArenaForAllocation());
+    _impl_.targetable_ = reinterpret_cast<::Digit::PrimeServer::Models::TargetableConfig*>(p);
+  }
+  return _impl_.targetable_;
+}
+inline ::Digit::PrimeServer::Models::TargetableConfig* ActivatedShipAbilityConfig::mutable_targetable() {
+  ::Digit::PrimeServer::Models::TargetableConfig* _msg = _internal_mutable_targetable();
+  // @@protoc_insertion_point(field_mutable:Digit.PrimeServer.Models.ActivatedShipAbilityConfig.targetable)
+  return _msg;
+}
+inline void ActivatedShipAbilityConfig::set_allocated_targetable(::Digit::PrimeServer::Models::TargetableConfig* value) {
+  ::google::protobuf::Arena* message_arena = GetArenaForAllocation();
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  if (message_arena == nullptr) {
+    delete reinterpret_cast<::Digit::PrimeServer::Models::TargetableConfig*>(_impl_.targetable_);
+  }
+
+  if (value != nullptr) {
+    ::google::protobuf::Arena* submessage_arena =
+        ::google::protobuf::Arena::InternalGetOwningArena(reinterpret_cast<::Digit::PrimeServer::Models::TargetableConfig*>(value));
+    if (message_arena != submessage_arena) {
+      value = ::google::protobuf::internal::GetOwnedMessage(message_arena, value, submessage_arena);
+    }
+    _impl_._has_bits_[0] |= 0x00000001u;
+  } else {
+    _impl_._has_bits_[0] &= ~0x00000001u;
+  }
+
+  _impl_.targetable_ = reinterpret_cast<::Digit::PrimeServer::Models::TargetableConfig*>(value);
+  // @@protoc_insertion_point(field_set_allocated:Digit.PrimeServer.Models.ActivatedShipAbilityConfig.targetable)
+}
+
+// int32 abilityType = 2;
+inline void ActivatedShipAbilityConfig::clear_abilitytype() {
+  _impl_.abilitytype_ = 0;
+}
+inline ::int32_t ActivatedShipAbilityConfig::abilitytype() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.ActivatedShipAbilityConfig.abilityType)
+  return _internal_abilitytype();
+}
+inline void ActivatedShipAbilityConfig::set_abilitytype(::int32_t value) {
+  _internal_set_abilitytype(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.ActivatedShipAbilityConfig.abilityType)
+}
+inline ::int32_t ActivatedShipAbilityConfig::_internal_abilitytype() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.abilitytype_;
+}
+inline void ActivatedShipAbilityConfig::_internal_set_abilitytype(::int32_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.abilitytype_ = value;
+}
+
+// -------------------------------------------------------------------
+
+// TargetableConfig
+
+// repeated int32 deployedFleetTypes = 1;
+inline int TargetableConfig::_internal_deployedfleettypes_size() const {
+  return _internal_deployedfleettypes().size();
+}
+inline int TargetableConfig::deployedfleettypes_size() const {
+  return _internal_deployedfleettypes_size();
+}
+inline void TargetableConfig::clear_deployedfleettypes() {
+  _internal_mutable_deployedfleettypes()->Clear();
+}
+inline ::int32_t TargetableConfig::deployedfleettypes(int index) const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.TargetableConfig.deployedFleetTypes)
+  return _internal_deployedfleettypes().Get(index);
+}
+inline void TargetableConfig::set_deployedfleettypes(int index, ::int32_t value) {
+  _internal_mutable_deployedfleettypes()->Set(index, value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.TargetableConfig.deployedFleetTypes)
+}
+inline void TargetableConfig::add_deployedfleettypes(::int32_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _internal_mutable_deployedfleettypes()->Add(value);
+  // @@protoc_insertion_point(field_add:Digit.PrimeServer.Models.TargetableConfig.deployedFleetTypes)
+}
+inline const ::google::protobuf::RepeatedField<::int32_t>& TargetableConfig::deployedfleettypes() const {
+  // @@protoc_insertion_point(field_list:Digit.PrimeServer.Models.TargetableConfig.deployedFleetTypes)
+  return _internal_deployedfleettypes();
+}
+inline ::google::protobuf::RepeatedField<::int32_t>* TargetableConfig::mutable_deployedfleettypes() {
+  // @@protoc_insertion_point(field_mutable_list:Digit.PrimeServer.Models.TargetableConfig.deployedFleetTypes)
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  return _internal_mutable_deployedfleettypes();
+}
+
+inline const ::google::protobuf::RepeatedField<::int32_t>& TargetableConfig::_internal_deployedfleettypes() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.deployedfleettypes_;
+}
+inline ::google::protobuf::RepeatedField<::int32_t>* TargetableConfig::_internal_mutable_deployedfleettypes() {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return &_impl_.deployedfleettypes_;
+}
+
+// bool armada = 2;
+inline void TargetableConfig::clear_armada() {
+  _impl_.armada_ = false;
+}
+inline bool TargetableConfig::armada() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.TargetableConfig.armada)
+  return _internal_armada();
+}
+inline void TargetableConfig::set_armada(bool value) {
+  _internal_set_armada(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.TargetableConfig.armada)
+}
+inline bool TargetableConfig::_internal_armada() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.armada_;
+}
+inline void TargetableConfig::_internal_set_armada(bool value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.armada_ = value;
 }
 
 // -------------------------------------------------------------------
@@ -108542,6 +114223,216 @@ OptimisedGalaxy::_internal_mutable_marauders() {
   return &_impl_.marauders_;
 }
 
+// repeated bool hazardsEnabled = 27;
+inline int OptimisedGalaxy::_internal_hazardsenabled_size() const {
+  return _internal_hazardsenabled().size();
+}
+inline int OptimisedGalaxy::hazardsenabled_size() const {
+  return _internal_hazardsenabled_size();
+}
+inline void OptimisedGalaxy::clear_hazardsenabled() {
+  _internal_mutable_hazardsenabled()->Clear();
+}
+inline bool OptimisedGalaxy::hazardsenabled(int index) const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.OptimisedGalaxy.hazardsEnabled)
+  return _internal_hazardsenabled().Get(index);
+}
+inline void OptimisedGalaxy::set_hazardsenabled(int index, bool value) {
+  _internal_mutable_hazardsenabled()->Set(index, value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.OptimisedGalaxy.hazardsEnabled)
+}
+inline void OptimisedGalaxy::add_hazardsenabled(bool value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _internal_mutable_hazardsenabled()->Add(value);
+  // @@protoc_insertion_point(field_add:Digit.PrimeServer.Models.OptimisedGalaxy.hazardsEnabled)
+}
+inline const ::google::protobuf::RepeatedField<bool>& OptimisedGalaxy::hazardsenabled() const {
+  // @@protoc_insertion_point(field_list:Digit.PrimeServer.Models.OptimisedGalaxy.hazardsEnabled)
+  return _internal_hazardsenabled();
+}
+inline ::google::protobuf::RepeatedField<bool>* OptimisedGalaxy::mutable_hazardsenabled() {
+  // @@protoc_insertion_point(field_mutable_list:Digit.PrimeServer.Models.OptimisedGalaxy.hazardsEnabled)
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  return _internal_mutable_hazardsenabled();
+}
+
+inline const ::google::protobuf::RepeatedField<bool>& OptimisedGalaxy::_internal_hazardsenabled() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.hazardsenabled_;
+}
+inline ::google::protobuf::RepeatedField<bool>* OptimisedGalaxy::_internal_mutable_hazardsenabled() {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return &_impl_.hazardsenabled_;
+}
+
+// repeated int64 hazardId = 28;
+inline int OptimisedGalaxy::_internal_hazardid_size() const {
+  return _internal_hazardid().size();
+}
+inline int OptimisedGalaxy::hazardid_size() const {
+  return _internal_hazardid_size();
+}
+inline void OptimisedGalaxy::clear_hazardid() {
+  _internal_mutable_hazardid()->Clear();
+}
+inline ::int64_t OptimisedGalaxy::hazardid(int index) const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.OptimisedGalaxy.hazardId)
+  return _internal_hazardid().Get(index);
+}
+inline void OptimisedGalaxy::set_hazardid(int index, ::int64_t value) {
+  _internal_mutable_hazardid()->Set(index, value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.OptimisedGalaxy.hazardId)
+}
+inline void OptimisedGalaxy::add_hazardid(::int64_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _internal_mutable_hazardid()->Add(value);
+  // @@protoc_insertion_point(field_add:Digit.PrimeServer.Models.OptimisedGalaxy.hazardId)
+}
+inline const ::google::protobuf::RepeatedField<::int64_t>& OptimisedGalaxy::hazardid() const {
+  // @@protoc_insertion_point(field_list:Digit.PrimeServer.Models.OptimisedGalaxy.hazardId)
+  return _internal_hazardid();
+}
+inline ::google::protobuf::RepeatedField<::int64_t>* OptimisedGalaxy::mutable_hazardid() {
+  // @@protoc_insertion_point(field_mutable_list:Digit.PrimeServer.Models.OptimisedGalaxy.hazardId)
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  return _internal_mutable_hazardid();
+}
+
+inline const ::google::protobuf::RepeatedField<::int64_t>& OptimisedGalaxy::_internal_hazardid() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.hazardid_;
+}
+inline ::google::protobuf::RepeatedField<::int64_t>* OptimisedGalaxy::_internal_mutable_hazardid() {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return &_impl_.hazardid_;
+}
+
+// repeated int32 hazardsLevel = 29;
+inline int OptimisedGalaxy::_internal_hazardslevel_size() const {
+  return _internal_hazardslevel().size();
+}
+inline int OptimisedGalaxy::hazardslevel_size() const {
+  return _internal_hazardslevel_size();
+}
+inline void OptimisedGalaxy::clear_hazardslevel() {
+  _internal_mutable_hazardslevel()->Clear();
+}
+inline ::int32_t OptimisedGalaxy::hazardslevel(int index) const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.OptimisedGalaxy.hazardsLevel)
+  return _internal_hazardslevel().Get(index);
+}
+inline void OptimisedGalaxy::set_hazardslevel(int index, ::int32_t value) {
+  _internal_mutable_hazardslevel()->Set(index, value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.OptimisedGalaxy.hazardsLevel)
+}
+inline void OptimisedGalaxy::add_hazardslevel(::int32_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _internal_mutable_hazardslevel()->Add(value);
+  // @@protoc_insertion_point(field_add:Digit.PrimeServer.Models.OptimisedGalaxy.hazardsLevel)
+}
+inline const ::google::protobuf::RepeatedField<::int32_t>& OptimisedGalaxy::hazardslevel() const {
+  // @@protoc_insertion_point(field_list:Digit.PrimeServer.Models.OptimisedGalaxy.hazardsLevel)
+  return _internal_hazardslevel();
+}
+inline ::google::protobuf::RepeatedField<::int32_t>* OptimisedGalaxy::mutable_hazardslevel() {
+  // @@protoc_insertion_point(field_mutable_list:Digit.PrimeServer.Models.OptimisedGalaxy.hazardsLevel)
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  return _internal_mutable_hazardslevel();
+}
+
+inline const ::google::protobuf::RepeatedField<::int32_t>& OptimisedGalaxy::_internal_hazardslevel() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.hazardslevel_;
+}
+inline ::google::protobuf::RepeatedField<::int32_t>* OptimisedGalaxy::_internal_mutable_hazardslevel() {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return &_impl_.hazardslevel_;
+}
+
+// repeated bool isWaveDefense = 30;
+inline int OptimisedGalaxy::_internal_iswavedefense_size() const {
+  return _internal_iswavedefense().size();
+}
+inline int OptimisedGalaxy::iswavedefense_size() const {
+  return _internal_iswavedefense_size();
+}
+inline void OptimisedGalaxy::clear_iswavedefense() {
+  _internal_mutable_iswavedefense()->Clear();
+}
+inline bool OptimisedGalaxy::iswavedefense(int index) const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.OptimisedGalaxy.isWaveDefense)
+  return _internal_iswavedefense().Get(index);
+}
+inline void OptimisedGalaxy::set_iswavedefense(int index, bool value) {
+  _internal_mutable_iswavedefense()->Set(index, value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.OptimisedGalaxy.isWaveDefense)
+}
+inline void OptimisedGalaxy::add_iswavedefense(bool value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _internal_mutable_iswavedefense()->Add(value);
+  // @@protoc_insertion_point(field_add:Digit.PrimeServer.Models.OptimisedGalaxy.isWaveDefense)
+}
+inline const ::google::protobuf::RepeatedField<bool>& OptimisedGalaxy::iswavedefense() const {
+  // @@protoc_insertion_point(field_list:Digit.PrimeServer.Models.OptimisedGalaxy.isWaveDefense)
+  return _internal_iswavedefense();
+}
+inline ::google::protobuf::RepeatedField<bool>* OptimisedGalaxy::mutable_iswavedefense() {
+  // @@protoc_insertion_point(field_mutable_list:Digit.PrimeServer.Models.OptimisedGalaxy.isWaveDefense)
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  return _internal_mutable_iswavedefense();
+}
+
+inline const ::google::protobuf::RepeatedField<bool>& OptimisedGalaxy::_internal_iswavedefense() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.iswavedefense_;
+}
+inline ::google::protobuf::RepeatedField<bool>* OptimisedGalaxy::_internal_mutable_iswavedefense() {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return &_impl_.iswavedefense_;
+}
+
+// repeated int64 waveDefenseChallenge = 31;
+inline int OptimisedGalaxy::_internal_wavedefensechallenge_size() const {
+  return _internal_wavedefensechallenge().size();
+}
+inline int OptimisedGalaxy::wavedefensechallenge_size() const {
+  return _internal_wavedefensechallenge_size();
+}
+inline void OptimisedGalaxy::clear_wavedefensechallenge() {
+  _internal_mutable_wavedefensechallenge()->Clear();
+}
+inline ::int64_t OptimisedGalaxy::wavedefensechallenge(int index) const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.OptimisedGalaxy.waveDefenseChallenge)
+  return _internal_wavedefensechallenge().Get(index);
+}
+inline void OptimisedGalaxy::set_wavedefensechallenge(int index, ::int64_t value) {
+  _internal_mutable_wavedefensechallenge()->Set(index, value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.OptimisedGalaxy.waveDefenseChallenge)
+}
+inline void OptimisedGalaxy::add_wavedefensechallenge(::int64_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _internal_mutable_wavedefensechallenge()->Add(value);
+  // @@protoc_insertion_point(field_add:Digit.PrimeServer.Models.OptimisedGalaxy.waveDefenseChallenge)
+}
+inline const ::google::protobuf::RepeatedField<::int64_t>& OptimisedGalaxy::wavedefensechallenge() const {
+  // @@protoc_insertion_point(field_list:Digit.PrimeServer.Models.OptimisedGalaxy.waveDefenseChallenge)
+  return _internal_wavedefensechallenge();
+}
+inline ::google::protobuf::RepeatedField<::int64_t>* OptimisedGalaxy::mutable_wavedefensechallenge() {
+  // @@protoc_insertion_point(field_mutable_list:Digit.PrimeServer.Models.OptimisedGalaxy.waveDefenseChallenge)
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  return _internal_mutable_wavedefensechallenge();
+}
+
+inline const ::google::protobuf::RepeatedField<::int64_t>& OptimisedGalaxy::_internal_wavedefensechallenge() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.wavedefensechallenge_;
+}
+inline ::google::protobuf::RepeatedField<::int64_t>* OptimisedGalaxy::_internal_mutable_wavedefensechallenge() {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return &_impl_.wavedefensechallenge_;
+}
+
 // -------------------------------------------------------------------
 
 // PeaceShieldRulesConfig
@@ -111161,6 +117052,74 @@ DeployedFleet::_internal_mutable_forbiddentechs() {
   return &_impl_.forbiddentechs_;
 }
 
+// .Digit.PrimeServer.Models.DamageSources causeOfDestruction = 37;
+inline void DeployedFleet::clear_causeofdestruction() {
+  _impl_.causeofdestruction_ = 0;
+}
+inline ::Digit::PrimeServer::Models::DamageSources DeployedFleet::causeofdestruction() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.DeployedFleet.causeOfDestruction)
+  return _internal_causeofdestruction();
+}
+inline void DeployedFleet::set_causeofdestruction(::Digit::PrimeServer::Models::DamageSources value) {
+  _internal_set_causeofdestruction(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.DeployedFleet.causeOfDestruction)
+}
+inline ::Digit::PrimeServer::Models::DamageSources DeployedFleet::_internal_causeofdestruction() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return static_cast<::Digit::PrimeServer::Models::DamageSources>(_impl_.causeofdestruction_);
+}
+inline void DeployedFleet::_internal_set_causeofdestruction(::Digit::PrimeServer::Models::DamageSources value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.causeofdestruction_ = value;
+}
+
+// repeated .Digit.PrimeServer.Models.StatusCounter statusCounters = 38;
+inline int DeployedFleet::_internal_statuscounters_size() const {
+  return _internal_statuscounters().size();
+}
+inline int DeployedFleet::statuscounters_size() const {
+  return _internal_statuscounters_size();
+}
+inline void DeployedFleet::clear_statuscounters() {
+  _internal_mutable_statuscounters()->Clear();
+}
+inline ::Digit::PrimeServer::Models::StatusCounter* DeployedFleet::mutable_statuscounters(int index) {
+  // @@protoc_insertion_point(field_mutable:Digit.PrimeServer.Models.DeployedFleet.statusCounters)
+  return _internal_mutable_statuscounters()->Mutable(index);
+}
+inline ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::StatusCounter >*
+DeployedFleet::mutable_statuscounters() {
+  // @@protoc_insertion_point(field_mutable_list:Digit.PrimeServer.Models.DeployedFleet.statusCounters)
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  return _internal_mutable_statuscounters();
+}
+inline const ::Digit::PrimeServer::Models::StatusCounter& DeployedFleet::statuscounters(int index) const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.DeployedFleet.statusCounters)
+    return _internal_statuscounters().Get(index);
+}
+inline ::Digit::PrimeServer::Models::StatusCounter* DeployedFleet::add_statuscounters() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ::Digit::PrimeServer::Models::StatusCounter* _add = _internal_mutable_statuscounters()->Add();
+  // @@protoc_insertion_point(field_add:Digit.PrimeServer.Models.DeployedFleet.statusCounters)
+  return _add;
+}
+inline const ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::StatusCounter >&
+DeployedFleet::statuscounters() const {
+  // @@protoc_insertion_point(field_list:Digit.PrimeServer.Models.DeployedFleet.statusCounters)
+  return _internal_statuscounters();
+}
+inline const ::google::protobuf::RepeatedPtrField<::Digit::PrimeServer::Models::StatusCounter>&
+DeployedFleet::_internal_statuscounters() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.statuscounters_;
+}
+inline ::google::protobuf::RepeatedPtrField<::Digit::PrimeServer::Models::StatusCounter>*
+DeployedFleet::_internal_mutable_statuscounters() {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return &_impl_.statuscounters_;
+}
+
 // -------------------------------------------------------------------
 
 // WarpData
@@ -111442,6 +117401,54 @@ inline void ForbiddenTechData::_internal_set_tier(::int32_t value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
   _impl_.tier_ = value;
+}
+
+// -------------------------------------------------------------------
+
+// StatusCounter
+
+// int64 statusId = 1;
+inline void StatusCounter::clear_statusid() {
+  _impl_.statusid_ = ::int64_t{0};
+}
+inline ::int64_t StatusCounter::statusid() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.StatusCounter.statusId)
+  return _internal_statusid();
+}
+inline void StatusCounter::set_statusid(::int64_t value) {
+  _internal_set_statusid(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.StatusCounter.statusId)
+}
+inline ::int64_t StatusCounter::_internal_statusid() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.statusid_;
+}
+inline void StatusCounter::_internal_set_statusid(::int64_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.statusid_ = value;
+}
+
+// int64 counter = 2;
+inline void StatusCounter::clear_counter() {
+  _impl_.counter_ = ::int64_t{0};
+}
+inline ::int64_t StatusCounter::counter() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.StatusCounter.counter)
+  return _internal_counter();
+}
+inline void StatusCounter::set_counter(::int64_t value) {
+  _internal_set_counter(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.StatusCounter.counter)
+}
+inline ::int64_t StatusCounter::_internal_counter() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.counter_;
+}
+inline void StatusCounter::_internal_set_counter(::int64_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.counter_ = value;
 }
 
 // -------------------------------------------------------------------
@@ -113593,6 +119600,28 @@ inline void Job::set_allocated_entityref(::EntityRef* value) {
   // @@protoc_insertion_point(field_set_allocated:Digit.PrimeServer.Models.Job.entityRef)
 }
 
+// int32 tier = 19;
+inline void Job::clear_tier() {
+  _impl_.tier_ = 0;
+}
+inline ::int32_t Job::tier() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.Job.tier)
+  return _internal_tier();
+}
+inline void Job::set_tier(::int32_t value) {
+  _internal_set_tier(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.Job.tier)
+}
+inline ::int32_t Job::_internal_tier() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.tier_;
+}
+inline void Job::_internal_set_tier(::int32_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.tier_ = value;
+}
+
 // .google.protobuf.Timestamp startTime = 4;
 inline bool Job::has_starttime() const {
   bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
@@ -114940,13 +120969,13 @@ inline void Mission::_internal_set_type(::Digit::PrimeServer::Models::MissionTyp
 
 // .Digit.PrimeServer.Models.MissionMetaData metadata = 7;
 inline bool Mission::has_metadata() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
   PROTOBUF_ASSUME(!value || _impl_.metadata_ != nullptr);
   return value;
 }
 inline void Mission::clear_metadata() {
   if (_impl_.metadata_ != nullptr) _impl_.metadata_->Clear();
-  _impl_._has_bits_[0] &= ~0x00000004u;
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 inline const ::Digit::PrimeServer::Models::MissionMetaData& Mission::_internal_metadata() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
@@ -114964,16 +120993,16 @@ inline void Mission::unsafe_arena_set_allocated_metadata(::Digit::PrimeServer::M
   }
   _impl_.metadata_ = reinterpret_cast<::Digit::PrimeServer::Models::MissionMetaData*>(value);
   if (value != nullptr) {
-    _impl_._has_bits_[0] |= 0x00000004u;
+    _impl_._has_bits_[0] |= 0x00000001u;
   } else {
-    _impl_._has_bits_[0] &= ~0x00000004u;
+    _impl_._has_bits_[0] &= ~0x00000001u;
   }
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:Digit.PrimeServer.Models.Mission.metadata)
 }
 inline ::Digit::PrimeServer::Models::MissionMetaData* Mission::release_metadata() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
 
-  _impl_._has_bits_[0] &= ~0x00000004u;
+  _impl_._has_bits_[0] &= ~0x00000001u;
   ::Digit::PrimeServer::Models::MissionMetaData* released = _impl_.metadata_;
   _impl_.metadata_ = nullptr;
 #ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
@@ -114993,14 +121022,14 @@ inline ::Digit::PrimeServer::Models::MissionMetaData* Mission::unsafe_arena_rele
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   // @@protoc_insertion_point(field_release:Digit.PrimeServer.Models.Mission.metadata)
 
-  _impl_._has_bits_[0] &= ~0x00000004u;
+  _impl_._has_bits_[0] &= ~0x00000001u;
   ::Digit::PrimeServer::Models::MissionMetaData* temp = _impl_.metadata_;
   _impl_.metadata_ = nullptr;
   return temp;
 }
 inline ::Digit::PrimeServer::Models::MissionMetaData* Mission::_internal_mutable_metadata() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_._has_bits_[0] |= 0x00000004u;
+  _impl_._has_bits_[0] |= 0x00000001u;
   if (_impl_.metadata_ == nullptr) {
     auto* p = CreateMaybeMessage<::Digit::PrimeServer::Models::MissionMetaData>(GetArenaForAllocation());
     _impl_.metadata_ = reinterpret_cast<::Digit::PrimeServer::Models::MissionMetaData*>(p);
@@ -115025,9 +121054,9 @@ inline void Mission::set_allocated_metadata(::Digit::PrimeServer::Models::Missio
     if (message_arena != submessage_arena) {
       value = ::google::protobuf::internal::GetOwnedMessage(message_arena, value, submessage_arena);
     }
-    _impl_._has_bits_[0] |= 0x00000004u;
+    _impl_._has_bits_[0] |= 0x00000001u;
   } else {
-    _impl_._has_bits_[0] &= ~0x00000004u;
+    _impl_._has_bits_[0] &= ~0x00000001u;
   }
 
   _impl_.metadata_ = reinterpret_cast<::Digit::PrimeServer::Models::MissionMetaData*>(value);
@@ -115036,7 +121065,7 @@ inline void Mission::set_allocated_metadata(::Digit::PrimeServer::Models::Missio
 
 // .google.protobuf.Timestamp lastModified = 8;
 inline bool Mission::has_lastmodified() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000008u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
   PROTOBUF_ASSUME(!value || _impl_.lastmodified_ != nullptr);
   return value;
 }
@@ -115056,16 +121085,16 @@ inline void Mission::unsafe_arena_set_allocated_lastmodified(::google::protobuf:
   }
   _impl_.lastmodified_ = reinterpret_cast<::google::protobuf::Timestamp*>(value);
   if (value != nullptr) {
-    _impl_._has_bits_[0] |= 0x00000008u;
+    _impl_._has_bits_[0] |= 0x00000002u;
   } else {
-    _impl_._has_bits_[0] &= ~0x00000008u;
+    _impl_._has_bits_[0] &= ~0x00000002u;
   }
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:Digit.PrimeServer.Models.Mission.lastModified)
 }
 inline ::google::protobuf::Timestamp* Mission::release_lastmodified() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
 
-  _impl_._has_bits_[0] &= ~0x00000008u;
+  _impl_._has_bits_[0] &= ~0x00000002u;
   ::google::protobuf::Timestamp* released = _impl_.lastmodified_;
   _impl_.lastmodified_ = nullptr;
 #ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
@@ -115085,14 +121114,14 @@ inline ::google::protobuf::Timestamp* Mission::unsafe_arena_release_lastmodified
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   // @@protoc_insertion_point(field_release:Digit.PrimeServer.Models.Mission.lastModified)
 
-  _impl_._has_bits_[0] &= ~0x00000008u;
+  _impl_._has_bits_[0] &= ~0x00000002u;
   ::google::protobuf::Timestamp* temp = _impl_.lastmodified_;
   _impl_.lastmodified_ = nullptr;
   return temp;
 }
 inline ::google::protobuf::Timestamp* Mission::_internal_mutable_lastmodified() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_._has_bits_[0] |= 0x00000008u;
+  _impl_._has_bits_[0] |= 0x00000002u;
   if (_impl_.lastmodified_ == nullptr) {
     auto* p = CreateMaybeMessage<::google::protobuf::Timestamp>(GetArenaForAllocation());
     _impl_.lastmodified_ = reinterpret_cast<::google::protobuf::Timestamp*>(p);
@@ -115117,205 +121146,105 @@ inline void Mission::set_allocated_lastmodified(::google::protobuf::Timestamp* v
     if (message_arena != submessage_arena) {
       value = ::google::protobuf::internal::GetOwnedMessage(message_arena, value, submessage_arena);
     }
-    _impl_._has_bits_[0] |= 0x00000008u;
+    _impl_._has_bits_[0] |= 0x00000002u;
   } else {
-    _impl_._has_bits_[0] &= ~0x00000008u;
+    _impl_._has_bits_[0] &= ~0x00000002u;
   }
 
   _impl_.lastmodified_ = reinterpret_cast<::google::protobuf::Timestamp*>(value);
   // @@protoc_insertion_point(field_set_allocated:Digit.PrimeServer.Models.Mission.lastModified)
 }
 
-// .Digit.PrimeServer.Models.MissionObjective objectives = 2;
-inline bool Mission::has_objectives() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
-  PROTOBUF_ASSUME(!value || _impl_.objectives_ != nullptr);
-  return value;
+// repeated .Digit.PrimeServer.Models.MissionObjective objectives = 2;
+inline int Mission::_internal_objectives_size() const {
+  return _internal_objectives().size();
+}
+inline int Mission::objectives_size() const {
+  return _internal_objectives_size();
 }
 inline void Mission::clear_objectives() {
-  if (_impl_.objectives_ != nullptr) _impl_.objectives_->Clear();
-  _impl_._has_bits_[0] &= ~0x00000001u;
+  _internal_mutable_objectives()->Clear();
 }
-inline const ::Digit::PrimeServer::Models::MissionObjective& Mission::_internal_objectives() const {
-  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  const ::Digit::PrimeServer::Models::MissionObjective* p = _impl_.objectives_;
-  return p != nullptr ? *p : reinterpret_cast<const ::Digit::PrimeServer::Models::MissionObjective&>(::Digit::PrimeServer::Models::_MissionObjective_default_instance_);
+inline ::Digit::PrimeServer::Models::MissionObjective* Mission::mutable_objectives(int index) {
+  // @@protoc_insertion_point(field_mutable:Digit.PrimeServer.Models.Mission.objectives)
+  return _internal_mutable_objectives()->Mutable(index);
 }
-inline const ::Digit::PrimeServer::Models::MissionObjective& Mission::objectives() const {
+inline ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::MissionObjective >*
+Mission::mutable_objectives() {
+  // @@protoc_insertion_point(field_mutable_list:Digit.PrimeServer.Models.Mission.objectives)
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  return _internal_mutable_objectives();
+}
+inline const ::Digit::PrimeServer::Models::MissionObjective& Mission::objectives(int index) const {
   // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.Mission.objectives)
+    return _internal_objectives().Get(index);
+}
+inline ::Digit::PrimeServer::Models::MissionObjective* Mission::add_objectives() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ::Digit::PrimeServer::Models::MissionObjective* _add = _internal_mutable_objectives()->Add();
+  // @@protoc_insertion_point(field_add:Digit.PrimeServer.Models.Mission.objectives)
+  return _add;
+}
+inline const ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::MissionObjective >&
+Mission::objectives() const {
+  // @@protoc_insertion_point(field_list:Digit.PrimeServer.Models.Mission.objectives)
   return _internal_objectives();
 }
-inline void Mission::unsafe_arena_set_allocated_objectives(::Digit::PrimeServer::Models::MissionObjective* value) {
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  if (GetArenaForAllocation() == nullptr) {
-    delete reinterpret_cast<::google::protobuf::MessageLite*>(_impl_.objectives_);
-  }
-  _impl_.objectives_ = reinterpret_cast<::Digit::PrimeServer::Models::MissionObjective*>(value);
-  if (value != nullptr) {
-    _impl_._has_bits_[0] |= 0x00000001u;
-  } else {
-    _impl_._has_bits_[0] &= ~0x00000001u;
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:Digit.PrimeServer.Models.Mission.objectives)
-}
-inline ::Digit::PrimeServer::Models::MissionObjective* Mission::release_objectives() {
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-
-  _impl_._has_bits_[0] &= ~0x00000001u;
-  ::Digit::PrimeServer::Models::MissionObjective* released = _impl_.objectives_;
-  _impl_.objectives_ = nullptr;
-#ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
-  auto* old = reinterpret_cast<::google::protobuf::MessageLite*>(released);
-  released = ::google::protobuf::internal::DuplicateIfNonNull(released);
-  if (GetArenaForAllocation() == nullptr) {
-    delete old;
-  }
-#else   // PROTOBUF_FORCE_COPY_IN_RELEASE
-  if (GetArenaForAllocation() != nullptr) {
-    released = ::google::protobuf::internal::DuplicateIfNonNull(released);
-  }
-#endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
-  return released;
-}
-inline ::Digit::PrimeServer::Models::MissionObjective* Mission::unsafe_arena_release_objectives() {
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:Digit.PrimeServer.Models.Mission.objectives)
-
-  _impl_._has_bits_[0] &= ~0x00000001u;
-  ::Digit::PrimeServer::Models::MissionObjective* temp = _impl_.objectives_;
-  _impl_.objectives_ = nullptr;
-  return temp;
-}
-inline ::Digit::PrimeServer::Models::MissionObjective* Mission::_internal_mutable_objectives() {
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_._has_bits_[0] |= 0x00000001u;
-  if (_impl_.objectives_ == nullptr) {
-    auto* p = CreateMaybeMessage<::Digit::PrimeServer::Models::MissionObjective>(GetArenaForAllocation());
-    _impl_.objectives_ = reinterpret_cast<::Digit::PrimeServer::Models::MissionObjective*>(p);
-  }
+inline const ::google::protobuf::RepeatedPtrField<::Digit::PrimeServer::Models::MissionObjective>&
+Mission::_internal_objectives() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
   return _impl_.objectives_;
 }
-inline ::Digit::PrimeServer::Models::MissionObjective* Mission::mutable_objectives() {
-  ::Digit::PrimeServer::Models::MissionObjective* _msg = _internal_mutable_objectives();
-  // @@protoc_insertion_point(field_mutable:Digit.PrimeServer.Models.Mission.objectives)
-  return _msg;
-}
-inline void Mission::set_allocated_objectives(::Digit::PrimeServer::Models::MissionObjective* value) {
-  ::google::protobuf::Arena* message_arena = GetArenaForAllocation();
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  if (message_arena == nullptr) {
-    delete reinterpret_cast<::Digit::PrimeServer::Models::MissionObjective*>(_impl_.objectives_);
-  }
-
-  if (value != nullptr) {
-    ::google::protobuf::Arena* submessage_arena =
-        ::google::protobuf::Arena::InternalGetOwningArena(reinterpret_cast<::Digit::PrimeServer::Models::MissionObjective*>(value));
-    if (message_arena != submessage_arena) {
-      value = ::google::protobuf::internal::GetOwnedMessage(message_arena, value, submessage_arena);
-    }
-    _impl_._has_bits_[0] |= 0x00000001u;
-  } else {
-    _impl_._has_bits_[0] &= ~0x00000001u;
-  }
-
-  _impl_.objectives_ = reinterpret_cast<::Digit::PrimeServer::Models::MissionObjective*>(value);
-  // @@protoc_insertion_point(field_set_allocated:Digit.PrimeServer.Models.Mission.objectives)
+inline ::google::protobuf::RepeatedPtrField<::Digit::PrimeServer::Models::MissionObjective>*
+Mission::_internal_mutable_objectives() {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return &_impl_.objectives_;
 }
 
-// .Digit.PrimeServer.Models.MissionRequirement acceptanceRequirements = 4;
-inline bool Mission::has_acceptancerequirements() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
-  PROTOBUF_ASSUME(!value || _impl_.acceptancerequirements_ != nullptr);
-  return value;
+// repeated .Digit.PrimeServer.Models.MissionRequirement acceptanceRequirements = 4;
+inline int Mission::_internal_acceptancerequirements_size() const {
+  return _internal_acceptancerequirements().size();
+}
+inline int Mission::acceptancerequirements_size() const {
+  return _internal_acceptancerequirements_size();
 }
 inline void Mission::clear_acceptancerequirements() {
-  if (_impl_.acceptancerequirements_ != nullptr) _impl_.acceptancerequirements_->Clear();
-  _impl_._has_bits_[0] &= ~0x00000002u;
+  _internal_mutable_acceptancerequirements()->Clear();
 }
-inline const ::Digit::PrimeServer::Models::MissionRequirement& Mission::_internal_acceptancerequirements() const {
-  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  const ::Digit::PrimeServer::Models::MissionRequirement* p = _impl_.acceptancerequirements_;
-  return p != nullptr ? *p : reinterpret_cast<const ::Digit::PrimeServer::Models::MissionRequirement&>(::Digit::PrimeServer::Models::_MissionRequirement_default_instance_);
+inline ::Digit::PrimeServer::Models::MissionRequirement* Mission::mutable_acceptancerequirements(int index) {
+  // @@protoc_insertion_point(field_mutable:Digit.PrimeServer.Models.Mission.acceptanceRequirements)
+  return _internal_mutable_acceptancerequirements()->Mutable(index);
 }
-inline const ::Digit::PrimeServer::Models::MissionRequirement& Mission::acceptancerequirements() const {
+inline ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::MissionRequirement >*
+Mission::mutable_acceptancerequirements() {
+  // @@protoc_insertion_point(field_mutable_list:Digit.PrimeServer.Models.Mission.acceptanceRequirements)
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  return _internal_mutable_acceptancerequirements();
+}
+inline const ::Digit::PrimeServer::Models::MissionRequirement& Mission::acceptancerequirements(int index) const {
   // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.Mission.acceptanceRequirements)
+    return _internal_acceptancerequirements().Get(index);
+}
+inline ::Digit::PrimeServer::Models::MissionRequirement* Mission::add_acceptancerequirements() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ::Digit::PrimeServer::Models::MissionRequirement* _add = _internal_mutable_acceptancerequirements()->Add();
+  // @@protoc_insertion_point(field_add:Digit.PrimeServer.Models.Mission.acceptanceRequirements)
+  return _add;
+}
+inline const ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::MissionRequirement >&
+Mission::acceptancerequirements() const {
+  // @@protoc_insertion_point(field_list:Digit.PrimeServer.Models.Mission.acceptanceRequirements)
   return _internal_acceptancerequirements();
 }
-inline void Mission::unsafe_arena_set_allocated_acceptancerequirements(::Digit::PrimeServer::Models::MissionRequirement* value) {
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  if (GetArenaForAllocation() == nullptr) {
-    delete reinterpret_cast<::google::protobuf::MessageLite*>(_impl_.acceptancerequirements_);
-  }
-  _impl_.acceptancerequirements_ = reinterpret_cast<::Digit::PrimeServer::Models::MissionRequirement*>(value);
-  if (value != nullptr) {
-    _impl_._has_bits_[0] |= 0x00000002u;
-  } else {
-    _impl_._has_bits_[0] &= ~0x00000002u;
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:Digit.PrimeServer.Models.Mission.acceptanceRequirements)
-}
-inline ::Digit::PrimeServer::Models::MissionRequirement* Mission::release_acceptancerequirements() {
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-
-  _impl_._has_bits_[0] &= ~0x00000002u;
-  ::Digit::PrimeServer::Models::MissionRequirement* released = _impl_.acceptancerequirements_;
-  _impl_.acceptancerequirements_ = nullptr;
-#ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
-  auto* old = reinterpret_cast<::google::protobuf::MessageLite*>(released);
-  released = ::google::protobuf::internal::DuplicateIfNonNull(released);
-  if (GetArenaForAllocation() == nullptr) {
-    delete old;
-  }
-#else   // PROTOBUF_FORCE_COPY_IN_RELEASE
-  if (GetArenaForAllocation() != nullptr) {
-    released = ::google::protobuf::internal::DuplicateIfNonNull(released);
-  }
-#endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
-  return released;
-}
-inline ::Digit::PrimeServer::Models::MissionRequirement* Mission::unsafe_arena_release_acceptancerequirements() {
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:Digit.PrimeServer.Models.Mission.acceptanceRequirements)
-
-  _impl_._has_bits_[0] &= ~0x00000002u;
-  ::Digit::PrimeServer::Models::MissionRequirement* temp = _impl_.acceptancerequirements_;
-  _impl_.acceptancerequirements_ = nullptr;
-  return temp;
-}
-inline ::Digit::PrimeServer::Models::MissionRequirement* Mission::_internal_mutable_acceptancerequirements() {
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_._has_bits_[0] |= 0x00000002u;
-  if (_impl_.acceptancerequirements_ == nullptr) {
-    auto* p = CreateMaybeMessage<::Digit::PrimeServer::Models::MissionRequirement>(GetArenaForAllocation());
-    _impl_.acceptancerequirements_ = reinterpret_cast<::Digit::PrimeServer::Models::MissionRequirement*>(p);
-  }
+inline const ::google::protobuf::RepeatedPtrField<::Digit::PrimeServer::Models::MissionRequirement>&
+Mission::_internal_acceptancerequirements() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
   return _impl_.acceptancerequirements_;
 }
-inline ::Digit::PrimeServer::Models::MissionRequirement* Mission::mutable_acceptancerequirements() {
-  ::Digit::PrimeServer::Models::MissionRequirement* _msg = _internal_mutable_acceptancerequirements();
-  // @@protoc_insertion_point(field_mutable:Digit.PrimeServer.Models.Mission.acceptanceRequirements)
-  return _msg;
-}
-inline void Mission::set_allocated_acceptancerequirements(::Digit::PrimeServer::Models::MissionRequirement* value) {
-  ::google::protobuf::Arena* message_arena = GetArenaForAllocation();
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  if (message_arena == nullptr) {
-    delete reinterpret_cast<::Digit::PrimeServer::Models::MissionRequirement*>(_impl_.acceptancerequirements_);
-  }
-
-  if (value != nullptr) {
-    ::google::protobuf::Arena* submessage_arena =
-        ::google::protobuf::Arena::InternalGetOwningArena(reinterpret_cast<::Digit::PrimeServer::Models::MissionRequirement*>(value));
-    if (message_arena != submessage_arena) {
-      value = ::google::protobuf::internal::GetOwnedMessage(message_arena, value, submessage_arena);
-    }
-    _impl_._has_bits_[0] |= 0x00000002u;
-  } else {
-    _impl_._has_bits_[0] &= ~0x00000002u;
-  }
-
-  _impl_.acceptancerequirements_ = reinterpret_cast<::Digit::PrimeServer::Models::MissionRequirement*>(value);
-  // @@protoc_insertion_point(field_set_allocated:Digit.PrimeServer.Models.Mission.acceptanceRequirements)
+inline ::google::protobuf::RepeatedPtrField<::Digit::PrimeServer::Models::MissionRequirement>*
+Mission::_internal_mutable_acceptancerequirements() {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return &_impl_.acceptancerequirements_;
 }
 
 // -------------------------------------------------------------------
@@ -125766,6 +131695,252 @@ OfficersResponse::_internal_mutable_officers() {
 
 // -------------------------------------------------------------------
 
+// Party
+
+// string createdAt = 1;
+inline void Party::clear_createdat() {
+  _impl_.createdat_.ClearToEmpty();
+}
+inline const std::string& Party::createdat() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.Party.createdAt)
+  return _internal_createdat();
+}
+template <typename Arg_, typename... Args_>
+inline PROTOBUF_ALWAYS_INLINE void Party::set_createdat(Arg_&& arg,
+                                                     Args_... args) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.createdat_.Set(static_cast<Arg_&&>(arg), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.Party.createdAt)
+}
+inline std::string* Party::mutable_createdat() {
+  std::string* _s = _internal_mutable_createdat();
+  // @@protoc_insertion_point(field_mutable:Digit.PrimeServer.Models.Party.createdAt)
+  return _s;
+}
+inline const std::string& Party::_internal_createdat() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.createdat_.Get();
+}
+inline void Party::_internal_set_createdat(const std::string& value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.createdat_.Set(value, GetArenaForAllocation());
+}
+inline std::string* Party::_internal_mutable_createdat() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  return _impl_.createdat_.Mutable( GetArenaForAllocation());
+}
+inline std::string* Party::release_createdat() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  // @@protoc_insertion_point(field_release:Digit.PrimeServer.Models.Party.createdAt)
+  return _impl_.createdat_.Release();
+}
+inline void Party::set_allocated_createdat(std::string* value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_.createdat_.SetAllocated(value, GetArenaForAllocation());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        if (_impl_.createdat_.IsDefault()) {
+          _impl_.createdat_.Set("", GetArenaForAllocation());
+        }
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:Digit.PrimeServer.Models.Party.createdAt)
+}
+
+// int64 id = 2;
+inline void Party::clear_id() {
+  _impl_.id_ = ::int64_t{0};
+}
+inline ::int64_t Party::id() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.Party.id)
+  return _internal_id();
+}
+inline void Party::set_id(::int64_t value) {
+  _internal_set_id(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.Party.id)
+}
+inline ::int64_t Party::_internal_id() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.id_;
+}
+inline void Party::_internal_set_id(::int64_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.id_ = value;
+}
+
+// string leader = 3;
+inline void Party::clear_leader() {
+  _impl_.leader_.ClearToEmpty();
+}
+inline const std::string& Party::leader() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.Party.leader)
+  return _internal_leader();
+}
+template <typename Arg_, typename... Args_>
+inline PROTOBUF_ALWAYS_INLINE void Party::set_leader(Arg_&& arg,
+                                                     Args_... args) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.leader_.Set(static_cast<Arg_&&>(arg), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.Party.leader)
+}
+inline std::string* Party::mutable_leader() {
+  std::string* _s = _internal_mutable_leader();
+  // @@protoc_insertion_point(field_mutable:Digit.PrimeServer.Models.Party.leader)
+  return _s;
+}
+inline const std::string& Party::_internal_leader() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.leader_.Get();
+}
+inline void Party::_internal_set_leader(const std::string& value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.leader_.Set(value, GetArenaForAllocation());
+}
+inline std::string* Party::_internal_mutable_leader() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  return _impl_.leader_.Mutable( GetArenaForAllocation());
+}
+inline std::string* Party::release_leader() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  // @@protoc_insertion_point(field_release:Digit.PrimeServer.Models.Party.leader)
+  return _impl_.leader_.Release();
+}
+inline void Party::set_allocated_leader(std::string* value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_.leader_.SetAllocated(value, GetArenaForAllocation());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        if (_impl_.leader_.IsDefault()) {
+          _impl_.leader_.Set("", GetArenaForAllocation());
+        }
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:Digit.PrimeServer.Models.Party.leader)
+}
+
+// int32 maxPlayers = 4;
+inline void Party::clear_maxplayers() {
+  _impl_.maxplayers_ = 0;
+}
+inline ::int32_t Party::maxplayers() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.Party.maxPlayers)
+  return _internal_maxplayers();
+}
+inline void Party::set_maxplayers(::int32_t value) {
+  _internal_set_maxplayers(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.Party.maxPlayers)
+}
+inline ::int32_t Party::_internal_maxplayers() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.maxplayers_;
+}
+inline void Party::_internal_set_maxplayers(::int32_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.maxplayers_ = value;
+}
+
+// repeated string members = 5;
+inline int Party::_internal_members_size() const {
+  return _internal_members().size();
+}
+inline int Party::members_size() const {
+  return _internal_members_size();
+}
+inline void Party::clear_members() {
+  _internal_mutable_members()->Clear();
+}
+inline std::string* Party::add_members() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  std::string* _s = _internal_mutable_members()->Add();
+  // @@protoc_insertion_point(field_add_mutable:Digit.PrimeServer.Models.Party.members)
+  return _s;
+}
+inline const std::string& Party::members(int index) const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.Party.members)
+  return _internal_members().Get(index);
+}
+inline std::string* Party::mutable_members(int index) {
+  // @@protoc_insertion_point(field_mutable:Digit.PrimeServer.Models.Party.members)
+  return _internal_mutable_members()->Mutable(index);
+}
+inline void Party::set_members(int index, const std::string& value) {
+  _internal_mutable_members()->Mutable(index)->assign(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.Party.members)
+}
+inline void Party::set_members(int index, std::string&& value) {
+  _internal_mutable_members()->Mutable(index)->assign(std::move(value));
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.Party.members)
+}
+inline void Party::set_members(int index, const char* value) {
+  ABSL_DCHECK(value != nullptr);
+  _internal_mutable_members()->Mutable(index)->assign(value);
+  // @@protoc_insertion_point(field_set_char:Digit.PrimeServer.Models.Party.members)
+}
+inline void Party::set_members(int index, const char* value,
+                              std::size_t size) {
+  _internal_mutable_members()->Mutable(index)->assign(
+      reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_set_pointer:Digit.PrimeServer.Models.Party.members)
+}
+inline void Party::set_members(int index, absl::string_view value) {
+  _internal_mutable_members()->Mutable(index)->assign(value.data(),
+                                                     value.size());
+  // @@protoc_insertion_point(field_set_string_piece:Digit.PrimeServer.Models.Party.members)
+}
+inline void Party::add_members(const std::string& value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _internal_mutable_members()->Add()->assign(value);
+  // @@protoc_insertion_point(field_add:Digit.PrimeServer.Models.Party.members)
+}
+inline void Party::add_members(std::string&& value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _internal_mutable_members()->Add(std::move(value));
+  // @@protoc_insertion_point(field_add:Digit.PrimeServer.Models.Party.members)
+}
+inline void Party::add_members(const char* value) {
+  ABSL_DCHECK(value != nullptr);
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _internal_mutable_members()->Add()->assign(value);
+  // @@protoc_insertion_point(field_add_char:Digit.PrimeServer.Models.Party.members)
+}
+inline void Party::add_members(const char* value, std::size_t size) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _internal_mutable_members()->Add()->assign(
+      reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_add_pointer:Digit.PrimeServer.Models.Party.members)
+}
+inline void Party::add_members(absl::string_view value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _internal_mutable_members()->Add()->assign(value.data(), value.size());
+  // @@protoc_insertion_point(field_add_string_piece:Digit.PrimeServer.Models.Party.members)
+}
+inline const ::google::protobuf::RepeatedPtrField<std::string>&
+Party::members() const {
+  // @@protoc_insertion_point(field_list:Digit.PrimeServer.Models.Party.members)
+  return _internal_members();
+}
+inline ::google::protobuf::RepeatedPtrField<std::string>* Party::mutable_members() {
+  // @@protoc_insertion_point(field_mutable_list:Digit.PrimeServer.Models.Party.members)
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  return _internal_mutable_members();
+}
+inline const ::google::protobuf::RepeatedPtrField<std::string>&
+Party::_internal_members() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.members_;
+}
+inline ::google::protobuf::RepeatedPtrField<std::string>*
+Party::_internal_mutable_members() {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return &_impl_.members_;
+}
+
+// -------------------------------------------------------------------
+
 // Inventory
 
 // .Digit.PrimeServer.Models.InventoryId id = 1;
@@ -130320,6 +136495,50 @@ inline void ForbiddenTechSlotParams::_internal_set_ownerid(::int64_t value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
   _impl_.ownerid_ = value;
+}
+
+// int32 level = 2;
+inline void ForbiddenTechSlotParams::clear_level() {
+  _impl_.level_ = 0;
+}
+inline ::int32_t ForbiddenTechSlotParams::level() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.ForbiddenTechSlotParams.level)
+  return _internal_level();
+}
+inline void ForbiddenTechSlotParams::set_level(::int32_t value) {
+  _internal_set_level(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.ForbiddenTechSlotParams.level)
+}
+inline ::int32_t ForbiddenTechSlotParams::_internal_level() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.level_;
+}
+inline void ForbiddenTechSlotParams::_internal_set_level(::int32_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.level_ = value;
+}
+
+// int32 tier = 3;
+inline void ForbiddenTechSlotParams::clear_tier() {
+  _impl_.tier_ = 0;
+}
+inline ::int32_t ForbiddenTechSlotParams::tier() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.ForbiddenTechSlotParams.tier)
+  return _internal_tier();
+}
+inline void ForbiddenTechSlotParams::set_tier(::int32_t value) {
+  _internal_set_tier(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.ForbiddenTechSlotParams.tier)
+}
+inline ::int32_t ForbiddenTechSlotParams::_internal_tier() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.tier_;
+}
+inline void ForbiddenTechSlotParams::_internal_set_tier(::int32_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.tier_ = value;
 }
 
 // -------------------------------------------------------------------
@@ -135198,6 +141417,72 @@ inline void ActivatedAbilitySpec::set_allocated_idrefs(::Digit::PrimeServer::Mod
   // @@protoc_insertion_point(field_set_allocated:Digit.PrimeServer.Models.ActivatedAbilitySpec.idRefs)
 }
 
+// .Digit.PrimeServer.Models.ActivatedAbilityCostType costType = 20;
+inline void ActivatedAbilitySpec::clear_costtype() {
+  _impl_.costtype_ = 0;
+}
+inline ::Digit::PrimeServer::Models::ActivatedAbilityCostType ActivatedAbilitySpec::costtype() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.ActivatedAbilitySpec.costType)
+  return _internal_costtype();
+}
+inline void ActivatedAbilitySpec::set_costtype(::Digit::PrimeServer::Models::ActivatedAbilityCostType value) {
+  _internal_set_costtype(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.ActivatedAbilitySpec.costType)
+}
+inline ::Digit::PrimeServer::Models::ActivatedAbilityCostType ActivatedAbilitySpec::_internal_costtype() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return static_cast<::Digit::PrimeServer::Models::ActivatedAbilityCostType>(_impl_.costtype_);
+}
+inline void ActivatedAbilitySpec::_internal_set_costtype(::Digit::PrimeServer::Models::ActivatedAbilityCostType value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.costtype_ = value;
+}
+
+// int64 costId = 21;
+inline void ActivatedAbilitySpec::clear_costid() {
+  _impl_.costid_ = ::int64_t{0};
+}
+inline ::int64_t ActivatedAbilitySpec::costid() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.ActivatedAbilitySpec.costId)
+  return _internal_costid();
+}
+inline void ActivatedAbilitySpec::set_costid(::int64_t value) {
+  _internal_set_costid(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.ActivatedAbilitySpec.costId)
+}
+inline ::int64_t ActivatedAbilitySpec::_internal_costid() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.costid_;
+}
+inline void ActivatedAbilitySpec::_internal_set_costid(::int64_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.costid_ = value;
+}
+
+// .Digit.PrimeServer.Models.ActivationSource activationSource = 22;
+inline void ActivatedAbilitySpec::clear_activationsource() {
+  _impl_.activationsource_ = 0;
+}
+inline ::Digit::PrimeServer::Models::ActivationSource ActivatedAbilitySpec::activationsource() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.ActivatedAbilitySpec.activationSource)
+  return _internal_activationsource();
+}
+inline void ActivatedAbilitySpec::set_activationsource(::Digit::PrimeServer::Models::ActivationSource value) {
+  _internal_set_activationsource(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.ActivatedAbilitySpec.activationSource)
+}
+inline ::Digit::PrimeServer::Models::ActivationSource ActivatedAbilitySpec::_internal_activationsource() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return static_cast<::Digit::PrimeServer::Models::ActivationSource>(_impl_.activationsource_);
+}
+inline void ActivatedAbilitySpec::_internal_set_activationsource(::Digit::PrimeServer::Models::ActivationSource value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.activationsource_ = value;
+}
+
 // -------------------------------------------------------------------
 
 // AllianceLevelSpec_AllowedContribution
@@ -136465,6 +142750,28 @@ inline void CargoSpec::_internal_set_resourcemax(::int64_t value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
   _impl_.resourcemax_ = value;
+}
+
+// int32 generation = 3;
+inline void CargoSpec::clear_generation() {
+  _impl_.generation_ = 0;
+}
+inline ::int32_t CargoSpec::generation() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.CargoSpec.generation)
+  return _internal_generation();
+}
+inline void CargoSpec::set_generation(::int32_t value) {
+  _internal_set_generation(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.CargoSpec.generation)
+}
+inline ::int32_t CargoSpec::_internal_generation() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.generation_;
+}
+inline void CargoSpec::_internal_set_generation(::int32_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.generation_ = value;
 }
 
 // -------------------------------------------------------------------
@@ -138171,6 +144478,123 @@ inline ::google::protobuf::Map<::int64_t, ::int32_t>* ForbiddenTechRemovalCost::
 
 // -------------------------------------------------------------------
 
+// ForbiddenTechCost
+
+// map<int64, int64> costs = 1;
+inline int ForbiddenTechCost::_internal_costs_size() const {
+  return _internal_costs().size();
+}
+inline int ForbiddenTechCost::costs_size() const {
+  return _internal_costs_size();
+}
+inline void ForbiddenTechCost::clear_costs() {
+  _impl_.costs_.Clear();
+}
+inline const ::google::protobuf::Map<::int64_t, ::int64_t>& ForbiddenTechCost::_internal_costs() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.costs_.GetMap();
+}
+inline const ::google::protobuf::Map<::int64_t, ::int64_t>& ForbiddenTechCost::costs() const {
+  // @@protoc_insertion_point(field_map:Digit.PrimeServer.Models.ForbiddenTechCost.costs)
+  return _internal_costs();
+}
+inline ::google::protobuf::Map<::int64_t, ::int64_t>* ForbiddenTechCost::_internal_mutable_costs() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  return _impl_.costs_.MutableMap();
+}
+inline ::google::protobuf::Map<::int64_t, ::int64_t>* ForbiddenTechCost::mutable_costs() {
+  // @@protoc_insertion_point(field_mutable_map:Digit.PrimeServer.Models.ForbiddenTechCost.costs)
+  return _internal_mutable_costs();
+}
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// ForbiddenTechUpgradeCostSpec
+
+// int32 rarity = 1;
+inline void ForbiddenTechUpgradeCostSpec::clear_rarity() {
+  _impl_.rarity_ = 0;
+}
+inline ::int32_t ForbiddenTechUpgradeCostSpec::rarity() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.ForbiddenTechUpgradeCostSpec.rarity)
+  return _internal_rarity();
+}
+inline void ForbiddenTechUpgradeCostSpec::set_rarity(::int32_t value) {
+  _internal_set_rarity(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.ForbiddenTechUpgradeCostSpec.rarity)
+}
+inline ::int32_t ForbiddenTechUpgradeCostSpec::_internal_rarity() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.rarity_;
+}
+inline void ForbiddenTechUpgradeCostSpec::_internal_set_rarity(::int32_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.rarity_ = value;
+}
+
+// map<int32, .Digit.PrimeServer.Models.ForbiddenTechCost> tierCosts = 2;
+inline int ForbiddenTechUpgradeCostSpec::_internal_tiercosts_size() const {
+  return _internal_tiercosts().size();
+}
+inline int ForbiddenTechUpgradeCostSpec::tiercosts_size() const {
+  return _internal_tiercosts_size();
+}
+inline void ForbiddenTechUpgradeCostSpec::clear_tiercosts() {
+  _impl_.tiercosts_.Clear();
+}
+inline const ::google::protobuf::Map<::int32_t, ::Digit::PrimeServer::Models::ForbiddenTechCost>& ForbiddenTechUpgradeCostSpec::_internal_tiercosts() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.tiercosts_.GetMap();
+}
+inline const ::google::protobuf::Map<::int32_t, ::Digit::PrimeServer::Models::ForbiddenTechCost>& ForbiddenTechUpgradeCostSpec::tiercosts() const {
+  // @@protoc_insertion_point(field_map:Digit.PrimeServer.Models.ForbiddenTechUpgradeCostSpec.tierCosts)
+  return _internal_tiercosts();
+}
+inline ::google::protobuf::Map<::int32_t, ::Digit::PrimeServer::Models::ForbiddenTechCost>* ForbiddenTechUpgradeCostSpec::_internal_mutable_tiercosts() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  return _impl_.tiercosts_.MutableMap();
+}
+inline ::google::protobuf::Map<::int32_t, ::Digit::PrimeServer::Models::ForbiddenTechCost>* ForbiddenTechUpgradeCostSpec::mutable_tiercosts() {
+  // @@protoc_insertion_point(field_mutable_map:Digit.PrimeServer.Models.ForbiddenTechUpgradeCostSpec.tierCosts)
+  return _internal_mutable_tiercosts();
+}
+
+// map<int32, .Digit.PrimeServer.Models.ForbiddenTechCost> levelCosts = 3;
+inline int ForbiddenTechUpgradeCostSpec::_internal_levelcosts_size() const {
+  return _internal_levelcosts().size();
+}
+inline int ForbiddenTechUpgradeCostSpec::levelcosts_size() const {
+  return _internal_levelcosts_size();
+}
+inline void ForbiddenTechUpgradeCostSpec::clear_levelcosts() {
+  _impl_.levelcosts_.Clear();
+}
+inline const ::google::protobuf::Map<::int32_t, ::Digit::PrimeServer::Models::ForbiddenTechCost>& ForbiddenTechUpgradeCostSpec::_internal_levelcosts() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.levelcosts_.GetMap();
+}
+inline const ::google::protobuf::Map<::int32_t, ::Digit::PrimeServer::Models::ForbiddenTechCost>& ForbiddenTechUpgradeCostSpec::levelcosts() const {
+  // @@protoc_insertion_point(field_map:Digit.PrimeServer.Models.ForbiddenTechUpgradeCostSpec.levelCosts)
+  return _internal_levelcosts();
+}
+inline ::google::protobuf::Map<::int32_t, ::Digit::PrimeServer::Models::ForbiddenTechCost>* ForbiddenTechUpgradeCostSpec::_internal_mutable_levelcosts() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  return _impl_.levelcosts_.MutableMap();
+}
+inline ::google::protobuf::Map<::int32_t, ::Digit::PrimeServer::Models::ForbiddenTechCost>* ForbiddenTechUpgradeCostSpec::mutable_levelcosts() {
+  // @@protoc_insertion_point(field_mutable_map:Digit.PrimeServer.Models.ForbiddenTechUpgradeCostSpec.levelCosts)
+  return _internal_mutable_levelcosts();
+}
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // StaticSyncResourceSpecsResponse
 
 // map<int64, .Digit.PrimeServer.Models.ResourceSpec> resourceSpecs = 1;
@@ -138330,6 +144754,39 @@ inline ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::Starbase
 inline ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::StarbaseSpec>* StaticSyncStarbaseSpecsResponse::mutable_starbasespecs() {
   // @@protoc_insertion_point(field_mutable_map:Digit.PrimeServer.Models.StaticSyncStarbaseSpecsResponse.starbaseSpecs)
   return _internal_mutable_starbasespecs();
+}
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// StaticSyncHazardSpecsResponse
+
+// map<int64, .Digit.PrimeServer.Models.HazardSpec> hazardSpecs = 1;
+inline int StaticSyncHazardSpecsResponse::_internal_hazardspecs_size() const {
+  return _internal_hazardspecs().size();
+}
+inline int StaticSyncHazardSpecsResponse::hazardspecs_size() const {
+  return _internal_hazardspecs_size();
+}
+inline void StaticSyncHazardSpecsResponse::clear_hazardspecs() {
+  _impl_.hazardspecs_.Clear();
+}
+inline const ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::HazardSpec>& StaticSyncHazardSpecsResponse::_internal_hazardspecs() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.hazardspecs_.GetMap();
+}
+inline const ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::HazardSpec>& StaticSyncHazardSpecsResponse::hazardspecs() const {
+  // @@protoc_insertion_point(field_map:Digit.PrimeServer.Models.StaticSyncHazardSpecsResponse.hazardSpecs)
+  return _internal_hazardspecs();
+}
+inline ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::HazardSpec>* StaticSyncHazardSpecsResponse::_internal_mutable_hazardspecs() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  return _impl_.hazardspecs_.MutableMap();
+}
+inline ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::HazardSpec>* StaticSyncHazardSpecsResponse::mutable_hazardspecs() {
+  // @@protoc_insertion_point(field_mutable_map:Digit.PrimeServer.Models.StaticSyncHazardSpecsResponse.hazardSpecs)
+  return _internal_mutable_hazardspecs();
 }
 
 // -------------------------------------------------------------------
@@ -142778,6 +149235,56 @@ inline void StaticSyncPeaceShieldRulesResponse::set_allocated_peaceshieldrulessp
 
 // -------------------------------------------------------------------
 
+// StaticSyncActivatedShipAbilityConfigsResponse
+
+// repeated .Digit.PrimeServer.Models.ActivatedShipAbilityConfig activatedShipAbilityConfig = 1;
+inline int StaticSyncActivatedShipAbilityConfigsResponse::_internal_activatedshipabilityconfig_size() const {
+  return _internal_activatedshipabilityconfig().size();
+}
+inline int StaticSyncActivatedShipAbilityConfigsResponse::activatedshipabilityconfig_size() const {
+  return _internal_activatedshipabilityconfig_size();
+}
+inline void StaticSyncActivatedShipAbilityConfigsResponse::clear_activatedshipabilityconfig() {
+  _internal_mutable_activatedshipabilityconfig()->Clear();
+}
+inline ::Digit::PrimeServer::Models::ActivatedShipAbilityConfig* StaticSyncActivatedShipAbilityConfigsResponse::mutable_activatedshipabilityconfig(int index) {
+  // @@protoc_insertion_point(field_mutable:Digit.PrimeServer.Models.StaticSyncActivatedShipAbilityConfigsResponse.activatedShipAbilityConfig)
+  return _internal_mutable_activatedshipabilityconfig()->Mutable(index);
+}
+inline ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::ActivatedShipAbilityConfig >*
+StaticSyncActivatedShipAbilityConfigsResponse::mutable_activatedshipabilityconfig() {
+  // @@protoc_insertion_point(field_mutable_list:Digit.PrimeServer.Models.StaticSyncActivatedShipAbilityConfigsResponse.activatedShipAbilityConfig)
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  return _internal_mutable_activatedshipabilityconfig();
+}
+inline const ::Digit::PrimeServer::Models::ActivatedShipAbilityConfig& StaticSyncActivatedShipAbilityConfigsResponse::activatedshipabilityconfig(int index) const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.StaticSyncActivatedShipAbilityConfigsResponse.activatedShipAbilityConfig)
+    return _internal_activatedshipabilityconfig().Get(index);
+}
+inline ::Digit::PrimeServer::Models::ActivatedShipAbilityConfig* StaticSyncActivatedShipAbilityConfigsResponse::add_activatedshipabilityconfig() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ::Digit::PrimeServer::Models::ActivatedShipAbilityConfig* _add = _internal_mutable_activatedshipabilityconfig()->Add();
+  // @@protoc_insertion_point(field_add:Digit.PrimeServer.Models.StaticSyncActivatedShipAbilityConfigsResponse.activatedShipAbilityConfig)
+  return _add;
+}
+inline const ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::ActivatedShipAbilityConfig >&
+StaticSyncActivatedShipAbilityConfigsResponse::activatedshipabilityconfig() const {
+  // @@protoc_insertion_point(field_list:Digit.PrimeServer.Models.StaticSyncActivatedShipAbilityConfigsResponse.activatedShipAbilityConfig)
+  return _internal_activatedshipabilityconfig();
+}
+inline const ::google::protobuf::RepeatedPtrField<::Digit::PrimeServer::Models::ActivatedShipAbilityConfig>&
+StaticSyncActivatedShipAbilityConfigsResponse::_internal_activatedshipabilityconfig() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.activatedshipabilityconfig_;
+}
+inline ::google::protobuf::RepeatedPtrField<::Digit::PrimeServer::Models::ActivatedShipAbilityConfig>*
+StaticSyncActivatedShipAbilityConfigsResponse::_internal_mutable_activatedshipabilityconfig() {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return &_impl_.activatedshipabilityconfig_;
+}
+
+// -------------------------------------------------------------------
+
 // StaticSyncAllianceStarbaseConfResponse
 
 // .Digit.PrimeServer.Models.AllianceStarbaseConfig allianceStarbaseConfig = 1;
@@ -143689,6 +150196,411 @@ inline void StaticSyncChallengeConfResponse::set_allocated_challengeconfig(::Dig
 
   _impl_.challengeconfig_ = reinterpret_cast<::Digit::PrimeServer::Models::ChallengeConfig*>(value);
   // @@protoc_insertion_point(field_set_allocated:Digit.PrimeServer.Models.StaticSyncChallengeConfResponse.challengeConfig)
+}
+
+// -------------------------------------------------------------------
+
+// StaticSyncForbiddenTechUpgradeCostsSpecsResponse
+
+// repeated .Digit.PrimeServer.Models.ForbiddenTechUpgradeCostSpec forbiddenTechUpgradeCostsSpecs = 1;
+inline int StaticSyncForbiddenTechUpgradeCostsSpecsResponse::_internal_forbiddentechupgradecostsspecs_size() const {
+  return _internal_forbiddentechupgradecostsspecs().size();
+}
+inline int StaticSyncForbiddenTechUpgradeCostsSpecsResponse::forbiddentechupgradecostsspecs_size() const {
+  return _internal_forbiddentechupgradecostsspecs_size();
+}
+inline void StaticSyncForbiddenTechUpgradeCostsSpecsResponse::clear_forbiddentechupgradecostsspecs() {
+  _internal_mutable_forbiddentechupgradecostsspecs()->Clear();
+}
+inline ::Digit::PrimeServer::Models::ForbiddenTechUpgradeCostSpec* StaticSyncForbiddenTechUpgradeCostsSpecsResponse::mutable_forbiddentechupgradecostsspecs(int index) {
+  // @@protoc_insertion_point(field_mutable:Digit.PrimeServer.Models.StaticSyncForbiddenTechUpgradeCostsSpecsResponse.forbiddenTechUpgradeCostsSpecs)
+  return _internal_mutable_forbiddentechupgradecostsspecs()->Mutable(index);
+}
+inline ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::ForbiddenTechUpgradeCostSpec >*
+StaticSyncForbiddenTechUpgradeCostsSpecsResponse::mutable_forbiddentechupgradecostsspecs() {
+  // @@protoc_insertion_point(field_mutable_list:Digit.PrimeServer.Models.StaticSyncForbiddenTechUpgradeCostsSpecsResponse.forbiddenTechUpgradeCostsSpecs)
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  return _internal_mutable_forbiddentechupgradecostsspecs();
+}
+inline const ::Digit::PrimeServer::Models::ForbiddenTechUpgradeCostSpec& StaticSyncForbiddenTechUpgradeCostsSpecsResponse::forbiddentechupgradecostsspecs(int index) const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.StaticSyncForbiddenTechUpgradeCostsSpecsResponse.forbiddenTechUpgradeCostsSpecs)
+    return _internal_forbiddentechupgradecostsspecs().Get(index);
+}
+inline ::Digit::PrimeServer::Models::ForbiddenTechUpgradeCostSpec* StaticSyncForbiddenTechUpgradeCostsSpecsResponse::add_forbiddentechupgradecostsspecs() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ::Digit::PrimeServer::Models::ForbiddenTechUpgradeCostSpec* _add = _internal_mutable_forbiddentechupgradecostsspecs()->Add();
+  // @@protoc_insertion_point(field_add:Digit.PrimeServer.Models.StaticSyncForbiddenTechUpgradeCostsSpecsResponse.forbiddenTechUpgradeCostsSpecs)
+  return _add;
+}
+inline const ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::ForbiddenTechUpgradeCostSpec >&
+StaticSyncForbiddenTechUpgradeCostsSpecsResponse::forbiddentechupgradecostsspecs() const {
+  // @@protoc_insertion_point(field_list:Digit.PrimeServer.Models.StaticSyncForbiddenTechUpgradeCostsSpecsResponse.forbiddenTechUpgradeCostsSpecs)
+  return _internal_forbiddentechupgradecostsspecs();
+}
+inline const ::google::protobuf::RepeatedPtrField<::Digit::PrimeServer::Models::ForbiddenTechUpgradeCostSpec>&
+StaticSyncForbiddenTechUpgradeCostsSpecsResponse::_internal_forbiddentechupgradecostsspecs() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.forbiddentechupgradecostsspecs_;
+}
+inline ::google::protobuf::RepeatedPtrField<::Digit::PrimeServer::Models::ForbiddenTechUpgradeCostSpec>*
+StaticSyncForbiddenTechUpgradeCostsSpecsResponse::_internal_mutable_forbiddentechupgradecostsspecs() {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return &_impl_.forbiddentechupgradecostsspecs_;
+}
+
+// -------------------------------------------------------------------
+
+// HazardSpec_HazardLevel
+
+// int32 level = 1;
+inline void HazardSpec_HazardLevel::clear_level() {
+  _impl_.level_ = 0;
+}
+inline ::int32_t HazardSpec_HazardLevel::level() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.HazardSpec.HazardLevel.level)
+  return _internal_level();
+}
+inline void HazardSpec_HazardLevel::set_level(::int32_t value) {
+  _internal_set_level(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.HazardSpec.HazardLevel.level)
+}
+inline ::int32_t HazardSpec_HazardLevel::_internal_level() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.level_;
+}
+inline void HazardSpec_HazardLevel::_internal_set_level(::int32_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.level_ = value;
+}
+
+// float strength = 2;
+inline void HazardSpec_HazardLevel::clear_strength() {
+  _impl_.strength_ = 0;
+}
+inline float HazardSpec_HazardLevel::strength() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.HazardSpec.HazardLevel.strength)
+  return _internal_strength();
+}
+inline void HazardSpec_HazardLevel::set_strength(float value) {
+  _internal_set_strength(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.HazardSpec.HazardLevel.strength)
+}
+inline float HazardSpec_HazardLevel::_internal_strength() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.strength_;
+}
+inline void HazardSpec_HazardLevel::_internal_set_strength(float value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.strength_ = value;
+}
+
+// -------------------------------------------------------------------
+
+// HazardSpec
+
+// int64 id = 1;
+inline void HazardSpec::clear_id() {
+  _impl_.id_ = ::int64_t{0};
+}
+inline ::int64_t HazardSpec::id() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.HazardSpec.id)
+  return _internal_id();
+}
+inline void HazardSpec::set_id(::int64_t value) {
+  _internal_set_id(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.HazardSpec.id)
+}
+inline ::int64_t HazardSpec::_internal_id() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.id_;
+}
+inline void HazardSpec::_internal_set_id(::int64_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.id_ = value;
+}
+
+// string name = 2;
+inline void HazardSpec::clear_name() {
+  _impl_.name_.ClearToEmpty();
+}
+inline const std::string& HazardSpec::name() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.HazardSpec.name)
+  return _internal_name();
+}
+template <typename Arg_, typename... Args_>
+inline PROTOBUF_ALWAYS_INLINE void HazardSpec::set_name(Arg_&& arg,
+                                                     Args_... args) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.name_.Set(static_cast<Arg_&&>(arg), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.HazardSpec.name)
+}
+inline std::string* HazardSpec::mutable_name() {
+  std::string* _s = _internal_mutable_name();
+  // @@protoc_insertion_point(field_mutable:Digit.PrimeServer.Models.HazardSpec.name)
+  return _s;
+}
+inline const std::string& HazardSpec::_internal_name() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.name_.Get();
+}
+inline void HazardSpec::_internal_set_name(const std::string& value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.name_.Set(value, GetArenaForAllocation());
+}
+inline std::string* HazardSpec::_internal_mutable_name() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  return _impl_.name_.Mutable( GetArenaForAllocation());
+}
+inline std::string* HazardSpec::release_name() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  // @@protoc_insertion_point(field_release:Digit.PrimeServer.Models.HazardSpec.name)
+  return _impl_.name_.Release();
+}
+inline void HazardSpec::set_allocated_name(std::string* value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_.name_.SetAllocated(value, GetArenaForAllocation());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        if (_impl_.name_.IsDefault()) {
+          _impl_.name_.Set("", GetArenaForAllocation());
+        }
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:Digit.PrimeServer.Models.HazardSpec.name)
+}
+
+// .Digit.PrimeServer.Models.HazardType type = 3;
+inline void HazardSpec::clear_type() {
+  _impl_.type_ = 0;
+}
+inline ::Digit::PrimeServer::Models::HazardType HazardSpec::type() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.HazardSpec.type)
+  return _internal_type();
+}
+inline void HazardSpec::set_type(::Digit::PrimeServer::Models::HazardType value) {
+  _internal_set_type(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.HazardSpec.type)
+}
+inline ::Digit::PrimeServer::Models::HazardType HazardSpec::_internal_type() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return static_cast<::Digit::PrimeServer::Models::HazardType>(_impl_.type_);
+}
+inline void HazardSpec::_internal_set_type(::Digit::PrimeServer::Models::HazardType value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.type_ = value;
+}
+
+// .Digit.PrimeServer.Models.HazardEffect effect = 4;
+inline void HazardSpec::clear_effect() {
+  _impl_.effect_ = 0;
+}
+inline ::Digit::PrimeServer::Models::HazardEffect HazardSpec::effect() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.HazardSpec.effect)
+  return _internal_effect();
+}
+inline void HazardSpec::set_effect(::Digit::PrimeServer::Models::HazardEffect value) {
+  _internal_set_effect(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.HazardSpec.effect)
+}
+inline ::Digit::PrimeServer::Models::HazardEffect HazardSpec::_internal_effect() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return static_cast<::Digit::PrimeServer::Models::HazardEffect>(_impl_.effect_);
+}
+inline void HazardSpec::_internal_set_effect(::Digit::PrimeServer::Models::HazardEffect value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.effect_ = value;
+}
+
+// .Digit.PrimeServer.Models.IdRefs idRefs = 5;
+inline bool HazardSpec::has_idrefs() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  PROTOBUF_ASSUME(!value || _impl_.idrefs_ != nullptr);
+  return value;
+}
+inline void HazardSpec::clear_idrefs() {
+  if (_impl_.idrefs_ != nullptr) _impl_.idrefs_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline const ::Digit::PrimeServer::Models::IdRefs& HazardSpec::_internal_idrefs() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  const ::Digit::PrimeServer::Models::IdRefs* p = _impl_.idrefs_;
+  return p != nullptr ? *p : reinterpret_cast<const ::Digit::PrimeServer::Models::IdRefs&>(::Digit::PrimeServer::Models::_IdRefs_default_instance_);
+}
+inline const ::Digit::PrimeServer::Models::IdRefs& HazardSpec::idrefs() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.HazardSpec.idRefs)
+  return _internal_idrefs();
+}
+inline void HazardSpec::unsafe_arena_set_allocated_idrefs(::Digit::PrimeServer::Models::IdRefs* value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  if (GetArenaForAllocation() == nullptr) {
+    delete reinterpret_cast<::google::protobuf::MessageLite*>(_impl_.idrefs_);
+  }
+  _impl_.idrefs_ = reinterpret_cast<::Digit::PrimeServer::Models::IdRefs*>(value);
+  if (value != nullptr) {
+    _impl_._has_bits_[0] |= 0x00000001u;
+  } else {
+    _impl_._has_bits_[0] &= ~0x00000001u;
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:Digit.PrimeServer.Models.HazardSpec.idRefs)
+}
+inline ::Digit::PrimeServer::Models::IdRefs* HazardSpec::release_idrefs() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+
+  _impl_._has_bits_[0] &= ~0x00000001u;
+  ::Digit::PrimeServer::Models::IdRefs* released = _impl_.idrefs_;
+  _impl_.idrefs_ = nullptr;
+#ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
+  auto* old = reinterpret_cast<::google::protobuf::MessageLite*>(released);
+  released = ::google::protobuf::internal::DuplicateIfNonNull(released);
+  if (GetArenaForAllocation() == nullptr) {
+    delete old;
+  }
+#else   // PROTOBUF_FORCE_COPY_IN_RELEASE
+  if (GetArenaForAllocation() != nullptr) {
+    released = ::google::protobuf::internal::DuplicateIfNonNull(released);
+  }
+#endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
+  return released;
+}
+inline ::Digit::PrimeServer::Models::IdRefs* HazardSpec::unsafe_arena_release_idrefs() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  // @@protoc_insertion_point(field_release:Digit.PrimeServer.Models.HazardSpec.idRefs)
+
+  _impl_._has_bits_[0] &= ~0x00000001u;
+  ::Digit::PrimeServer::Models::IdRefs* temp = _impl_.idrefs_;
+  _impl_.idrefs_ = nullptr;
+  return temp;
+}
+inline ::Digit::PrimeServer::Models::IdRefs* HazardSpec::_internal_mutable_idrefs() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_._has_bits_[0] |= 0x00000001u;
+  if (_impl_.idrefs_ == nullptr) {
+    auto* p = CreateMaybeMessage<::Digit::PrimeServer::Models::IdRefs>(GetArenaForAllocation());
+    _impl_.idrefs_ = reinterpret_cast<::Digit::PrimeServer::Models::IdRefs*>(p);
+  }
+  return _impl_.idrefs_;
+}
+inline ::Digit::PrimeServer::Models::IdRefs* HazardSpec::mutable_idrefs() {
+  ::Digit::PrimeServer::Models::IdRefs* _msg = _internal_mutable_idrefs();
+  // @@protoc_insertion_point(field_mutable:Digit.PrimeServer.Models.HazardSpec.idRefs)
+  return _msg;
+}
+inline void HazardSpec::set_allocated_idrefs(::Digit::PrimeServer::Models::IdRefs* value) {
+  ::google::protobuf::Arena* message_arena = GetArenaForAllocation();
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  if (message_arena == nullptr) {
+    delete reinterpret_cast<::Digit::PrimeServer::Models::IdRefs*>(_impl_.idrefs_);
+  }
+
+  if (value != nullptr) {
+    ::google::protobuf::Arena* submessage_arena =
+        ::google::protobuf::Arena::InternalGetOwningArena(reinterpret_cast<::Digit::PrimeServer::Models::IdRefs*>(value));
+    if (message_arena != submessage_arena) {
+      value = ::google::protobuf::internal::GetOwnedMessage(message_arena, value, submessage_arena);
+    }
+    _impl_._has_bits_[0] |= 0x00000001u;
+  } else {
+    _impl_._has_bits_[0] &= ~0x00000001u;
+  }
+
+  _impl_.idrefs_ = reinterpret_cast<::Digit::PrimeServer::Models::IdRefs*>(value);
+  // @@protoc_insertion_point(field_set_allocated:Digit.PrimeServer.Models.HazardSpec.idRefs)
+}
+
+// float baseDamage = 6;
+inline void HazardSpec::clear_basedamage() {
+  _impl_.basedamage_ = 0;
+}
+inline float HazardSpec::basedamage() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.HazardSpec.baseDamage)
+  return _internal_basedamage();
+}
+inline void HazardSpec::set_basedamage(float value) {
+  _internal_set_basedamage(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.HazardSpec.baseDamage)
+}
+inline float HazardSpec::_internal_basedamage() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.basedamage_;
+}
+inline void HazardSpec::_internal_set_basedamage(float value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.basedamage_ = value;
+}
+
+// repeated .Digit.PrimeServer.Models.HazardSpec.HazardLevel levels = 7;
+inline int HazardSpec::_internal_levels_size() const {
+  return _internal_levels().size();
+}
+inline int HazardSpec::levels_size() const {
+  return _internal_levels_size();
+}
+inline void HazardSpec::clear_levels() {
+  _internal_mutable_levels()->Clear();
+}
+inline ::Digit::PrimeServer::Models::HazardSpec_HazardLevel* HazardSpec::mutable_levels(int index) {
+  // @@protoc_insertion_point(field_mutable:Digit.PrimeServer.Models.HazardSpec.levels)
+  return _internal_mutable_levels()->Mutable(index);
+}
+inline ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::HazardSpec_HazardLevel >*
+HazardSpec::mutable_levels() {
+  // @@protoc_insertion_point(field_mutable_list:Digit.PrimeServer.Models.HazardSpec.levels)
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  return _internal_mutable_levels();
+}
+inline const ::Digit::PrimeServer::Models::HazardSpec_HazardLevel& HazardSpec::levels(int index) const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.HazardSpec.levels)
+    return _internal_levels().Get(index);
+}
+inline ::Digit::PrimeServer::Models::HazardSpec_HazardLevel* HazardSpec::add_levels() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ::Digit::PrimeServer::Models::HazardSpec_HazardLevel* _add = _internal_mutable_levels()->Add();
+  // @@protoc_insertion_point(field_add:Digit.PrimeServer.Models.HazardSpec.levels)
+  return _add;
+}
+inline const ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::HazardSpec_HazardLevel >&
+HazardSpec::levels() const {
+  // @@protoc_insertion_point(field_list:Digit.PrimeServer.Models.HazardSpec.levels)
+  return _internal_levels();
+}
+inline const ::google::protobuf::RepeatedPtrField<::Digit::PrimeServer::Models::HazardSpec_HazardLevel>&
+HazardSpec::_internal_levels() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.levels_;
+}
+inline ::google::protobuf::RepeatedPtrField<::Digit::PrimeServer::Models::HazardSpec_HazardLevel>*
+HazardSpec::_internal_mutable_levels() {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return &_impl_.levels_;
+}
+
+// float rate = 8;
+inline void HazardSpec::clear_rate() {
+  _impl_.rate_ = 0;
+}
+inline float HazardSpec::rate() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.HazardSpec.rate)
+  return _internal_rate();
+}
+inline void HazardSpec::set_rate(float value) {
+  _internal_set_rate(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.HazardSpec.rate)
+}
+inline float HazardSpec::_internal_rate() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.rate_;
+}
+inline void HazardSpec::_internal_set_rate(float value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.rate_ = value;
 }
 
 // -------------------------------------------------------------------
@@ -145098,6 +152010,92 @@ inline ::google::protobuf::Map<::int64_t, ::int32_t>* HullSpec::_internal_mutabl
 inline ::google::protobuf::Map<::int64_t, ::int32_t>* HullSpec::mutable_forbiddentechslot1cost() {
   // @@protoc_insertion_point(field_mutable_map:Digit.PrimeServer.Models.HullSpec.forbiddenTechSlot1Cost)
   return _internal_mutable_forbiddentechslot1cost();
+}
+
+// bool peaceShieldDownWhenAttacked = 33;
+inline void HullSpec::clear_peaceshielddownwhenattacked() {
+  _impl_.peaceshielddownwhenattacked_ = false;
+}
+inline bool HullSpec::peaceshielddownwhenattacked() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.HullSpec.peaceShieldDownWhenAttacked)
+  return _internal_peaceshielddownwhenattacked();
+}
+inline void HullSpec::set_peaceshielddownwhenattacked(bool value) {
+  _internal_set_peaceshielddownwhenattacked(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.HullSpec.peaceShieldDownWhenAttacked)
+}
+inline bool HullSpec::_internal_peaceshielddownwhenattacked() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.peaceshielddownwhenattacked_;
+}
+inline void HullSpec::_internal_set_peaceshielddownwhenattacked(bool value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.peaceshielddownwhenattacked_ = value;
+}
+
+// int32 generation = 34;
+inline void HullSpec::clear_generation() {
+  _impl_.generation_ = 0;
+}
+inline ::int32_t HullSpec::generation() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.HullSpec.generation)
+  return _internal_generation();
+}
+inline void HullSpec::set_generation(::int32_t value) {
+  _internal_set_generation(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.HullSpec.generation)
+}
+inline ::int32_t HullSpec::_internal_generation() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.generation_;
+}
+inline void HullSpec::_internal_set_generation(::int32_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.generation_ = value;
+}
+
+// repeated int64 shipBonuses = 35;
+inline int HullSpec::_internal_shipbonuses_size() const {
+  return _internal_shipbonuses().size();
+}
+inline int HullSpec::shipbonuses_size() const {
+  return _internal_shipbonuses_size();
+}
+inline void HullSpec::clear_shipbonuses() {
+  _internal_mutable_shipbonuses()->Clear();
+}
+inline ::int64_t HullSpec::shipbonuses(int index) const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.HullSpec.shipBonuses)
+  return _internal_shipbonuses().Get(index);
+}
+inline void HullSpec::set_shipbonuses(int index, ::int64_t value) {
+  _internal_mutable_shipbonuses()->Set(index, value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.HullSpec.shipBonuses)
+}
+inline void HullSpec::add_shipbonuses(::int64_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _internal_mutable_shipbonuses()->Add(value);
+  // @@protoc_insertion_point(field_add:Digit.PrimeServer.Models.HullSpec.shipBonuses)
+}
+inline const ::google::protobuf::RepeatedField<::int64_t>& HullSpec::shipbonuses() const {
+  // @@protoc_insertion_point(field_list:Digit.PrimeServer.Models.HullSpec.shipBonuses)
+  return _internal_shipbonuses();
+}
+inline ::google::protobuf::RepeatedField<::int64_t>* HullSpec::mutable_shipbonuses() {
+  // @@protoc_insertion_point(field_mutable_list:Digit.PrimeServer.Models.HullSpec.shipBonuses)
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  return _internal_mutable_shipbonuses();
+}
+
+inline const ::google::protobuf::RepeatedField<::int64_t>& HullSpec::_internal_shipbonuses() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.shipbonuses_;
+}
+inline ::google::protobuf::RepeatedField<::int64_t>* HullSpec::_internal_mutable_shipbonuses() {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return &_impl_.shipbonuses_;
 }
 
 // -------------------------------------------------------------------
@@ -148974,6 +155972,28 @@ inline void ResearchProjectSpec::_internal_set_entitytype(::Digit::PrimeServer::
   _impl_.entitytype_ = value;
 }
 
+// int32 generation = 9;
+inline void ResearchProjectSpec::clear_generation() {
+  _impl_.generation_ = 0;
+}
+inline ::int32_t ResearchProjectSpec::generation() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.ResearchProjectSpec.generation)
+  return _internal_generation();
+}
+inline void ResearchProjectSpec::set_generation(::int32_t value) {
+  _internal_set_generation(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.ResearchProjectSpec.generation)
+}
+inline ::int32_t ResearchProjectSpec::_internal_generation() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.generation_;
+}
+inline void ResearchProjectSpec::_internal_set_generation(::int32_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.generation_ = value;
+}
+
 // -------------------------------------------------------------------
 
 // Resource
@@ -149279,6 +156299,28 @@ inline ::google::protobuf::RepeatedPtrField<::Digit::PrimeServer::Models::Resour
 ResourceConversionSpec::_internal_mutable_rates() {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
   return &_impl_.rates_;
+}
+
+// int32 generation = 8;
+inline void ResourceConversionSpec::clear_generation() {
+  _impl_.generation_ = 0;
+}
+inline ::int32_t ResourceConversionSpec::generation() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.ResourceConversionSpec.generation)
+  return _internal_generation();
+}
+inline void ResourceConversionSpec::set_generation(::int32_t value) {
+  _internal_set_generation(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.ResourceConversionSpec.generation)
+}
+inline ::int32_t ResourceConversionSpec::_internal_generation() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.generation_;
+}
+inline void ResourceConversionSpec::_internal_set_generation(::int32_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.generation_ = value;
 }
 
 // -------------------------------------------------------------------
@@ -150062,6 +157104,28 @@ inline void ResourceSpec::_internal_set_ownertype(::Digit::PrimeServer::Models::
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
   _impl_.ownertype_ = value;
+}
+
+// int32 generation = 22;
+inline void ResourceSpec::clear_generation() {
+  _impl_.generation_ = 0;
+}
+inline ::int32_t ResourceSpec::generation() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.ResourceSpec.generation)
+  return _internal_generation();
+}
+inline void ResourceSpec::set_generation(::int32_t value) {
+  _internal_set_generation(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.ResourceSpec.generation)
+}
+inline ::int32_t ResourceSpec::_internal_generation() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.generation_;
+}
+inline void ResourceSpec::_internal_set_generation(::int32_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.generation_ = value;
 }
 
 inline bool ResourceSpec::has_Params() const {
@@ -153018,6 +160082,41 @@ inline void StarbaseSpec_Attribute::_internal_set_drydockfleetcountlimit(::int32
 
 // StarbaseSpec_Level
 
+// int64 resourceType = 11;
+inline bool StarbaseSpec_Level::has_resourcetype() const {
+  return Attribute_case() == kResourceType;
+}
+inline void StarbaseSpec_Level::set_has_resourcetype() {
+  _impl_._oneof_case_[0] = kResourceType;
+}
+inline void StarbaseSpec_Level::clear_resourcetype() {
+  if (Attribute_case() == kResourceType) {
+    _impl_.Attribute_.resourcetype_ = ::int64_t{0};
+    clear_has_Attribute();
+  }
+}
+inline ::int64_t StarbaseSpec_Level::resourcetype() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.StarbaseSpec.Level.resourceType)
+  return _internal_resourcetype();
+}
+inline void StarbaseSpec_Level::set_resourcetype(::int64_t value) {
+  _internal_set_resourcetype(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.StarbaseSpec.Level.resourceType)
+}
+inline ::int64_t StarbaseSpec_Level::_internal_resourcetype() const {
+  if (Attribute_case() == kResourceType) {
+    return _impl_.Attribute_.resourcetype_;
+  }
+  return ::int64_t{0};
+}
+inline void StarbaseSpec_Level::_internal_set_resourcetype(::int64_t value) {
+  if (Attribute_case() != kResourceType) {
+    clear_Attribute();
+    set_has_resourcetype();
+  }
+  _impl_.Attribute_.resourcetype_ = value;
+}
+
 // int64 buildTimeInSeconds = 1;
 inline void StarbaseSpec_Level::clear_buildtimeinseconds() {
   _impl_.buildtimeinseconds_ = ::int64_t{0};
@@ -153244,6 +160343,37 @@ inline void StarbaseSpec_Level::_internal_set_militarymight(::int64_t value) {
   _impl_.militarymight_ = value;
 }
 
+// int32 generation = 10;
+inline void StarbaseSpec_Level::clear_generation() {
+  _impl_.generation_ = 0;
+}
+inline ::int32_t StarbaseSpec_Level::generation() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.StarbaseSpec.Level.generation)
+  return _internal_generation();
+}
+inline void StarbaseSpec_Level::set_generation(::int32_t value) {
+  _internal_set_generation(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.StarbaseSpec.Level.generation)
+}
+inline ::int32_t StarbaseSpec_Level::_internal_generation() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.generation_;
+}
+inline void StarbaseSpec_Level::_internal_set_generation(::int32_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.generation_ = value;
+}
+
+inline bool StarbaseSpec_Level::has_Attribute() const {
+  return Attribute_case() != ATTRIBUTE_NOT_SET;
+}
+inline void StarbaseSpec_Level::clear_has_Attribute() {
+  _impl_._oneof_case_[0] = ATTRIBUTE_NOT_SET;
+}
+inline StarbaseSpec_Level::AttributeCase StarbaseSpec_Level::Attribute_case() const {
+  return StarbaseSpec_Level::AttributeCase(_impl_._oneof_case_[0]);
+}
 // -------------------------------------------------------------------
 
 // StarbaseSpec
@@ -159575,35 +166705,1524 @@ UserProfilesResponse::_internal_mutable_userprofiles() {
 
 // -------------------------------------------------------------------
 
+// HostileWaveInfo
+
+// string hostileName = 1;
+inline void HostileWaveInfo::clear_hostilename() {
+  _impl_.hostilename_.ClearToEmpty();
+}
+inline const std::string& HostileWaveInfo::hostilename() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.HostileWaveInfo.hostileName)
+  return _internal_hostilename();
+}
+template <typename Arg_, typename... Args_>
+inline PROTOBUF_ALWAYS_INLINE void HostileWaveInfo::set_hostilename(Arg_&& arg,
+                                                     Args_... args) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.hostilename_.Set(static_cast<Arg_&&>(arg), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.HostileWaveInfo.hostileName)
+}
+inline std::string* HostileWaveInfo::mutable_hostilename() {
+  std::string* _s = _internal_mutable_hostilename();
+  // @@protoc_insertion_point(field_mutable:Digit.PrimeServer.Models.HostileWaveInfo.hostileName)
+  return _s;
+}
+inline const std::string& HostileWaveInfo::_internal_hostilename() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.hostilename_.Get();
+}
+inline void HostileWaveInfo::_internal_set_hostilename(const std::string& value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.hostilename_.Set(value, GetArenaForAllocation());
+}
+inline std::string* HostileWaveInfo::_internal_mutable_hostilename() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  return _impl_.hostilename_.Mutable( GetArenaForAllocation());
+}
+inline std::string* HostileWaveInfo::release_hostilename() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  // @@protoc_insertion_point(field_release:Digit.PrimeServer.Models.HostileWaveInfo.hostileName)
+  return _impl_.hostilename_.Release();
+}
+inline void HostileWaveInfo::set_allocated_hostilename(std::string* value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_.hostilename_.SetAllocated(value, GetArenaForAllocation());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        if (_impl_.hostilename_.IsDefault()) {
+          _impl_.hostilename_.Set("", GetArenaForAllocation());
+        }
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:Digit.PrimeServer.Models.HostileWaveInfo.hostileName)
+}
+
+// int32 amount = 3;
+inline void HostileWaveInfo::clear_amount() {
+  _impl_.amount_ = 0;
+}
+inline ::int32_t HostileWaveInfo::amount() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.HostileWaveInfo.amount)
+  return _internal_amount();
+}
+inline void HostileWaveInfo::set_amount(::int32_t value) {
+  _internal_set_amount(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.HostileWaveInfo.amount)
+}
+inline ::int32_t HostileWaveInfo::_internal_amount() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.amount_;
+}
+inline void HostileWaveInfo::_internal_set_amount(::int32_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.amount_ = value;
+}
+
+// int32 level = 4;
+inline void HostileWaveInfo::clear_level() {
+  _impl_.level_ = 0;
+}
+inline ::int32_t HostileWaveInfo::level() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.HostileWaveInfo.level)
+  return _internal_level();
+}
+inline void HostileWaveInfo::set_level(::int32_t value) {
+  _internal_set_level(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.HostileWaveInfo.level)
+}
+inline ::int32_t HostileWaveInfo::_internal_level() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.level_;
+}
+inline void HostileWaveInfo::_internal_set_level(::int32_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.level_ = value;
+}
+
 // -------------------------------------------------------------------
 
-// DataCache
+// Wave
 
-// map<string, string> etags = 1;
-inline int DataCache::_internal_etags_size() const {
-  return _internal_etags().size();
+// int32 waveNumber = 1;
+inline void Wave::clear_wavenumber() {
+  _impl_.wavenumber_ = 0;
 }
-inline int DataCache::etags_size() const {
-  return _internal_etags_size();
+inline ::int32_t Wave::wavenumber() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.Wave.waveNumber)
+  return _internal_wavenumber();
 }
-inline void DataCache::clear_etags() {
-  _impl_.etags_.Clear();
+inline void Wave::set_wavenumber(::int32_t value) {
+  _internal_set_wavenumber(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.Wave.waveNumber)
 }
-inline const ::google::protobuf::Map<std::string, std::string>& DataCache::_internal_etags() const {
+inline ::int32_t Wave::_internal_wavenumber() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.etags_.GetMap();
+  return _impl_.wavenumber_;
 }
-inline const ::google::protobuf::Map<std::string, std::string>& DataCache::etags() const {
-  // @@protoc_insertion_point(field_map:Digit.PrimeServer.Models.DataCache.etags)
-  return _internal_etags();
-}
-inline ::google::protobuf::Map<std::string, std::string>* DataCache::_internal_mutable_etags() {
+inline void Wave::_internal_set_wavenumber(::int32_t value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  return _impl_.etags_.MutableMap();
+  ;
+  _impl_.wavenumber_ = value;
 }
-inline ::google::protobuf::Map<std::string, std::string>* DataCache::mutable_etags() {
-  // @@protoc_insertion_point(field_mutable_map:Digit.PrimeServer.Models.DataCache.etags)
-  return _internal_mutable_etags();
+
+// int32 totalHostiles = 2;
+inline void Wave::clear_totalhostiles() {
+  _impl_.totalhostiles_ = 0;
+}
+inline ::int32_t Wave::totalhostiles() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.Wave.totalHostiles)
+  return _internal_totalhostiles();
+}
+inline void Wave::set_totalhostiles(::int32_t value) {
+  _internal_set_totalhostiles(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.Wave.totalHostiles)
+}
+inline ::int32_t Wave::_internal_totalhostiles() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.totalhostiles_;
+}
+inline void Wave::_internal_set_totalhostiles(::int32_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.totalhostiles_ = value;
+}
+
+// repeated .Digit.PrimeServer.Models.HostileWaveInfo hostileFleets = 3;
+inline int Wave::_internal_hostilefleets_size() const {
+  return _internal_hostilefleets().size();
+}
+inline int Wave::hostilefleets_size() const {
+  return _internal_hostilefleets_size();
+}
+inline void Wave::clear_hostilefleets() {
+  _internal_mutable_hostilefleets()->Clear();
+}
+inline ::Digit::PrimeServer::Models::HostileWaveInfo* Wave::mutable_hostilefleets(int index) {
+  // @@protoc_insertion_point(field_mutable:Digit.PrimeServer.Models.Wave.hostileFleets)
+  return _internal_mutable_hostilefleets()->Mutable(index);
+}
+inline ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::HostileWaveInfo >*
+Wave::mutable_hostilefleets() {
+  // @@protoc_insertion_point(field_mutable_list:Digit.PrimeServer.Models.Wave.hostileFleets)
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  return _internal_mutable_hostilefleets();
+}
+inline const ::Digit::PrimeServer::Models::HostileWaveInfo& Wave::hostilefleets(int index) const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.Wave.hostileFleets)
+    return _internal_hostilefleets().Get(index);
+}
+inline ::Digit::PrimeServer::Models::HostileWaveInfo* Wave::add_hostilefleets() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ::Digit::PrimeServer::Models::HostileWaveInfo* _add = _internal_mutable_hostilefleets()->Add();
+  // @@protoc_insertion_point(field_add:Digit.PrimeServer.Models.Wave.hostileFleets)
+  return _add;
+}
+inline const ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::HostileWaveInfo >&
+Wave::hostilefleets() const {
+  // @@protoc_insertion_point(field_list:Digit.PrimeServer.Models.Wave.hostileFleets)
+  return _internal_hostilefleets();
+}
+inline const ::google::protobuf::RepeatedPtrField<::Digit::PrimeServer::Models::HostileWaveInfo>&
+Wave::_internal_hostilefleets() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.hostilefleets_;
+}
+inline ::google::protobuf::RepeatedPtrField<::Digit::PrimeServer::Models::HostileWaveInfo>*
+Wave::_internal_mutable_hostilefleets() {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return &_impl_.hostilefleets_;
+}
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// WavesSpec
+
+// int64 id = 1;
+inline void WavesSpec::clear_id() {
+  _impl_.id_ = ::int64_t{0};
+}
+inline ::int64_t WavesSpec::id() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.WavesSpec.id)
+  return _internal_id();
+}
+inline void WavesSpec::set_id(::int64_t value) {
+  _internal_set_id(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.WavesSpec.id)
+}
+inline ::int64_t WavesSpec::_internal_id() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.id_;
+}
+inline void WavesSpec::_internal_set_id(::int64_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.id_ = value;
+}
+
+// string idStr = 2;
+inline void WavesSpec::clear_idstr() {
+  _impl_.idstr_.ClearToEmpty();
+}
+inline const std::string& WavesSpec::idstr() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.WavesSpec.idStr)
+  return _internal_idstr();
+}
+template <typename Arg_, typename... Args_>
+inline PROTOBUF_ALWAYS_INLINE void WavesSpec::set_idstr(Arg_&& arg,
+                                                     Args_... args) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.idstr_.Set(static_cast<Arg_&&>(arg), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.WavesSpec.idStr)
+}
+inline std::string* WavesSpec::mutable_idstr() {
+  std::string* _s = _internal_mutable_idstr();
+  // @@protoc_insertion_point(field_mutable:Digit.PrimeServer.Models.WavesSpec.idStr)
+  return _s;
+}
+inline const std::string& WavesSpec::_internal_idstr() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.idstr_.Get();
+}
+inline void WavesSpec::_internal_set_idstr(const std::string& value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.idstr_.Set(value, GetArenaForAllocation());
+}
+inline std::string* WavesSpec::_internal_mutable_idstr() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  return _impl_.idstr_.Mutable( GetArenaForAllocation());
+}
+inline std::string* WavesSpec::release_idstr() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  // @@protoc_insertion_point(field_release:Digit.PrimeServer.Models.WavesSpec.idStr)
+  return _impl_.idstr_.Release();
+}
+inline void WavesSpec::set_allocated_idstr(std::string* value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_.idstr_.SetAllocated(value, GetArenaForAllocation());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        if (_impl_.idstr_.IsDefault()) {
+          _impl_.idstr_.Set("", GetArenaForAllocation());
+        }
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:Digit.PrimeServer.Models.WavesSpec.idStr)
+}
+
+// int32 totalWaves = 3;
+inline void WavesSpec::clear_totalwaves() {
+  _impl_.totalwaves_ = 0;
+}
+inline ::int32_t WavesSpec::totalwaves() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.WavesSpec.totalWaves)
+  return _internal_totalwaves();
+}
+inline void WavesSpec::set_totalwaves(::int32_t value) {
+  _internal_set_totalwaves(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.WavesSpec.totalWaves)
+}
+inline ::int32_t WavesSpec::_internal_totalwaves() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.totalwaves_;
+}
+inline void WavesSpec::_internal_set_totalwaves(::int32_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.totalwaves_ = value;
+}
+
+// map<int64, .Digit.PrimeServer.Models.Wave> waves = 4;
+inline int WavesSpec::_internal_waves_size() const {
+  return _internal_waves().size();
+}
+inline int WavesSpec::waves_size() const {
+  return _internal_waves_size();
+}
+inline void WavesSpec::clear_waves() {
+  _impl_.waves_.Clear();
+}
+inline const ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::Wave>& WavesSpec::_internal_waves() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.waves_.GetMap();
+}
+inline const ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::Wave>& WavesSpec::waves() const {
+  // @@protoc_insertion_point(field_map:Digit.PrimeServer.Models.WavesSpec.waves)
+  return _internal_waves();
+}
+inline ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::Wave>* WavesSpec::_internal_mutable_waves() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  return _impl_.waves_.MutableMap();
+}
+inline ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::Wave>* WavesSpec::mutable_waves() {
+  // @@protoc_insertion_point(field_mutable_map:Digit.PrimeServer.Models.WavesSpec.waves)
+  return _internal_mutable_waves();
+}
+
+// -------------------------------------------------------------------
+
+// ChallengeSpec
+
+// int64 entryCostAmount = 1;
+inline void ChallengeSpec::clear_entrycostamount() {
+  _impl_.entrycostamount_ = ::int64_t{0};
+}
+inline ::int64_t ChallengeSpec::entrycostamount() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.ChallengeSpec.entryCostAmount)
+  return _internal_entrycostamount();
+}
+inline void ChallengeSpec::set_entrycostamount(::int64_t value) {
+  _internal_set_entrycostamount(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.ChallengeSpec.entryCostAmount)
+}
+inline ::int64_t ChallengeSpec::_internal_entrycostamount() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.entrycostamount_;
+}
+inline void ChallengeSpec::_internal_set_entrycostamount(::int64_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.entrycostamount_ = value;
+}
+
+// int64 entryCostResourceId = 2;
+inline void ChallengeSpec::clear_entrycostresourceid() {
+  _impl_.entrycostresourceid_ = ::int64_t{0};
+}
+inline ::int64_t ChallengeSpec::entrycostresourceid() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.ChallengeSpec.entryCostResourceId)
+  return _internal_entrycostresourceid();
+}
+inline void ChallengeSpec::set_entrycostresourceid(::int64_t value) {
+  _internal_set_entrycostresourceid(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.ChallengeSpec.entryCostResourceId)
+}
+inline ::int64_t ChallengeSpec::_internal_entrycostresourceid() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.entrycostresourceid_;
+}
+inline void ChallengeSpec::_internal_set_entrycostresourceid(::int64_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.entrycostresourceid_ = value;
+}
+
+// int64 id = 3;
+inline void ChallengeSpec::clear_id() {
+  _impl_.id_ = ::int64_t{0};
+}
+inline ::int64_t ChallengeSpec::id() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.ChallengeSpec.id)
+  return _internal_id();
+}
+inline void ChallengeSpec::set_id(::int64_t value) {
+  _internal_set_id(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.ChallengeSpec.id)
+}
+inline ::int64_t ChallengeSpec::_internal_id() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.id_;
+}
+inline void ChallengeSpec::_internal_set_id(::int64_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.id_ = value;
+}
+
+// string idStr = 4;
+inline void ChallengeSpec::clear_idstr() {
+  _impl_.idstr_.ClearToEmpty();
+}
+inline const std::string& ChallengeSpec::idstr() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.ChallengeSpec.idStr)
+  return _internal_idstr();
+}
+template <typename Arg_, typename... Args_>
+inline PROTOBUF_ALWAYS_INLINE void ChallengeSpec::set_idstr(Arg_&& arg,
+                                                     Args_... args) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.idstr_.Set(static_cast<Arg_&&>(arg), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.ChallengeSpec.idStr)
+}
+inline std::string* ChallengeSpec::mutable_idstr() {
+  std::string* _s = _internal_mutable_idstr();
+  // @@protoc_insertion_point(field_mutable:Digit.PrimeServer.Models.ChallengeSpec.idStr)
+  return _s;
+}
+inline const std::string& ChallengeSpec::_internal_idstr() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.idstr_.Get();
+}
+inline void ChallengeSpec::_internal_set_idstr(const std::string& value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.idstr_.Set(value, GetArenaForAllocation());
+}
+inline std::string* ChallengeSpec::_internal_mutable_idstr() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  return _impl_.idstr_.Mutable( GetArenaForAllocation());
+}
+inline std::string* ChallengeSpec::release_idstr() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  // @@protoc_insertion_point(field_release:Digit.PrimeServer.Models.ChallengeSpec.idStr)
+  return _impl_.idstr_.Release();
+}
+inline void ChallengeSpec::set_allocated_idstr(std::string* value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_.idstr_.SetAllocated(value, GetArenaForAllocation());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        if (_impl_.idstr_.IsDefault()) {
+          _impl_.idstr_.Set("", GetArenaForAllocation());
+        }
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:Digit.PrimeServer.Models.ChallengeSpec.idStr)
+}
+
+// int32 maxAllowedDamage = 5;
+inline void ChallengeSpec::clear_maxalloweddamage() {
+  _impl_.maxalloweddamage_ = 0;
+}
+inline ::int32_t ChallengeSpec::maxalloweddamage() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.ChallengeSpec.maxAllowedDamage)
+  return _internal_maxalloweddamage();
+}
+inline void ChallengeSpec::set_maxalloweddamage(::int32_t value) {
+  _internal_set_maxalloweddamage(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.ChallengeSpec.maxAllowedDamage)
+}
+inline ::int32_t ChallengeSpec::_internal_maxalloweddamage() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.maxalloweddamage_;
+}
+inline void ChallengeSpec::_internal_set_maxalloweddamage(::int32_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.maxalloweddamage_ = value;
+}
+
+// int32 maxPlayers = 6;
+inline void ChallengeSpec::clear_maxplayers() {
+  _impl_.maxplayers_ = 0;
+}
+inline ::int32_t ChallengeSpec::maxplayers() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.ChallengeSpec.maxPlayers)
+  return _internal_maxplayers();
+}
+inline void ChallengeSpec::set_maxplayers(::int32_t value) {
+  _internal_set_maxplayers(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.ChallengeSpec.maxPlayers)
+}
+inline ::int32_t ChallengeSpec::_internal_maxplayers() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.maxplayers_;
+}
+inline void ChallengeSpec::_internal_set_maxplayers(::int32_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.maxplayers_ = value;
+}
+
+// int32 totalWaves = 7;
+inline void ChallengeSpec::clear_totalwaves() {
+  _impl_.totalwaves_ = 0;
+}
+inline ::int32_t ChallengeSpec::totalwaves() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.ChallengeSpec.totalWaves)
+  return _internal_totalwaves();
+}
+inline void ChallengeSpec::set_totalwaves(::int32_t value) {
+  _internal_set_totalwaves(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.ChallengeSpec.totalWaves)
+}
+inline ::int32_t ChallengeSpec::_internal_totalwaves() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.totalwaves_;
+}
+inline void ChallengeSpec::_internal_set_totalwaves(::int32_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.totalwaves_ = value;
+}
+
+// int32 fleetsPerPlayer = 8;
+inline void ChallengeSpec::clear_fleetsperplayer() {
+  _impl_.fleetsperplayer_ = 0;
+}
+inline ::int32_t ChallengeSpec::fleetsperplayer() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.ChallengeSpec.fleetsPerPlayer)
+  return _internal_fleetsperplayer();
+}
+inline void ChallengeSpec::set_fleetsperplayer(::int32_t value) {
+  _internal_set_fleetsperplayer(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.ChallengeSpec.fleetsPerPlayer)
+}
+inline ::int32_t ChallengeSpec::_internal_fleetsperplayer() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.fleetsperplayer_;
+}
+inline void ChallengeSpec::_internal_set_fleetsperplayer(::int32_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.fleetsperplayer_ = value;
+}
+
+// int32 requiredLevel = 9;
+inline void ChallengeSpec::clear_requiredlevel() {
+  _impl_.requiredlevel_ = 0;
+}
+inline ::int32_t ChallengeSpec::requiredlevel() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.ChallengeSpec.requiredLevel)
+  return _internal_requiredlevel();
+}
+inline void ChallengeSpec::set_requiredlevel(::int32_t value) {
+  _internal_set_requiredlevel(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.ChallengeSpec.requiredLevel)
+}
+inline ::int32_t ChallengeSpec::_internal_requiredlevel() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.requiredlevel_;
+}
+inline void ChallengeSpec::_internal_set_requiredlevel(::int32_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.requiredlevel_ = value;
+}
+
+// int32 countdownDuration = 10;
+inline void ChallengeSpec::clear_countdownduration() {
+  _impl_.countdownduration_ = 0;
+}
+inline ::int32_t ChallengeSpec::countdownduration() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.ChallengeSpec.countdownDuration)
+  return _internal_countdownduration();
+}
+inline void ChallengeSpec::set_countdownduration(::int32_t value) {
+  _internal_set_countdownduration(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.ChallengeSpec.countdownDuration)
+}
+inline ::int32_t ChallengeSpec::_internal_countdownduration() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.countdownduration_;
+}
+inline void ChallengeSpec::_internal_set_countdownduration(::int32_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.countdownduration_ = value;
+}
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// WaveRewardSpec
+
+// int64 id = 1;
+inline void WaveRewardSpec::clear_id() {
+  _impl_.id_ = ::int64_t{0};
+}
+inline ::int64_t WaveRewardSpec::id() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.WaveRewardSpec.id)
+  return _internal_id();
+}
+inline void WaveRewardSpec::set_id(::int64_t value) {
+  _internal_set_id(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.WaveRewardSpec.id)
+}
+inline ::int64_t WaveRewardSpec::_internal_id() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.id_;
+}
+inline void WaveRewardSpec::_internal_set_id(::int64_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.id_ = value;
+}
+
+// string idStr = 2;
+inline void WaveRewardSpec::clear_idstr() {
+  _impl_.idstr_.ClearToEmpty();
+}
+inline const std::string& WaveRewardSpec::idstr() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.WaveRewardSpec.idStr)
+  return _internal_idstr();
+}
+template <typename Arg_, typename... Args_>
+inline PROTOBUF_ALWAYS_INLINE void WaveRewardSpec::set_idstr(Arg_&& arg,
+                                                     Args_... args) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.idstr_.Set(static_cast<Arg_&&>(arg), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.WaveRewardSpec.idStr)
+}
+inline std::string* WaveRewardSpec::mutable_idstr() {
+  std::string* _s = _internal_mutable_idstr();
+  // @@protoc_insertion_point(field_mutable:Digit.PrimeServer.Models.WaveRewardSpec.idStr)
+  return _s;
+}
+inline const std::string& WaveRewardSpec::_internal_idstr() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.idstr_.Get();
+}
+inline void WaveRewardSpec::_internal_set_idstr(const std::string& value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.idstr_.Set(value, GetArenaForAllocation());
+}
+inline std::string* WaveRewardSpec::_internal_mutable_idstr() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  return _impl_.idstr_.Mutable( GetArenaForAllocation());
+}
+inline std::string* WaveRewardSpec::release_idstr() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  // @@protoc_insertion_point(field_release:Digit.PrimeServer.Models.WaveRewardSpec.idStr)
+  return _impl_.idstr_.Release();
+}
+inline void WaveRewardSpec::set_allocated_idstr(std::string* value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_.idstr_.SetAllocated(value, GetArenaForAllocation());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        if (_impl_.idstr_.IsDefault()) {
+          _impl_.idstr_.Set("", GetArenaForAllocation());
+        }
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:Digit.PrimeServer.Models.WaveRewardSpec.idStr)
+}
+
+// map<int32, .Digit.PrimeServer.Models.WaveRewardList> waveRewardMap = 3;
+inline int WaveRewardSpec::_internal_waverewardmap_size() const {
+  return _internal_waverewardmap().size();
+}
+inline int WaveRewardSpec::waverewardmap_size() const {
+  return _internal_waverewardmap_size();
+}
+inline void WaveRewardSpec::clear_waverewardmap() {
+  _impl_.waverewardmap_.Clear();
+}
+inline const ::google::protobuf::Map<::int32_t, ::Digit::PrimeServer::Models::WaveRewardList>& WaveRewardSpec::_internal_waverewardmap() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.waverewardmap_.GetMap();
+}
+inline const ::google::protobuf::Map<::int32_t, ::Digit::PrimeServer::Models::WaveRewardList>& WaveRewardSpec::waverewardmap() const {
+  // @@protoc_insertion_point(field_map:Digit.PrimeServer.Models.WaveRewardSpec.waveRewardMap)
+  return _internal_waverewardmap();
+}
+inline ::google::protobuf::Map<::int32_t, ::Digit::PrimeServer::Models::WaveRewardList>* WaveRewardSpec::_internal_mutable_waverewardmap() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  return _impl_.waverewardmap_.MutableMap();
+}
+inline ::google::protobuf::Map<::int32_t, ::Digit::PrimeServer::Models::WaveRewardList>* WaveRewardSpec::mutable_waverewardmap() {
+  // @@protoc_insertion_point(field_mutable_map:Digit.PrimeServer.Models.WaveRewardSpec.waveRewardMap)
+  return _internal_mutable_waverewardmap();
+}
+
+// -------------------------------------------------------------------
+
+// WaveRewardList
+
+// repeated .Digit.PrimeServer.Models.InventoryItem rewardList = 1;
+inline int WaveRewardList::_internal_rewardlist_size() const {
+  return _internal_rewardlist().size();
+}
+inline int WaveRewardList::rewardlist_size() const {
+  return _internal_rewardlist_size();
+}
+inline void WaveRewardList::clear_rewardlist() {
+  _internal_mutable_rewardlist()->Clear();
+}
+inline ::Digit::PrimeServer::Models::InventoryItem* WaveRewardList::mutable_rewardlist(int index) {
+  // @@protoc_insertion_point(field_mutable:Digit.PrimeServer.Models.WaveRewardList.rewardList)
+  return _internal_mutable_rewardlist()->Mutable(index);
+}
+inline ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::InventoryItem >*
+WaveRewardList::mutable_rewardlist() {
+  // @@protoc_insertion_point(field_mutable_list:Digit.PrimeServer.Models.WaveRewardList.rewardList)
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  return _internal_mutable_rewardlist();
+}
+inline const ::Digit::PrimeServer::Models::InventoryItem& WaveRewardList::rewardlist(int index) const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.WaveRewardList.rewardList)
+    return _internal_rewardlist().Get(index);
+}
+inline ::Digit::PrimeServer::Models::InventoryItem* WaveRewardList::add_rewardlist() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ::Digit::PrimeServer::Models::InventoryItem* _add = _internal_mutable_rewardlist()->Add();
+  // @@protoc_insertion_point(field_add:Digit.PrimeServer.Models.WaveRewardList.rewardList)
+  return _add;
+}
+inline const ::google::protobuf::RepeatedPtrField< ::Digit::PrimeServer::Models::InventoryItem >&
+WaveRewardList::rewardlist() const {
+  // @@protoc_insertion_point(field_list:Digit.PrimeServer.Models.WaveRewardList.rewardList)
+  return _internal_rewardlist();
+}
+inline const ::google::protobuf::RepeatedPtrField<::Digit::PrimeServer::Models::InventoryItem>&
+WaveRewardList::_internal_rewardlist() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.rewardlist_;
+}
+inline ::google::protobuf::RepeatedPtrField<::Digit::PrimeServer::Models::InventoryItem>*
+WaveRewardList::_internal_mutable_rewardlist() {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return &_impl_.rewardlist_;
+}
+
+// -------------------------------------------------------------------
+
+// WaveDefenseSystem
+
+// int64 challengeId = 1;
+inline void WaveDefenseSystem::clear_challengeid() {
+  _impl_.challengeid_ = ::int64_t{0};
+}
+inline ::int64_t WaveDefenseSystem::challengeid() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.WaveDefenseSystem.challengeId)
+  return _internal_challengeid();
+}
+inline void WaveDefenseSystem::set_challengeid(::int64_t value) {
+  _internal_set_challengeid(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.WaveDefenseSystem.challengeId)
+}
+inline ::int64_t WaveDefenseSystem::_internal_challengeid() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.challengeid_;
+}
+inline void WaveDefenseSystem::_internal_set_challengeid(::int64_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.challengeid_ = value;
+}
+
+// int32 status = 2;
+inline void WaveDefenseSystem::clear_status() {
+  _impl_.status_ = 0;
+}
+inline ::int32_t WaveDefenseSystem::status() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.WaveDefenseSystem.status)
+  return _internal_status();
+}
+inline void WaveDefenseSystem::set_status(::int32_t value) {
+  _internal_set_status(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.WaveDefenseSystem.status)
+}
+inline ::int32_t WaveDefenseSystem::_internal_status() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.status_;
+}
+inline void WaveDefenseSystem::_internal_set_status(::int32_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.status_ = value;
+}
+
+// int64 wdChallengeId = 3;
+inline void WaveDefenseSystem::clear_wdchallengeid() {
+  _impl_.wdchallengeid_ = ::int64_t{0};
+}
+inline ::int64_t WaveDefenseSystem::wdchallengeid() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.WaveDefenseSystem.wdChallengeId)
+  return _internal_wdchallengeid();
+}
+inline void WaveDefenseSystem::set_wdchallengeid(::int64_t value) {
+  _internal_set_wdchallengeid(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.WaveDefenseSystem.wdChallengeId)
+}
+inline ::int64_t WaveDefenseSystem::_internal_wdchallengeid() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.wdchallengeid_;
+}
+inline void WaveDefenseSystem::_internal_set_wdchallengeid(::int64_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.wdchallengeid_ = value;
+}
+
+// int64 systemId = 4;
+inline void WaveDefenseSystem::clear_systemid() {
+  _impl_.systemid_ = ::int64_t{0};
+}
+inline ::int64_t WaveDefenseSystem::systemid() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.WaveDefenseSystem.systemId)
+  return _internal_systemid();
+}
+inline void WaveDefenseSystem::set_systemid(::int64_t value) {
+  _internal_set_systemid(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.WaveDefenseSystem.systemId)
+}
+inline ::int64_t WaveDefenseSystem::_internal_systemid() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.systemid_;
+}
+inline void WaveDefenseSystem::_internal_set_systemid(::int64_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.systemid_ = value;
+}
+
+// -------------------------------------------------------------------
+
+// PlayerFleetList
+
+// repeated int64 fleetList = 1;
+inline int PlayerFleetList::_internal_fleetlist_size() const {
+  return _internal_fleetlist().size();
+}
+inline int PlayerFleetList::fleetlist_size() const {
+  return _internal_fleetlist_size();
+}
+inline void PlayerFleetList::clear_fleetlist() {
+  _internal_mutable_fleetlist()->Clear();
+}
+inline ::int64_t PlayerFleetList::fleetlist(int index) const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.PlayerFleetList.fleetList)
+  return _internal_fleetlist().Get(index);
+}
+inline void PlayerFleetList::set_fleetlist(int index, ::int64_t value) {
+  _internal_mutable_fleetlist()->Set(index, value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.PlayerFleetList.fleetList)
+}
+inline void PlayerFleetList::add_fleetlist(::int64_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _internal_mutable_fleetlist()->Add(value);
+  // @@protoc_insertion_point(field_add:Digit.PrimeServer.Models.PlayerFleetList.fleetList)
+}
+inline const ::google::protobuf::RepeatedField<::int64_t>& PlayerFleetList::fleetlist() const {
+  // @@protoc_insertion_point(field_list:Digit.PrimeServer.Models.PlayerFleetList.fleetList)
+  return _internal_fleetlist();
+}
+inline ::google::protobuf::RepeatedField<::int64_t>* PlayerFleetList::mutable_fleetlist() {
+  // @@protoc_insertion_point(field_mutable_list:Digit.PrimeServer.Models.PlayerFleetList.fleetList)
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  return _internal_mutable_fleetlist();
+}
+
+inline const ::google::protobuf::RepeatedField<::int64_t>& PlayerFleetList::_internal_fleetlist() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.fleetlist_;
+}
+inline ::google::protobuf::RepeatedField<::int64_t>* PlayerFleetList::_internal_mutable_fleetlist() {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return &_impl_.fleetlist_;
+}
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// WaveDefenseChallenge
+
+// int64 id = 1;
+inline void WaveDefenseChallenge::clear_id() {
+  _impl_.id_ = ::int64_t{0};
+}
+inline ::int64_t WaveDefenseChallenge::id() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.WaveDefenseChallenge.id)
+  return _internal_id();
+}
+inline void WaveDefenseChallenge::set_id(::int64_t value) {
+  _internal_set_id(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.WaveDefenseChallenge.id)
+}
+inline ::int64_t WaveDefenseChallenge::_internal_id() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.id_;
+}
+inline void WaveDefenseChallenge::_internal_set_id(::int64_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.id_ = value;
+}
+
+// int64 challengeId = 2;
+inline void WaveDefenseChallenge::clear_challengeid() {
+  _impl_.challengeid_ = ::int64_t{0};
+}
+inline ::int64_t WaveDefenseChallenge::challengeid() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.WaveDefenseChallenge.challengeId)
+  return _internal_challengeid();
+}
+inline void WaveDefenseChallenge::set_challengeid(::int64_t value) {
+  _internal_set_challengeid(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.WaveDefenseChallenge.challengeId)
+}
+inline ::int64_t WaveDefenseChallenge::_internal_challengeid() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.challengeid_;
+}
+inline void WaveDefenseChallenge::_internal_set_challengeid(::int64_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.challengeid_ = value;
+}
+
+// int64 systemId = 3;
+inline void WaveDefenseChallenge::clear_systemid() {
+  _impl_.systemid_ = ::int64_t{0};
+}
+inline ::int64_t WaveDefenseChallenge::systemid() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.WaveDefenseChallenge.systemId)
+  return _internal_systemid();
+}
+inline void WaveDefenseChallenge::set_systemid(::int64_t value) {
+  _internal_set_systemid(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.WaveDefenseChallenge.systemId)
+}
+inline ::int64_t WaveDefenseChallenge::_internal_systemid() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.systemid_;
+}
+inline void WaveDefenseChallenge::_internal_set_systemid(::int64_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.systemid_ = value;
+}
+
+// int32 totalWaves = 4;
+inline void WaveDefenseChallenge::clear_totalwaves() {
+  _impl_.totalwaves_ = 0;
+}
+inline ::int32_t WaveDefenseChallenge::totalwaves() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.WaveDefenseChallenge.totalWaves)
+  return _internal_totalwaves();
+}
+inline void WaveDefenseChallenge::set_totalwaves(::int32_t value) {
+  _internal_set_totalwaves(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.WaveDefenseChallenge.totalWaves)
+}
+inline ::int32_t WaveDefenseChallenge::_internal_totalwaves() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.totalwaves_;
+}
+inline void WaveDefenseChallenge::_internal_set_totalwaves(::int32_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.totalwaves_ = value;
+}
+
+// int32 currentWave = 5;
+inline void WaveDefenseChallenge::clear_currentwave() {
+  _impl_.currentwave_ = 0;
+}
+inline ::int32_t WaveDefenseChallenge::currentwave() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.WaveDefenseChallenge.currentWave)
+  return _internal_currentwave();
+}
+inline void WaveDefenseChallenge::set_currentwave(::int32_t value) {
+  _internal_set_currentwave(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.WaveDefenseChallenge.currentWave)
+}
+inline ::int32_t WaveDefenseChallenge::_internal_currentwave() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.currentwave_;
+}
+inline void WaveDefenseChallenge::_internal_set_currentwave(::int32_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.currentwave_ = value;
+}
+
+// int32 status = 6;
+inline void WaveDefenseChallenge::clear_status() {
+  _impl_.status_ = 0;
+}
+inline ::int32_t WaveDefenseChallenge::status() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.WaveDefenseChallenge.status)
+  return _internal_status();
+}
+inline void WaveDefenseChallenge::set_status(::int32_t value) {
+  _internal_set_status(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.WaveDefenseChallenge.status)
+}
+inline ::int32_t WaveDefenseChallenge::_internal_status() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.status_;
+}
+inline void WaveDefenseChallenge::_internal_set_status(::int32_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.status_ = value;
+}
+
+// int32 centralEntityHp = 7;
+inline void WaveDefenseChallenge::clear_centralentityhp() {
+  _impl_.centralentityhp_ = 0;
+}
+inline ::int32_t WaveDefenseChallenge::centralentityhp() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.WaveDefenseChallenge.centralEntityHp)
+  return _internal_centralentityhp();
+}
+inline void WaveDefenseChallenge::set_centralentityhp(::int32_t value) {
+  _internal_set_centralentityhp(value);
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.WaveDefenseChallenge.centralEntityHp)
+}
+inline ::int32_t WaveDefenseChallenge::_internal_centralentityhp() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.centralentityhp_;
+}
+inline void WaveDefenseChallenge::_internal_set_centralentityhp(::int32_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.centralentityhp_ = value;
+}
+
+// .google.protobuf.Timestamp startTime = 8;
+inline bool WaveDefenseChallenge::has_starttime() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  PROTOBUF_ASSUME(!value || _impl_.starttime_ != nullptr);
+  return value;
+}
+inline const ::google::protobuf::Timestamp& WaveDefenseChallenge::_internal_starttime() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  const ::google::protobuf::Timestamp* p = _impl_.starttime_;
+  return p != nullptr ? *p : reinterpret_cast<const ::google::protobuf::Timestamp&>(::google::protobuf::_Timestamp_default_instance_);
+}
+inline const ::google::protobuf::Timestamp& WaveDefenseChallenge::starttime() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.WaveDefenseChallenge.startTime)
+  return _internal_starttime();
+}
+inline void WaveDefenseChallenge::unsafe_arena_set_allocated_starttime(::google::protobuf::Timestamp* value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  if (GetArenaForAllocation() == nullptr) {
+    delete reinterpret_cast<::google::protobuf::MessageLite*>(_impl_.starttime_);
+  }
+  _impl_.starttime_ = reinterpret_cast<::google::protobuf::Timestamp*>(value);
+  if (value != nullptr) {
+    _impl_._has_bits_[0] |= 0x00000001u;
+  } else {
+    _impl_._has_bits_[0] &= ~0x00000001u;
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:Digit.PrimeServer.Models.WaveDefenseChallenge.startTime)
+}
+inline ::google::protobuf::Timestamp* WaveDefenseChallenge::release_starttime() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+
+  _impl_._has_bits_[0] &= ~0x00000001u;
+  ::google::protobuf::Timestamp* released = _impl_.starttime_;
+  _impl_.starttime_ = nullptr;
+#ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
+  auto* old = reinterpret_cast<::google::protobuf::MessageLite*>(released);
+  released = ::google::protobuf::internal::DuplicateIfNonNull(released);
+  if (GetArenaForAllocation() == nullptr) {
+    delete old;
+  }
+#else   // PROTOBUF_FORCE_COPY_IN_RELEASE
+  if (GetArenaForAllocation() != nullptr) {
+    released = ::google::protobuf::internal::DuplicateIfNonNull(released);
+  }
+#endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
+  return released;
+}
+inline ::google::protobuf::Timestamp* WaveDefenseChallenge::unsafe_arena_release_starttime() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  // @@protoc_insertion_point(field_release:Digit.PrimeServer.Models.WaveDefenseChallenge.startTime)
+
+  _impl_._has_bits_[0] &= ~0x00000001u;
+  ::google::protobuf::Timestamp* temp = _impl_.starttime_;
+  _impl_.starttime_ = nullptr;
+  return temp;
+}
+inline ::google::protobuf::Timestamp* WaveDefenseChallenge::_internal_mutable_starttime() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_._has_bits_[0] |= 0x00000001u;
+  if (_impl_.starttime_ == nullptr) {
+    auto* p = CreateMaybeMessage<::google::protobuf::Timestamp>(GetArenaForAllocation());
+    _impl_.starttime_ = reinterpret_cast<::google::protobuf::Timestamp*>(p);
+  }
+  return _impl_.starttime_;
+}
+inline ::google::protobuf::Timestamp* WaveDefenseChallenge::mutable_starttime() {
+  ::google::protobuf::Timestamp* _msg = _internal_mutable_starttime();
+  // @@protoc_insertion_point(field_mutable:Digit.PrimeServer.Models.WaveDefenseChallenge.startTime)
+  return _msg;
+}
+inline void WaveDefenseChallenge::set_allocated_starttime(::google::protobuf::Timestamp* value) {
+  ::google::protobuf::Arena* message_arena = GetArenaForAllocation();
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  if (message_arena == nullptr) {
+    delete reinterpret_cast<::google::protobuf::MessageLite*>(_impl_.starttime_);
+  }
+
+  if (value != nullptr) {
+    ::google::protobuf::Arena* submessage_arena =
+        ::google::protobuf::Arena::InternalGetOwningArena(reinterpret_cast<::google::protobuf::MessageLite*>(value));
+    if (message_arena != submessage_arena) {
+      value = ::google::protobuf::internal::GetOwnedMessage(message_arena, value, submessage_arena);
+    }
+    _impl_._has_bits_[0] |= 0x00000001u;
+  } else {
+    _impl_._has_bits_[0] &= ~0x00000001u;
+  }
+
+  _impl_.starttime_ = reinterpret_cast<::google::protobuf::Timestamp*>(value);
+  // @@protoc_insertion_point(field_set_allocated:Digit.PrimeServer.Models.WaveDefenseChallenge.startTime)
+}
+
+// map<string, .Digit.PrimeServer.Models.PlayerFleetList> playerFleetsMap = 9;
+inline int WaveDefenseChallenge::_internal_playerfleetsmap_size() const {
+  return _internal_playerfleetsmap().size();
+}
+inline int WaveDefenseChallenge::playerfleetsmap_size() const {
+  return _internal_playerfleetsmap_size();
+}
+inline void WaveDefenseChallenge::clear_playerfleetsmap() {
+  _impl_.playerfleetsmap_.Clear();
+}
+inline const ::google::protobuf::Map<std::string, ::Digit::PrimeServer::Models::PlayerFleetList>& WaveDefenseChallenge::_internal_playerfleetsmap() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.playerfleetsmap_.GetMap();
+}
+inline const ::google::protobuf::Map<std::string, ::Digit::PrimeServer::Models::PlayerFleetList>& WaveDefenseChallenge::playerfleetsmap() const {
+  // @@protoc_insertion_point(field_map:Digit.PrimeServer.Models.WaveDefenseChallenge.playerFleetsMap)
+  return _internal_playerfleetsmap();
+}
+inline ::google::protobuf::Map<std::string, ::Digit::PrimeServer::Models::PlayerFleetList>* WaveDefenseChallenge::_internal_mutable_playerfleetsmap() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  return _impl_.playerfleetsmap_.MutableMap();
+}
+inline ::google::protobuf::Map<std::string, ::Digit::PrimeServer::Models::PlayerFleetList>* WaveDefenseChallenge::mutable_playerfleetsmap() {
+  // @@protoc_insertion_point(field_mutable_map:Digit.PrimeServer.Models.WaveDefenseChallenge.playerFleetsMap)
+  return _internal_mutable_playerfleetsmap();
+}
+
+// string leader = 10;
+inline void WaveDefenseChallenge::clear_leader() {
+  _impl_.leader_.ClearToEmpty();
+}
+inline const std::string& WaveDefenseChallenge::leader() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.WaveDefenseChallenge.leader)
+  return _internal_leader();
+}
+template <typename Arg_, typename... Args_>
+inline PROTOBUF_ALWAYS_INLINE void WaveDefenseChallenge::set_leader(Arg_&& arg,
+                                                     Args_... args) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.leader_.Set(static_cast<Arg_&&>(arg), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:Digit.PrimeServer.Models.WaveDefenseChallenge.leader)
+}
+inline std::string* WaveDefenseChallenge::mutable_leader() {
+  std::string* _s = _internal_mutable_leader();
+  // @@protoc_insertion_point(field_mutable:Digit.PrimeServer.Models.WaveDefenseChallenge.leader)
+  return _s;
+}
+inline const std::string& WaveDefenseChallenge::_internal_leader() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.leader_.Get();
+}
+inline void WaveDefenseChallenge::_internal_set_leader(const std::string& value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.leader_.Set(value, GetArenaForAllocation());
+}
+inline std::string* WaveDefenseChallenge::_internal_mutable_leader() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  return _impl_.leader_.Mutable( GetArenaForAllocation());
+}
+inline std::string* WaveDefenseChallenge::release_leader() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  // @@protoc_insertion_point(field_release:Digit.PrimeServer.Models.WaveDefenseChallenge.leader)
+  return _impl_.leader_.Release();
+}
+inline void WaveDefenseChallenge::set_allocated_leader(std::string* value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_.leader_.SetAllocated(value, GetArenaForAllocation());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        if (_impl_.leader_.IsDefault()) {
+          _impl_.leader_.Set("", GetArenaForAllocation());
+        }
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:Digit.PrimeServer.Models.WaveDefenseChallenge.leader)
+}
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// WaveDefenseStaticDataResponse
+
+// map<int64, .Digit.PrimeServer.Models.ChallengeSpec> challenges = 1;
+inline int WaveDefenseStaticDataResponse::_internal_challenges_size() const {
+  return _internal_challenges().size();
+}
+inline int WaveDefenseStaticDataResponse::challenges_size() const {
+  return _internal_challenges_size();
+}
+inline void WaveDefenseStaticDataResponse::clear_challenges() {
+  _impl_.challenges_.Clear();
+}
+inline const ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::ChallengeSpec>& WaveDefenseStaticDataResponse::_internal_challenges() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.challenges_.GetMap();
+}
+inline const ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::ChallengeSpec>& WaveDefenseStaticDataResponse::challenges() const {
+  // @@protoc_insertion_point(field_map:Digit.PrimeServer.Models.WaveDefenseStaticDataResponse.challenges)
+  return _internal_challenges();
+}
+inline ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::ChallengeSpec>* WaveDefenseStaticDataResponse::_internal_mutable_challenges() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  return _impl_.challenges_.MutableMap();
+}
+inline ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::ChallengeSpec>* WaveDefenseStaticDataResponse::mutable_challenges() {
+  // @@protoc_insertion_point(field_mutable_map:Digit.PrimeServer.Models.WaveDefenseStaticDataResponse.challenges)
+  return _internal_mutable_challenges();
+}
+
+// map<int64, .Digit.PrimeServer.Models.WavesSpec> waves = 2;
+inline int WaveDefenseStaticDataResponse::_internal_waves_size() const {
+  return _internal_waves().size();
+}
+inline int WaveDefenseStaticDataResponse::waves_size() const {
+  return _internal_waves_size();
+}
+inline void WaveDefenseStaticDataResponse::clear_waves() {
+  _impl_.waves_.Clear();
+}
+inline const ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::WavesSpec>& WaveDefenseStaticDataResponse::_internal_waves() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.waves_.GetMap();
+}
+inline const ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::WavesSpec>& WaveDefenseStaticDataResponse::waves() const {
+  // @@protoc_insertion_point(field_map:Digit.PrimeServer.Models.WaveDefenseStaticDataResponse.waves)
+  return _internal_waves();
+}
+inline ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::WavesSpec>* WaveDefenseStaticDataResponse::_internal_mutable_waves() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  return _impl_.waves_.MutableMap();
+}
+inline ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::WavesSpec>* WaveDefenseStaticDataResponse::mutable_waves() {
+  // @@protoc_insertion_point(field_mutable_map:Digit.PrimeServer.Models.WaveDefenseStaticDataResponse.waves)
+  return _internal_mutable_waves();
+}
+
+// map<int64, .Digit.PrimeServer.Models.WaveRewardSpec> rewards = 3;
+inline int WaveDefenseStaticDataResponse::_internal_rewards_size() const {
+  return _internal_rewards().size();
+}
+inline int WaveDefenseStaticDataResponse::rewards_size() const {
+  return _internal_rewards_size();
+}
+inline void WaveDefenseStaticDataResponse::clear_rewards() {
+  _impl_.rewards_.Clear();
+}
+inline const ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::WaveRewardSpec>& WaveDefenseStaticDataResponse::_internal_rewards() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.rewards_.GetMap();
+}
+inline const ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::WaveRewardSpec>& WaveDefenseStaticDataResponse::rewards() const {
+  // @@protoc_insertion_point(field_map:Digit.PrimeServer.Models.WaveDefenseStaticDataResponse.rewards)
+  return _internal_rewards();
+}
+inline ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::WaveRewardSpec>* WaveDefenseStaticDataResponse::_internal_mutable_rewards() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  return _impl_.rewards_.MutableMap();
+}
+inline ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::WaveRewardSpec>* WaveDefenseStaticDataResponse::mutable_rewards() {
+  // @@protoc_insertion_point(field_mutable_map:Digit.PrimeServer.Models.WaveDefenseStaticDataResponse.rewards)
+  return _internal_mutable_rewards();
+}
+
+// -------------------------------------------------------------------
+
+// WaveDefensePartyDataResponse
+
+// .Digit.PrimeServer.Models.Party party = 1;
+inline bool WaveDefensePartyDataResponse::has_party() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  PROTOBUF_ASSUME(!value || _impl_.party_ != nullptr);
+  return value;
+}
+inline void WaveDefensePartyDataResponse::clear_party() {
+  if (_impl_.party_ != nullptr) _impl_.party_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline const ::Digit::PrimeServer::Models::Party& WaveDefensePartyDataResponse::_internal_party() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  const ::Digit::PrimeServer::Models::Party* p = _impl_.party_;
+  return p != nullptr ? *p : reinterpret_cast<const ::Digit::PrimeServer::Models::Party&>(::Digit::PrimeServer::Models::_Party_default_instance_);
+}
+inline const ::Digit::PrimeServer::Models::Party& WaveDefensePartyDataResponse::party() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.WaveDefensePartyDataResponse.party)
+  return _internal_party();
+}
+inline void WaveDefensePartyDataResponse::unsafe_arena_set_allocated_party(::Digit::PrimeServer::Models::Party* value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  if (GetArenaForAllocation() == nullptr) {
+    delete reinterpret_cast<::google::protobuf::MessageLite*>(_impl_.party_);
+  }
+  _impl_.party_ = reinterpret_cast<::Digit::PrimeServer::Models::Party*>(value);
+  if (value != nullptr) {
+    _impl_._has_bits_[0] |= 0x00000001u;
+  } else {
+    _impl_._has_bits_[0] &= ~0x00000001u;
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:Digit.PrimeServer.Models.WaveDefensePartyDataResponse.party)
+}
+inline ::Digit::PrimeServer::Models::Party* WaveDefensePartyDataResponse::release_party() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+
+  _impl_._has_bits_[0] &= ~0x00000001u;
+  ::Digit::PrimeServer::Models::Party* released = _impl_.party_;
+  _impl_.party_ = nullptr;
+#ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
+  auto* old = reinterpret_cast<::google::protobuf::MessageLite*>(released);
+  released = ::google::protobuf::internal::DuplicateIfNonNull(released);
+  if (GetArenaForAllocation() == nullptr) {
+    delete old;
+  }
+#else   // PROTOBUF_FORCE_COPY_IN_RELEASE
+  if (GetArenaForAllocation() != nullptr) {
+    released = ::google::protobuf::internal::DuplicateIfNonNull(released);
+  }
+#endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
+  return released;
+}
+inline ::Digit::PrimeServer::Models::Party* WaveDefensePartyDataResponse::unsafe_arena_release_party() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  // @@protoc_insertion_point(field_release:Digit.PrimeServer.Models.WaveDefensePartyDataResponse.party)
+
+  _impl_._has_bits_[0] &= ~0x00000001u;
+  ::Digit::PrimeServer::Models::Party* temp = _impl_.party_;
+  _impl_.party_ = nullptr;
+  return temp;
+}
+inline ::Digit::PrimeServer::Models::Party* WaveDefensePartyDataResponse::_internal_mutable_party() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_._has_bits_[0] |= 0x00000001u;
+  if (_impl_.party_ == nullptr) {
+    auto* p = CreateMaybeMessage<::Digit::PrimeServer::Models::Party>(GetArenaForAllocation());
+    _impl_.party_ = reinterpret_cast<::Digit::PrimeServer::Models::Party*>(p);
+  }
+  return _impl_.party_;
+}
+inline ::Digit::PrimeServer::Models::Party* WaveDefensePartyDataResponse::mutable_party() {
+  ::Digit::PrimeServer::Models::Party* _msg = _internal_mutable_party();
+  // @@protoc_insertion_point(field_mutable:Digit.PrimeServer.Models.WaveDefensePartyDataResponse.party)
+  return _msg;
+}
+inline void WaveDefensePartyDataResponse::set_allocated_party(::Digit::PrimeServer::Models::Party* value) {
+  ::google::protobuf::Arena* message_arena = GetArenaForAllocation();
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  if (message_arena == nullptr) {
+    delete reinterpret_cast<::Digit::PrimeServer::Models::Party*>(_impl_.party_);
+  }
+
+  if (value != nullptr) {
+    ::google::protobuf::Arena* submessage_arena =
+        ::google::protobuf::Arena::InternalGetOwningArena(reinterpret_cast<::Digit::PrimeServer::Models::Party*>(value));
+    if (message_arena != submessage_arena) {
+      value = ::google::protobuf::internal::GetOwnedMessage(message_arena, value, submessage_arena);
+    }
+    _impl_._has_bits_[0] |= 0x00000001u;
+  } else {
+    _impl_._has_bits_[0] &= ~0x00000001u;
+  }
+
+  _impl_.party_ = reinterpret_cast<::Digit::PrimeServer::Models::Party*>(value);
+  // @@protoc_insertion_point(field_set_allocated:Digit.PrimeServer.Models.WaveDefensePartyDataResponse.party)
+}
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// WaveDefenseSyncDataResponse
+
+// map<int64, .Digit.PrimeServer.Models.WaveDefenseSystem> waveDefenseSystems = 1;
+inline int WaveDefenseSyncDataResponse::_internal_wavedefensesystems_size() const {
+  return _internal_wavedefensesystems().size();
+}
+inline int WaveDefenseSyncDataResponse::wavedefensesystems_size() const {
+  return _internal_wavedefensesystems_size();
+}
+inline void WaveDefenseSyncDataResponse::clear_wavedefensesystems() {
+  _impl_.wavedefensesystems_.Clear();
+}
+inline const ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::WaveDefenseSystem>& WaveDefenseSyncDataResponse::_internal_wavedefensesystems() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.wavedefensesystems_.GetMap();
+}
+inline const ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::WaveDefenseSystem>& WaveDefenseSyncDataResponse::wavedefensesystems() const {
+  // @@protoc_insertion_point(field_map:Digit.PrimeServer.Models.WaveDefenseSyncDataResponse.waveDefenseSystems)
+  return _internal_wavedefensesystems();
+}
+inline ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::WaveDefenseSystem>* WaveDefenseSyncDataResponse::_internal_mutable_wavedefensesystems() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  return _impl_.wavedefensesystems_.MutableMap();
+}
+inline ::google::protobuf::Map<::int64_t, ::Digit::PrimeServer::Models::WaveDefenseSystem>* WaveDefenseSyncDataResponse::mutable_wavedefensesystems() {
+  // @@protoc_insertion_point(field_mutable_map:Digit.PrimeServer.Models.WaveDefenseSyncDataResponse.waveDefenseSystems)
+  return _internal_mutable_wavedefensesystems();
+}
+
+// -------------------------------------------------------------------
+
+// WaveDefenseChallengeDataResponse
+
+// .Digit.PrimeServer.Models.WaveDefenseChallenge waveDefenseChallenge = 1;
+inline bool WaveDefenseChallengeDataResponse::has_wavedefensechallenge() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  PROTOBUF_ASSUME(!value || _impl_.wavedefensechallenge_ != nullptr);
+  return value;
+}
+inline void WaveDefenseChallengeDataResponse::clear_wavedefensechallenge() {
+  if (_impl_.wavedefensechallenge_ != nullptr) _impl_.wavedefensechallenge_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline const ::Digit::PrimeServer::Models::WaveDefenseChallenge& WaveDefenseChallengeDataResponse::_internal_wavedefensechallenge() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  const ::Digit::PrimeServer::Models::WaveDefenseChallenge* p = _impl_.wavedefensechallenge_;
+  return p != nullptr ? *p : reinterpret_cast<const ::Digit::PrimeServer::Models::WaveDefenseChallenge&>(::Digit::PrimeServer::Models::_WaveDefenseChallenge_default_instance_);
+}
+inline const ::Digit::PrimeServer::Models::WaveDefenseChallenge& WaveDefenseChallengeDataResponse::wavedefensechallenge() const {
+  // @@protoc_insertion_point(field_get:Digit.PrimeServer.Models.WaveDefenseChallengeDataResponse.waveDefenseChallenge)
+  return _internal_wavedefensechallenge();
+}
+inline void WaveDefenseChallengeDataResponse::unsafe_arena_set_allocated_wavedefensechallenge(::Digit::PrimeServer::Models::WaveDefenseChallenge* value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  if (GetArenaForAllocation() == nullptr) {
+    delete reinterpret_cast<::google::protobuf::MessageLite*>(_impl_.wavedefensechallenge_);
+  }
+  _impl_.wavedefensechallenge_ = reinterpret_cast<::Digit::PrimeServer::Models::WaveDefenseChallenge*>(value);
+  if (value != nullptr) {
+    _impl_._has_bits_[0] |= 0x00000001u;
+  } else {
+    _impl_._has_bits_[0] &= ~0x00000001u;
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:Digit.PrimeServer.Models.WaveDefenseChallengeDataResponse.waveDefenseChallenge)
+}
+inline ::Digit::PrimeServer::Models::WaveDefenseChallenge* WaveDefenseChallengeDataResponse::release_wavedefensechallenge() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+
+  _impl_._has_bits_[0] &= ~0x00000001u;
+  ::Digit::PrimeServer::Models::WaveDefenseChallenge* released = _impl_.wavedefensechallenge_;
+  _impl_.wavedefensechallenge_ = nullptr;
+#ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
+  auto* old = reinterpret_cast<::google::protobuf::MessageLite*>(released);
+  released = ::google::protobuf::internal::DuplicateIfNonNull(released);
+  if (GetArenaForAllocation() == nullptr) {
+    delete old;
+  }
+#else   // PROTOBUF_FORCE_COPY_IN_RELEASE
+  if (GetArenaForAllocation() != nullptr) {
+    released = ::google::protobuf::internal::DuplicateIfNonNull(released);
+  }
+#endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
+  return released;
+}
+inline ::Digit::PrimeServer::Models::WaveDefenseChallenge* WaveDefenseChallengeDataResponse::unsafe_arena_release_wavedefensechallenge() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  // @@protoc_insertion_point(field_release:Digit.PrimeServer.Models.WaveDefenseChallengeDataResponse.waveDefenseChallenge)
+
+  _impl_._has_bits_[0] &= ~0x00000001u;
+  ::Digit::PrimeServer::Models::WaveDefenseChallenge* temp = _impl_.wavedefensechallenge_;
+  _impl_.wavedefensechallenge_ = nullptr;
+  return temp;
+}
+inline ::Digit::PrimeServer::Models::WaveDefenseChallenge* WaveDefenseChallengeDataResponse::_internal_mutable_wavedefensechallenge() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_._has_bits_[0] |= 0x00000001u;
+  if (_impl_.wavedefensechallenge_ == nullptr) {
+    auto* p = CreateMaybeMessage<::Digit::PrimeServer::Models::WaveDefenseChallenge>(GetArenaForAllocation());
+    _impl_.wavedefensechallenge_ = reinterpret_cast<::Digit::PrimeServer::Models::WaveDefenseChallenge*>(p);
+  }
+  return _impl_.wavedefensechallenge_;
+}
+inline ::Digit::PrimeServer::Models::WaveDefenseChallenge* WaveDefenseChallengeDataResponse::mutable_wavedefensechallenge() {
+  ::Digit::PrimeServer::Models::WaveDefenseChallenge* _msg = _internal_mutable_wavedefensechallenge();
+  // @@protoc_insertion_point(field_mutable:Digit.PrimeServer.Models.WaveDefenseChallengeDataResponse.waveDefenseChallenge)
+  return _msg;
+}
+inline void WaveDefenseChallengeDataResponse::set_allocated_wavedefensechallenge(::Digit::PrimeServer::Models::WaveDefenseChallenge* value) {
+  ::google::protobuf::Arena* message_arena = GetArenaForAllocation();
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  if (message_arena == nullptr) {
+    delete reinterpret_cast<::Digit::PrimeServer::Models::WaveDefenseChallenge*>(_impl_.wavedefensechallenge_);
+  }
+
+  if (value != nullptr) {
+    ::google::protobuf::Arena* submessage_arena =
+        ::google::protobuf::Arena::InternalGetOwningArena(reinterpret_cast<::Digit::PrimeServer::Models::WaveDefenseChallenge*>(value));
+    if (message_arena != submessage_arena) {
+      value = ::google::protobuf::internal::GetOwnedMessage(message_arena, value, submessage_arena);
+    }
+    _impl_._has_bits_[0] |= 0x00000001u;
+  } else {
+    _impl_._has_bits_[0] &= ~0x00000001u;
+  }
+
+  _impl_.wavedefensechallenge_ = reinterpret_cast<::Digit::PrimeServer::Models::WaveDefenseChallenge*>(value);
+  // @@protoc_insertion_point(field_set_allocated:Digit.PrimeServer.Models.WaveDefenseChallengeDataResponse.waveDefenseChallenge)
 }
 
 #ifdef __GNUC__
@@ -159662,10 +168281,40 @@ inline const EnumDescriptor* GetEnumDescriptor<::Digit::PrimeServer::Models::Act
   return ::Digit::PrimeServer::Models::ActionType_descriptor();
 }
 template <>
+struct is_proto_enum<::Digit::PrimeServer::Models::ActivatedAbilityCostType> : std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor<::Digit::PrimeServer::Models::ActivatedAbilityCostType>() {
+  return ::Digit::PrimeServer::Models::ActivatedAbilityCostType_descriptor();
+}
+template <>
+struct is_proto_enum<::Digit::PrimeServer::Models::ActivationSource> : std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor<::Digit::PrimeServer::Models::ActivationSource>() {
+  return ::Digit::PrimeServer::Models::ActivationSource_descriptor();
+}
+template <>
 struct is_proto_enum<::Digit::PrimeServer::Models::Domain> : std::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor<::Digit::PrimeServer::Models::Domain>() {
   return ::Digit::PrimeServer::Models::Domain_descriptor();
+}
+template <>
+struct is_proto_enum<::Digit::PrimeServer::Models::HazardType> : std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor<::Digit::PrimeServer::Models::HazardType>() {
+  return ::Digit::PrimeServer::Models::HazardType_descriptor();
+}
+template <>
+struct is_proto_enum<::Digit::PrimeServer::Models::HazardEffect> : std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor<::Digit::PrimeServer::Models::HazardEffect>() {
+  return ::Digit::PrimeServer::Models::HazardEffect_descriptor();
+}
+template <>
+struct is_proto_enum<::Digit::PrimeServer::Models::StatusCounterType> : std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor<::Digit::PrimeServer::Models::StatusCounterType>() {
+  return ::Digit::PrimeServer::Models::StatusCounterType_descriptor();
 }
 template <>
 struct is_proto_enum<::Digit::PrimeServer::Models::BuildStatus> : std::true_type {};
@@ -159750,6 +168399,12 @@ struct is_proto_enum<::Digit::PrimeServer::Models::DeployedFleetType> : std::tru
 template <>
 inline const EnumDescriptor* GetEnumDescriptor<::Digit::PrimeServer::Models::DeployedFleetType>() {
   return ::Digit::PrimeServer::Models::DeployedFleetType_descriptor();
+}
+template <>
+struct is_proto_enum<::Digit::PrimeServer::Models::DamageSources> : std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor<::Digit::PrimeServer::Models::DamageSources>() {
+  return ::Digit::PrimeServer::Models::DamageSources_descriptor();
 }
 template <>
 struct is_proto_enum<::Digit::PrimeServer::Models::TargetAction> : std::true_type {};
