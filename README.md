@@ -1,7 +1,8 @@
 # Star Trek Fleet Command - Community Patch
 
 <p align="center">
-  <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License: GPLv3">
+  <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License: GPLv3" />
+  ![GitHub Sponsors](https://img.shields.io/github/sponsors/netniv)
 </p>
 
 <p align="center">
