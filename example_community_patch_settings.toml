@@ -79,9 +79,6 @@ action_recall_cancel = 'SPACE'
 # Repair ship action (R or Mouse Side Button 2)
 action_repair = 'R|MOUSE3'
 
-# Secondary actions such as Scan
-action_secondary = 'R'
-
 # Switch between Cargo and Preview screens when clicked on a ship/node/station (TAB or Mouse Side Button 1)
 action_secondary = 'TAB|MOUSE2'
 
