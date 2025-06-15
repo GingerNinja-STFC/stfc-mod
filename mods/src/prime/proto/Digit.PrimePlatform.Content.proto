@@ -1,3 +1,4 @@
+
 syntax="proto3";
 
 option optimize_for = LITE_RUNTIME;
@@ -9,6 +10,14 @@ package Digit.PrimePlatform.Content;
 enum AnimationOnClaimType {
   ANIMATIONONCLAIMTYPE_UNSPECIFIED = 0;
   ANIMATIONONCLAIMTYPE_FLYOUT = 1;
+}
+
+enum BundleBorderShapeType {
+  BUNDLEBORDERSHAPETYPE_NONE = 0;
+  BUNDLEBORDERSHAPETYPE_DEFAULT = 1;
+  BUNDLEBORDERSHAPETYPE_LIMITED = 2;
+  BUNDLEBORDERSHAPETYPE_NEWCONTENT = 3;
+  BUNDLEBORDERSHAPETYPE_PLAYERLIFECYCLE = 4;
 }
 
 message Bundle {
@@ -28,6 +37,10 @@ message Bundle {
   OfferDetails offerDetails = 14;
   bool isPlayerlifecycle = 15;
   bool allowCustomQuantity = 16;
+  repeated int64 storeGroupIds = 17;
+  BundleStyle bundleStyle = 18;
+  int32 pityCap = 19;
+  int32 pityCount = 20;
 }
 
 message TranslationsContainer {
@@ -53,6 +66,7 @@ message ContentItem {
   int64 quantity = 2;
   string type = 3;
   uint32 level = 4;
+  uint32 rewardIdx = 5;
 }
 
 message Bucket {
@@ -68,10 +82,16 @@ message BundleContent {
   ContentItemList showcase = 3;
   ContentItemList static = 4;
   ContentItemList multiplied = 5;
+  repeated CustomizedSet customized = 6;
 }
 
 message ContentItemList {
   repeated ContentItem items = 1;
+}
+
+message CustomizedSet {
+  uint32 setIdx = 1;
+  ContentItemList contents = 2;
 }
 
 message Order {
@@ -133,5 +153,21 @@ message OfferDetails {
   google.protobuf.Timestamp validUntilTimestamp = 5;
   int32 sameRemainingCount = 6;
   bool sameRemainingCountVisible = 7;
+  bool cooldownConfigured = 8;
+}
+
+message StoreGroups {
+  repeated StoreGroup storeGroups_ = 1;
+}
+
+message StoreGroup {
+  int64 id = 1;
+  string name = 2;
+  string transId = 3;
+  int32 sortOrder = 4;
+}
+
+message BundleStyle {
+  BundleBorderShapeType borderShapeType = 1;
 }
 

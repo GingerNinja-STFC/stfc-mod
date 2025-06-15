@@ -1,3 +1,4 @@
+
 syntax="proto3";
 
 option optimize_for = LITE_RUNTIME;
@@ -37,6 +38,7 @@ enum ResourceSubtype {
   RESOURCESUBTYPE_SCRAPPEDMATERIAL = 14;
   RESOURCESUBTYPE_TERRITORYCAPTURE = 15;
   RESOURCESUBTYPE_COSMETICSSHARD = 16;
+  RESOURCESUBTYPE_RATING = 17;
 }
 
 message InventoryGroup {

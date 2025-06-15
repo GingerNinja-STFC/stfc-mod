@@ -1,3 +1,4 @@
+
 syntax="proto3";
 
 option optimize_for = LITE_RUNTIME;
@@ -26,6 +27,15 @@ enum EventCategories {
   EVENTCATEGORIES_MINIGAMECATEGORY = 15;
   EVENTCATEGORIES_MINIGAMESTAGE = 16;
   EVENTCATEGORIES_WARCHEST = 17;
+  EVENTCATEGORIES_ALLIANCEGAME = 18;
+  EVENTCATEGORIES_ALLIANCEGAMETASK = 19;
+  EVENTCATEGORIES_METAEVENTCATEGORY = 20;
+  EVENTCATEGORIES_METAEVENTOBJECTIVE = 21;
+  EVENTCATEGORIES_INVASION = 22;
+  EVENTCATEGORIES_LOOPMUSEUM = 23;
+  EVENTCATEGORIES_LOOPMUSEUMTASK = 24;
+  EVENTCATEGORIES_PLCBPSEASON = 25;
+  EVENTCATEGORIES_PLCBPEVENT = 26;
 }
 
 enum JoinForbidden {
@@ -59,6 +69,18 @@ enum PlayerlifecycleContentType {
   PLAYERLIFECYCLECONTENTTYPE_NEWS = 0;
   PLAYERLIFECYCLECONTENTTYPE_BUNDLES = 1;
   PLAYERLIFECYCLECONTENTTYPE_EVENTS = 2;
+}
+
+message AllianceGamesChangesNotification {
+  repeated string addedTaskIds = 1;
+  repeated string removedTaskIds = 2;
+}
+
+message ApmFiltersStatus {
+  bool apmRequired = 1;
+}
+
+message ApmFiltersNotification {
 }
 
 message EventEntryData {
@@ -103,6 +125,16 @@ message EventMetadata {
   bool minigameLock = 25;
   uint32 minigameLevelMin = 26;
   uint32 minigameLevelMax = 27;
+  uint32 metaEventDay = 28;
+  uint32 metaEventSection = 29;
+  Digit.PrimePlatform.Content.Resource rerollCost = 30;
+  repeated NumberOfSlotsPerCategory numSlotsCategory = 31;
+  uint32 numHoursPerCycle = 32;
+  uint32 promotionThresholdPercent = 33;
+  uint32 relegationThresholdPercent = 34;
+  uint32 taskCategoryType = 35;
+  Digit.PrimePlatform.Content.Resource rewardUnlockCost = 36;
+  repeated int64 claimableBundleIds = 37;
 }
 
 message EventModel {
@@ -180,6 +212,11 @@ message EventSegment {
   EventReward uniqueWinner = 4;
 }
 
+message NumberOfSlotsPerCategory {
+  uint32 categoryId = 1;
+  uint32 amount = 2;
+}
+
 message EventVideoAssets {
   string en = 1;
   string es = 2;
@@ -197,6 +234,35 @@ message EventVideoAssets {
 
 message RepeatedInt32 {
   repeated int32 values = 1;
+}
+
+message AllianceGameMemberInformation {
+  string accountId = 1;
+  int32 numCurrentCycleAssignedTasks = 2;
+  int32 numAgAssignedTasks = 3;
+  int32 numAgCompletedTasks = 4;
+}
+
+message AllianceGameFlags {
+  bool promotionHandled = 1;
+}
+
+message AllianceGameOutcome {
+  int32 result = 1;
+  int32 oldLeague = 2;
+  int32 newLeague = 3;
+}
+
+message LeaderboardInfo {
+  int32 totalParticipatingAlliances = 1;
+}
+
+message AllianceGameStateResponse {
+  map<string, AllianceGameMemberInformation> memberInformation = 1;
+  int32 numMaxAssignableTasksPerCycle = 2;
+  AllianceGameOutcome outcome = 3;
+  AllianceGameFlags flags = 4;
+  LeaderboardInfo leaderboardInfo = 5;
 }
 
 message PlayerlifecycleNotification {
@@ -317,5 +383,11 @@ message MinigameStage {
   repeated uint32 rewards = 3;
   uint32 score = 4;
   uint32 priority = 5;
+}
+
+message PromoCodeRedeem {
+  string promoCode = 1;
+  int64 linkedBundleId = 2;
+  Digit.PrimePlatform.Content.Order order = 3;
 }
 
