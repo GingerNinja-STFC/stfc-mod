@@ -4,15 +4,10 @@ set_languages("c++20")
 
 add_requires("eastl")
 add_requires("spdlog")
-add_requires("protobuf-cpp 29.3")
 add_requires("toml++")
 add_requires("nlohmann_json")
-add_requires("inifile-cpp")
-add_requires("7z")
-add_requires("lzma")
-add_requires("librsync")
 add_requires("libcurl", { configs = { zlib = true } })
-add_requires("capstone", { debug = true, })
+add_requires("protobuf 31.1")
 
 if is_plat("windows") then
     includes("win-proxy-dll")
@@ -20,6 +15,10 @@ if is_plat("windows") then
 end
 
 if is_plat("macosx") then
+    add_requires("7z")
+    add_requires("inifile-cpp")
+    add_requires("librsync")
+    add_requires("lzma")
     includes("macos-dylib")
     includes("macos-loader")
     includes("macos-launcher")
@@ -35,6 +34,7 @@ on_fetch(function(package, opt)
 end)
 package_end()
 
+add_requires("capstone", { debug = true })
 add_requires("spud v0.2.0")
 -- add_requires("spud-local")
 add_requires("libil2cpp")
