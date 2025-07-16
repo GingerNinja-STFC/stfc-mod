@@ -12,6 +12,7 @@ add_requires("protobuf 31.1")
 if is_plat("windows") then
     includes("win-proxy-dll")
     add_links('rpcrt4')
+    add_links('runtimeobject')
 end
 
 if is_plat("macosx") then
