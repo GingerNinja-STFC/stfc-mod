@@ -20,10 +20,6 @@ on_load(function (package)
         package:add("deps", "zlib")
     end
 
-    if package:is_plat("windows") and package:config("shared") then
-        package:add("defines", "PROTOBUF_USE_DLLS")
-    end
-
     package:addenv("PATH", package:installdir("bin"))
 end)
 
@@ -68,11 +64,6 @@ on_install(function (package)
     }
 
     table.insert(configs, "-DCMAKE_BUILD_TYPE=" .. (package:is_debug() and "Debug" or "Release"))
-
-    if package:config("shared") then
-        table.insert(configs, "-Dprotobuf_BUILD_SHARED_LIBS=ON")
-        table.insert(configs, "-DPROTOBUF_USE_DLLS")
-    end
 
     if package:config("zlib") then
         table.insert(configs, "-Dprotobuf_WITH_ZLIB=ON")

@@ -35,9 +35,7 @@ on_fetch(function(package, opt)
 end)
 package_end()
 
-add_requires("capstone", { debug = true })
-add_requires("spud v0.2.0")
--- add_requires("spud-local")
+add_requires("spud v0.2.0-2")
 add_requires("libil2cpp")
 add_requires("simdutf")
 
