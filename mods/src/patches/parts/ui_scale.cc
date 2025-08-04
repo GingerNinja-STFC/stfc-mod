@@ -61,7 +61,7 @@ void CanvasController_Show(auto original, CanvasController* _this, int desiredEn
 void InstallUiScaleHooks()
 {
   auto screen_manager_helper = il2cpp_get_class_helper("Assembly-CSharp", "Digit.Client.UI", "ScreenManager");
-  if (!screen_manager_helper.HasClass()) {
+  if (!screen_manager_helper.isValidHelper()) {
     ErrorMsg::MissingHelper("UI", "ScreenManager");
   } else {
     auto ptr_update_scale = screen_manager_helper.GetMethod("UpdateCanvasRootScaleFactor");
@@ -73,7 +73,7 @@ void InstallUiScaleHooks()
   }
 
   auto canvas_controller_helper = il2cpp_get_class_helper("Assembly-CSharp", "Digit.Client.UI", "CanvasController");
-  if (!canvas_controller_helper.HasClass()) {
+  if (!canvas_controller_helper.isValidHelper()) {
     ErrorMsg::MissingHelper("UI", "CanvasController");
   } else {
     auto ptr_canvas_show = canvas_controller_helper.GetMethodSpecial("Show", [](auto count, const Il2CppType** params) {

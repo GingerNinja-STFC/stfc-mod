@@ -163,7 +163,7 @@ void InstallFreeResizeHooks()
 {
   auto AspectRatioConstraintHandler_helper =
       il2cpp_get_class_helper("Assembly-CSharp", "Digit.Client.Utils", "AspectRatioConstraintHandler");
-  if (!AspectRatioConstraintHandler_helper.HasClass()) {
+  if (!AspectRatioConstraintHandler_helper.isValidHelper()) {
     ErrorMsg::MissingHelper("Utils", "AspectRatioConstraintHandler");
   } else {
     auto ptr_update = AspectRatioConstraintHandler_helper.GetMethod("Update");

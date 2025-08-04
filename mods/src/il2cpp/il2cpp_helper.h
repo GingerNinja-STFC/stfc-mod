@@ -26,6 +26,11 @@ public:
     this->propInfo = propInfo;
   }
 
+  bool isValidHelper()
+  {
+    return this->cls != nullptr && propInfo != nullptr;
+  }
+
   template <typename T> void SetRaw(void* _this, T& v)
   {
     if (!this->propInfo) {
@@ -86,6 +91,11 @@ public:
     this->fieldInfo = fieldInfo;
   }
 
+  bool isValidHelper()
+  {
+    return this->cls != nullptr && fieldInfo != nullptr;
+  }
+
   inline ptrdiff_t offset() const
   {
     return this->fieldInfo->offset;
@@ -136,7 +146,8 @@ public:
     return obj;
   }
 
-  bool HasClass() {
+  bool isValidHelper()
+  {
     return this->cls != nullptr;
   }
 

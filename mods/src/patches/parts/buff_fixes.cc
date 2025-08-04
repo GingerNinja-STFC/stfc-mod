@@ -104,7 +104,7 @@ void InstallBuffFixHooks()
 {
   auto buffhelper =
       il2cpp_get_class_helper("Digit.Client.PrimeLib.Runtime", "Digit.PrimeServer.Services", "BuffService");
-  if (!buffhelper.HasClass()) {
+  if (!buffhelper.isValidHelper()) {
     ErrorMsg::MissingHelper("Services", "BuffService");
   } else {
     auto ptr = buffhelper.GetMethod("IsBuffConditionMet");
@@ -134,7 +134,7 @@ void InstallBuffFixHooks()
 
   auto fleethelper =
       il2cpp_get_class_helper("Digit.Client.PrimeLib.Runtime", "Digit.PrimeServer.Services", "FleetService");
-  if (!fleethelper.HasClass()) {
+  if (!fleethelper.isValidHelper()) {
     ErrorMsg::MissingHelper("Services", "FleetService");
   } else {
     auto ptr = fleethelper.GetMethod("ResolveOfficerAbilityBuffs");

@@ -24,7 +24,7 @@ void InstallImproveResponsivenessHooks()
 {
   auto transition_manager_helper =
       il2cpp_get_class_helper("Assembly-CSharp", "Digit.Prime.LoadingScreen", "TransitionManager");
-  if (!transition_manager_helper.HasClass()) {
+  if (!transition_manager_helper.isValidHelper()) {
     ErrorMsg::MissingHelper("LoadingScreen", "TransitionManager");
   } else {
     auto awake = transition_manager_helper.GetMethod("Awake");

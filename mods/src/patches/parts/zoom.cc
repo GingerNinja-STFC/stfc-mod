@@ -194,7 +194,7 @@ void NavigationCamera_SetSystemViewSizeData_Hook(auto original, uint8_t *_this_c
 void InstallZoomHooks()
 {
   auto screen_manager_helper = il2cpp_get_class_helper("Assembly-CSharp", "Digit.Prime.Navigation", "NavigationZoom");
-  if (!screen_manager_helper.HasClass()) {
+  if (!screen_manager_helper.isValidHelper()) {
     ErrorMsg::MissingHelper("Navigation", "NavigationZoom");
   } else {
     auto ptr_update = screen_manager_helper.GetMethod("Update");

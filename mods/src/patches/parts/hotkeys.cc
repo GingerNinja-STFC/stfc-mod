@@ -76,7 +76,7 @@ bool MoveOfficerCanvas(bool goLeft)
 void ScreenManager_Update_Hook(auto original, ScreenManager* _this)
 {
   // This function is called every frame to update the screen manager.
-  // Create a global clock to detect time elapsed 
+  // Create a global clock to detect time elapsed
   static std::chrono::time_point<std::chrono::steady_clock> select_clock = std::chrono::steady_clock::now();
 
   Key::ResetCache();
@@ -156,9 +156,11 @@ void ScreenManager_Update_Hook(auto original, ScreenManager* _this)
       auto can_locate = !config->disable_preview_locate || !CanHideViewers();
       if (fleet_bar) {
         std::chrono::time_point<std::chrono::steady_clock> select_now = std::chrono::steady_clock::now();
-        std::chrono::milliseconds select_diff = std::chrono::duration_cast<std::chrono::milliseconds>(select_now - select_clock);
+        std::chrono::milliseconds                          select_diff =
+            std::chrono::duration_cast<std::chrono::milliseconds>(select_now - select_clock);
         spdlog::info("DBG: select_diff was {}ms", select_diff.count());
-        if (can_locate && fleet_bar->IsIndexSelected(ship_select_request) && select_diff < std::chrono::milliseconds((int)Config::Get().select_timer)) {
+        if (can_locate && fleet_bar->IsIndexSelected(ship_select_request)
+            && select_diff < std::chrono::milliseconds((int)Config::Get().select_timer)) {
           auto fleet = fleet_bar->_fleetPanelController->fleet;
           if (NavigationSectionManager::Instance() && NavigationSectionManager::Instance()->SNavigationManager) {
             NavigationSectionManager::Instance()->SNavigationManager->HideInteraction();
@@ -579,14 +581,6 @@ void ExecuteSpaceAction(FleetBarViewController* fleet_bar)
   if (has_recall_cancel
       && (fleet->CurrentState == FleetState::WarpCharging || fleet->CurrentState == FleetState::Warping)) {
     fleet_controller->CancelButtonClicked();
-  } else if (has_queue) {
-    auto fleets_manager = FleetsManager::Instance();
-    if (fleets_manager != nullptr) {
-      auto target = fleets_manager->targetFleetData;
-      if (target != nullptr) {
-        action_queue->AddToQueue(target->ID);
-      }
-    }
   } else {
     auto all_pre_scan_widgets = ObjectFinder<PreScanTargetWidget>::GetAll();
     for (auto pre_scan_widget : all_pre_scan_widgets) {
@@ -603,29 +597,50 @@ void ExecuteSpaceAction(FleetBarViewController* fleet_bar)
           } else if (has_primary) {
             return mine_object_viewer_widget->MineClicked();
           }
-        } else {
-          if (has_queue) {
+        } else if (has_queue && pre_scan_widget->_addToQueueButtonWidget && pre_scan_widget->_scanEngageButtonsWidget) {
+          /* if (pre_scan_widget->_addToQueueButtonWidget->SemaphoreListener->Interactable) { */
+            auto context = pre_scan_widget->_scanEngageButtonsWidget->Context;
+            auto type    = GetHullTypeFromBattleTarget(context);
 
-          } else if (has_secondary) {
-            return pre_scan_widget->_scanEngageButtonsWidget->OnScanButtonClicked();
-          } else if (has_primary) {
-            auto armada_object_viewer_widget = ObjectFinder<ArmadaObjectViewerWidget>::Get();
-            if (!armada_object_viewer_widget
-                || (armada_object_viewer_widget->_visibilityController->_state != VisibilityState::Visible
-                    && armada_object_viewer_widget->_visibilityController->_state != VisibilityState::Show)) {
-              auto context = pre_scan_widget->_scanEngageButtonsWidget->Context;
-              auto type    = GetHullTypeFromBattleTarget(context);
-
-              // Try once more in X frames if we get ANY
-              // in-case of failed to navgitate error?
-              if (type != HullType::ArmadaTarget && (type != HullType::Any || force_space_action_next_frame)) {
-                pre_scan_widget->_scanEngageButtonsWidget->OnEngageButtonClicked();
-              } else if (type == HullType::Any) {
-                force_space_action_next_frame = true;
+            // Try once more in X frames if we get ANY
+            // in-case of failed to navgitate error?
+            if (type != HullType::ArmadaTarget && (type != HullType::Any || force_space_action_next_frame)) {
+              auto listener = pre_scan_widget->_addToQueueButtonWidget->SemaphoreListener;
+              if (listener) {
+                auto button = listener->TheButton;
+                if (button) {
+                  button->Press();
+                }
               }
-
-              return;
+            } else if (type == HullType::Any) {
+              force_space_action_next_frame = true;
             }
+
+            return;
+          /*}*/
+        } else if (has_secondary) {
+          return pre_scan_widget->_scanEngageButtonsWidget->OnScanButtonClicked();
+        } else if (has_primary) {
+          auto armada_object_viewer_widget = ObjectFinder<ArmadaObjectViewerWidget>::Get();
+          auto armada_not_shown =
+              !armada_object_viewer_widget
+              || (armada_object_viewer_widget->_visibilityController->_state != VisibilityState::Visible
+                  && armada_object_viewer_widget->_visibilityController->_state != VisibilityState::Show);
+
+          if (armada_not_shown && pre_scan_widget->_scanEngageButtonsWidget
+              && pre_scan_widget->_scanEngageButtonsWidget->enabled) {
+            auto context = pre_scan_widget->_scanEngageButtonsWidget->Context;
+            auto type    = GetHullTypeFromBattleTarget(context);
+
+            // Try once more in X frames if we get ANY
+            // in-case of failed to navgitate error?
+            if (type != HullType::ArmadaTarget && (type != HullType::Any || force_space_action_next_frame)) {
+              pre_scan_widget->_scanEngageButtonsWidget->OnEngageButtonClicked();
+            } else if (type == HullType::Any) {
+              force_space_action_next_frame = true;
+            }
+
+            return;
           }
         }
       }
@@ -761,7 +776,7 @@ void InstallHotkeyHooks()
 {
   auto shortcuts_manager_helper =
       il2cpp_get_class_helper("Assembly-CSharp", "Digit.Prime.GameInput", "ShortcutsManager");
-  if (!shortcuts_manager_helper.HasClass()) {
+  if (!shortcuts_manager_helper.isValidHelper()) {
     ErrorMsg::MissingHelper("GameInput", "ShortcutsManager");
   } else {
     auto ptr_can_user_shortcuts = shortcuts_manager_helper.GetMethod("InitializeActions");
@@ -773,7 +788,7 @@ void InstallHotkeyHooks()
   }
 
   auto screen_manager_helper = il2cpp_get_class_helper("Assembly-CSharp", "Digit.Client.UI", "ScreenManager");
-  if (!screen_manager_helper.HasClass()) {
+  if (!screen_manager_helper.isValidHelper()) {
     ErrorMsg::MissingHelper("UI", "ScreenManager");
   } else {
     auto ptr_update = screen_manager_helper.GetMethod("Update");
@@ -786,7 +801,7 @@ void InstallHotkeyHooks()
 
   static auto rewards_button_widget =
       il2cpp_get_class_helper("Assembly-CSharp", "Digit.Prime.Combat", "RewardsButtonWidget");
-  if (!rewards_button_widget.HasClass()) {
+  if (!rewards_button_widget.isValidHelper()) {
     ErrorMsg::MissingHelper("Combat", "RewardsButtonWidget");
   } else {
     auto on_did_bind_context_ptr = rewards_button_widget.GetMethod("OnDidBindContext");
@@ -800,7 +815,7 @@ void InstallHotkeyHooks()
 
   static auto pre_scan_target_widget =
       il2cpp_get_class_helper("Assembly-CSharp", "Digit.Prime.Combat", "PreScanTargetWidget");
-  if (!pre_scan_target_widget.HasClass()) {
+  if (!pre_scan_target_widget.isValidHelper()) {
     ErrorMsg::MissingHelper("Combat", "PreScanTargetWidget");
   } else {
     auto show_with_fleet_ptr = pre_scan_target_widget.GetMethod("ShowWithFleet");

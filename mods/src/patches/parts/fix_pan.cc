@@ -45,7 +45,7 @@ bool NavigationPan_LateUpdate_Hook(auto original, NavigationPan *_this)
 void InstallPanHooks()
 {
   auto touchhelper = il2cpp_get_class_helper("Assembly-CSharp-firstpass", "", "TKTouch");
-  if (!touchhelper.HasClass()) {
+  if (!touchhelper.isValidHelper()) {
     ErrorMsg::MissingHelper("<global>", "TKTouch");
   } else {
     auto ptr = touchhelper.GetMethod("populateWithPosition");
@@ -57,7 +57,7 @@ void InstallPanHooks()
   }
 
   auto navhelper = il2cpp_get_class_helper("Assembly-CSharp", "Digit.Prime.Navigation", "NavigationPan");
-  if (!navhelper.HasClass()) {
+  if (!navhelper.isValidHelper()) {
     ErrorMsg::MissingHelper("Navgiation", "NavigationPan");
   } else {
     auto ptr = navhelper.GetMethod("LateUpdate");

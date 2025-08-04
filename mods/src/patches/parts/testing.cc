@@ -139,7 +139,7 @@ bool IsQueueEnabled(auto original, void* _this)
 void InstallTestPatches()
 {
   auto model = il2cpp_get_class_helper("Assembly-CSharp", "Digit.Client.Core", "Model");
-  if (!model.HasClass()) {
+  if (!model.isValidHelper()) {
     ErrorMsg::MissingHelper("Core", "Model");
   } else {
     auto load_configs_ptr = model.GetMethod("LoadConfigs");
@@ -152,7 +152,7 @@ void InstallTestPatches()
 
   auto battle_target_data =
       il2cpp_get_class_helper("Digit.Client.PrimeLib.Runtime", "Digit.PrimeServer.Models", "BattleTargetData");
-  if (!battle_target_data.HasClass()) {
+  if (!battle_target_data.isValidHelper()) {
     ErrorMsg::MissingHelper("Models", "BattleTargetData");
   } else {
     static auto SetActive =
@@ -165,7 +165,7 @@ void InstallTestPatches()
   }
 
   auto queue_manager = il2cpp_get_class_helper("Assembly-CSharp", "Prime.ActionQueue", "ActionQueueManager");
-  if (!queue_manager.HasClass()) {
+  if (!queue_manager.isValidHelper()) {
     ErrorMsg::MissingHelper("ActionQueue", "ActionQueueManager");
   } else {
 

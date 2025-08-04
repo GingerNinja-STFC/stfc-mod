@@ -24,7 +24,7 @@ int64_t InventoryForPopup_set_MaxItemsToUse(auto original, InventoryForPopup* a1
 {
   if (a1->IsDonationUse && a2 == 50 && Config::Get().extend_donation_slider) {
     const auto max = Config::Get().extend_donation_max;
-    if (max) {
+    if (max > 0) {
       a2 = max;
     } else {
       return 0;
@@ -32,6 +32,21 @@ int64_t InventoryForPopup_set_MaxItemsToUse(auto original, InventoryForPopup* a1
   }
 
   int64_t standard = original(a1, a2);
+  return standard;
+}
+
+int64_t InventoryForPopup_get_MaxItemsToUse(auto original, InventoryForPopup* a1)
+{
+  int64_t standard = original(a1);
+  if (/*a1->IsDonationUse && */ standard == 50 && Config::Get().extend_donation_slider) {
+    const auto max = Config::Get().extend_donation_max;
+    if (max > 0) {
+      standard = max;
+    } else {
+      standard = 0;
+    }
+  }
+
   return standard;
 }
 
@@ -46,19 +61,35 @@ void BundleDataWidget_OnActionButtonPressedCallback(auto original, BundleDataWid
 
 void InstallMiscPatches()
 {
-  auto h   = il2cpp_get_class_helper("Assembly-CSharp", "Digit.Prime.Inventories", "InventoryForPopup");
-  auto ptr = h.GetMethod("set_MaxItemsToUse");
-  if (!ptr) {
-    return;
+  auto h = il2cpp_get_class_helper("Assembly-CSharp", "Digit.Prime.Inventories", "InventoryForPopup");
+  if (!h.isValidHelper()) {
+    ErrorMsg::MissingHelper("Digit.Prime.Inventories", "InventoryForPopup");
+  } else {
+    auto ptr = h.GetMethod("set_MaxItemsToUse");
+    if (!ptr) {
+      ErrorMsg::MissingMethod("InventoryForPopup", "get_MaxItemsToUse");
+    } else {
+      SPUD_STATIC_DETOUR(ptr, InventoryForPopup_set_MaxItemsToUse);
+    }
+
+    ptr = h.GetMethod("get_MaxItemsToUse");
+    if (!ptr) {
+      ErrorMsg::MissingMethod("InventoryForPopup", "get_MaxItemsToUse");
+    } else {
+      SPUD_STATIC_DETOUR(ptr, InventoryForPopup_get_MaxItemsToUse);
+    }
   }
-  SPUD_STATIC_DETOUR(ptr, InventoryForPopup_set_MaxItemsToUse);
 
   auto bundle_data_widget = il2cpp_get_class_helper("Assembly-CSharp", "Digit.Prime.Shop", "BundleDataWidget");
-  ptr                     = bundle_data_widget.GetMethod("OnActionButtonPressedCallback");
-  if (!ptr) {
-    return;
+  if (!bundle_data_widget.isValidHelper()) {
+    ErrorMsg::MissingHelper("Digit.Prime.Shop", "BundleDataWidget");
+  } else {
+    auto ptr = bundle_data_widget.GetMethod("OnActionButtonPressedCallback");
+    if (!ptr) {
+      ErrorMsg::MissingMethod("BundleDataWidget", "OnActionButtonPressedCallback");
+    } else
+      SPUD_STATIC_DETOUR(ptr, BundleDataWidget_OnActionButtonPressedCallback);
   }
-  SPUD_STATIC_DETOUR(ptr, BundleDataWidget_OnActionButtonPressedCallback);
 }
 
 struct Resolution {
@@ -122,8 +153,12 @@ ResolutionArray* GetResolutions_Hook(auto original)
 
 void InstallResolutionListFix()
 {
-  SPUD_STATIC_DETOUR(il2cpp_resolve_icall_typed<ResolutionArray*()>("UnityEngine.Screen::get_resolutions()"),
-                     GetResolutions_Hook);
+  auto get_resolutions = il2cpp_resolve_icall_typed<ResolutionArray*()>("UnityEngine.Screen::get_resolutions()");
+  if (!get_resolutions) {
+    ErrorMsg::MissingMethod("UnityEngine.Screen", "get_resolutions");
+  } else {
+    SPUD_STATIC_DETOUR(get_resolutions, GetResolutions_Hook);
+  }
 }
 
 IList* ExtractBuffsOfType_Hook(auto original, ClientModifierType modifier, IList* list)
@@ -259,7 +294,7 @@ void InstallTempCrashFixes()
 {
   auto BuffService_helper =
       il2cpp_get_class_helper("Digit.Client.PrimeLib.Runtime", "Digit.PrimeServer.Services", "BuffService");
-  if (!BuffService_helper.HasClass()) {
+  if (!BuffService_helper.isValidHelper()) {
     ErrorMsg::MissingHelper("Services", "BuffService");
   } else {
     auto ptr_extract_buffs_of_type = BuffService_helper.GetMethod("ExtractBuffsOfType");
@@ -271,7 +306,7 @@ void InstallTempCrashFixes()
   }
 
   auto shop_scene_manager = il2cpp_get_class_helper("Assembly-CSharp", "Digit.Prime.Shop", "ShopSceneManager");
-  if (!shop_scene_manager.HasClass()) {
+  if (!shop_scene_manager.isValidHelper()) {
     ErrorMsg::MissingHelper("Shop", "ShopSceneManager");
   } else {
     auto reveal_show = shop_scene_manager.GetMethod("ShouldShowRevealSequence");
@@ -284,7 +319,7 @@ void InstallTempCrashFixes()
 
   static auto interstitial_controller =
       il2cpp_get_class_helper("Assembly-CSharp", "Digit.Prime.Interstitial", "InterstitialViewController");
-  if (!interstitial_controller.HasClass()) {
+  if (!interstitial_controller.isValidHelper()) {
     ErrorMsg::MissingHelper("Interstitial", "InterstitialViewController");
   } else {
     auto interstitial_show = interstitial_controller.GetMethod("AboutToShow");
@@ -297,14 +332,14 @@ void InstallTempCrashFixes()
 
   static auto actionqueue_manager =
       il2cpp_get_class_helper("Assembly-CSharp", "Prime.ActionQueue", "ActionQueueManager");
-  if (!actionqueue_manager.HasClass()) {
+  if (!actionqueue_manager.isValidHelper()) {
     ErrorMsg::MissingHelper("ActionQueue", "ActionQueueMaanger");
   } else {
     auto addtoqueue_method = actionqueue_manager.GetMethod("AddActionToQueue");
     if (addtoqueue_method == nullptr) {
       ErrorMsg::MissingMethod("ActionQueueManager", "AddActionToQueue");
     } else {
-      //SPUD_STATIC_DETOUR(addtoqueue_method, ActionQueueManager_AddActionToQueue);
+      // SPUD_STATIC_DETOUR(addtoqueue_method, ActionQueueManager_AddActionToQueue);
     }
   }
 }

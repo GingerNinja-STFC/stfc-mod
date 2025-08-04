@@ -885,7 +885,7 @@ void InstallSyncPatches()
 
   auto missions_data_container =
       il2cpp_get_class_helper("Digit.Client.PrimeLib.Runtime", "Digit.PrimeServer.Models", "MissionsDataContainer");
-  if (!missions_data_container.HasClass()) {
+  if (!missions_data_container.isValidHelper()) {
     ErrorMsg::MissingHelper("Models", "MissionsDataContainer");
   } else {
     auto ptr = missions_data_container.GetMethod("ParseBinaryObject");
@@ -898,7 +898,7 @@ void InstallSyncPatches()
 
   auto inventory_data_container =
       il2cpp_get_class_helper("Digit.Client.PrimeLib.Runtime", "Digit.PrimeServer.Services", "InventoryDataContainer");
-  if (!inventory_data_container.HasClass()) {
+  if (!inventory_data_container.isValidHelper()) {
     ErrorMsg::MissingHelper("Services", "InventoryDataContainer");
   } else {
     auto ptr = inventory_data_container.GetMethod("ParseBinaryObject");
@@ -911,7 +911,7 @@ void InstallSyncPatches()
 
   auto research_data_container =
       il2cpp_get_class_helper("Digit.Client.PrimeLib.Runtime", "Digit.PrimeServer.Services", "ResearchDataContainer");
-  if (!research_data_container.HasClass()) {
+  if (!research_data_container.isValidHelper()) {
     ErrorMsg::MissingHelper("Services", "ResearchDataContainer");
   } else {
     auto ptr = research_data_container.GetMethod("ParseBinaryObject");
@@ -924,7 +924,7 @@ void InstallSyncPatches()
 
   auto research_service =
       il2cpp_get_class_helper("Digit.Client.PrimeLib.Runtime", "Digit.PrimeServer.Services", "ResearchService");
-  if (!research_service.HasClass()) {
+  if (!research_service.isValidHelper()) {
     ErrorMsg::MissingHelper("Services", "ResearchService");
   } else {
     auto ptr = research_service.GetMethod("ParseBinaryObject");
@@ -937,7 +937,7 @@ void InstallSyncPatches()
 
   auto game_server_model_registry =
       il2cpp_get_class_helper("Digit.Client.PrimeLib.Runtime", "Digit.PrimeServer.Core", "GameServerModelRegistry");
-  if (!game_server_model_registry.HasClass()) {
+  if (!game_server_model_registry.isValidHelper()) {
     ErrorMsg::MissingHelper("Core", "GameServerModelRegistry");
   } else {
     auto ptr = game_server_model_registry.GetMethod("ProcessResultInternal");
@@ -957,7 +957,7 @@ void InstallSyncPatches()
 
   auto platform_model_registry =
       il2cpp_get_class_helper("Digit.Client.PrimeLib.Runtime", "Digit.PrimePlatform.Core", "PlatformModelRegistry");
-  if (!platform_model_registry.HasClass()) {
+  if (!platform_model_registry.isValidHelper()) {
     ErrorMsg::MissingHelper("Core", "PlatformModelRegistry");
   } else {
     auto ptr = platform_model_registry.GetMethod("ProcessResultInternal");
@@ -969,7 +969,7 @@ void InstallSyncPatches()
   }
 
   auto authentication_service = il2cpp_get_class_helper("Assembly-CSharp", "Digit.Client.Core", "PrimeApp");
-  if (!authentication_service.HasClass()) {
+  if (!authentication_service.isValidHelper()) {
     ErrorMsg::MissingHelper("Core", "PrimeApp");
   } else {
     auto ptr = authentication_service.GetMethod("InitPrimeServer");
@@ -981,7 +981,7 @@ void InstallSyncPatches()
   }
 
   auto game_server = il2cpp_get_class_helper("Digit.Client.PrimeLib.Runtime", "Digit.PrimeServer.Core", "GameServer");
-  if (!game_server.HasClass()) {
+  if (!game_server.isValidHelper()) {
     ErrorMsg::MissingHelper("Core", "GameServer");
   } else {
     auto ptr = game_server.GetMethod("SetInstanceIdHeader");

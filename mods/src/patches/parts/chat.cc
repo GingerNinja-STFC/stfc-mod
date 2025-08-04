@@ -75,7 +75,7 @@ void InstallChatPatches()
   static auto fullscreen_controller =
       il2cpp_get_class_helper("Assembly-CSharp", "Digit.Prime.Chat", "FullScreenChatViewController");
 
-  if (!fullscreen_controller.HasClass()) {
+  if (!fullscreen_controller.isValidHelper()) {
     ErrorMsg::MissingHelper("Chat", "FullScreenChatViewController");
   } else {
     auto ptr = fullscreen_controller.GetMethod("AboutToShow");
@@ -89,7 +89,7 @@ void InstallChatPatches()
   static auto preview_controller =
       il2cpp_get_class_helper("Assembly-CSharp", "Digit.Prime.Chat", "ChatPreviewController");
 
-  if (!preview_controller.HasClass()) {
+  if (!preview_controller.isValidHelper()) {
     ErrorMsg::MissingHelper("Chat", "ChatPreviewController");
   } else {
     auto ptr = preview_controller.GetMethod("AboutToShow");

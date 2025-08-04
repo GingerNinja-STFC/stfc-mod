@@ -32,7 +32,7 @@ void ToastObserver_EnqueueOrCombineToast_Hook(auto original, ToastObserver *_thi
 void InstallToastBannerHooks()
 {
   auto helper = il2cpp_get_class_helper("Assembly-CSharp", "Digit.Prime.HUD", "ToastObserver");
-  if (!helper.HasClass()) {
+  if (!helper.isValidHelper()) {
     ErrorMsg::MissingHelper("HUD", "ToastObserver");
   } else {
     auto ptr = helper.GetMethod("EnqueueToast");

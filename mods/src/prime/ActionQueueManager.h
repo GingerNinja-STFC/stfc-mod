@@ -88,7 +88,7 @@ private:
   {
     static auto class_helper = il2cpp_get_class_helper("Assembly-CSharp", "Prime.ActionQueue", "ActionQueueManager");
     static auto class_warn   = true;
-    if (!class_helper.HasClass()) {
+    if (!class_helper.isValidHelper()) {
       if (class_warn) {
         class_warn = false;
         ErrorMsg::MissingHelper("ActionQueue", "ActionQueueManager");
