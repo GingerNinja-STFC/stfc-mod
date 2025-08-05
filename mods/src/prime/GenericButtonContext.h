@@ -17,12 +17,18 @@ private:
 public:
   bool __get_Interactable()
   {
-    static auto field = get_class_helper().GetProperty("Interactable");
-    return *field.Get<bool>(this);
+    auto field = get_class_helper().GetProperty("Interactable");
+    if (field.isValidHelper()) {
+      return *field.Get<bool>(this);
+    }
+
+    return false;
   }
   void __set_Interactable(bool v)
   {
-    static auto field = get_class_helper().GetProperty("Interactable");
-    field.SetRaw<bool>(this, v);
+    auto field = get_class_helper().GetProperty("Interactable");
+    if (field.isValidHelper()) {
+      field.SetRaw<bool>(this, v);
+    }
   }
 };
