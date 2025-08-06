@@ -1,8 +1,8 @@
 # Star Trek Fleet Command - Community Patch
 
 <p align="center">
-  <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License: GPLv3" />
-  <img src="https://img.shields.io/github/sponsors/netniv" alt="Sponsorship" />
+  <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License: GPLv3">
+  <img src="https://img.shields.io/github/sponsors/netniv" alt="Sponsorship">
 </p>
 
 <p align="center">
@@ -12,6 +12,7 @@
 ## Features
 
 - Set system UI scale + adjustment factor
+- Set viewer UI scale
 - Set system zoom
   - default
   - maximum
@@ -67,11 +68,13 @@ The following keybinds have recently been added:
 Key | Shortcut
 --: | ---
 MINUS | Zoom (min)
-EQUAL | Zoom (default)
+EQUALS | Zoom (default)
 BACKSPACE | Zoom (max)
 B | Bookmarks
 F | Factions
-Shift-F | reFinery
+Shift-F | Refinery
+Shift-I | Artifact Gallery
+U | Research
 I | Inventory
 M | Active Missions
 O | Command Center
@@ -81,6 +84,8 @@ Shift-T | Away Teams
 X | ExoComp
 Z | Daily Missions
 ` | Open Alliance Chat - Side of Screen
+SHIFT-PGUP | UI Viewer Scale Up
+SHIFT-PGDOWN | UI Viewer Scale Down
 
 ## Contributing / Building
 
@@ -95,7 +100,7 @@ names:
 - community_patch_settings.toml
 - version.dll
 
-The pre-compiled DLL can be downloaded from the official assets hosted on [GitHub Releases](https://github.com/tashcan/bob/releases)
+The pre-compiled DLL can be downloaded from the official assets hosted on [GitHub Releases](https://github.com/netniv/stfc-mod/releases)
 
 ## Configuration
 
@@ -140,9 +145,9 @@ The most common problems getting the DLL to work are:
 
 ## Support
 
-Tashcan has now retired all things STFC from [Ripper's Corner](https://discord.gg/gPuQ5sPYM9) but still swing by to say hello to the wonderful man.
-
 For STFC Community Mod items, please visit the [STFC Community Mod](https://discord.gg/PrpHgs7Vjs) discord server.
+
+Tashcan has now retired all things STFC from [Ripper's Corner](https://discord.gg/gPuQ5sPYM9) but still swing by to say hello to the wonderful man.
 
 ## Disclaimer
 

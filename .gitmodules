@@ -1,3 +1,3 @@
-[submodule "third_party/spdlog"]
-	path = third_party/spdlog
-	url = https://github.com/gabime/spdlog.git
+[submodule "macos-launcher/deps/PLzmaSDK"]
+	path = macos-launcher/deps/PLzmaSDK
+	url = https://github.com/OlehKulykov/PLzmaSDK.git

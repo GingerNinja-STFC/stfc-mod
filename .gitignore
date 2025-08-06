@@ -1,6 +1,9 @@
-.vscode/
+.vscode/*
+!.vscode/extensions.json
 .vs/
+/.idea/
 /out/
+*/build/*
 /build/
 *.code-workspace
 /.cache/
@@ -8,5 +11,7 @@ compile_commands.json
 version.aps
 *.vars
 debug.log
-enc_temp_folder/
 /app/
+/.xmake/
+/vsxmake*/
+.DS_Store

@@ -5,32 +5,66 @@ on:
     branches:
       - "**"
   pull_request:
-    branches: [ "main", "dev" ]
+    branches: ["main", "dev"]
 
 jobs:
-  build:
+  build-win:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
-          submodules: 'recursive'
+          submodules: "recursive"
 
-      - uses: seanmiddleditch/gha-setup-ninja@master
-      - uses: ilammy/msvc-dev-cmd@v1
+      - name: Setup
+        uses: xmake-io/github-action-setup-xmake@v1
         with:
-          arch: amd64
+          xmake-version: latest
+          actions-cache-folder: ".xmake-cache"
+          actions-cache-key: "win-ci"
 
-      - name: Configure CMake
-        run: cmake -G "Ninja Multi-Config" -B build -S ${{ github.workspace }}
+      - name: Configure
+        run: xmake f -m releasedbg -y
 
       - name: Build
-        run: cmake --build build --target stfc-community-patch -j --config Release
+        run: xmake -y
 
       - name: Package
         run: |
-          mv build/Release/stfc-community-patch.dll version.dll
+          mv build/windows/x64/releasedbg/stfc-community-patch.dll version.dll
 
-      - uses: actions/upload-artifact@v4
+      - name: Upload
+        uses: actions/upload-artifact@v4
         with:
           name: stfc-community-patch
           path: version.dll
+
+  build-mac:
+    runs-on: macos-15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: "recursive"
+
+      - name: Set up xmake
+        uses: xmake-io/github-action-setup-xmake@v1
+        with:
+          xmake-version: latest
+          actions-cache-folder: ".xmake-cache"
+          actions-cache-key: "mac-ci"
+
+      - name: Set up Homebrew
+        uses: Homebrew/actions/setup-homebrew@main
+
+      - name: Install brew things
+        run: brew install create-dmg
+
+      - name: Create App Bundle
+        run: scripts/create-mac-dmg.sh releasedbg
+
+      - name: Upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: stfc-community-patch-installer
+          path: stfc-community-patch-installer.dmg
