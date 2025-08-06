@@ -616,6 +616,7 @@ void ExecuteSpaceAction(FleetBarViewController* fleet_bar)
                 auto button = listener->TheButton;
                 if (button) {
                   button->Press();
+                  DidHideViewers();
                   return;
                 }
               }
