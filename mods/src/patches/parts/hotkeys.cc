@@ -575,7 +575,7 @@ void ExecuteSpaceAction(FleetBarViewController* fleet_bar)
   auto has_repair        = MapKey::IsDown(GameFunction::ActionRepair);
   auto has_recall_cancel = MapKey::IsDown(GameFunction::ActionRecallCancel);
   auto has_secondary     = MapKey::IsDown(GameFunction::ActionSecondary);
-  auto has_queue         = MapKey::IsDown(GameFunction::ActionQueue) && action_queue->CanAddToQueue(fleet);
+  auto has_queue         = MapKey::IsDown(GameFunction::ActionQueue);
   auto has_queue_clear   = MapKey::IsDown(GameFunction::ActionQueueClear);
   auto has_recall =
       MapKey::IsDown(GameFunction::ActionRecall) && (!Config::Get().disable_preview_recall || !CanHideViewers());
@@ -583,7 +583,7 @@ void ExecuteSpaceAction(FleetBarViewController* fleet_bar)
   if (has_queue_clear) {
     action_queue->ClearQueue(fleet);
   } else if (has_recall_cancel
-      && (fleet->CurrentState == FleetState::WarpCharging || fleet->CurrentState == FleetState::Warping)) {
+             && (fleet->CurrentState == FleetState::WarpCharging || fleet->CurrentState == FleetState::Warping)) {
     fleet_controller->CancelButtonClicked();
   } else {
     auto all_pre_scan_widgets = ObjectFinder<PreScanTargetWidget>::GetAll();
@@ -603,23 +603,24 @@ void ExecuteSpaceAction(FleetBarViewController* fleet_bar)
           }
         }
 
-        if (has_queue && pre_scan_widget->_addToQueueButtonWidget && pre_scan_widget->_scanEngageButtonsWidget) {
-          if (pre_scan_widget->_addToQueueButtonWidget->isActiveAndEnabled) {
-            auto context = pre_scan_widget->_scanEngageButtonsWidget->Context;
-            auto type    = GetHullTypeFromBattleTarget(context);
+        if (has_queue && action_queue->IsQueueUnlocked() && pre_scan_widget->_addToQueueButtonWidget
+            && pre_scan_widget->_scanEngageButtonsWidget) {
+          auto context = pre_scan_widget->_scanEngageButtonsWidget->Context;
+          auto type    = GetHullTypeFromBattleTarget(context);
 
-            // Try once more in X frames if we get ANY
-            // in-case of failed to navgitate error?
-            if (type != HullType::ArmadaTarget && (type != HullType::Any || force_space_action_next_frame)) {
+          // Try once more in X frames if we get ANY
+          // in-case of failed to navgitate error?
+          if (type != HullType::ArmadaTarget && (type != HullType::Any || force_space_action_next_frame)) {
+            if (pre_scan_widget->_addToQueueButtonWidget->isActiveAndEnabled) {
               auto listener = pre_scan_widget->_addToQueueButtonWidget->SemaphoreListener;
-              if (listener) {
+              if (listener && !action_queue->IsQueueFull(fleet)) {
                 auto button = listener->TheButton;
                 if (button) {
                   button->Press();
                   DidHideViewers();
-                  return;
                 }
               }
+              return;
             }
 
             if (type == HullType::Any) {
@@ -633,26 +634,18 @@ void ExecuteSpaceAction(FleetBarViewController* fleet_bar)
           return pre_scan_widget->_scanEngageButtonsWidget->OnScanButtonClicked();
         }
 
-        if (has_primary) {
-          auto armada_object_viewer_widget = ObjectFinder<ArmadaObjectViewerWidget>::Get();
-          auto armada_not_shown =
-              !armada_object_viewer_widget
-              || (armada_object_viewer_widget->_visibilityController->_state != VisibilityState::Visible
-                  && armada_object_viewer_widget->_visibilityController->_state != VisibilityState::Show);
+        if (has_primary && pre_scan_widget->_scanEngageButtonsWidget
+            && pre_scan_widget->_scanEngageButtonsWidget->enabled) {
+          auto context = pre_scan_widget->_scanEngageButtonsWidget->Context;
+          auto type    = GetHullTypeFromBattleTarget(context);
 
-          if (armada_not_shown && pre_scan_widget->_scanEngageButtonsWidget
-              && pre_scan_widget->_scanEngageButtonsWidget->enabled) {
-            auto context = pre_scan_widget->_scanEngageButtonsWidget->Context;
-            auto type    = GetHullTypeFromBattleTarget(context);
-
-            // Try once more in X frames if we get ANY
-            // in-case of failed to navgitate error?
-            if (type != HullType::ArmadaTarget && (type != HullType::Any || force_space_action_next_frame)) {
-              pre_scan_widget->_scanEngageButtonsWidget->OnEngageButtonClicked();
-            } else if (type == HullType::Any) {
-              force_space_action_next_frame = true;
-            }
-
+          // Try once more in X frames if we get ANY
+          // in-case of failed to navgitate error?
+          if (type != HullType::ArmadaTarget && (type != HullType::Any || force_space_action_next_frame)) {
+            pre_scan_widget->_scanEngageButtonsWidget->OnEngageButtonClicked();
+            return;
+          } else if (type == HullType::Any) {
+            force_space_action_next_frame = true;
             return;
           }
         }
@@ -679,13 +672,20 @@ void ExecuteSpaceAction(FleetBarViewController* fleet_bar)
       }
     } else if (auto navigation_ui_controller = ObjectFinder<NavigationInteractionUIViewController>::Get();
                navigation_ui_controller && has_primary) {
-      if (auto armada_object_viewer_widget = ObjectFinder<ArmadaObjectViewerWidget>::Get();
-          armada_object_viewer_widget
-          && (armada_object_viewer_widget->_visibilityController->_state == VisibilityState::Visible
-              || armada_object_viewer_widget->_visibilityController->_state == VisibilityState::Show)) {
-        auto button = armada_object_viewer_widget->__get__joinContext();
+      auto armada_widget = ObjectFinder<ArmadaObjectViewerWidget>::Get();
+      auto armada_state  = VisibilityState::Unknown;
+
+      if (armada_widget) {
+        if (armada_widget->_visibilityController) {
+          armada_state = armada_widget->_visibilityController->State;
+        }
+      }
+
+      spdlog::trace("have armada? {}, State {}", (armada_widget ? "Yes" : "No"), (int)armada_state);
+      if (armada_widget && (armada_state == VisibilityState::Visible || armada_state == VisibilityState::Show)) {
+        auto button = armada_widget->__get__joinContext();
         if (button && button->Interactable) {
-          armada_object_viewer_widget->ValidateThenJoinArmada();
+          armada_widget->ValidateThenJoinArmada();
         }
       } else {
         navigation_ui_controller->OnSetCourseButtonClick();

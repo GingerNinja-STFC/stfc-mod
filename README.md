@@ -63,8 +63,8 @@ SHIFT-PGDOWN | UI Viewer Scale Down
 ### Combat/Navigation shorcuts
 Key | Shortcut
 --: | ---
-SPACE | Perform default action
-SPACE | Add to Kir'Shira queue (if owned) and already attacking
+SPACE or MOUSE1 | Perform default action (MOUSE1 = right mouse click)
+SPACE or MOUSE1 | Add to Kir'Shira queue (if owned) and already attacking
 1-8 | Ship select/focus
 R | When ship selected, recall ship
 R | When clicking on mine/player/enemy, perform non-default action (eg, scan)

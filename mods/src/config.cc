@@ -408,11 +408,7 @@ void Config::Load()
   this->hotkeys_extended    = get_config_or_default(config, parsed, "control", "hotkeys_extended", true);
   this->use_scopely_hotkeys = get_config_or_default(config, parsed, "control", "use_scopely_hotkeys", false);
   this->select_timer        = get_config_or_default(config, parsed, "control", "select_timer", 500);
-#if DEBUG
   this->enable_experimental = get_config_or_default(config, parsed, "control", "enable_experimental", false);
-#else
-  this->enable_experimental = false;
-#endif
 
   this->ui_scale            = get_config_or_default(config, parsed, "graphics", "ui_scale", 0.9f);
   this->ui_scale_adjust     = get_config_or_default(config, parsed, "graphics", "ui_scale_adjust", 0.05f);
@@ -562,9 +558,9 @@ void Config::Load()
   parse_config_shortcut(config, parsed, "select_ship8", GameFunction::SelectShip8, "8");
   parse_config_shortcut(config, parsed, "select_current", GameFunction::SelectCurrent, "CTRL-SPACE");
 
-  parse_config_shortcut(config, parsed, "action_primary", GameFunction::ActionPrimary, "SPACE");
+  parse_config_shortcut(config, parsed, "action_primary", GameFunction::ActionPrimary, "SPACE|MOUSE1");
   parse_config_shortcut(config, parsed, "action_secondary", GameFunction::ActionSecondary, "R");
-  parse_config_shortcut(config, parsed, "action_queue", GameFunction::ActionQueue, "ALT-Q");
+  parse_config_shortcut(config, parsed, "action_queue", GameFunction::ActionQueue, "SPACE|MOUSE1");
   parse_config_shortcut(config, parsed, "action_queue_clear", GameFunction::ActionQueueClear, "CTRL-C");
   parse_config_shortcut(config, parsed, "action_view", GameFunction::ActionView, "V");
   parse_config_shortcut(config, parsed, "action_recall", GameFunction::ActionRecall, "R");
