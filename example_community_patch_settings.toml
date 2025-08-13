@@ -8,7 +8,7 @@ assets_url_override = ''
 settings_url = ''
 
 [control]
-# Enable experimental features (dev only, no effect on prood)
+# Enable experimental features
 enable_experimental = false
 
 # If you don't want any hotkeys you can set this to false
@@ -18,8 +18,31 @@ hotkeys_enabled = true
 # If you prefer to disable the extended hotkeys set this to false
 hotkeys_extended = true
 
+# If you have the Kir'Shara artifact, should the queue be enabled
+# by default, or not?
+queue_enabled = true
+
+# The amount of time in milliseconds (ms) that is required for
+# two taps of a number key (1-8) to be considered a dobule-taps
+# and locate the ship from that dock number.
+#
+# NOTE: Default is 500ms.
+#
+#       A lower number will need a faster to hit the same
+#       number a second time (double tap).
+#
+#       A higher value means you can take longer to hit the same
+#       number a second time (double tap).
+#
+#       A very high number, 999999 or greater, will simulate the
+#       previous versions functionality of always consider the
+#       same number a second time as a double tap.
+select_timer = 500
+
 # If you prefer to use Scopely's hotkeys set this to true
 use_scopely_hotkeys = false
+
+
 
 [graphics]
 # Allow borderless full screen mode, set to false to disable
@@ -30,6 +53,7 @@ default_system_zoom = 1750.0
 
 # Allow free resizing, set to false to disable
 free_resize = true
+
 # This controls the zoom speed when using Q/E in System View, defaults to 350
 keyboard_zoom_speed = 350.0
 
@@ -67,32 +91,32 @@ use_presets_as_default = true
 zoom = 5000.0
 
 [shortcuts]
+# Toggle Kir'Shara queue (Requires Kir'Shara)
+toggle_queue = "CTRL-Q"
+
+# Queue hostiles instead of attacking (Requires Kir'Shara)
+action_queue = 'SPACE|MOUSE1'
+
+# Clear hostile queue (Does not cancel primary attack, requires Kir'Shara)
+action_queue_clear = 'CTRL-C'
+
 # Primary actions such as Mine or Attack or Go (SPACE bar or Mouse Right Click)
 action_primary = 'SPACE|MOUSE1'
 
-# Recall ship action (R or Mouse Side Button 2)
+# Recall ship action (R or Mouse Side Button)
 action_recall = 'R|MOUSE3'
 
-# Cancel a recall operation (currently disabled due to crash)
+# Cancel a recall operation (SPACE bar or Mouse Right Click)
 action_recall_cancel = 'SPACE|MOUSE1'
 
 # Repair ship action (R or Mouse Side Button 2)
 action_repair = 'R|MOUSE3'
 
 # Switch between Cargo and Preview screens when clicked on a ship/node/station (TAB or Mouse Side Button 1)
-action_secondary = 'TAB|MOUSE2'
+action_secondary = 'TAB|MOUSE4'
 
-# Toggle rewards view
-action_view = 'V'
-
-# Toggle Kir'Shara queue
-toggle_queue = "CTRL-Q"
-
-# Add to Kir'Shara queue
-action_queue = "SPACE|MOUSE1"
-
-# Clear Kir'Shara queue
-action_queue_clear = "CTRL-C"
+# Toggle rewards view (V or Mouse Scroll Click)
+action_view = 'V|MOUSE2'
 
 # Disable all hotkeys when using mod hotkeys
 hotkeys_disble = 'CTRL-ALT-MINUS'
@@ -120,28 +144,28 @@ select_chatprivate = 'CTRL-3'
 # Locate currently selected ship
 select_current = 'CTRL-SPACE'
 
-# Select ship 1 (or locate on second press)
+# Select ship 1 (or locate on second press - see select_timer)
 select_ship1 = '1'
 
-# Select ship 2 (or locate on second press)
+# Select ship 2 (or locate on second press - see select_timer)
 select_ship2 = '2'
 
-# Select ship 3 (or locate on second press)
+# Select ship 3 (or locate on second press - see select_timer)
 select_ship3 = '3'
 
-# Select ship 4 (or locate on second press)
+# Select ship 4 (or locate on second press - see select_timer)
 select_ship4 = '4'
 
-# Select ship 5 (or locate on second press)
+# Select ship 5 (or locate on second press - see select_timer)
 select_ship5 = '5'
 
-# Select ship 6 (or locate on second press)
+# Select ship 6 (or locate on second press - see select_timer)
 select_ship6 = '6'
 
-# Select ship 7 (or locate on second press)
+# Select ship 7 (or locate on second press - see select_timer)
 select_ship7 = '7'
 
-# Select ship 8 (or locate on second press)
+# Select ship 8 (or locate on second press - see select_timer)
 select_ship8 = '8'
 
 # Set zoom presets from zoom for current session
@@ -355,10 +379,10 @@ disable_escape_exit = true
 disable_galaxy_chat = false
 
 # Stop locate working when ship or node previews are displayed
-disable_preview_locate = true
+disable_preview_locate = false
 
 # Stop recall working when ship or node previews are displayed
-disable_preview_recall = true
+disable_preview_recall = false
 
 # Allow suppressing configured banners (disabled_banner_types) from being displayed
 # This specifies the types of Banners you DON'T want to see, This must be a comma seperated list enclosed in single quotes.
