@@ -42,8 +42,6 @@ select_timer = 500
 # If you prefer to use Scopely's hotkeys set this to true
 use_scopely_hotkeys = false
 
-
-
 [graphics]
 # Allow borderless full screen mode, set to false to disable
 borderless_fullscreen_f11 = true
