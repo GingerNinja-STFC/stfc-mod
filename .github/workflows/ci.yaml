@@ -23,15 +23,27 @@ jobs:
           package-cache: true
           package-cache-key: 'stfc-mod-ci-win'
 
+      - name: Cache xmake packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.xmake/packages
+          key: ${{ runner.os }}-xmake-packages-${{ hashFiles('xmake.lua') }}
+
+      - name: Cache xmake build
+        uses: actions/cache@v3
+        with:
+          path: build/.xmake
+          key: ${{ runner.os }}-xmake-build-${{ hashFiles('xmake.lua') }}
+
       - name: Configure
-        run: xmake f -m releasedbg -y
+        run: xmake f -m release -y
 
       - name: Build
         run: xmake -y
 
       - name: Package
         run: |
-          mv build/windows/x64/releasedbg/stfc-community-patch.dll version.dll
+          mv build/windows/x64/release/stfc-community-patch.dll version.dll
 
       - name: Upload
         uses: actions/upload-artifact@v4
@@ -54,6 +66,18 @@ jobs:
           package-cache: true
           package-cache-key: 'stfc-mod-ci-mac'
 
+      - name: Cache xmake packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.xmake/packages
+          key: ${{ runner.os }}-xmake-packages-${{ hashFiles('xmake.lua') }}
+
+      - name: Cache xmake build
+        uses: actions/cache@v3
+        with:
+          path: build/.xmake
+          key: ${{ runner.os }}-xmake-build-${{ hashFiles('xmake.lua') }}
+
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@main
 
@@ -61,7 +85,7 @@ jobs:
         run: brew install create-dmg
 
       - name: Create App Bundle
-        run: scripts/create-mac-dmg.sh releasedbg
+        run: scripts/create-mac-dmg.sh release
 
       - name: Upload
         uses: actions/upload-artifact@v4
