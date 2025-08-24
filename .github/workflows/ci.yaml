@@ -16,15 +16,11 @@ jobs:
         with:
           submodules: "recursive"
 
+      - name: Ensure package cache folder exists
+        run: mkdir -p ~/.xmake/packages
+
       - name: Ensure build cache folder exists
         run: mkdir -p build/.xmake
-
-      - name: Setup
-        uses: xmake-io/github-action-setup-xmake@v1
-        with:
-          xmake-version: latest
-          package-cache: true
-          package-cache-key: 'stfc-mod-ci-win'
 
       - name: Cache xmake packages
         uses: actions/cache@v3
@@ -37,6 +33,13 @@ jobs:
         with:
           path: build/.xmake
           key: ${{ runner.os }}-xmake-build-${{ hashFiles('xmake.lua') }}
+
+      - name: Setup
+        uses: xmake-io/github-action-setup-xmake@v1
+        with:
+          xmake-version: latest
+          package-cache: true
+          package-cache-key: 'stfc-mod-ci-win'
 
       - name: Configure
         run: xmake f -m release -y
@@ -62,15 +65,11 @@ jobs:
         with:
           submodules: "recursive"
 
+      - name: Ensure package cache folder exists
+        run: mkdir -p ~/.xmake/packages
+
       - name: Ensure build cache folder exists
         run: mkdir -p build/.xmake
-
-      - name: Set up xmake
-        uses: xmake-io/github-action-setup-xmake@v1
-        with:
-          xmake-version: latest
-          package-cache: true
-          package-cache-key: 'stfc-mod-ci-mac'
 
       - name: Cache xmake packages
         uses: actions/cache@v3
@@ -83,6 +82,13 @@ jobs:
         with:
           path: build/.xmake
           key: ${{ runner.os }}-xmake-build-${{ hashFiles('xmake.lua') }}
+
+      - name: Set up xmake
+        uses: xmake-io/github-action-setup-xmake@v1
+        with:
+          xmake-version: latest
+          package-cache: true
+          package-cache-key: 'stfc-mod-ci-mac'
 
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@main
