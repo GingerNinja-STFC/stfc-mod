@@ -10,6 +10,12 @@ do
     add_files("src/prime/proto/*.proto")
     set_exceptions("cxx")
     add_defines("NOMINMAX")
+    
+    if is_mode("releasedbg") then
+        add_defines("_MODDBG")      -- enable your debug flag
+        add_cxflags("/Zi")         -- optional: include debug info in release
+    end
+    
     if is_plat("windows") then
         add_cxflags("/bigobj")
         add_linkdirs("src/il2cpp")

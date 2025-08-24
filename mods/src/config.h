@@ -41,7 +41,7 @@ public:
   float system_pan_momentum_falloff;
 
   float keyboard_zoom_speed;
-  int select_timer;
+  int   select_timer;
 
   bool  queue_enabled;
   bool  hotkeys_enabled;
@@ -96,6 +96,22 @@ public:
   bool sync_buildings;
   bool sync_ships;
 
+  bool installUiScaleHooks;
+  bool installZoomHooks;
+  bool installBuffFixHooks;
+  bool installToastBannerHooks;
+  bool installPanHooks;
+  bool installImproveResponsivenessHooks;
+  bool installHotkeyHooks;
+  bool installFreeResizeHooks;
+  bool installTempCrashFixes;
+  bool installTestPatches;
+  bool installMiscPatches;
+  bool installChatPatches;
+  bool installResolutionListFix;
+  bool installSyncPatches;
+  bool installObjectTracker;
+  
   std::string config_settings_url;
   std::string config_assets_url_override;
 };

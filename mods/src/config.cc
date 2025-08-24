@@ -142,8 +142,8 @@ float Config::GetDPI()
     auto horizontalScale = ((double)cxPhysical / (double)cxLogical);
     auto verticalScale   = ((double)cyPhysical / (double)cyLogical);
 
-    spdlog::debug("Horizonzal scaling: {}", horizontalScale);
-    spdlog::debug("Vertical scaling: {}", verticalScale);
+    spdlog::trace("Horizonzal scaling: {}", horizontalScale);
+    spdlog::trace("Vertical scaling: {}", verticalScale);
 
     dpi         = horizontalScale;
     lastMonitor = monitor;
@@ -238,7 +238,7 @@ inline T get_config_or_default(toml::table config, toml::table& new_config, std:
 
   sectionTable.as_table()->insert_or_assign(item, final_value);
 
-  spdlog::info("config value {}.{} value: {}", section, item, final_value);
+  spdlog::debug("config value {}.{} value: {}", section, item, final_value);
 
   return (T)final_value;
 }
@@ -279,7 +279,7 @@ void read_sync_targets(toml::table config, toml::table& new_config, std::map<std
     if (sync_targets.emplace(url.value(), token.value()).second) {
       new_config["sync"]["targets"].as_table()->emplace<toml::table>(
           key, toml::table{{"url", url.value()}, {"token", token.value()}});
-      spdlog::info("config value sync.targets.{} url: {}, token: {}", key, url.value(), token.value());
+      spdlog::debug("config value sync.targets.{} url: {}, token: {}", key, url.value(), token.value());
     }
   }
 }
@@ -318,7 +318,7 @@ void parse_config_shortcut(toml::table config, toml::table& new_config, std::str
   auto shortcut = MapKey::GetShortcuts(gameFunction);
   sectionTable.as_table()->insert_or_assign(item, shortcut);
 
-  spdlog::info("shortcut value {}.{} value: {}", section, item, shortcut);
+  spdlog::debug("shortcut value {}.{} value: {}", section, item, shortcut);
 }
 
 void migrate_mac_config_if_needed(const char* filename)
@@ -382,10 +382,6 @@ void Config::Load()
 {
   auto filename = File::Config();
 
-  spdlog::info("=-=-=-==-=-=-=-=-=-=-=-=-=-=");
-  spdlog::info("Loading Config :: {}", filename);
-  spdlog::info("=-=-=-==-=-=-=-=-=-=-=-=-=-=");
-
   migrate_mac_config_if_needed(filename);
   delete_old_vars();
 
@@ -397,11 +393,49 @@ void Config::Load()
     write_config = true;
   } catch (const toml::parse_error& e) {
     spdlog::warn("Failed to load config file, falling back to default settings: {}", e.description());
+    spdlog::debug("");
     write_config = false;
   } catch (...) {
-    spdlog::info("Failed to load config file, falling back to default settings");
+    spdlog::warn("Failed to load config file, falling back to default settings");
+    spdlog::debug("");
     write_config = false;
   }
+
+#if _MODDBG
+  this->installUiScaleHooks     = get_config_or_default(config, parsed, "patches", "uiscalehooks", true);
+  this->installZoomHooks        = get_config_or_default(config, parsed, "patches", "zoomhooks", true);
+  this->installBuffFixHooks     = get_config_or_default(config, parsed, "patches", "bufffixhooks", true);
+  this->installToastBannerHooks = get_config_or_default(config, parsed, "patches", "toastbannerhooks", true);
+  this->installPanHooks         = get_config_or_default(config, parsed, "patches", "panhooks", true);
+  this->installImproveResponsivenessHooks =
+      get_config_or_default(config, parsed, "patches", "improveresponsivenesshooks", true);
+  this->installHotkeyHooks       = get_config_or_default(config, parsed, "patches", "hotkeyhooks", true);
+  this->installFreeResizeHooks   = get_config_or_default(config, parsed, "patches", "freeresizehooks", true);
+  this->installTempCrashFixes    = get_config_or_default(config, parsed, "patches", "tempcrashfixes", true);
+  this->installTestPatches       = get_config_or_default(config, parsed, "patches", "testpatches", true);
+  this->installMiscPatches       = get_config_or_default(config, parsed, "patches", "miscpatches", true);
+  this->installChatPatches       = get_config_or_default(config, parsed, "patches", "chatpatches", true);
+  this->installResolutionListFix = get_config_or_default(config, parsed, "patches", "resolutionlistfix", true);
+  this->installSyncPatches       = get_config_or_default(config, parsed, "patches", "syncpatches", true);
+  this->installObjectTracker     = get_config_or_default(config, parsed, "patches", "objecttracker", true);
+  spdlog::debug("");
+#else
+  this->installUiScaleHooks               = true;
+  this->installZoomHooks                  = true;
+  this->installBuffFixHooks               = true;
+  this->installToastBannerHooks           = true;
+  this->installPanHooks                   = true;
+  this->installImproveResponsivenessHooks = true;
+  this->installHotkeyHooks                = true;
+  this->installFreeResizeHooks            = true;
+  this->installTempCrashFixes             = true;
+  this->installTestPatches                = true;
+  this->installMiscPatches                = true;
+  this->installChatPatches                = true;
+  this->installResolutionListFix          = true;
+  this->installSyncPatches                = true;
+  this->installObjectTracker              = true;
+#endif
 
   this->queue_enabled       = get_config_or_default(config, parsed, "control", "queue_enabled", true);
   this->hotkeys_enabled     = get_config_or_default(config, parsed, "control", "hotkeys_enabled", true);
@@ -409,6 +443,8 @@ void Config::Load()
   this->use_scopely_hotkeys = get_config_or_default(config, parsed, "control", "use_scopely_hotkeys", false);
   this->select_timer        = get_config_or_default(config, parsed, "control", "select_timer", 500);
   this->enable_experimental = get_config_or_default(config, parsed, "control", "enable_experimental", false);
+
+  spdlog::debug("");
 
   this->ui_scale            = get_config_or_default(config, parsed, "graphics", "ui_scale", 0.9f);
   this->ui_scale_adjust     = get_config_or_default(config, parsed, "graphics", "ui_scale_adjust", 0.05f);
@@ -421,6 +457,8 @@ void Config::Load()
     this->system_pan_momentum = get_config_or_default(config, parsed, "graphics", "system_pan_momentum", 0.2f);
   }
 
+  spdlog::debug("");
+
   this->system_pan_momentum_falloff =
       get_config_or_default(config, parsed, "graphics", "system_pan_momentum_falloff", 0.8f);
   this->borderless_fullscreen_f11 =
@@ -429,6 +467,8 @@ void Config::Load()
   this->show_all_resolutions = get_config_or_default(config, parsed, "graphics", "show_all_resolutions", false);
   this->default_system_zoom  = get_config_or_default(config, parsed, "graphics", "default_system_zoom", 0.0f);
 
+  spdlog::debug("");
+
   this->system_zoom_preset_1   = get_config_or_default(config, parsed, "graphics", "system_zoom_preset_1", 0.0f);
   this->system_zoom_preset_2   = get_config_or_default(config, parsed, "graphics", "system_zoom_preset_2", 0.0f);
   this->system_zoom_preset_3   = get_config_or_default(config, parsed, "graphics", "system_zoom_preset_3", 0.0f);
@@ -436,7 +476,11 @@ void Config::Load()
   this->system_zoom_preset_5   = get_config_or_default(config, parsed, "graphics", "system_zoom_preset_5", 0.0f);
   this->use_presets_as_default = get_config_or_default(config, parsed, "graphics", "use_presets_as_default", false);
 
+  spdlog::debug("");
+
   this->use_out_of_dock_power = get_config_or_default(config, parsed, "buffs", "use_out_of_dock_power", false);
+
+  spdlog::debug("");
 
   this->disable_escape_exit    = get_config_or_default(config, parsed, "ui", "disable_escape_exit", false);
   this->disable_preview_locate = get_config_or_default(config, parsed, "ui", "disable_preview_locate", false);
@@ -455,8 +499,15 @@ void Config::Load()
 
   this->always_skip_reveal_sequence = get_config_or_default(config, parsed, "ui", "always_skip_reveal_sequence", false);
 
-  this->sync_proxy      = get_config_or_default<std::string>(config, parsed, "sync", "proxy", "");
-  this->sync_file       = get_config_or_default<std::string>(config, parsed, "sync", "file", "");
+  // must explicitly include std::string typing here, or we get back char * which fails us!
+  std::string disabled_banner_types_str =
+      get_config_or_default<std::string>(config, parsed, "ui", "disabled_banner_types", "");
+
+  spdlog::debug("");
+
+  this->sync_proxy = get_config_or_default<std::string>(config, parsed, "sync", "proxy", "");
+  this->sync_file  = get_config_or_default<std::string>(config, parsed, "sync", "file", "");
+
   this->sync_debug      = get_config_or_default(config, parsed, "sync", "debug", false);
   this->sync_logging    = get_config_or_default(config, parsed, "sync", "logging", false);
   this->sync_battlelogs = get_config_or_default(config, parsed, "sync", "battlelogs", false);
@@ -468,6 +519,8 @@ void Config::Load()
   this->sync_traits     = get_config_or_default(config, parsed, "sync", "traits", false);
   this->sync_buildings  = get_config_or_default(config, parsed, "sync", "buildings", false);
   this->sync_ships      = get_config_or_default(config, parsed, "sync", "ships", false);
+
+  spdlog::debug("");
 
   parsed["sync"].as_table()->emplace<toml::table>("targets", toml::table());
 
@@ -494,9 +547,7 @@ void Config::Load()
     }
   }
 
-  // must explicitly include std::string typing here, or we get back char * which fails us!
-  std::string disabled_banner_types_str =
-      get_config_or_default<std::string>(config, parsed, "ui", "disabled_banner_types", "");
+  spdlog::debug("");
 
   this->config_settings_url = get_config_or_default<std::string>(config, parsed, "config", "settings_url", "");
   this->config_assets_url_override =
@@ -504,11 +555,13 @@ void Config::Load()
 
   std::vector<std::string> types = StrSplit(disabled_banner_types_str, ',');
 
+  spdlog::debug("");
+
   std::string       bannerString = "";
   std::stringstream message;
   message << "Parsing banner strings";
 
-  spdlog::info(message.str());
+  spdlog::debug(message.str());
 
   for (const auto& [key, value] : bannerTypes) {
     auto upper_key = AsciiStrToUpper(key);
@@ -529,9 +582,11 @@ void Config::Load()
 
   message.str("");
   message << "Final disabledbanner types: " << bannerString;
-  spdlog::info(message.str());
+  spdlog::debug(message.str());
 
   parsed["ui"].as_table()->insert_or_assign("disabled_banner_types", bannerString);
+
+  spdlog::debug("");
 
   if (this->enable_experimental) {
     parse_config_shortcut(config, parsed, "move_left", GameFunction::MoveLeft, "LEFT|A");
@@ -639,6 +694,8 @@ void Config::Load()
     parse_config_shortcut(config, parsed, "toggle_cargo_armada", GameFunction::ToggleCargoArmada, "ALT-5");
   }
 
+  spdlog::debug("");
+
   if (!std::filesystem::exists(File::MakePath(File::Config()))) {
     message.str("");
     message << "Creating " << File::Config() << " (default config file)";
@@ -652,13 +709,17 @@ void Config::Load()
   spdlog::info(message.str());
 
   if (std::filesystem::exists(FILE_DEF_PARSED)) {
+    message.str("");
     message << "Removing " << FILE_DEF_PARSED << " (old parsed file)";
+    spdlog::info(message.str());
+
     std::filesystem::remove(FILE_DEF_PARSED);
   }
 
+  
   Config::Save(parsed, File::Vars());
 
-  std::cout << message.str() << ":\n-----------------------------\n\n"
+  std::cout << "\n\n-----------------------------\n\n"
             << parsed << "\n\n-----------------------------\nVersion "
 
 #if VERSION_PATCH
@@ -673,4 +734,5 @@ void Config::Load()
             << "\n\nPlease see https://github.com/netniv/stfc-mod for latest configuration help, examples and future "
                "releases\n"
             << "or visit the STFC Community Mod discord server at https://discord.gg/PrpHgs7Vjs\n\n";
+
 }
