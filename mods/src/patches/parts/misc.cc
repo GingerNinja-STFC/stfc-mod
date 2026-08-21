@@ -7,6 +7,7 @@
 #include <prime/IList.h>
 #include <prime/InventoryForPopup.h>
 #include <prime/ShopSummaryDirector.h>
+#include <prime/TournamentManager.h>
 
 #include <il2cpp/il2cpp_helper.h>
 
@@ -62,6 +63,32 @@ void BundleDataWidget_OnActionButtonPressedCallback(auto original, BundleDataWid
   }
 }
 
+// When skip_event_reward_animation is enabled, redirect the full-popup event
+// reward claim paths to the raw (animation-free) claim methods, then open the
+// events section directly. ClaimRewardsWithPopup(ITournament, Action<long>).
+void TournamentManager_ClaimRewardsWithPopup_Hook(auto original, TournamentManager* _this, void* tournament,
+                                                    void* onSuccessCallback)
+{
+  if (Config::Get().skip_event_reward_animation && _this != nullptr) {
+    _this->ClaimRewards(tournament, nullptr, true);
+    Hub::get_SectionManager()->TriggerSectionChange(SectionID::Tournament_Group_Selection, nullptr, false, false, true);
+    return;
+  }
+  original(_this, tournament, onSuccessCallback);
+}
+
+// ClaimAllRewardsWithPopup(List<ITournament>, EventModel).
+void TournamentManager_ClaimAllRewardsWithPopup_Hook(auto original, TournamentManager* _this, void* tournaments,
+                                                       void* eventModel)
+{
+  if (Config::Get().skip_event_reward_animation && _this != nullptr) {
+    _this->ClaimAllRewards(tournaments, nullptr, true);
+    Hub::get_SectionManager()->TriggerSectionChange(SectionID::Tournament_Group_Selection, nullptr, false, false, true);
+    return;
+  }
+  original(_this, tournaments, eventModel);
+}
+
 void InstallMiscPatches()
 {
 #if _WIN32
@@ -101,6 +128,22 @@ void InstallMiscPatches()
       ErrorMsg::MissingMethod("BundleDataWidget", "OnActionButtonPressedCallback");
     } else
       SPUD_STATIC_DETOUR(ptr, BundleDataWidget_OnActionButtonPressedCallback);
+  }
+
+  auto tournament_manager = il2cpp_get_class_helper("Assembly-CSharp", "Digit.Prime.Tournaments", "TournamentManager");
+  if (!tournament_manager.isValidHelper()) {
+    ErrorMsg::MissingHelper("Digit.Prime.Tournaments", "TournamentManager");
+  } else {
+    if (auto ptr = tournament_manager.GetMethod("ClaimRewardsWithPopup")) {
+      SPUD_STATIC_DETOUR(ptr, TournamentManager_ClaimRewardsWithPopup_Hook);
+    } else {
+      ErrorMsg::MissingMethod("TournamentManager", "ClaimRewardsWithPopup");
+    }
+    if (auto ptr = tournament_manager.GetMethod("ClaimAllRewardsWithPopup")) {
+      SPUD_STATIC_DETOUR(ptr, TournamentManager_ClaimAllRewardsWithPopup_Hook);
+    } else {
+      ErrorMsg::MissingMethod("TournamentManager", "ClaimAllRewardsWithPopup");
+    }
   }
 }
 

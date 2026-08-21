@@ -895,7 +895,9 @@ void Config::Load()
       get_config_or_default(config, parsed, "ui", "cargo_significant_decimals", DCU::cargo_significant_decimals, write_config);
 
   this->always_skip_reveal_sequence = get_config_or_default(config, parsed, "ui", "always_skip_reveal_sequence",
-                                                            DCU::always_skip_reveal_sequence, write_config);
+                                                             DCU::always_skip_reveal_sequence, write_config);
+  this->skip_event_reward_animation = get_config_or_default(config, parsed, "ui", "skip_event_reward_animation",
+                                                             DCU::skip_event_reward_animation, write_config);
   this->mission_hud_buttons.clear();
   this->mission_hud_buttons.emplace(
       "q_trials", get_mission_hud_visibility(config, parsed, "hud_q_trials", DCU::hud_q_trials, write_config));

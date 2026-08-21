@@ -567,6 +567,9 @@ zoom_reset = "="
 # Slaat de onthullig animatie van een kist altijd over en opent gewoon de kist
 always_skip_reveal_sequence = true
 
+# Sla de beloningsanimatie van evenementen over en open de evenementen direct
+skip_event_reward_animation = false
+
 # Open the bulk gift claim flyout automatically
 auto_open_bulk_claim_flyout = false
 
