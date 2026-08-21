@@ -63,9 +63,6 @@ void BundleDataWidget_OnActionButtonPressedCallback(auto original, BundleDataWid
   }
 }
 
-// When skip_event_reward_animation is enabled, redirect the full-popup event
-// reward claim paths to the raw (animation-free) claim methods, then open the
-// events section directly. ClaimRewardsWithPopup(ITournament, Action<long>).
 void TournamentManager_ClaimRewardsWithPopup_Hook(auto original, TournamentManager* _this, void* tournament,
                                                     void* onSuccessCallback)
 {
@@ -77,7 +74,6 @@ void TournamentManager_ClaimRewardsWithPopup_Hook(auto original, TournamentManag
   original(_this, tournament, onSuccessCallback);
 }
 
-// ClaimAllRewardsWithPopup(List<ITournament>, EventModel).
 void TournamentManager_ClaimAllRewardsWithPopup_Hook(auto original, TournamentManager* _this, void* tournaments,
                                                        void* eventModel)
 {
