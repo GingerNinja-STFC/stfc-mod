@@ -205,6 +205,7 @@ public:
   bool show_armada_cargo;
 
   bool                                        always_skip_reveal_sequence;
+  bool                                        skip_event_reward_animation;
   std::map<std::string, MissionHudVisibility> mission_hud_buttons;
 
   bool       sync_logging;
