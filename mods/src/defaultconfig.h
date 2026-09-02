@@ -87,6 +87,9 @@ namespace Patches
   constexpr bool cargoformathooks           = true;  // on by default: cargo number precision override
   constexpr bool officersorthooks           = true;  // restore Below Deck Ability sort option
   constexpr bool pinnedshiphooks            = true;  // pin configured ships to front of fleet dock sort
+  constexpr bool shoppipfix                 = true;  // refresh stale store "can afford" pips on inventory changes
+  constexpr bool officerpipfix              = true;  // clear stale officer "can promote" breadcrumbs behind the officer tab pip
+  constexpr bool refineryarmadapipfix       = true;  // stop cross-alliance armadas from lighting up the Refining tab pip
 } // namespace Patches
 
 namespace Shortcuts

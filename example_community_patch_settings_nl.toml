@@ -238,11 +238,14 @@ hotkeyhooks = true
 loadingscreenhooks = true
 miscpatches = true
 objecttracker = true
+officerpipfix = true
 officersorthooks = true
 panhooks = true
 
 # Zet geconfigureerde schepen vooraan in het vlootbeheerdok
 pinnedshiphooks = true
+refineryarmadapipfix = true
+shoppipfix = true
 syncpatches = true
 tempcrashfixes = true
 testpatches = true

@@ -238,11 +238,14 @@ hotkeyhooks = true
 loadingscreenhooks = true
 miscpatches = true
 objecttracker = true
+officerpipfix = true
 officersorthooks = true
 panhooks = true
 
 # Помещает настроенные корабли в начало списка в окне управления флотом
 pinnedshiphooks = true
+refineryarmadapipfix = true
+shoppipfix = true
 syncpatches = true
 tempcrashfixes = true
 testpatches = true

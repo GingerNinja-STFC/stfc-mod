@@ -48,6 +48,9 @@ void InstallDoubleClickAssignShipHooks();
 void InstallInstantWarpConfirmationHooks();
 void InstallForbiddenTechConfirmationHooks();
 void InstallAudioEventHooks();
+void InstallShopPipFixHooks();
+void InstallOfficerPipFixHooks();
+void InstallRefineryArmadaPipFixHooks();
 
 __int64 il2cpp_init_hook(auto original, const char* domain_name)
 {
@@ -151,6 +154,9 @@ __int64 il2cpp_init_hook(auto original, const char* domain_name)
       {"InstantWarpConfirm",   {InstallInstantWarpConfirmationHooks, &cfg.installInstantWarpConfirmationHooks}},
       {"ForbiddenTechConfirm", {InstallForbiddenTechConfirmationHooks, &cfg.auto_confirm_ft_upgrade}},
       {"AudioEvents",          {InstallAudioEventHooks,                 &cfg.installAudioEventHooks}},
+      {"ShopPipFix",           {InstallShopPipFixHooks,           &cfg.installShopPipFix}},
+      {"OfficerPipFix",        {InstallOfficerPipFixHooks,        &cfg.installOfficerPipFix}},
+      {"RefineryArmadaPipFix", {InstallRefineryArmadaPipFixHooks, &cfg.installRefineryArmadaPipFix}},
   };
   printf("il2cpp_init_hook(%s)\n", domain_name);
 

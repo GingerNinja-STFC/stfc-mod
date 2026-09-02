@@ -278,4 +278,16 @@ public:
 
   // Fleet management dock ship sort: pin configured ships to the front
   bool installPinnedShipSortHooks;
+
+  // Refresh stale "can afford" store pips (refinery, faction store, resources store, ...)
+  // when inventory items or resources change
+  bool installShopPipFix;
+
+  // Clear stale "can promote" officer breadcrumbs that keep the officer tab pip alive
+  bool installOfficerPipFix;
+
+  // Remove PipType.CrossAllianceArmadas from the Refining HUD button's pip badge filter, so it
+  // only lights up for genuinely refinery-relevant notifications instead of any active
+  // cross-alliance armada
+  bool installRefineryArmadaPipFix;
 };

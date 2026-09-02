@@ -238,11 +238,14 @@ hotkeyhooks = true
 loadingscreenhooks = true
 miscpatches = true
 objecttracker = true
+officerpipfix = true
 officersorthooks = true
 panhooks = true
 
 # Fija las naves configuradas al principio del muelle de gestión de flota
 pinnedshiphooks = true
+refineryarmadapipfix = true
+shoppipfix = true
 syncpatches = true
 tempcrashfixes = true
 testpatches = true

@@ -858,6 +858,12 @@ void Config::Load()
       get_config_or_default(config, parsed, "patches", "officersorthooks", DCP::officersorthooks, write_config);
   this->installPinnedShipSortHooks =
       get_config_or_default(config, parsed, "patches", "pinnedshiphooks", DCP::pinnedshiphooks, write_config);
+  this->installShopPipFix =
+      get_config_or_default(config, parsed, "patches", "shoppipfix", DCP::shoppipfix, write_config);
+  this->installOfficerPipFix =
+      get_config_or_default(config, parsed, "patches", "officerpipfix", DCP::officerpipfix, write_config);
+  this->installRefineryArmadaPipFix = get_config_or_default(
+      config, parsed, "patches", "refineryarmadapipfix", DCP::refineryarmadapipfix, write_config);
   spdlog::debug("");
   this->queue_enabled =
       get_config_or_default(config, parsed, "control", "queue_enabled", DCC::queue_enabled, write_config);
